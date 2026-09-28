@@ -1,0 +1,18 @@
+/*.rbxlx.lock
+/*.rbxl.lock
+sourcemap.json
+wally.lock
+Packages
+ServerPackages
+src/Shared/Network/
+/Notes
+/.github
+/.claude
+AGENTS.md
+/.cursor
+/scripts
+
+# Shared Cursor rules (junction to ~/.cursor/rules)
+.cursor/rules/
+.cursor/rules.bak/
+wally.lock

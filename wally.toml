@@ -1,0 +1,23 @@
+[package]
+name = "weewooz/framework-starter"
+version = "0.1.0"
+registry = "https://github.com/UpliftGames/wally-index"
+realm = "shared"
+
+[dependencies]
+Promise = "red-blox/promise@1.1.1"
+QuickZone = "ldgerrits/quickzone@1.4.7"
+Future = "red-blox/future@1.0.1"
+Signal = "sleitnick/signal@2.0.3"
+ObjectCache = "pyseph/objectcache@1.4.6"
+Spring = "sleitnick/spring@1.0.0"
+Octo = "sleitnick/octo-tree@0.3.1"
+SwiftCast = "ddust1n/swiftcast@1.4.1"
+Trove = "sleitnick/trove@1.8.0"
+Component = "sleitnick/component@2.4.8"
+RemoteComponent = "raild3x/remotecomponent@0.2.0"
+ShapeCastHitbox = "teamswordphin/shapecasthitbox@0.2.9"
+
+[server-dependencies]
+ProfileStore = "lm-loleris/profilestore@1.0.3"
+Cmdr = "evaera/cmdr@1.12.0"

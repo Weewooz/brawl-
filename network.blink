@@ -1,0 +1,70 @@
+option TypesOutput = "src/Shared/Network/Types.luau"
+option ClientOutput = "src/Shared/Network/Client.luau"
+option ServerOutput = "src/Shared/Network/Server.luau"
+option FutureLibrary = "ReplicatedStorage.Packages.Future"
+option Casing = Pascal
+option Typescript = true
+
+type success = boolean
+
+scope Notifications {
+    event Show {
+        From: Server,
+        Type: Reliable,
+        Call: SingleAsync,
+        Data: (string, u8, f64),
+    }
+}
+
+scope Latency {
+    event Pong {
+        From: Client,
+        Type: Unreliable,
+        Call: SingleAsync,
+        Data: f64,
+    }
+
+    event Ping {
+        From: Server,
+        Type: Unreliable,
+        Call: SingleAsync,
+        Data: f64,
+    }
+}
+
+scope Profile {
+    type data = unknown
+    type delta = unknown
+    type isCollection = boolean
+    type version = i32
+
+    event Synced {
+        From: Server,
+        Type: Reliable,
+        Call: ManyAsync,
+        Data: (data, version),
+    }
+
+    event Delta {
+        From: Server,
+        Type: Reliable,
+        Call: ManyAsync,
+        Data: (delta, isCollection),
+    }
+}
+
+scope Reconnection {
+    event Request {
+        From: Client,
+        Type: Reliable,
+        Call: SingleAsync,
+        Data: (CFrame, unknown),
+    }
+
+    event Reconnected {
+        From: Server,
+        Type: Reliable,
+        Call: SingleAsync,
+        Data: unknown,
+    }
+}

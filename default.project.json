@@ -1,0 +1,57 @@
+{
+  "name": "framework-starter",
+  "emitLegacyScripts": false,
+  "tree": {
+    "$className": "DataModel",
+    "ReplicatedFirst": {
+      "$className": "ReplicatedFirst",
+      "$path": "src/Client/Preload",
+      "$ignoreUnknownInstances": true
+    },
+    "ReplicatedStorage": {
+      "$className": "ReplicatedStorage",
+      "$ignoreUnknownInstances": true,
+      "Packages": {
+        "$path": "Packages"
+      },
+      "Client": {
+        "$className": "Folder",
+        "Controllers": {
+          "$path": "src/Client/Controllers"
+        },
+        "Modules": {
+          "$path": "src/Client/Modules"
+        }
+      },
+      "Shared": {
+        "$path": "src/Shared"
+      },
+      "Assets": {
+        "$className": "Folder",
+        "$ignoreUnknownInstances": true
+      }
+    },
+    "ServerScriptService": {
+      "$className": "ServerScriptService",
+      "ServerPackages": {
+        "$path": "ServerPackages"
+      },
+      "$path": "src/Server"
+    },
+    "StarterPlayer": {
+      "$className": "StarterPlayer",
+      "StarterCharacterScripts": {
+        "$className": "StarterCharacterScripts",
+        "$path": "src/Client/Characters"
+      }
+    },
+    "Workspace": {
+      "$className": "Workspace",
+      "$ignoreUnknownInstances": true,
+      "Visual": {
+        "$className": "Folder",
+        "$ignoreUnknownInstances": true
+      }
+    }
+  }
+}

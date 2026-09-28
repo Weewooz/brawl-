@@ -1,0 +1,51 @@
+{
+    "[luau]": {
+        "editor.defaultFormatter": "JohnnyMorganz.stylua",
+        "editor.formatOnSave": true,
+        "editor.formatOnPaste": true,
+        "editor.tabCompletion": "on",
+        "editor.suggest.showFunctions": true,
+        "editor.snippetSuggestions":"inline",
+        "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+        "editor.bracketPairColorization.enabled": true,
+        "editor.guides.bracketPairs": "active",
+        "editor.quickSuggestions": {
+            "comments": "on",
+            "strings": "on",
+            "other": "on"
+        }
+    },
+
+    "[lua]": {
+        "editor.defaultFormatter": "JohnnyMorganz.stylua",
+        "editor.formatOnSave": true,
+        "editor.formatOnPaste": true,
+        "editor.tabCompletion": "on",
+        "editor.suggest.showFunctions": true,
+        "editor.snippetSuggestions":"inline",
+        "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+        "editor.bracketPairColorization.enabled": true,
+        "editor.guides.bracketPairs": "active",
+        "editor.quickSuggestions": {
+            "comments": "on",
+            "strings": "on",
+            "other": "on"
+        }
+    },
+
+    "files.autoSave": "onFocusChange",
+    "luau-lsp.completion.autocompleteEnd": true,
+    "luau-lsp.completion.imports.enabled": true,
+    "luau-lsp.completion.imports.separateGroupsWithLine": true,
+    "luau-lsp.diagnostics.strictDatamodelTypes": true,
+    "luau-lsp.diagnostics.workspace": true,
+    "luau-lsp.hover.showTableKinds": true,
+    "luau-lsp.hover.multilineFunctionDefinitions": false,
+    "luau-lsp.inlayHints.parameterNames": "literals",
+    "luau-lsp.inlayHints.parameterTypes": true,
+    "luau-lsp.inlayHints.variableTypes": true,
+    "luau-lsp.studioPlugin.enabled": true,
+    "stylua.targetReleaseVersion": "latest",
+    "luau-lsp.sourcemap.autogenerate": true
+}
+
