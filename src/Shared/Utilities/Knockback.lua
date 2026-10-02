@@ -63,17 +63,83 @@ function Knockback.GetRadial(
 end
 
 function Knockback.Apply(character: Model, direction: Vector3, velocityChange: number): boolean
-	local rootPart = GetEligibleRoot(character)
-	if not rootPart or velocityChange <= 0 then
+	if velocityChange <= 0 then
 		return false
 	end
 
+	return Knockback.ApplyVelocity(character, Knockback.VelocityChange(direction, velocityChange))
+end
+
+function Knockback.VelocityChange(direction: Vector3, velocityChange: number): Vector3
 	local biasedDirection = direction + Vector3.yAxis * UPWARD_BIAS
 	if biasedDirection.Magnitude < 0.001 then
 		biasedDirection = Vector3.yAxis
 	end
 
-	rootPart:ApplyImpulse(biasedDirection.Unit * velocityChange * rootPart.AssemblyMass)
+	return biasedDirection.Unit * velocityChange
+end
+
+function Knockback.CancelDash(character: Model)
+	local rootPart = GetRoot(character)
+	if not rootPart then
+		return
+	end
+	local velocity = rootPart:FindFirstChild("DashVelocity")
+	if velocity then
+		velocity:Destroy()
+	end
+	local attachment = rootPart:FindFirstChild("DashAttachment")
+	if attachment then
+		attachment:Destroy()
+	end
+end
+
+function Knockback.ApplyVelocity(character: Model, velocityChange: Vector3): boolean
+	local rootPart = GetEligibleRoot(character)
+	if not rootPart or velocityChange.Magnitude <= 0 then
+		return false
+	end
+
+	Knockback.CancelDash(character)
+	rootPart.AssemblyLinearVelocity = velocityChange
+	return true
+end
+
+function Knockback.ApplySustained(character: Model, velocityChange: Vector3, duration: number): boolean
+	local rootPart = GetEligibleRoot(character)
+	local horizontal = Vector3.new(velocityChange.X, 0, velocityChange.Z)
+	if not rootPart or horizontal.Magnitude <= 0 or duration <= 0 then
+		return false
+	end
+
+	Knockback.CancelDash(character)
+	local previousVelocity = rootPart:FindFirstChild("StaggerVelocity")
+	if previousVelocity then
+		previousVelocity:Destroy()
+	end
+	local previousAttachment = rootPart:FindFirstChild("StaggerAttachment")
+	if previousAttachment then
+		previousAttachment:Destroy()
+	end
+
+	local attachment = Instance.new("Attachment")
+	attachment.Name = "StaggerAttachment"
+	attachment.Parent = rootPart
+	local velocity = Instance.new("LinearVelocity")
+	velocity.Name = "StaggerVelocity"
+	velocity.Attachment0 = attachment
+	velocity.RelativeTo = Enum.ActuatorRelativeTo.World
+	velocity.ForceLimitsEnabled = true
+	velocity.ForceLimitMode = Enum.ForceLimitMode.PerAxis
+	local force = rootPart.AssemblyMass * 600
+	velocity.MaxAxesForce = Vector3.new(force, 0, force)
+	velocity.VectorVelocity = horizontal
+	velocity.Parent = rootPart
+	rootPart.AssemblyLinearVelocity = horizontal + Vector3.yAxis * rootPart.AssemblyLinearVelocity.Y
+	task.delay(duration, function()
+		velocity:Destroy()
+		attachment:Destroy()
+	end)
 	return true
 end
 

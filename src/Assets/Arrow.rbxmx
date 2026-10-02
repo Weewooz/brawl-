@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='utf-8'?>
+<roblox version="4">
+  <Item class="Part" referent="Arrow">
+    <Properties>
+      <string name="Name">Arrow</string>
+      <bool name="Anchored">true</bool>
+      <bool name="CanCollide">false</bool>
+      <bool name="CanTouch">false</bool>
+      <bool name="CanQuery">false</bool>
+      <bool name="Massless">true</bool>
+      <bool name="CastShadow">false</bool>
+      <token name="Material">512</token>
+      <Vector3 name="Size">
+        <X>0.11</X>
+        <Y>0.11</Y>
+        <Z>2.2</Z>
+      </Vector3>
+      <Color3 name="Color">
+        <R>0.7568627450980392</R>
+        <G>0.6274509803921569</G>
+        <B>0.3843137254901961</B>
+      </Color3>
+      <CoordinateFrame name="CFrame">
+        <X>0</X>
+        <Y>0</Y>
+        <Z>0</Z>
+        <R00>1</R00>
+        <R01>0</R01>
+        <R02>0</R02>
+        <R10>0</R10>
+        <R11>1.0</R11>
+        <R12>-0.0</R12>
+        <R20>0</R20>
+        <R21>0.0</R21>
+        <R22>1.0</R22>
+      </CoordinateFrame>
+    </Properties>
+  </Item>
+</roblox>

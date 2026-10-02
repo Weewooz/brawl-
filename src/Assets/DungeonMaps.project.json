@@ -1,0 +1,5286 @@
+{
+  "name": "DungeonMaps",
+  "tree": {
+    "Layout1": {
+      "StairGuardWall": {
+        "$properties": {
+          "Anchored": true,
+          "BottomSurface": {
+            "Enum": 0
+          },
+          "CanCollide": true,
+          "Transparency": 0,
+          "TopSurface": {
+            "Enum": 0
+          },
+          "CanQuery": true,
+          "Color": [
+            0.1725490242242813,
+            0.18431372940540314,
+            0.23137255012989044
+          ],
+          "Material": {
+            "Enum": 800
+          },
+          "Size": [
+            52,
+            21,
+            2
+          ],
+          "CanTouch": true,
+          "Shape": {
+            "Enum": 1
+          },
+          "CFrame": [
+            158,
+            10.5,
+            9,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        "$className": "Part"
+      },
+      "Zone2": {
+        "NorthWall2": {
+          "$properties": {
+            "Anchored": true,
+            "BottomSurface": {
+              "Enum": 0
+            },
+            "CanCollide": true,
+            "Transparency": 0,
+            "TopSurface": {
+              "Enum": 0
+            },
+            "CanQuery": true,
+            "Color": [
+              0.1725490242242813,
+              0.18431372940540314,
+              0.23137255012989044
+            ],
+            "Material": {
+              "Enum": 800
+            },
+            "Size": [
+              3,
+              14,
+              24
+            ],
+            "CanTouch": true,
+            "Shape": {
+              "Enum": 1
+            },
+            "CFrame": [
+              132,
+              7,
+              -20,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "$className": "Part"
+        },
+        "SouthWall": {
+          "$properties": {
+            "Anchored": true,
+            "BottomSurface": {
+              "Enum": 0
+            },
+            "CanCollide": true,
+            "Transparency": 0,
+            "TopSurface": {
+              "Enum": 0
+            },
+            "CanQuery": true,
+            "Color": [
+              0.1725490242242813,
+              0.18431372940540314,
+              0.23137255012989044
+            ],
+            "Material": {
+              "Enum": 800
+            },
+            "Size": [
+              3,
+              14,
+              24
+            ],
+            "CanTouch": true,
+            "Shape": {
+              "Enum": 1
+            },
+            "CFrame": [
+              60,
+              7,
+              20,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "$className": "Part"
+        },
+        "Floor": {
+          "$properties": {
+            "Anchored": true,
+            "BottomSurface": {
+              "Enum": 0
+            },
+            "CanCollide": true,
+            "Transparency": 0,
+            "TopSurface": {
+              "Enum": 0
+            },
+            "CanQuery": true,
+            "Color": [
+              0.27843138575553894,
+              0.2862745225429535,
+              0.3137255012989044
+            ],
+            "Material": {
+              "Enum": 880
+            },
+            "Size": [
+              72,
+              3,
+              64
+            ],
+            "CanTouch": true,
+            "Shape": {
+              "Enum": 1
+            },
+            "CFrame": [
+              96,
+              -1.5,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "$className": "Part"
+        },
+        "SideWall2": {
+          "$properties": {
+            "Anchored": true,
+            "BottomSurface": {
+              "Enum": 0
+            },
+            "CanCollide": true,
+            "Transparency": 0,
+            "TopSurface": {
+              "Enum": 0
+            },
+            "CanQuery": true,
+            "Color": [
+              0.1725490242242813,
+              0.18431372940540314,
+              0.23137255012989044
+            ],
+            "Material": {
+              "Enum": 800
+            },
+            "Size": [
+              72,
+              14,
+              3
+            ],
+            "CanTouch": true,
+            "Shape": {
+              "Enum": 1
+            },
+            "CFrame": [
+              96,
+              7,
+              32,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "$className": "Part"
+        },
+        "NorthWall": {
+          "$properties": {
+            "Anchored": true,
+            "BottomSurface": {
+              "Enum": 0
+            },
+            "CanCollide": true,
+            "Transparency": 0,
+            "TopSurface": {
+              "Enum": 0
+            },
+            "CanQuery": true,
+            "Color": [
+              0.1725490242242813,
+              0.18431372940540314,
+              0.23137255012989044
+            ],
+            "Material": {
+              "Enum": 800
+            },
+            "Size": [
+              3,
+              14,
+              24
+            ],
+            "CanTouch": true,
+            "Shape": {
+              "Enum": 1
+            },
+            "CFrame": [
+              60,
+              7,
+              -20,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "$className": "Part"
+        },
+        "SidePartition2": {
+          "$properties": {
+            "Anchored": true,
+            "BottomSurface": {
+              "Enum": 0
+            },
+            "CanCollide": true,
+            "Transparency": 0,
+            "TopSurface": {
+              "Enum": 0
+            },
+            "CanQuery": true,
+            "Color": [
+              0.2705882489681244,
+              0.3176470696926117,
+              0.3450980484485626
+            ],
+            "Material": {
+              "Enum": 800
+            },
+            "Size": [
+              3,
+              6,
+              13
+            ],
+            "CanTouch": true,
+            "Shape": {
+              "Enum": 1
+            },
+            "CFrame": [
+              110,
+              3,
+              24,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "$className": "Part"
+        },
+        "SideWall": {
+          "$properties": {
+            "Anchored": true,
+            "BottomSurface": {
+              "Enum": 0
+            },
+            "CanCollide": true,
+            "Transparency": 0,
+            "TopSurface": {
+              "Enum": 0
+            },
+            "CanQuery": true,
+            "Color": [
+              0.1725490242242813,
+              0.18431372940540314,
+              0.23137255012989044
+            ],
+            "Material": {
+              "Enum": 800
+            },
+            "Size": [
+              72,
+              14,
+              3
+            ],
+            "CanTouch": true,
+            "Shape": {
+              "Enum": 1
+            },
+            "CFrame": [
+              96,
+              7,
+              -32,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "$className": "Part"
+        },
+        "Gate": {
+          "$properties": {
+            "Anchored": true,
+            "BottomSurface": {
+              "Enum": 0
+            },
+            "CanCollide": true,
+            "Transparency": 0,
+            "TopSurface": {
+              "Enum": 0
+            },
+            "CanQuery": true,
+            "Color": [
+              0.6823529601097107,
+              0.4470588266849518,
+              0.22745098173618317
+            ],
+            "Material": {
+              "Enum": 1088
+            },
+            "Size": [
+              3,
+              14,
+              16
+            ],
+            "CanTouch": true,
+            "Shape": {
+              "Enum": 1
+            },
+            "CFrame": [
+              132,
+              7,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "$className": "Part"
+        },
+        "$className": "Model",
+        "SouthWall2": {
+          "$properties": {
+            "Anchored": true,
+            "BottomSurface": {
+              "Enum": 0
+            },
+            "CanCollide": true,
+            "Transparency": 0,
+            "TopSurface": {
+              "Enum": 0
+            },
+            "CanQuery": true,
+            "Color": [
+              0.1725490242242813,
+              0.18431372940540314,
+              0.23137255012989044
+            ],
+            "Material": {
+              "Enum": 800
+            },
+            "Size": [
+              3,
+              14,
+              24
+            ],
+            "CanTouch": true,
+            "Shape": {
+              "Enum": 1
+            },
+            "CFrame": [
+              132,
+              7,
+              20,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "$className": "Part"
+        },
+        "SidePartition": {
+          "$properties": {
+            "Anchored": true,
+            "BottomSurface": {
+              "Enum": 0
+            },
+            "CanCollide": true,
+            "Transparency": 0,
+            "TopSurface": {
+              "Enum": 0
+            },
+            "CanQuery": true,
+            "Color": [
+              0.32156863808631897,
+              0.32549020648002625,
+              0.3529411852359772
+            ],
+            "Material": {
+              "Enum": 800
+            },
+            "Size": [
+              3,
+              8,
+              13
+            ],
+            "CanTouch": true,
+            "Shape": {
+              "Enum": 1
+            },
+            "CFrame": [
+              82,
+              4,
+              -24,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "$className": "Part"
+        }
+      },
+      "Zone3": {
+        "NorthWall2": {
+          "$properties": {
+            "Anchored": true,
+            "BottomSurface": {
+              "Enum": 0
+            },
+            "CanCollide": true,
+            "Transparency": 0,
+            "TopSurface": {
+              "Enum": 0
+            },
+            "CanQuery": true,
+            "Color": [
+              0.1725490242242813,
+              0.18431372940540314,
+              0.23137255012989044
+            ],
+            "Material": {
+              "Enum": 800
+            },
+            "Size": [
+              3,
+              14,
+              24
+            ],
+            "CanTouch": true,
+            "Shape": {
+              "Enum": 1
+            },
+            "CFrame": [
+              256,
+              19,
+              -20,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "$className": "Part"
+        },
+        "SouthWall": {
+          "$properties": {
+            "Anchored": true,
+            "BottomSurface": {
+              "Enum": 0
+            },
+            "CanCollide": true,
+            "Transparency": 0,
+            "TopSurface": {
+              "Enum": 0
+            },
+            "CanQuery": true,
+            "Color": [
+              0.1725490242242813,
+              0.18431372940540314,
+              0.23137255012989044
+            ],
+            "Material": {
+              "Enum": 800
+            },
+            "Size": [
+              3,
+              14,
+              24
+            ],
+            "CanTouch": true,
+            "Shape": {
+              "Enum": 1
+            },
+            "CFrame": [
+              184,
+              19,
+              20,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "$className": "Part"
+        },
+        "Floor": {
+          "$properties": {
+            "Anchored": true,
+            "BottomSurface": {
+              "Enum": 0
+            },
+            "CanCollide": true,
+            "Transparency": 0,
+            "TopSurface": {
+              "Enum": 0
+            },
+            "CanQuery": true,
+            "Color": [
+              0.27843138575553894,
+              0.2862745225429535,
+              0.3137255012989044
+            ],
+            "Material": {
+              "Enum": 880
+            },
+            "Size": [
+              72,
+              3,
+              64
+            ],
+            "CanTouch": true,
+            "Shape": {
+              "Enum": 1
+            },
+            "CFrame": [
+              220,
+              10.5,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "$className": "Part"
+        },
+        "SideWall2": {
+          "$properties": {
+            "Anchored": true,
+            "BottomSurface": {
+              "Enum": 0
+            },
+            "CanCollide": true,
+            "Transparency": 0,
+            "TopSurface": {
+              "Enum": 0
+            },
+            "CanQuery": true,
+            "Color": [
+              0.1725490242242813,
+              0.18431372940540314,
+              0.23137255012989044
+            ],
+            "Material": {
+              "Enum": 800
+            },
+            "Size": [
+              72,
+              14,
+              3
+            ],
+            "CanTouch": true,
+            "Shape": {
+              "Enum": 1
+            },
+            "CFrame": [
+              220,
+              19,
+              32,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "$className": "Part"
+        },
+        "NorthWall": {
+          "$properties": {
+            "Anchored": true,
+            "BottomSurface": {
+              "Enum": 0
+            },
+            "CanCollide": true,
+            "Transparency": 0,
+            "TopSurface": {
+              "Enum": 0
+            },
+            "CanQuery": true,
+            "Color": [
+              0.1725490242242813,
+              0.18431372940540314,
+              0.23137255012989044
+            ],
+            "Material": {
+              "Enum": 800
+            },
+            "Size": [
+              3,
+              14,
+              24
+            ],
+            "CanTouch": true,
+            "Shape": {
+              "Enum": 1
+            },
+            "CFrame": [
+              184,
+              19,
+              -20,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "$className": "Part"
+        },
+        "Cover3": {
+          "$properties": {
+            "Anchored": true,
+            "BottomSurface": {
+              "Enum": 0
+            },
+            "CanCollide": true,
+            "Transparency": 0,
+            "TopSurface": {
+              "Enum": 0
+            },
+            "CanQuery": true,
+            "Color": [
+              0.32156863808631897,
+              0.32549020648002625,
+              0.3529411852359772
+            ],
+            "Material": {
+              "Enum": 800
+            },
+            "Size": [
+              9,
+              6,
+              12
+            ],
+            "CanTouch": true,
+            "Shape": {
+              "Enum": 1
+            },
+            "CFrame": [
+              228,
+              15,
+              23,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "$className": "Part"
+        },
+        "Cover2": {
+          "$properties": {
+            "Anchored": true,
+            "BottomSurface": {
+              "Enum": 0
+            },
+            "CanCollide": true,
+            "Transparency": 0,
+            "TopSurface": {
+              "Enum": 0
+            },
+            "CanQuery": true,
+            "Color": [
+              0.2705882489681244,
+              0.3176470696926117,
+              0.3450980484485626
+            ],
+            "Material": {
+              "Enum": 800
+            },
+            "Size": [
+              7,
+              6,
+              10
+            ],
+            "CanTouch": true,
+            "Shape": {
+              "Enum": 1
+            },
+            "CFrame": [
+              212,
+              15,
+              -24,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "$className": "Part"
+        },
+        "Cover4": {
+          "$properties": {
+            "Anchored": true,
+            "BottomSurface": {
+              "Enum": 0
+            },
+            "CanCollide": true,
+            "Transparency": 0,
+            "TopSurface": {
+              "Enum": 0
+            },
+            "CanQuery": true,
+            "Color": [
+              0.2705882489681244,
+              0.3176470696926117,
+              0.3450980484485626
+            ],
+            "Material": {
+              "Enum": 800
+            },
+            "Size": [
+              6,
+              7,
+              11
+            ],
+            "CanTouch": true,
+            "Shape": {
+              "Enum": 1
+            },
+            "CFrame": [
+              243,
+              15.5,
+              23,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "$className": "Part"
+        },
+        "SideWall": {
+          "$properties": {
+            "Anchored": true,
+            "BottomSurface": {
+              "Enum": 0
+            },
+            "CanCollide": true,
+            "Transparency": 0,
+            "TopSurface": {
+              "Enum": 0
+            },
+            "CanQuery": true,
+            "Color": [
+              0.1725490242242813,
+              0.18431372940540314,
+              0.23137255012989044
+            ],
+            "Material": {
+              "Enum": 800
+            },
+            "Size": [
+              72,
+              14,
+              3
+            ],
+            "CanTouch": true,
+            "Shape": {
+              "Enum": 1
+            },
+            "CFrame": [
+              220,
+              19,
+              -32,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "$className": "Part"
+        },
+        "Cover": {
+          "$properties": {
+            "Anchored": true,
+            "BottomSurface": {
+              "Enum": 0
+            },
+            "CanCollide": true,
+            "Transparency": 0,
+            "TopSurface": {
+              "Enum": 0
+            },
+            "CanQuery": true,
+            "Color": [
+              0.35686275362968445,
+              0.3137255012989044,
+              0.29019609093666077
+            ],
+            "Material": {
+              "Enum": 800
+            },
+            "Size": [
+              9,
+              6,
+              11
+            ],
+            "CanTouch": true,
+            "Shape": {
+              "Enum": 1
+            },
+            "CFrame": [
+              197,
+              15,
+              -24,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "$className": "Part"
+        },
+        "$className": "Model",
+        "SouthWall2": {
+          "$properties": {
+            "Anchored": true,
+            "BottomSurface": {
+              "Enum": 0
+            },
+            "CanCollide": true,
+            "Transparency": 0,
+            "TopSurface": {
+              "Enum": 0
+            },
+            "CanQuery": true,
+            "Color": [
+              0.1725490242242813,
+              0.18431372940540314,
+              0.23137255012989044
+            ],
+            "Material": {
+              "Enum": 800
+            },
+            "Size": [
+              3,
+              14,
+              24
+            ],
+            "CanTouch": true,
+            "Shape": {
+              "Enum": 1
+            },
+            "CFrame": [
+              256,
+              19,
+              20,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "$className": "Part"
+        },
+        "Gate": {
+          "$properties": {
+            "Anchored": true,
+            "BottomSurface": {
+              "Enum": 0
+            },
+            "CanCollide": true,
+            "Transparency": 0,
+            "TopSurface": {
+              "Enum": 0
+            },
+            "CanQuery": true,
+            "Color": [
+              0.6823529601097107,
+              0.4470588266849518,
+              0.22745098173618317
+            ],
+            "Material": {
+              "Enum": 1088
+            },
+            "Size": [
+              3,
+              14,
+              16
+            ],
+            "CanTouch": true,
+            "Shape": {
+              "Enum": 1
+            },
+            "CFrame": [
+              256,
+              19,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "$className": "Part"
+        }
+      },
+      "ExitLanding": {
+        "$properties": {
+          "Anchored": true,
+          "BottomSurface": {
+            "Enum": 0
+          },
+          "CanCollide": true,
+          "Transparency": 0,
+          "TopSurface": {
+            "Enum": 0
+          },
+          "CanQuery": true,
+          "Color": [
+            0.3450980484485626,
+            0.3333333432674408,
+            0.30980393290519714
+          ],
+          "Material": {
+            "Enum": 880
+          },
+          "Size": [
+            12,
+            3,
+            16
+          ],
+          "CanTouch": true,
+          "Shape": {
+            "Enum": 1
+          },
+          "CFrame": [
+            262,
+            10.5,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        "$className": "Part"
+      },
+      "ZoneBridge": {
+        "$properties": {
+          "Anchored": true,
+          "BottomSurface": {
+            "Enum": 0
+          },
+          "CanCollide": true,
+          "Transparency": 0,
+          "TopSurface": {
+            "Enum": 0
+          },
+          "CanQuery": true,
+          "Color": [
+            0.3450980484485626,
+            0.3333333432674408,
+            0.30980393290519714
+          ],
+          "Material": {
+            "Enum": 880
+          },
+          "Size": [
+            24,
+            3,
+            16
+          ],
+          "CanTouch": true,
+          "Shape": {
+            "Enum": 1
+          },
+          "CFrame": [
+            48,
+            -1.5,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        "$className": "Part"
+      },
+      "Stair": {
+        "$properties": {
+          "Anchored": true,
+          "BottomSurface": {
+            "Enum": 0
+          },
+          "CanCollide": true,
+          "Transparency": 0,
+          "TopSurface": {
+            "Enum": 0
+          },
+          "CanQuery": true,
+          "Color": [
+            0.3450980484485626,
+            0.3333333432674408,
+            0.30980393290519714
+          ],
+          "Material": {
+            "Enum": 880
+          },
+          "Size": [
+            4.383333206176758,
+            15,
+            16
+          ],
+          "CanTouch": true,
+          "Shape": {
+            "Enum": 1
+          },
+          "CFrame": [
+            181.8333282470703,
+            4.5,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        "$className": "Part"
+      },
+      "$className": "Model",
+      "Zone1": {
+        "SouthWall": {
+          "$properties": {
+            "Anchored": true,
+            "BottomSurface": {
+              "Enum": 0
+            },
+            "CanCollide": true,
+            "Transparency": 0,
+            "TopSurface": {
+              "Enum": 0
+            },
+            "CanQuery": true,
+            "Color": [
+              0.1725490242242813,
+              0.18431372940540314,
+              0.23137255012989044
+            ],
+            "Material": {
+              "Enum": 800
+            },
+            "Size": [
+              3,
+              14,
+              24
+            ],
+            "CanTouch": true,
+            "Shape": {
+              "Enum": 1
+            },
+            "CFrame": [
+              36,
+              7,
+              20,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "$className": "Part"
+        },
+        "Floor": {
+          "$properties": {
+            "Anchored": true,
+            "BottomSurface": {
+              "Enum": 0
+            },
+            "CanCollide": true,
+            "Transparency": 0,
+            "TopSurface": {
+              "Enum": 0
+            },
+            "CanQuery": true,
+            "Color": [
+              0.27843138575553894,
+              0.2862745225429535,
+              0.3137255012989044
+            ],
+            "Material": {
+              "Enum": 880
+            },
+            "Size": [
+              72,
+              3,
+              64
+            ],
+            "CanTouch": true,
+            "Shape": {
+              "Enum": 1
+            },
+            "CFrame": [
+              0,
+              -1.5,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "$className": "Part"
+        },
+        "SideWall2": {
+          "$properties": {
+            "Anchored": true,
+            "BottomSurface": {
+              "Enum": 0
+            },
+            "CanCollide": true,
+            "Transparency": 0,
+            "TopSurface": {
+              "Enum": 0
+            },
+            "CanQuery": true,
+            "Color": [
+              0.1725490242242813,
+              0.18431372940540314,
+              0.23137255012989044
+            ],
+            "Material": {
+              "Enum": 800
+            },
+            "Size": [
+              72,
+              14,
+              3
+            ],
+            "CanTouch": true,
+            "Shape": {
+              "Enum": 1
+            },
+            "CFrame": [
+              0,
+              7,
+              32,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "$className": "Part"
+        },
+        "NorthWall": {
+          "$properties": {
+            "Anchored": true,
+            "BottomSurface": {
+              "Enum": 0
+            },
+            "CanCollide": true,
+            "Transparency": 0,
+            "TopSurface": {
+              "Enum": 0
+            },
+            "CanQuery": true,
+            "Color": [
+              0.1725490242242813,
+              0.18431372940540314,
+              0.23137255012989044
+            ],
+            "Material": {
+              "Enum": 800
+            },
+            "Size": [
+              3,
+              14,
+              24
+            ],
+            "CanTouch": true,
+            "Shape": {
+              "Enum": 1
+            },
+            "CFrame": [
+              36,
+              7,
+              -20,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "$className": "Part"
+        },
+        "Pillar3": {
+          "$properties": {
+            "Anchored": true,
+            "BottomSurface": {
+              "Enum": 0
+            },
+            "CanCollide": true,
+            "Transparency": 0,
+            "TopSurface": {
+              "Enum": 0
+            },
+            "CanQuery": true,
+            "Color": [
+              0.35686275362968445,
+              0.3137255012989044,
+              0.29019609093666077
+            ],
+            "Material": {
+              "Enum": 800
+            },
+            "Size": [
+              6,
+              10,
+              6
+            ],
+            "CanTouch": true,
+            "Shape": {
+              "Enum": 1
+            },
+            "CFrame": [
+              16,
+              5,
+              -24,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "$className": "Part"
+        },
+        "WestWall": {
+          "$properties": {
+            "Anchored": true,
+            "BottomSurface": {
+              "Enum": 0
+            },
+            "CanCollide": true,
+            "Transparency": 0,
+            "TopSurface": {
+              "Enum": 0
+            },
+            "CanQuery": true,
+            "Color": [
+              0.1725490242242813,
+              0.18431372940540314,
+              0.23137255012989044
+            ],
+            "Material": {
+              "Enum": 800
+            },
+            "Size": [
+              3,
+              14,
+              64
+            ],
+            "CanTouch": true,
+            "Shape": {
+              "Enum": 1
+            },
+            "CFrame": [
+              -36,
+              7,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "$className": "Part"
+        },
+        "Pillar4": {
+          "$properties": {
+            "Anchored": true,
+            "BottomSurface": {
+              "Enum": 0
+            },
+            "CanCollide": true,
+            "Transparency": 0,
+            "TopSurface": {
+              "Enum": 0
+            },
+            "CanQuery": true,
+            "Color": [
+              0.2705882489681244,
+              0.3176470696926117,
+              0.3450980484485626
+            ],
+            "Material": {
+              "Enum": 800
+            },
+            "Size": [
+              6,
+              9,
+              6
+            ],
+            "CanTouch": true,
+            "Shape": {
+              "Enum": 1
+            },
+            "CFrame": [
+              17,
+              4.5,
+              21,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "$className": "Part"
+        },
+        "Gate": {
+          "$properties": {
+            "Anchored": true,
+            "BottomSurface": {
+              "Enum": 0
+            },
+            "CanCollide": true,
+            "Transparency": 0,
+            "TopSurface": {
+              "Enum": 0
+            },
+            "CanQuery": true,
+            "Color": [
+              0.6823529601097107,
+              0.4470588266849518,
+              0.22745098173618317
+            ],
+            "Material": {
+              "Enum": 1088
+            },
+            "Size": [
+              3,
+              14,
+              16
+            ],
+            "CanTouch": true,
+            "Shape": {
+              "Enum": 1
+            },
+            "CFrame": [
+              36,
+              7,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "$className": "Part"
+        },
+        "Pillar2": {
+          "$properties": {
+            "Anchored": true,
+            "BottomSurface": {
+              "Enum": 0
+            },
+            "CanCollide": true,
+            "Transparency": 0,
+            "TopSurface": {
+              "Enum": 0
+            },
+            "CanQuery": true,
+            "Color": [
+              0.32156863808631897,
+              0.32549020648002625,
+              0.3529411852359772
+            ],
+            "Material": {
+              "Enum": 800
+            },
+            "Size": [
+              6,
+              7,
+              6
+            ],
+            "CanTouch": true,
+            "Shape": {
+              "Enum": 1
+            },
+            "CFrame": [
+              -21,
+              3.5,
+              22,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "$className": "Part"
+        },
+        "$className": "Model",
+        "Pillar": {
+          "$properties": {
+            "Anchored": true,
+            "BottomSurface": {
+              "Enum": 0
+            },
+            "CanCollide": true,
+            "Transparency": 0,
+            "TopSurface": {
+              "Enum": 0
+            },
+            "CanQuery": true,
+            "Color": [
+              0.35686275362968445,
+              0.3137255012989044,
+              0.29019609093666077
+            ],
+            "Material": {
+              "Enum": 800
+            },
+            "Size": [
+              6,
+              9,
+              6
+            ],
+            "CanTouch": true,
+            "Shape": {
+              "Enum": 1
+            },
+            "CFrame": [
+              -21,
+              4.5,
+              -24,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "$className": "Part"
+        },
+        "SideWall": {
+          "$properties": {
+            "Anchored": true,
+            "BottomSurface": {
+              "Enum": 0
+            },
+            "CanCollide": true,
+            "Transparency": 0,
+            "TopSurface": {
+              "Enum": 0
+            },
+            "CanQuery": true,
+            "Color": [
+              0.1725490242242813,
+              0.18431372940540314,
+              0.23137255012989044
+            ],
+            "Material": {
+              "Enum": 800
+            },
+            "Size": [
+              72,
+              14,
+              3
+            ],
+            "CanTouch": true,
+            "Shape": {
+              "Enum": 1
+            },
+            "CFrame": [
+              0,
+              7,
+              -32,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "$className": "Part"
+        }
+      },
+      "GuardWall": {
+        "$properties": {
+          "Anchored": true,
+          "BottomSurface": {
+            "Enum": 0
+          },
+          "CanCollide": true,
+          "Transparency": 0,
+          "TopSurface": {
+            "Enum": 0
+          },
+          "CanQuery": true,
+          "Color": [
+            0.1725490242242813,
+            0.18431372940540314,
+            0.23137255012989044
+          ],
+          "Material": {
+            "Enum": 800
+          },
+          "Size": [
+            12,
+            8,
+            2
+          ],
+          "CanTouch": true,
+          "Shape": {
+            "Enum": 1
+          },
+          "CFrame": [
+            262,
+            16,
+            9,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        "$className": "Part"
+      }
+    },
+    "$className": "Folder",
+    "Layout3": {
+      "StairGuardWall": {
+        "$properties": {
+          "Anchored": true,
+          "BottomSurface": {
+            "Enum": 0
+          },
+          "CanCollide": true,
+          "Transparency": 0,
+          "TopSurface": {
+            "Enum": 0
+          },
+          "CanQuery": true,
+          "Color": [
+            0.1725490242242813,
+            0.18431372940540314,
+            0.23137255012989044
+          ],
+          "Material": {
+            "Enum": 800
+          },
+          "Size": [
+            52,
+            21,
+            2
+          ],
+          "CanTouch": true,
+          "Shape": {
+            "Enum": 1
+          },
+          "CFrame": [
+            158,
+            10.5,
+            9,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        "$className": "Part"
+      },
+      "Zone2": {
+        "NorthWall2": {
+          "$properties": {
+            "Anchored": true,
+            "BottomSurface": {
+              "Enum": 0
+            },
+            "CanCollide": true,
+            "Transparency": 0,
+            "TopSurface": {
+              "Enum": 0
+            },
+            "CanQuery": true,
+            "Color": [
+              0.1725490242242813,
+              0.18431372940540314,
+              0.23137255012989044
+            ],
+            "Material": {
+              "Enum": 800
+            },
+            "Size": [
+              3,
+              14,
+              24
+            ],
+            "CanTouch": true,
+            "Shape": {
+              "Enum": 1
+            },
+            "CFrame": [
+              132,
+              7,
+              -20,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "$className": "Part"
+        },
+        "SouthWall": {
+          "$properties": {
+            "Anchored": true,
+            "BottomSurface": {
+              "Enum": 0
+            },
+            "CanCollide": true,
+            "Transparency": 0,
+            "TopSurface": {
+              "Enum": 0
+            },
+            "CanQuery": true,
+            "Color": [
+              0.1725490242242813,
+              0.18431372940540314,
+              0.23137255012989044
+            ],
+            "Material": {
+              "Enum": 800
+            },
+            "Size": [
+              3,
+              14,
+              24
+            ],
+            "CanTouch": true,
+            "Shape": {
+              "Enum": 1
+            },
+            "CFrame": [
+              60,
+              7,
+              20,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "$className": "Part"
+        },
+        "Floor": {
+          "$properties": {
+            "Anchored": true,
+            "BottomSurface": {
+              "Enum": 0
+            },
+            "CanCollide": true,
+            "Transparency": 0,
+            "TopSurface": {
+              "Enum": 0
+            },
+            "CanQuery": true,
+            "Color": [
+              0.27843138575553894,
+              0.2862745225429535,
+              0.3137255012989044
+            ],
+            "Material": {
+              "Enum": 880
+            },
+            "Size": [
+              72,
+              3,
+              64
+            ],
+            "CanTouch": true,
+            "Shape": {
+              "Enum": 1
+            },
+            "CFrame": [
+              96,
+              -1.5,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "$className": "Part"
+        },
+        "SideWall2": {
+          "$properties": {
+            "Anchored": true,
+            "BottomSurface": {
+              "Enum": 0
+            },
+            "CanCollide": true,
+            "Transparency": 0,
+            "TopSurface": {
+              "Enum": 0
+            },
+            "CanQuery": true,
+            "Color": [
+              0.1725490242242813,
+              0.18431372940540314,
+              0.23137255012989044
+            ],
+            "Material": {
+              "Enum": 800
+            },
+            "Size": [
+              72,
+              14,
+              3
+            ],
+            "CanTouch": true,
+            "Shape": {
+              "Enum": 1
+            },
+            "CFrame": [
+              96,
+              7,
+              32,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "$className": "Part"
+        },
+        "NorthWall": {
+          "$properties": {
+            "Anchored": true,
+            "BottomSurface": {
+              "Enum": 0
+            },
+            "CanCollide": true,
+            "Transparency": 0,
+            "TopSurface": {
+              "Enum": 0
+            },
+            "CanQuery": true,
+            "Color": [
+              0.1725490242242813,
+              0.18431372940540314,
+              0.23137255012989044
+            ],
+            "Material": {
+              "Enum": 800
+            },
+            "Size": [
+              3,
+              14,
+              24
+            ],
+            "CanTouch": true,
+            "Shape": {
+              "Enum": 1
+            },
+            "CFrame": [
+              60,
+              7,
+              -20,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "$className": "Part"
+        },
+        "Cover3": {
+          "$properties": {
+            "Anchored": true,
+            "BottomSurface": {
+              "Enum": 0
+            },
+            "CanCollide": true,
+            "Transparency": 0,
+            "TopSurface": {
+              "Enum": 0
+            },
+            "CanQuery": true,
+            "Color": [
+              0.35686275362968445,
+              0.3137255012989044,
+              0.29019609093666077
+            ],
+            "Material": {
+              "Enum": 800
+            },
+            "Size": [
+              5,
+              7,
+              10
+            ],
+            "CanTouch": true,
+            "Shape": {
+              "Enum": 1
+            },
+            "CFrame": [
+              104,
+              3.5,
+              -24,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "$className": "Part"
+        },
+        "Cover2": {
+          "$properties": {
+            "Anchored": true,
+            "BottomSurface": {
+              "Enum": 0
+            },
+            "CanCollide": true,
+            "Transparency": 0,
+            "TopSurface": {
+              "Enum": 0
+            },
+            "CanQuery": true,
+            "Color": [
+              0.35686275362968445,
+              0.3137255012989044,
+              0.29019609093666077
+            ],
+            "Material": {
+              "Enum": 800
+            },
+            "Size": [
+              5,
+              6,
+              8
+            ],
+            "CanTouch": true,
+            "Shape": {
+              "Enum": 1
+            },
+            "CFrame": [
+              88,
+              3,
+              -25,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "$className": "Part"
+        },
+        "Cover4": {
+          "$properties": {
+            "Anchored": true,
+            "BottomSurface": {
+              "Enum": 0
+            },
+            "CanCollide": true,
+            "Transparency": 0,
+            "TopSurface": {
+              "Enum": 0
+            },
+            "CanQuery": true,
+            "Color": [
+              0.2705882489681244,
+              0.3176470696926117,
+              0.3450980484485626
+            ],
+            "Material": {
+              "Enum": 800
+            },
+            "Size": [
+              8,
+              7,
+              10
+            ],
+            "CanTouch": true,
+            "Shape": {
+              "Enum": 1
+            },
+            "CFrame": [
+              119,
+              3.5,
+              -25,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "$className": "Part"
+        },
+        "SideWall": {
+          "$properties": {
+            "Anchored": true,
+            "BottomSurface": {
+              "Enum": 0
+            },
+            "CanCollide": true,
+            "Transparency": 0,
+            "TopSurface": {
+              "Enum": 0
+            },
+            "CanQuery": true,
+            "Color": [
+              0.1725490242242813,
+              0.18431372940540314,
+              0.23137255012989044
+            ],
+            "Material": {
+              "Enum": 800
+            },
+            "Size": [
+              72,
+              14,
+              3
+            ],
+            "CanTouch": true,
+            "Shape": {
+              "Enum": 1
+            },
+            "CFrame": [
+              96,
+              7,
+              -32,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "$className": "Part"
+        },
+        "Cover": {
+          "$properties": {
+            "Anchored": true,
+            "BottomSurface": {
+              "Enum": 0
+            },
+            "CanCollide": true,
+            "Transparency": 0,
+            "TopSurface": {
+              "Enum": 0
+            },
+            "CanQuery": true,
+            "Color": [
+              0.2705882489681244,
+              0.3176470696926117,
+              0.3450980484485626
+            ],
+            "Material": {
+              "Enum": 800
+            },
+            "Size": [
+              9,
+              8,
+              10
+            ],
+            "CanTouch": true,
+            "Shape": {
+              "Enum": 1
+            },
+            "CFrame": [
+              73,
+              4,
+              -21,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "$className": "Part"
+        },
+        "$className": "Model",
+        "SouthWall2": {
+          "$properties": {
+            "Anchored": true,
+            "BottomSurface": {
+              "Enum": 0
+            },
+            "CanCollide": true,
+            "Transparency": 0,
+            "TopSurface": {
+              "Enum": 0
+            },
+            "CanQuery": true,
+            "Color": [
+              0.1725490242242813,
+              0.18431372940540314,
+              0.23137255012989044
+            ],
+            "Material": {
+              "Enum": 800
+            },
+            "Size": [
+              3,
+              14,
+              24
+            ],
+            "CanTouch": true,
+            "Shape": {
+              "Enum": 1
+            },
+            "CFrame": [
+              132,
+              7,
+              20,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "$className": "Part"
+        },
+        "Gate": {
+          "$properties": {
+            "Anchored": true,
+            "BottomSurface": {
+              "Enum": 0
+            },
+            "CanCollide": true,
+            "Transparency": 0,
+            "TopSurface": {
+              "Enum": 0
+            },
+            "CanQuery": true,
+            "Color": [
+              0.6823529601097107,
+              0.4470588266849518,
+              0.22745098173618317
+            ],
+            "Material": {
+              "Enum": 1088
+            },
+            "Size": [
+              3,
+              14,
+              16
+            ],
+            "CanTouch": true,
+            "Shape": {
+              "Enum": 1
+            },
+            "CFrame": [
+              132,
+              7,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "$className": "Part"
+        }
+      },
+      "Zone3": {
+        "NorthWall2": {
+          "$properties": {
+            "Anchored": true,
+            "BottomSurface": {
+              "Enum": 0
+            },
+            "CanCollide": true,
+            "Transparency": 0,
+            "TopSurface": {
+              "Enum": 0
+            },
+            "CanQuery": true,
+            "Color": [
+              0.1725490242242813,
+              0.18431372940540314,
+              0.23137255012989044
+            ],
+            "Material": {
+              "Enum": 800
+            },
+            "Size": [
+              3,
+              14,
+              24
+            ],
+            "CanTouch": true,
+            "Shape": {
+              "Enum": 1
+            },
+            "CFrame": [
+              256,
+              19,
+              -20,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "$className": "Part"
+        },
+        "SouthWall": {
+          "$properties": {
+            "Anchored": true,
+            "BottomSurface": {
+              "Enum": 0
+            },
+            "CanCollide": true,
+            "Transparency": 0,
+            "TopSurface": {
+              "Enum": 0
+            },
+            "CanQuery": true,
+            "Color": [
+              0.1725490242242813,
+              0.18431372940540314,
+              0.23137255012989044
+            ],
+            "Material": {
+              "Enum": 800
+            },
+            "Size": [
+              3,
+              14,
+              24
+            ],
+            "CanTouch": true,
+            "Shape": {
+              "Enum": 1
+            },
+            "CFrame": [
+              184,
+              19,
+              20,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "$className": "Part"
+        },
+        "Floor": {
+          "$properties": {
+            "Anchored": true,
+            "BottomSurface": {
+              "Enum": 0
+            },
+            "CanCollide": true,
+            "Transparency": 0,
+            "TopSurface": {
+              "Enum": 0
+            },
+            "CanQuery": true,
+            "Color": [
+              0.27843138575553894,
+              0.2862745225429535,
+              0.3137255012989044
+            ],
+            "Material": {
+              "Enum": 880
+            },
+            "Size": [
+              72,
+              3,
+              64
+            ],
+            "CanTouch": true,
+            "Shape": {
+              "Enum": 1
+            },
+            "CFrame": [
+              220,
+              10.5,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "$className": "Part"
+        },
+        "SideWall2": {
+          "$properties": {
+            "Anchored": true,
+            "BottomSurface": {
+              "Enum": 0
+            },
+            "CanCollide": true,
+            "Transparency": 0,
+            "TopSurface": {
+              "Enum": 0
+            },
+            "CanQuery": true,
+            "Color": [
+              0.1725490242242813,
+              0.18431372940540314,
+              0.23137255012989044
+            ],
+            "Material": {
+              "Enum": 800
+            },
+            "Size": [
+              72,
+              14,
+              3
+            ],
+            "CanTouch": true,
+            "Shape": {
+              "Enum": 1
+            },
+            "CFrame": [
+              220,
+              19,
+              32,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "$className": "Part"
+        },
+        "NorthWall": {
+          "$properties": {
+            "Anchored": true,
+            "BottomSurface": {
+              "Enum": 0
+            },
+            "CanCollide": true,
+            "Transparency": 0,
+            "TopSurface": {
+              "Enum": 0
+            },
+            "CanQuery": true,
+            "Color": [
+              0.1725490242242813,
+              0.18431372940540314,
+              0.23137255012989044
+            ],
+            "Material": {
+              "Enum": 800
+            },
+            "Size": [
+              3,
+              14,
+              24
+            ],
+            "CanTouch": true,
+            "Shape": {
+              "Enum": 1
+            },
+            "CFrame": [
+              184,
+              19,
+              -20,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "$className": "Part"
+        },
+        "SidePartition2": {
+          "$properties": {
+            "Anchored": true,
+            "BottomSurface": {
+              "Enum": 0
+            },
+            "CanCollide": true,
+            "Transparency": 0,
+            "TopSurface": {
+              "Enum": 0
+            },
+            "CanQuery": true,
+            "Color": [
+              0.2705882489681244,
+              0.3176470696926117,
+              0.3450980484485626
+            ],
+            "Material": {
+              "Enum": 800
+            },
+            "Size": [
+              3,
+              8,
+              13
+            ],
+            "CanTouch": true,
+            "Shape": {
+              "Enum": 1
+            },
+            "CFrame": [
+              237,
+              16,
+              24,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "$className": "Part"
+        },
+        "SideWall": {
+          "$properties": {
+            "Anchored": true,
+            "BottomSurface": {
+              "Enum": 0
+            },
+            "CanCollide": true,
+            "Transparency": 0,
+            "TopSurface": {
+              "Enum": 0
+            },
+            "CanQuery": true,
+            "Color": [
+              0.1725490242242813,
+              0.18431372940540314,
+              0.23137255012989044
+            ],
+            "Material": {
+              "Enum": 800
+            },
+            "Size": [
+              72,
+              14,
+              3
+            ],
+            "CanTouch": true,
+            "Shape": {
+              "Enum": 1
+            },
+            "CFrame": [
+              220,
+              19,
+              -32,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "$className": "Part"
+        },
+        "Gate": {
+          "$properties": {
+            "Anchored": true,
+            "BottomSurface": {
+              "Enum": 0
+            },
+            "CanCollide": true,
+            "Transparency": 0,
+            "TopSurface": {
+              "Enum": 0
+            },
+            "CanQuery": true,
+            "Color": [
+              0.6823529601097107,
+              0.4470588266849518,
+              0.22745098173618317
+            ],
+            "Material": {
+              "Enum": 1088
+            },
+            "Size": [
+              3,
+              14,
+              16
+            ],
+            "CanTouch": true,
+            "Shape": {
+              "Enum": 1
+            },
+            "CFrame": [
+              256,
+              19,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "$className": "Part"
+        },
+        "$className": "Model",
+        "SouthWall2": {
+          "$properties": {
+            "Anchored": true,
+            "BottomSurface": {
+              "Enum": 0
+            },
+            "CanCollide": true,
+            "Transparency": 0,
+            "TopSurface": {
+              "Enum": 0
+            },
+            "CanQuery": true,
+            "Color": [
+              0.1725490242242813,
+              0.18431372940540314,
+              0.23137255012989044
+            ],
+            "Material": {
+              "Enum": 800
+            },
+            "Size": [
+              3,
+              14,
+              24
+            ],
+            "CanTouch": true,
+            "Shape": {
+              "Enum": 1
+            },
+            "CFrame": [
+              256,
+              19,
+              20,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "$className": "Part"
+        },
+        "SidePartition": {
+          "$properties": {
+            "Anchored": true,
+            "BottomSurface": {
+              "Enum": 0
+            },
+            "CanCollide": true,
+            "Transparency": 0,
+            "TopSurface": {
+              "Enum": 0
+            },
+            "CanQuery": true,
+            "Color": [
+              0.32156863808631897,
+              0.32549020648002625,
+              0.3529411852359772
+            ],
+            "Material": {
+              "Enum": 800
+            },
+            "Size": [
+              3,
+              6,
+              13
+            ],
+            "CanTouch": true,
+            "Shape": {
+              "Enum": 1
+            },
+            "CFrame": [
+              206,
+              15,
+              -24,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "$className": "Part"
+        }
+      },
+      "ExitLanding": {
+        "$properties": {
+          "Anchored": true,
+          "BottomSurface": {
+            "Enum": 0
+          },
+          "CanCollide": true,
+          "Transparency": 0,
+          "TopSurface": {
+            "Enum": 0
+          },
+          "CanQuery": true,
+          "Color": [
+            0.3450980484485626,
+            0.3333333432674408,
+            0.30980393290519714
+          ],
+          "Material": {
+            "Enum": 880
+          },
+          "Size": [
+            12,
+            3,
+            16
+          ],
+          "CanTouch": true,
+          "Shape": {
+            "Enum": 1
+          },
+          "CFrame": [
+            262,
+            10.5,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        "$className": "Part"
+      },
+      "ZoneBridge": {
+        "$properties": {
+          "Anchored": true,
+          "BottomSurface": {
+            "Enum": 0
+          },
+          "CanCollide": true,
+          "Transparency": 0,
+          "TopSurface": {
+            "Enum": 0
+          },
+          "CanQuery": true,
+          "Color": [
+            0.3450980484485626,
+            0.3333333432674408,
+            0.30980393290519714
+          ],
+          "Material": {
+            "Enum": 880
+          },
+          "Size": [
+            24,
+            3,
+            16
+          ],
+          "CanTouch": true,
+          "Shape": {
+            "Enum": 1
+          },
+          "CFrame": [
+            48,
+            -1.5,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        "$className": "Part"
+      },
+      "Stair": {
+        "$properties": {
+          "Anchored": true,
+          "BottomSurface": {
+            "Enum": 0
+          },
+          "CanCollide": true,
+          "Transparency": 0,
+          "TopSurface": {
+            "Enum": 0
+          },
+          "CanQuery": true,
+          "Color": [
+            0.3450980484485626,
+            0.3333333432674408,
+            0.30980393290519714
+          ],
+          "Material": {
+            "Enum": 880
+          },
+          "Size": [
+            4.383333206176758,
+            15,
+            16
+          ],
+          "CanTouch": true,
+          "Shape": {
+            "Enum": 1
+          },
+          "CFrame": [
+            181.8333282470703,
+            4.5,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        "$className": "Part"
+      },
+      "$className": "Model",
+      "Zone1": {
+        "SouthWall": {
+          "$properties": {
+            "Anchored": true,
+            "BottomSurface": {
+              "Enum": 0
+            },
+            "CanCollide": true,
+            "Transparency": 0,
+            "TopSurface": {
+              "Enum": 0
+            },
+            "CanQuery": true,
+            "Color": [
+              0.1725490242242813,
+              0.18431372940540314,
+              0.23137255012989044
+            ],
+            "Material": {
+              "Enum": 800
+            },
+            "Size": [
+              3,
+              14,
+              24
+            ],
+            "CanTouch": true,
+            "Shape": {
+              "Enum": 1
+            },
+            "CFrame": [
+              36,
+              7,
+              20,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "$className": "Part"
+        },
+        "Floor": {
+          "$properties": {
+            "Anchored": true,
+            "BottomSurface": {
+              "Enum": 0
+            },
+            "CanCollide": true,
+            "Transparency": 0,
+            "TopSurface": {
+              "Enum": 0
+            },
+            "CanQuery": true,
+            "Color": [
+              0.27843138575553894,
+              0.2862745225429535,
+              0.3137255012989044
+            ],
+            "Material": {
+              "Enum": 880
+            },
+            "Size": [
+              72,
+              3,
+              64
+            ],
+            "CanTouch": true,
+            "Shape": {
+              "Enum": 1
+            },
+            "CFrame": [
+              0,
+              -1.5,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "$className": "Part"
+        },
+        "SideWall2": {
+          "$properties": {
+            "Anchored": true,
+            "BottomSurface": {
+              "Enum": 0
+            },
+            "CanCollide": true,
+            "Transparency": 0,
+            "TopSurface": {
+              "Enum": 0
+            },
+            "CanQuery": true,
+            "Color": [
+              0.1725490242242813,
+              0.18431372940540314,
+              0.23137255012989044
+            ],
+            "Material": {
+              "Enum": 800
+            },
+            "Size": [
+              72,
+              14,
+              3
+            ],
+            "CanTouch": true,
+            "Shape": {
+              "Enum": 1
+            },
+            "CFrame": [
+              0,
+              7,
+              32,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "$className": "Part"
+        },
+        "NorthWall": {
+          "$properties": {
+            "Anchored": true,
+            "BottomSurface": {
+              "Enum": 0
+            },
+            "CanCollide": true,
+            "Transparency": 0,
+            "TopSurface": {
+              "Enum": 0
+            },
+            "CanQuery": true,
+            "Color": [
+              0.1725490242242813,
+              0.18431372940540314,
+              0.23137255012989044
+            ],
+            "Material": {
+              "Enum": 800
+            },
+            "Size": [
+              3,
+              14,
+              24
+            ],
+            "CanTouch": true,
+            "Shape": {
+              "Enum": 1
+            },
+            "CFrame": [
+              36,
+              7,
+              -20,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "$className": "Part"
+        },
+        "Pillar3": {
+          "$properties": {
+            "Anchored": true,
+            "BottomSurface": {
+              "Enum": 0
+            },
+            "CanCollide": true,
+            "Transparency": 0,
+            "TopSurface": {
+              "Enum": 0
+            },
+            "CanQuery": true,
+            "Color": [
+              0.2705882489681244,
+              0.3176470696926117,
+              0.3450980484485626
+            ],
+            "Material": {
+              "Enum": 800
+            },
+            "Size": [
+              6,
+              8,
+              6
+            ],
+            "CanTouch": true,
+            "Shape": {
+              "Enum": 1
+            },
+            "CFrame": [
+              21,
+              4,
+              -22,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "$className": "Part"
+        },
+        "WestWall": {
+          "$properties": {
+            "Anchored": true,
+            "BottomSurface": {
+              "Enum": 0
+            },
+            "CanCollide": true,
+            "Transparency": 0,
+            "TopSurface": {
+              "Enum": 0
+            },
+            "CanQuery": true,
+            "Color": [
+              0.1725490242242813,
+              0.18431372940540314,
+              0.23137255012989044
+            ],
+            "Material": {
+              "Enum": 800
+            },
+            "Size": [
+              3,
+              14,
+              64
+            ],
+            "CanTouch": true,
+            "Shape": {
+              "Enum": 1
+            },
+            "CFrame": [
+              -36,
+              7,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "$className": "Part"
+        },
+        "Pillar4": {
+          "$properties": {
+            "Anchored": true,
+            "BottomSurface": {
+              "Enum": 0
+            },
+            "CanCollide": true,
+            "Transparency": 0,
+            "TopSurface": {
+              "Enum": 0
+            },
+            "CanQuery": true,
+            "Color": [
+              0.32156863808631897,
+              0.32549020648002625,
+              0.3529411852359772
+            ],
+            "Material": {
+              "Enum": 800
+            },
+            "Size": [
+              6,
+              10,
+              6
+            ],
+            "CanTouch": true,
+            "Shape": {
+              "Enum": 1
+            },
+            "CFrame": [
+              18,
+              5,
+              24,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "$className": "Part"
+        },
+        "Gate": {
+          "$properties": {
+            "Anchored": true,
+            "BottomSurface": {
+              "Enum": 0
+            },
+            "CanCollide": true,
+            "Transparency": 0,
+            "TopSurface": {
+              "Enum": 0
+            },
+            "CanQuery": true,
+            "Color": [
+              0.6823529601097107,
+              0.4470588266849518,
+              0.22745098173618317
+            ],
+            "Material": {
+              "Enum": 1088
+            },
+            "Size": [
+              3,
+              14,
+              16
+            ],
+            "CanTouch": true,
+            "Shape": {
+              "Enum": 1
+            },
+            "CFrame": [
+              36,
+              7,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "$className": "Part"
+        },
+        "Pillar2": {
+          "$properties": {
+            "Anchored": true,
+            "BottomSurface": {
+              "Enum": 0
+            },
+            "CanCollide": true,
+            "Transparency": 0,
+            "TopSurface": {
+              "Enum": 0
+            },
+            "CanQuery": true,
+            "Color": [
+              0.32156863808631897,
+              0.32549020648002625,
+              0.3529411852359772
+            ],
+            "Material": {
+              "Enum": 800
+            },
+            "Size": [
+              6,
+              7,
+              6
+            ],
+            "CanTouch": true,
+            "Shape": {
+              "Enum": 1
+            },
+            "CFrame": [
+              -16,
+              3.5,
+              24,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "$className": "Part"
+        },
+        "$className": "Model",
+        "Pillar": {
+          "$properties": {
+            "Anchored": true,
+            "BottomSurface": {
+              "Enum": 0
+            },
+            "CanCollide": true,
+            "Transparency": 0,
+            "TopSurface": {
+              "Enum": 0
+            },
+            "CanQuery": true,
+            "Color": [
+              0.32156863808631897,
+              0.32549020648002625,
+              0.3529411852359772
+            ],
+            "Material": {
+              "Enum": 800
+            },
+            "Size": [
+              6,
+              8,
+              6
+            ],
+            "CanTouch": true,
+            "Shape": {
+              "Enum": 1
+            },
+            "CFrame": [
+              -21,
+              4,
+              -22,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "$className": "Part"
+        },
+        "SideWall": {
+          "$properties": {
+            "Anchored": true,
+            "BottomSurface": {
+              "Enum": 0
+            },
+            "CanCollide": true,
+            "Transparency": 0,
+            "TopSurface": {
+              "Enum": 0
+            },
+            "CanQuery": true,
+            "Color": [
+              0.1725490242242813,
+              0.18431372940540314,
+              0.23137255012989044
+            ],
+            "Material": {
+              "Enum": 800
+            },
+            "Size": [
+              72,
+              14,
+              3
+            ],
+            "CanTouch": true,
+            "Shape": {
+              "Enum": 1
+            },
+            "CFrame": [
+              0,
+              7,
+              -32,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "$className": "Part"
+        }
+      },
+      "GuardWall": {
+        "$properties": {
+          "Anchored": true,
+          "BottomSurface": {
+            "Enum": 0
+          },
+          "CanCollide": true,
+          "Transparency": 0,
+          "TopSurface": {
+            "Enum": 0
+          },
+          "CanQuery": true,
+          "Color": [
+            0.1725490242242813,
+            0.18431372940540314,
+            0.23137255012989044
+          ],
+          "Material": {
+            "Enum": 800
+          },
+          "Size": [
+            12,
+            8,
+            2
+          ],
+          "CanTouch": true,
+          "Shape": {
+            "Enum": 1
+          },
+          "CFrame": [
+            262,
+            16,
+            9,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        "$className": "Part"
+      }
+    },
+    "Layout2": {
+      "StairGuardWall": {
+        "$properties": {
+          "Anchored": true,
+          "BottomSurface": {
+            "Enum": 0
+          },
+          "CanCollide": true,
+          "Transparency": 0,
+          "TopSurface": {
+            "Enum": 0
+          },
+          "CanQuery": true,
+          "Color": [
+            0.1725490242242813,
+            0.18431372940540314,
+            0.23137255012989044
+          ],
+          "Material": {
+            "Enum": 800
+          },
+          "Size": [
+            52,
+            21,
+            2
+          ],
+          "CanTouch": true,
+          "Shape": {
+            "Enum": 1
+          },
+          "CFrame": [
+            158,
+            10.5,
+            9,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        "$className": "Part"
+      },
+      "Zone2": {
+        "NorthWall2": {
+          "$properties": {
+            "Anchored": true,
+            "BottomSurface": {
+              "Enum": 0
+            },
+            "CanCollide": true,
+            "Transparency": 0,
+            "TopSurface": {
+              "Enum": 0
+            },
+            "CanQuery": true,
+            "Color": [
+              0.1725490242242813,
+              0.18431372940540314,
+              0.23137255012989044
+            ],
+            "Material": {
+              "Enum": 800
+            },
+            "Size": [
+              3,
+              14,
+              24
+            ],
+            "CanTouch": true,
+            "Shape": {
+              "Enum": 1
+            },
+            "CFrame": [
+              132,
+              7,
+              -20,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "$className": "Part"
+        },
+        "SouthWall": {
+          "$properties": {
+            "Anchored": true,
+            "BottomSurface": {
+              "Enum": 0
+            },
+            "CanCollide": true,
+            "Transparency": 0,
+            "TopSurface": {
+              "Enum": 0
+            },
+            "CanQuery": true,
+            "Color": [
+              0.1725490242242813,
+              0.18431372940540314,
+              0.23137255012989044
+            ],
+            "Material": {
+              "Enum": 800
+            },
+            "Size": [
+              3,
+              14,
+              24
+            ],
+            "CanTouch": true,
+            "Shape": {
+              "Enum": 1
+            },
+            "CFrame": [
+              60,
+              7,
+              20,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "$className": "Part"
+        },
+        "Floor": {
+          "$properties": {
+            "Anchored": true,
+            "BottomSurface": {
+              "Enum": 0
+            },
+            "CanCollide": true,
+            "Transparency": 0,
+            "TopSurface": {
+              "Enum": 0
+            },
+            "CanQuery": true,
+            "Color": [
+              0.27843138575553894,
+              0.2862745225429535,
+              0.3137255012989044
+            ],
+            "Material": {
+              "Enum": 880
+            },
+            "Size": [
+              72,
+              3,
+              64
+            ],
+            "CanTouch": true,
+            "Shape": {
+              "Enum": 1
+            },
+            "CFrame": [
+              96,
+              -1.5,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "$className": "Part"
+        },
+        "SideWall2": {
+          "$properties": {
+            "Anchored": true,
+            "BottomSurface": {
+              "Enum": 0
+            },
+            "CanCollide": true,
+            "Transparency": 0,
+            "TopSurface": {
+              "Enum": 0
+            },
+            "CanQuery": true,
+            "Color": [
+              0.1725490242242813,
+              0.18431372940540314,
+              0.23137255012989044
+            ],
+            "Material": {
+              "Enum": 800
+            },
+            "Size": [
+              72,
+              14,
+              3
+            ],
+            "CanTouch": true,
+            "Shape": {
+              "Enum": 1
+            },
+            "CFrame": [
+              96,
+              7,
+              32,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "$className": "Part"
+        },
+        "NorthWall": {
+          "$properties": {
+            "Anchored": true,
+            "BottomSurface": {
+              "Enum": 0
+            },
+            "CanCollide": true,
+            "Transparency": 0,
+            "TopSurface": {
+              "Enum": 0
+            },
+            "CanQuery": true,
+            "Color": [
+              0.1725490242242813,
+              0.18431372940540314,
+              0.23137255012989044
+            ],
+            "Material": {
+              "Enum": 800
+            },
+            "Size": [
+              3,
+              14,
+              24
+            ],
+            "CanTouch": true,
+            "Shape": {
+              "Enum": 1
+            },
+            "CFrame": [
+              60,
+              7,
+              -20,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "$className": "Part"
+        },
+        "Cover3": {
+          "$properties": {
+            "Anchored": true,
+            "BottomSurface": {
+              "Enum": 0
+            },
+            "CanCollide": true,
+            "Transparency": 0,
+            "TopSurface": {
+              "Enum": 0
+            },
+            "CanQuery": true,
+            "Color": [
+              0.32156863808631897,
+              0.32549020648002625,
+              0.3529411852359772
+            ],
+            "Material": {
+              "Enum": 800
+            },
+            "Size": [
+              9,
+              5,
+              8
+            ],
+            "CanTouch": true,
+            "Shape": {
+              "Enum": 1
+            },
+            "CFrame": [
+              104,
+              2.5,
+              22,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "$className": "Part"
+        },
+        "Cover2": {
+          "$properties": {
+            "Anchored": true,
+            "BottomSurface": {
+              "Enum": 0
+            },
+            "CanCollide": true,
+            "Transparency": 0,
+            "TopSurface": {
+              "Enum": 0
+            },
+            "CanQuery": true,
+            "Color": [
+              0.2705882489681244,
+              0.3176470696926117,
+              0.3450980484485626
+            ],
+            "Material": {
+              "Enum": 800
+            },
+            "Size": [
+              8,
+              7,
+              12
+            ],
+            "CanTouch": true,
+            "Shape": {
+              "Enum": 1
+            },
+            "CFrame": [
+              88,
+              3.5,
+              -24,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "$className": "Part"
+        },
+        "Cover4": {
+          "$properties": {
+            "Anchored": true,
+            "BottomSurface": {
+              "Enum": 0
+            },
+            "CanCollide": true,
+            "Transparency": 0,
+            "TopSurface": {
+              "Enum": 0
+            },
+            "CanQuery": true,
+            "Color": [
+              0.2705882489681244,
+              0.3176470696926117,
+              0.3450980484485626
+            ],
+            "Material": {
+              "Enum": 800
+            },
+            "Size": [
+              5,
+              5,
+              8
+            ],
+            "CanTouch": true,
+            "Shape": {
+              "Enum": 1
+            },
+            "CFrame": [
+              119,
+              2.5,
+              25,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "$className": "Part"
+        },
+        "SideWall": {
+          "$properties": {
+            "Anchored": true,
+            "BottomSurface": {
+              "Enum": 0
+            },
+            "CanCollide": true,
+            "Transparency": 0,
+            "TopSurface": {
+              "Enum": 0
+            },
+            "CanQuery": true,
+            "Color": [
+              0.1725490242242813,
+              0.18431372940540314,
+              0.23137255012989044
+            ],
+            "Material": {
+              "Enum": 800
+            },
+            "Size": [
+              72,
+              14,
+              3
+            ],
+            "CanTouch": true,
+            "Shape": {
+              "Enum": 1
+            },
+            "CFrame": [
+              96,
+              7,
+              -32,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "$className": "Part"
+        },
+        "Cover": {
+          "$properties": {
+            "Anchored": true,
+            "BottomSurface": {
+              "Enum": 0
+            },
+            "CanCollide": true,
+            "Transparency": 0,
+            "TopSurface": {
+              "Enum": 0
+            },
+            "CanQuery": true,
+            "Color": [
+              0.35686275362968445,
+              0.3137255012989044,
+              0.29019609093666077
+            ],
+            "Material": {
+              "Enum": 800
+            },
+            "Size": [
+              9,
+              8,
+              8
+            ],
+            "CanTouch": true,
+            "Shape": {
+              "Enum": 1
+            },
+            "CFrame": [
+              73,
+              4,
+              -23,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "$className": "Part"
+        },
+        "$className": "Model",
+        "SouthWall2": {
+          "$properties": {
+            "Anchored": true,
+            "BottomSurface": {
+              "Enum": 0
+            },
+            "CanCollide": true,
+            "Transparency": 0,
+            "TopSurface": {
+              "Enum": 0
+            },
+            "CanQuery": true,
+            "Color": [
+              0.1725490242242813,
+              0.18431372940540314,
+              0.23137255012989044
+            ],
+            "Material": {
+              "Enum": 800
+            },
+            "Size": [
+              3,
+              14,
+              24
+            ],
+            "CanTouch": true,
+            "Shape": {
+              "Enum": 1
+            },
+            "CFrame": [
+              132,
+              7,
+              20,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "$className": "Part"
+        },
+        "Gate": {
+          "$properties": {
+            "Anchored": true,
+            "BottomSurface": {
+              "Enum": 0
+            },
+            "CanCollide": true,
+            "Transparency": 0,
+            "TopSurface": {
+              "Enum": 0
+            },
+            "CanQuery": true,
+            "Color": [
+              0.6823529601097107,
+              0.4470588266849518,
+              0.22745098173618317
+            ],
+            "Material": {
+              "Enum": 1088
+            },
+            "Size": [
+              3,
+              14,
+              16
+            ],
+            "CanTouch": true,
+            "Shape": {
+              "Enum": 1
+            },
+            "CFrame": [
+              132,
+              7,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "$className": "Part"
+        }
+      },
+      "Zone3": {
+        "NorthWall2": {
+          "$properties": {
+            "Anchored": true,
+            "BottomSurface": {
+              "Enum": 0
+            },
+            "CanCollide": true,
+            "Transparency": 0,
+            "TopSurface": {
+              "Enum": 0
+            },
+            "CanQuery": true,
+            "Color": [
+              0.1725490242242813,
+              0.18431372940540314,
+              0.23137255012989044
+            ],
+            "Material": {
+              "Enum": 800
+            },
+            "Size": [
+              3,
+              14,
+              24
+            ],
+            "CanTouch": true,
+            "Shape": {
+              "Enum": 1
+            },
+            "CFrame": [
+              256,
+              19,
+              -20,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "$className": "Part"
+        },
+        "SouthWall": {
+          "$properties": {
+            "Anchored": true,
+            "BottomSurface": {
+              "Enum": 0
+            },
+            "CanCollide": true,
+            "Transparency": 0,
+            "TopSurface": {
+              "Enum": 0
+            },
+            "CanQuery": true,
+            "Color": [
+              0.1725490242242813,
+              0.18431372940540314,
+              0.23137255012989044
+            ],
+            "Material": {
+              "Enum": 800
+            },
+            "Size": [
+              3,
+              14,
+              24
+            ],
+            "CanTouch": true,
+            "Shape": {
+              "Enum": 1
+            },
+            "CFrame": [
+              184,
+              19,
+              20,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "$className": "Part"
+        },
+        "Floor": {
+          "$properties": {
+            "Anchored": true,
+            "BottomSurface": {
+              "Enum": 0
+            },
+            "CanCollide": true,
+            "Transparency": 0,
+            "TopSurface": {
+              "Enum": 0
+            },
+            "CanQuery": true,
+            "Color": [
+              0.27843138575553894,
+              0.2862745225429535,
+              0.3137255012989044
+            ],
+            "Material": {
+              "Enum": 880
+            },
+            "Size": [
+              72,
+              3,
+              64
+            ],
+            "CanTouch": true,
+            "Shape": {
+              "Enum": 1
+            },
+            "CFrame": [
+              220,
+              10.5,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "$className": "Part"
+        },
+        "SideWall2": {
+          "$properties": {
+            "Anchored": true,
+            "BottomSurface": {
+              "Enum": 0
+            },
+            "CanCollide": true,
+            "Transparency": 0,
+            "TopSurface": {
+              "Enum": 0
+            },
+            "CanQuery": true,
+            "Color": [
+              0.1725490242242813,
+              0.18431372940540314,
+              0.23137255012989044
+            ],
+            "Material": {
+              "Enum": 800
+            },
+            "Size": [
+              72,
+              14,
+              3
+            ],
+            "CanTouch": true,
+            "Shape": {
+              "Enum": 1
+            },
+            "CFrame": [
+              220,
+              19,
+              32,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "$className": "Part"
+        },
+        "NorthWall": {
+          "$properties": {
+            "Anchored": true,
+            "BottomSurface": {
+              "Enum": 0
+            },
+            "CanCollide": true,
+            "Transparency": 0,
+            "TopSurface": {
+              "Enum": 0
+            },
+            "CanQuery": true,
+            "Color": [
+              0.1725490242242813,
+              0.18431372940540314,
+              0.23137255012989044
+            ],
+            "Material": {
+              "Enum": 800
+            },
+            "Size": [
+              3,
+              14,
+              24
+            ],
+            "CanTouch": true,
+            "Shape": {
+              "Enum": 1
+            },
+            "CFrame": [
+              184,
+              19,
+              -20,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "$className": "Part"
+        },
+        "SidePartition2": {
+          "$properties": {
+            "Anchored": true,
+            "BottomSurface": {
+              "Enum": 0
+            },
+            "CanCollide": true,
+            "Transparency": 0,
+            "TopSurface": {
+              "Enum": 0
+            },
+            "CanQuery": true,
+            "Color": [
+              0.32156863808631897,
+              0.32549020648002625,
+              0.3529411852359772
+            ],
+            "Material": {
+              "Enum": 800
+            },
+            "Size": [
+              3,
+              7,
+              13
+            ],
+            "CanTouch": true,
+            "Shape": {
+              "Enum": 1
+            },
+            "CFrame": [
+              232,
+              15.5,
+              24,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "$className": "Part"
+        },
+        "SideWall": {
+          "$properties": {
+            "Anchored": true,
+            "BottomSurface": {
+              "Enum": 0
+            },
+            "CanCollide": true,
+            "Transparency": 0,
+            "TopSurface": {
+              "Enum": 0
+            },
+            "CanQuery": true,
+            "Color": [
+              0.1725490242242813,
+              0.18431372940540314,
+              0.23137255012989044
+            ],
+            "Material": {
+              "Enum": 800
+            },
+            "Size": [
+              72,
+              14,
+              3
+            ],
+            "CanTouch": true,
+            "Shape": {
+              "Enum": 1
+            },
+            "CFrame": [
+              220,
+              19,
+              -32,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "$className": "Part"
+        },
+        "Gate": {
+          "$properties": {
+            "Anchored": true,
+            "BottomSurface": {
+              "Enum": 0
+            },
+            "CanCollide": true,
+            "Transparency": 0,
+            "TopSurface": {
+              "Enum": 0
+            },
+            "CanQuery": true,
+            "Color": [
+              0.6823529601097107,
+              0.4470588266849518,
+              0.22745098173618317
+            ],
+            "Material": {
+              "Enum": 1088
+            },
+            "Size": [
+              3,
+              14,
+              16
+            ],
+            "CanTouch": true,
+            "Shape": {
+              "Enum": 1
+            },
+            "CFrame": [
+              256,
+              19,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "$className": "Part"
+        },
+        "$className": "Model",
+        "SouthWall2": {
+          "$properties": {
+            "Anchored": true,
+            "BottomSurface": {
+              "Enum": 0
+            },
+            "CanCollide": true,
+            "Transparency": 0,
+            "TopSurface": {
+              "Enum": 0
+            },
+            "CanQuery": true,
+            "Color": [
+              0.1725490242242813,
+              0.18431372940540314,
+              0.23137255012989044
+            ],
+            "Material": {
+              "Enum": 800
+            },
+            "Size": [
+              3,
+              14,
+              24
+            ],
+            "CanTouch": true,
+            "Shape": {
+              "Enum": 1
+            },
+            "CFrame": [
+              256,
+              19,
+              20,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "$className": "Part"
+        },
+        "SidePartition": {
+          "$properties": {
+            "Anchored": true,
+            "BottomSurface": {
+              "Enum": 0
+            },
+            "CanCollide": true,
+            "Transparency": 0,
+            "TopSurface": {
+              "Enum": 0
+            },
+            "CanQuery": true,
+            "Color": [
+              0.2705882489681244,
+              0.3176470696926117,
+              0.3450980484485626
+            ],
+            "Material": {
+              "Enum": 800
+            },
+            "Size": [
+              3,
+              8,
+              13
+            ],
+            "CanTouch": true,
+            "Shape": {
+              "Enum": 1
+            },
+            "CFrame": [
+              205,
+              16,
+              -24,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "$className": "Part"
+        }
+      },
+      "ExitLanding": {
+        "$properties": {
+          "Anchored": true,
+          "BottomSurface": {
+            "Enum": 0
+          },
+          "CanCollide": true,
+          "Transparency": 0,
+          "TopSurface": {
+            "Enum": 0
+          },
+          "CanQuery": true,
+          "Color": [
+            0.3450980484485626,
+            0.3333333432674408,
+            0.30980393290519714
+          ],
+          "Material": {
+            "Enum": 880
+          },
+          "Size": [
+            12,
+            3,
+            16
+          ],
+          "CanTouch": true,
+          "Shape": {
+            "Enum": 1
+          },
+          "CFrame": [
+            262,
+            10.5,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        "$className": "Part"
+      },
+      "ZoneBridge": {
+        "$properties": {
+          "Anchored": true,
+          "BottomSurface": {
+            "Enum": 0
+          },
+          "CanCollide": true,
+          "Transparency": 0,
+          "TopSurface": {
+            "Enum": 0
+          },
+          "CanQuery": true,
+          "Color": [
+            0.3450980484485626,
+            0.3333333432674408,
+            0.30980393290519714
+          ],
+          "Material": {
+            "Enum": 880
+          },
+          "Size": [
+            24,
+            3,
+            16
+          ],
+          "CanTouch": true,
+          "Shape": {
+            "Enum": 1
+          },
+          "CFrame": [
+            48,
+            -1.5,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        "$className": "Part"
+      },
+      "Stair": {
+        "$properties": {
+          "Anchored": true,
+          "BottomSurface": {
+            "Enum": 0
+          },
+          "CanCollide": true,
+          "Transparency": 0,
+          "TopSurface": {
+            "Enum": 0
+          },
+          "CanQuery": true,
+          "Color": [
+            0.3450980484485626,
+            0.3333333432674408,
+            0.30980393290519714
+          ],
+          "Material": {
+            "Enum": 880
+          },
+          "Size": [
+            4.383333206176758,
+            15,
+            16
+          ],
+          "CanTouch": true,
+          "Shape": {
+            "Enum": 1
+          },
+          "CFrame": [
+            181.8333282470703,
+            4.5,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        "$className": "Part"
+      },
+      "$className": "Model",
+      "Zone1": {
+        "SouthWall": {
+          "$properties": {
+            "Anchored": true,
+            "BottomSurface": {
+              "Enum": 0
+            },
+            "CanCollide": true,
+            "Transparency": 0,
+            "TopSurface": {
+              "Enum": 0
+            },
+            "CanQuery": true,
+            "Color": [
+              0.1725490242242813,
+              0.18431372940540314,
+              0.23137255012989044
+            ],
+            "Material": {
+              "Enum": 800
+            },
+            "Size": [
+              3,
+              14,
+              24
+            ],
+            "CanTouch": true,
+            "Shape": {
+              "Enum": 1
+            },
+            "CFrame": [
+              36,
+              7,
+              20,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "$className": "Part"
+        },
+        "Floor": {
+          "$properties": {
+            "Anchored": true,
+            "BottomSurface": {
+              "Enum": 0
+            },
+            "CanCollide": true,
+            "Transparency": 0,
+            "TopSurface": {
+              "Enum": 0
+            },
+            "CanQuery": true,
+            "Color": [
+              0.27843138575553894,
+              0.2862745225429535,
+              0.3137255012989044
+            ],
+            "Material": {
+              "Enum": 880
+            },
+            "Size": [
+              72,
+              3,
+              64
+            ],
+            "CanTouch": true,
+            "Shape": {
+              "Enum": 1
+            },
+            "CFrame": [
+              0,
+              -1.5,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "$className": "Part"
+        },
+        "SideWall2": {
+          "$properties": {
+            "Anchored": true,
+            "BottomSurface": {
+              "Enum": 0
+            },
+            "CanCollide": true,
+            "Transparency": 0,
+            "TopSurface": {
+              "Enum": 0
+            },
+            "CanQuery": true,
+            "Color": [
+              0.1725490242242813,
+              0.18431372940540314,
+              0.23137255012989044
+            ],
+            "Material": {
+              "Enum": 800
+            },
+            "Size": [
+              72,
+              14,
+              3
+            ],
+            "CanTouch": true,
+            "Shape": {
+              "Enum": 1
+            },
+            "CFrame": [
+              0,
+              7,
+              32,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "$className": "Part"
+        },
+        "NorthWall": {
+          "$properties": {
+            "Anchored": true,
+            "BottomSurface": {
+              "Enum": 0
+            },
+            "CanCollide": true,
+            "Transparency": 0,
+            "TopSurface": {
+              "Enum": 0
+            },
+            "CanQuery": true,
+            "Color": [
+              0.1725490242242813,
+              0.18431372940540314,
+              0.23137255012989044
+            ],
+            "Material": {
+              "Enum": 800
+            },
+            "Size": [
+              3,
+              14,
+              24
+            ],
+            "CanTouch": true,
+            "Shape": {
+              "Enum": 1
+            },
+            "CFrame": [
+              36,
+              7,
+              -20,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "$className": "Part"
+        },
+        "Pillar3": {
+          "$properties": {
+            "Anchored": true,
+            "BottomSurface": {
+              "Enum": 0
+            },
+            "CanCollide": true,
+            "Transparency": 0,
+            "TopSurface": {
+              "Enum": 0
+            },
+            "CanQuery": true,
+            "Color": [
+              0.2705882489681244,
+              0.3176470696926117,
+              0.3450980484485626
+            ],
+            "Material": {
+              "Enum": 800
+            },
+            "Size": [
+              6,
+              7,
+              6
+            ],
+            "CanTouch": true,
+            "Shape": {
+              "Enum": 1
+            },
+            "CFrame": [
+              20,
+              3.5,
+              -21,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "$className": "Part"
+        },
+        "WestWall": {
+          "$properties": {
+            "Anchored": true,
+            "BottomSurface": {
+              "Enum": 0
+            },
+            "CanCollide": true,
+            "Transparency": 0,
+            "TopSurface": {
+              "Enum": 0
+            },
+            "CanQuery": true,
+            "Color": [
+              0.1725490242242813,
+              0.18431372940540314,
+              0.23137255012989044
+            ],
+            "Material": {
+              "Enum": 800
+            },
+            "Size": [
+              3,
+              14,
+              64
+            ],
+            "CanTouch": true,
+            "Shape": {
+              "Enum": 1
+            },
+            "CFrame": [
+              -36,
+              7,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "$className": "Part"
+        },
+        "Pillar4": {
+          "$properties": {
+            "Anchored": true,
+            "BottomSurface": {
+              "Enum": 0
+            },
+            "CanCollide": true,
+            "Transparency": 0,
+            "TopSurface": {
+              "Enum": 0
+            },
+            "CanQuery": true,
+            "Color": [
+              0.2705882489681244,
+              0.3176470696926117,
+              0.3450980484485626
+            ],
+            "Material": {
+              "Enum": 800
+            },
+            "Size": [
+              6,
+              8,
+              6
+            ],
+            "CanTouch": true,
+            "Shape": {
+              "Enum": 1
+            },
+            "CFrame": [
+              17,
+              4,
+              21,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "$className": "Part"
+        },
+        "Gate": {
+          "$properties": {
+            "Anchored": true,
+            "BottomSurface": {
+              "Enum": 0
+            },
+            "CanCollide": true,
+            "Transparency": 0,
+            "TopSurface": {
+              "Enum": 0
+            },
+            "CanQuery": true,
+            "Color": [
+              0.6823529601097107,
+              0.4470588266849518,
+              0.22745098173618317
+            ],
+            "Material": {
+              "Enum": 1088
+            },
+            "Size": [
+              3,
+              14,
+              16
+            ],
+            "CanTouch": true,
+            "Shape": {
+              "Enum": 1
+            },
+            "CFrame": [
+              36,
+              7,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "$className": "Part"
+        },
+        "Pillar2": {
+          "$properties": {
+            "Anchored": true,
+            "BottomSurface": {
+              "Enum": 0
+            },
+            "CanCollide": true,
+            "Transparency": 0,
+            "TopSurface": {
+              "Enum": 0
+            },
+            "CanQuery": true,
+            "Color": [
+              0.35686275362968445,
+              0.3137255012989044,
+              0.29019609093666077
+            ],
+            "Material": {
+              "Enum": 800
+            },
+            "Size": [
+              6,
+              10,
+              6
+            ],
+            "CanTouch": true,
+            "Shape": {
+              "Enum": 1
+            },
+            "CFrame": [
+              -22,
+              5,
+              21,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "$className": "Part"
+        },
+        "$className": "Model",
+        "Pillar": {
+          "$properties": {
+            "Anchored": true,
+            "BottomSurface": {
+              "Enum": 0
+            },
+            "CanCollide": true,
+            "Transparency": 0,
+            "TopSurface": {
+              "Enum": 0
+            },
+            "CanQuery": true,
+            "Color": [
+              0.32156863808631897,
+              0.32549020648002625,
+              0.3529411852359772
+            ],
+            "Material": {
+              "Enum": 800
+            },
+            "Size": [
+              6,
+              8,
+              6
+            ],
+            "CanTouch": true,
+            "Shape": {
+              "Enum": 1
+            },
+            "CFrame": [
+              -16,
+              4,
+              -23,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "$className": "Part"
+        },
+        "SideWall": {
+          "$properties": {
+            "Anchored": true,
+            "BottomSurface": {
+              "Enum": 0
+            },
+            "CanCollide": true,
+            "Transparency": 0,
+            "TopSurface": {
+              "Enum": 0
+            },
+            "CanQuery": true,
+            "Color": [
+              0.1725490242242813,
+              0.18431372940540314,
+              0.23137255012989044
+            ],
+            "Material": {
+              "Enum": 800
+            },
+            "Size": [
+              72,
+              14,
+              3
+            ],
+            "CanTouch": true,
+            "Shape": {
+              "Enum": 1
+            },
+            "CFrame": [
+              0,
+              7,
+              -32,
+              1,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              1
+            ]
+          },
+          "$className": "Part"
+        }
+      },
+      "GuardWall": {
+        "$properties": {
+          "Anchored": true,
+          "BottomSurface": {
+            "Enum": 0
+          },
+          "CanCollide": true,
+          "Transparency": 0,
+          "TopSurface": {
+            "Enum": 0
+          },
+          "CanQuery": true,
+          "Color": [
+            0.1725490242242813,
+            0.18431372940540314,
+            0.23137255012989044
+          ],
+          "Material": {
+            "Enum": 800
+          },
+          "Size": [
+            12,
+            8,
+            2
+          ],
+          "CanTouch": true,
+          "Shape": {
+            "Enum": 1
+          },
+          "CFrame": [
+            262,
+            16,
+            9,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        "$className": "Part"
+      }
+    }
+  }
+}

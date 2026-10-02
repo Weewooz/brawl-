@@ -1,0 +1,12 @@
+{
+  "CanvasSize": [1254, 1254],
+  "Placement": "Use identical full-canvas size and position for every layer.",
+  "Background": "Use your existing color background below these layers.",
+  "LayersBackToFront": [
+    "ChargeWindScrolls.png",
+    "ChargeDash.png",
+    "ChargeKatana.png",
+    "ChargeTarget.png",
+    "ChargeFrameVintageGold.png"
+  ]
+}

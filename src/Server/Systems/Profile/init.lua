@@ -49,6 +49,7 @@ export type System = {
 	Handle: (self: System, player: Player, message: any, profile: Profile) -> boolean,
 
 	Get: (self: System, player: Player, editable: boolean?, replicate: boolean?) -> Profile?,
+	IsLoaded: (self: System, player: Player) -> boolean,
 	Update: (self: System, player: Player, path: string, key: string, value: any) -> (),
 	Add: (self: System, player: Player, path: string, key: string, value: any) -> (),
 	Remove: (self: System, player: Player, path: string, key: string) -> (),
@@ -260,6 +261,10 @@ function System:Handle(player: Player, message: any, profile: Profile): boolean
 	self.Received:Fire(player, profile, message)
 
 	return false
+end
+
+function System:IsLoaded(player: Player): boolean
+	return Profiles[player] ~= nil
 end
 
 -- Frozen cached copy by default; editable=true returns the live table

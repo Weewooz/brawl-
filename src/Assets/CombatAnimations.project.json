@@ -1,0 +1,78 @@
+{
+  "name": "CombatAnimations",
+  "tree": {
+    "Spin": {
+      "$properties": {
+        "AnimationId": "rbxassetid://80062530948695"
+      },
+      "$className": "Animation"
+    },
+    "Idle": {
+      "$properties": {
+        "AnimationId": "rbxassetid://96812255424824"
+      },
+      "$className": "Animation"
+    },
+    "Slash": {
+      "$properties": {
+        "AnimationId": "rbxassetid://80062530948695"
+      },
+      "$className": "Animation"
+    },
+    "Run": {
+      "$properties": {
+        "AnimationId": "rbxassetid://86008359822086"
+      },
+      "$className": "Animation"
+    },
+    "Impact": {
+      "$properties": {
+        "AnimationId": "rbxassetid://89393118584495"
+      },
+      "$className": "Animation"
+    },
+    "Charge": {
+      "$properties": {
+        "AnimationId": "rbxassetid://133821952223555"
+      },
+      "$className": "Animation"
+    },
+    "Overhead": {
+      "$properties": {
+        "AnimationId": "rbxassetid://133821952223555"
+      },
+      "$className": "Animation"
+    },
+    "Reverse": {
+      "$properties": {
+        "AnimationId": "rbxassetid://129160086003523"
+      },
+      "$className": "Animation"
+    },
+    "$className": "Folder",
+    "Guard": {
+      "$properties": {
+        "AnimationId": "rbxassetid://77073158809556"
+      },
+      "$className": "Animation"
+    },
+    "Walk": {
+      "$properties": {
+        "AnimationId": "rbxassetid://71554969080348"
+      },
+      "$className": "Animation"
+    },
+    "RisingCrash": {
+      "$properties": {
+        "AnimationId": "rbxassetid://129160086003523"
+      },
+      "$className": "Animation"
+    },
+    "GroundShock": {
+      "$properties": {
+        "AnimationId": "rbxassetid://133821952223555"
+      },
+      "$className": "Animation"
+    }
+  }
+}

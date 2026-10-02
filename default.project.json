@@ -3,6 +3,17 @@
   "emitLegacyScripts": false,
   "tree": {
     "$className": "DataModel",
+    "SoundService": {
+      "$className": "SoundService",
+      "$properties": {
+        "DefaultListenerLocation": {
+          "Enum": 2
+        }
+      }
+    },
+    "Teams": {
+      "$path": "src/Assets/CaptureTeams.project.json"
+    },
     "ReplicatedFirst": {
       "$className": "ReplicatedFirst",
       "$path": "src/Client/Preload",
@@ -26,9 +37,55 @@
       "Shared": {
         "$path": "src/Shared"
       },
+      "CaptureState": {
+        "$path": "src/Assets/CaptureState.project.json"
+      },
       "Assets": {
         "$className": "Folder",
-        "$ignoreUnknownInstances": true
+        "$ignoreUnknownInstances": true,
+        "Weapons": {
+          "$className": "Folder",
+          "$ignoreUnknownInstances": true,
+          "Yumi": {
+            "$path": "src/Assets/Yumi.rbxmx"
+          },
+          "Arrow": {
+            "$path": "src/Assets/Arrow.rbxmx"
+          }
+        },
+        "CombatAnimations": {
+          "$path": "src/Assets/CombatAnimations.project.json"
+        },
+        "TeamMarkerPool": {
+          "$path": "src/Assets/TeamMarkerPool.project.json"
+        },
+        "CombatTelegraphs": {
+          "$path": "src/Assets/CombatTelegraphs.project.json"
+        },
+        "CombatStatusPool": {
+          "$path": "src/Assets/CombatStatusPool.project.json"
+        },
+        "DungeonAnimations": {
+          "$path": "src/Assets/DungeonAnimations.project.json"
+        },
+        "DungeonReviveMarker": {
+          "$path": "src/Assets/DungeonReviveMarker.project.json"
+        },
+        "DungeonReviveProtection": {
+          "$path": "src/Assets/DungeonReviveProtection.project.json"
+        },
+        "CombatAudioPool": {
+          "$path": "src/Assets/Combat/CombatAudioPool.project.json"
+        },
+        "CombatHighlightPool": {
+          "$path": "src/Assets/Combat/CombatHighlightPool.project.json"
+        },
+        "CombatAimPreview": {
+          "$path": "src/Assets/CombatAimPreview.project.json"
+        },
+        "PingMarkerPool": {
+          "$path": "src/Assets/PingMarkerPool.project.json"
+        }
       }
     },
     "ServerScriptService": {
@@ -38,8 +95,50 @@
       },
       "$path": "src/Server"
     },
+    "ServerStorage": {
+      "$className": "ServerStorage",
+      "DungeonMaps": {
+        "$path": "src/Assets/DungeonMaps.project.json"
+      },
+      "CaptureBotPool": {
+        "$path": "src/Assets/CaptureBots"
+      }
+    },
+    "StarterGui": {
+      "$className": "StarterGui",
+      "$ignoreUnknownInstances": true,
+      "$properties": {
+        "ScreenOrientation": {
+          "Enum": 2
+        }
+      },
+      "CombatControls": {
+        "$path": "src/Assets/CombatControls.project.json"
+      },
+      "CaptureHUD": {
+        "$path": "src/Assets/CaptureHUD.project.json"
+      },
+      "DungeonStatus": {
+        "$path": "src/Assets/DungeonStatus.project.json"
+      },
+      "Controls": {
+        "$path": "src/Assets/InputPreview.project.json"
+      }
+    },
+    "TextChatService": {
+      "$className": "TextChatService",
+      "$ignoreUnknownInstances": true,
+      "DungeonCommand": {
+        "$path": "src/Assets/DungeonCommand.project.json"
+      }
+    },
     "StarterPlayer": {
       "$className": "StarterPlayer",
+      "$properties": {
+        "CharacterJumpPower": 0,
+        "CharacterJumpHeight": 0,
+        "AutoJumpEnabled": false
+      },
       "StarterCharacterScripts": {
         "$className": "StarterCharacterScripts",
         "$path": "src/Client/Characters"
@@ -48,6 +147,12 @@
     "Workspace": {
       "$className": "Workspace",
       "$ignoreUnknownInstances": true,
+      "CaptureArena": {
+        "$path": "src/Assets/CaptureArena.project.json"
+      },
+      "TemporaryDungeonTown": {
+        "$path": "src/Assets/TemporaryDungeonTown.project.json"
+      },
       "Visual": {
         "$className": "Folder",
         "$ignoreUnknownInstances": true

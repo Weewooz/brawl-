@@ -1,0 +1,2086 @@
+{
+  "name": "TeamMarkerPool",
+  "tree": {
+    "1": {
+      "$properties": {
+        "Enabled": false,
+        "MaxDistance": 160,
+        "StudsOffsetWorldSpace": [
+          0,
+          2.700000047683716,
+          0
+        ],
+        "ResetOnSpawn": true,
+        "AlwaysOnTop": false,
+        "Size": {
+          "UDim2": [
+            [
+              0,
+              116
+            ],
+            [
+              0,
+              38
+            ]
+          ]
+        }
+      },
+      "$className": "BillboardGui",
+      "Health": {
+        "$properties": {
+          "Visible": true,
+          "ClipsDescendants": false,
+          "Active": false,
+          "AnchorPoint": [
+            0,
+            0
+          ],
+          "Rotation": 0,
+          "BackgroundTransparency": 0,
+          "Position": {
+            "UDim2": [
+              [
+                0,
+                28
+              ],
+              [
+                0,
+                24
+              ]
+            ]
+          },
+          "BackgroundColor3": [
+            0.0941176488995552,
+            0.13725490868091583,
+            0.1921568661928177
+          ],
+          "ZIndex": 1,
+          "BorderSizePixel": 0,
+          "Size": {
+            "UDim2": [
+              [
+                0,
+                60
+              ],
+              [
+                0,
+                5
+              ]
+            ]
+          }
+        },
+        "$className": "Frame",
+        "Corner": {
+          "$properties": {
+            "CornerRadius": {
+              "UDim": [
+                0,
+                3
+              ]
+            }
+          },
+          "$className": "UICorner"
+        },
+        "Fill": {
+          "$className": "Frame",
+          "Corner": {
+            "$properties": {
+              "CornerRadius": {
+                "UDim": [
+                  0,
+                  3
+                ]
+              }
+            },
+            "$className": "UICorner"
+          },
+          "$properties": {
+            "Visible": true,
+            "ClipsDescendants": false,
+            "Active": false,
+            "AnchorPoint": [
+              0,
+              0
+            ],
+            "Rotation": 0,
+            "BackgroundTransparency": 0,
+            "Position": {
+              "UDim2": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ]
+            },
+            "BackgroundColor3": [
+              0.2980392277240753,
+              0.7411764860153198,
+              0.9333333373069763
+            ],
+            "ZIndex": 1,
+            "BorderSizePixel": 0,
+            "Size": {
+              "UDim2": [
+                [
+                  1,
+                  0
+                ],
+                [
+                  1,
+                  0
+                ]
+              ]
+            }
+          }
+        }
+      },
+      "Label": {
+        "$properties": {
+          "Visible": true,
+          "TextWrapped": false,
+          "Active": false,
+          "TextTransparency": 0,
+          "TextStrokeTransparency": 0.30000001192092896,
+          "AnchorPoint": [
+            0,
+            0
+          ],
+          "ZIndex": 1,
+          "BorderSizePixel": 0,
+          "Size": {
+            "UDim2": [
+              [
+                0,
+                116
+              ],
+              [
+                0,
+                22
+              ]
+            ]
+          },
+          "TextColor3": [
+            0.9411764740943909,
+            0.9529411792755127,
+            0.9137254953384399
+          ],
+          "TextStrokeColor3": [
+            0,
+            0,
+            0
+          ],
+          "Text": "",
+          "ClipsDescendants": false,
+          "TextXAlignment": {
+            "Enum": 2
+          },
+          "Rotation": 0,
+          "Font": {
+            "Enum": 18
+          },
+          "BackgroundTransparency": 1,
+          "Position": {
+            "UDim2": [
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ]
+          },
+          "TextSize": 10,
+          "TextYAlignment": {
+            "Enum": 1
+          },
+          "TextScaled": false,
+          "BackgroundColor3": [
+            0.6392157077789307,
+            0.6352941393852234,
+            0.6470588445663452
+          ]
+        },
+        "$className": "TextLabel"
+      }
+    },
+    "2": {
+      "$properties": {
+        "Enabled": false,
+        "MaxDistance": 160,
+        "StudsOffsetWorldSpace": [
+          0,
+          2.700000047683716,
+          0
+        ],
+        "ResetOnSpawn": true,
+        "AlwaysOnTop": false,
+        "Size": {
+          "UDim2": [
+            [
+              0,
+              116
+            ],
+            [
+              0,
+              38
+            ]
+          ]
+        }
+      },
+      "$className": "BillboardGui",
+      "Health": {
+        "$properties": {
+          "Visible": true,
+          "ClipsDescendants": false,
+          "Active": false,
+          "AnchorPoint": [
+            0,
+            0
+          ],
+          "Rotation": 0,
+          "BackgroundTransparency": 0,
+          "Position": {
+            "UDim2": [
+              [
+                0,
+                28
+              ],
+              [
+                0,
+                24
+              ]
+            ]
+          },
+          "BackgroundColor3": [
+            0.0941176488995552,
+            0.13725490868091583,
+            0.1921568661928177
+          ],
+          "ZIndex": 1,
+          "BorderSizePixel": 0,
+          "Size": {
+            "UDim2": [
+              [
+                0,
+                60
+              ],
+              [
+                0,
+                5
+              ]
+            ]
+          }
+        },
+        "$className": "Frame",
+        "Corner": {
+          "$properties": {
+            "CornerRadius": {
+              "UDim": [
+                0,
+                3
+              ]
+            }
+          },
+          "$className": "UICorner"
+        },
+        "Fill": {
+          "$className": "Frame",
+          "Corner": {
+            "$properties": {
+              "CornerRadius": {
+                "UDim": [
+                  0,
+                  3
+                ]
+              }
+            },
+            "$className": "UICorner"
+          },
+          "$properties": {
+            "Visible": true,
+            "ClipsDescendants": false,
+            "Active": false,
+            "AnchorPoint": [
+              0,
+              0
+            ],
+            "Rotation": 0,
+            "BackgroundTransparency": 0,
+            "Position": {
+              "UDim2": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ]
+            },
+            "BackgroundColor3": [
+              0.2980392277240753,
+              0.7411764860153198,
+              0.9333333373069763
+            ],
+            "ZIndex": 1,
+            "BorderSizePixel": 0,
+            "Size": {
+              "UDim2": [
+                [
+                  1,
+                  0
+                ],
+                [
+                  1,
+                  0
+                ]
+              ]
+            }
+          }
+        }
+      },
+      "Label": {
+        "$properties": {
+          "Visible": true,
+          "TextWrapped": false,
+          "Active": false,
+          "TextTransparency": 0,
+          "TextStrokeTransparency": 0.30000001192092896,
+          "AnchorPoint": [
+            0,
+            0
+          ],
+          "ZIndex": 1,
+          "BorderSizePixel": 0,
+          "Size": {
+            "UDim2": [
+              [
+                0,
+                116
+              ],
+              [
+                0,
+                22
+              ]
+            ]
+          },
+          "TextColor3": [
+            0.9411764740943909,
+            0.9529411792755127,
+            0.9137254953384399
+          ],
+          "TextStrokeColor3": [
+            0,
+            0,
+            0
+          ],
+          "Text": "",
+          "ClipsDescendants": false,
+          "TextXAlignment": {
+            "Enum": 2
+          },
+          "Rotation": 0,
+          "Font": {
+            "Enum": 18
+          },
+          "BackgroundTransparency": 1,
+          "Position": {
+            "UDim2": [
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ]
+          },
+          "TextSize": 10,
+          "TextYAlignment": {
+            "Enum": 1
+          },
+          "TextScaled": false,
+          "BackgroundColor3": [
+            0.6392157077789307,
+            0.6352941393852234,
+            0.6470588445663452
+          ]
+        },
+        "$className": "TextLabel"
+      }
+    },
+    "3": {
+      "$properties": {
+        "Enabled": false,
+        "MaxDistance": 160,
+        "StudsOffsetWorldSpace": [
+          0,
+          2.700000047683716,
+          0
+        ],
+        "ResetOnSpawn": true,
+        "AlwaysOnTop": false,
+        "Size": {
+          "UDim2": [
+            [
+              0,
+              116
+            ],
+            [
+              0,
+              38
+            ]
+          ]
+        }
+      },
+      "$className": "BillboardGui",
+      "Health": {
+        "$properties": {
+          "Visible": true,
+          "ClipsDescendants": false,
+          "Active": false,
+          "AnchorPoint": [
+            0,
+            0
+          ],
+          "Rotation": 0,
+          "BackgroundTransparency": 0,
+          "Position": {
+            "UDim2": [
+              [
+                0,
+                28
+              ],
+              [
+                0,
+                24
+              ]
+            ]
+          },
+          "BackgroundColor3": [
+            0.0941176488995552,
+            0.13725490868091583,
+            0.1921568661928177
+          ],
+          "ZIndex": 1,
+          "BorderSizePixel": 0,
+          "Size": {
+            "UDim2": [
+              [
+                0,
+                60
+              ],
+              [
+                0,
+                5
+              ]
+            ]
+          }
+        },
+        "$className": "Frame",
+        "Corner": {
+          "$properties": {
+            "CornerRadius": {
+              "UDim": [
+                0,
+                3
+              ]
+            }
+          },
+          "$className": "UICorner"
+        },
+        "Fill": {
+          "$className": "Frame",
+          "Corner": {
+            "$properties": {
+              "CornerRadius": {
+                "UDim": [
+                  0,
+                  3
+                ]
+              }
+            },
+            "$className": "UICorner"
+          },
+          "$properties": {
+            "Visible": true,
+            "ClipsDescendants": false,
+            "Active": false,
+            "AnchorPoint": [
+              0,
+              0
+            ],
+            "Rotation": 0,
+            "BackgroundTransparency": 0,
+            "Position": {
+              "UDim2": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ]
+            },
+            "BackgroundColor3": [
+              0.2980392277240753,
+              0.7411764860153198,
+              0.9333333373069763
+            ],
+            "ZIndex": 1,
+            "BorderSizePixel": 0,
+            "Size": {
+              "UDim2": [
+                [
+                  1,
+                  0
+                ],
+                [
+                  1,
+                  0
+                ]
+              ]
+            }
+          }
+        }
+      },
+      "Label": {
+        "$properties": {
+          "Visible": true,
+          "TextWrapped": false,
+          "Active": false,
+          "TextTransparency": 0,
+          "TextStrokeTransparency": 0.30000001192092896,
+          "AnchorPoint": [
+            0,
+            0
+          ],
+          "ZIndex": 1,
+          "BorderSizePixel": 0,
+          "Size": {
+            "UDim2": [
+              [
+                0,
+                116
+              ],
+              [
+                0,
+                22
+              ]
+            ]
+          },
+          "TextColor3": [
+            0.9411764740943909,
+            0.9529411792755127,
+            0.9137254953384399
+          ],
+          "TextStrokeColor3": [
+            0,
+            0,
+            0
+          ],
+          "Text": "",
+          "ClipsDescendants": false,
+          "TextXAlignment": {
+            "Enum": 2
+          },
+          "Rotation": 0,
+          "Font": {
+            "Enum": 18
+          },
+          "BackgroundTransparency": 1,
+          "Position": {
+            "UDim2": [
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ]
+          },
+          "TextSize": 10,
+          "TextYAlignment": {
+            "Enum": 1
+          },
+          "TextScaled": false,
+          "BackgroundColor3": [
+            0.6392157077789307,
+            0.6352941393852234,
+            0.6470588445663452
+          ]
+        },
+        "$className": "TextLabel"
+      }
+    },
+    "4": {
+      "$properties": {
+        "Enabled": false,
+        "MaxDistance": 160,
+        "StudsOffsetWorldSpace": [
+          0,
+          2.700000047683716,
+          0
+        ],
+        "ResetOnSpawn": true,
+        "AlwaysOnTop": false,
+        "Size": {
+          "UDim2": [
+            [
+              0,
+              116
+            ],
+            [
+              0,
+              38
+            ]
+          ]
+        }
+      },
+      "$className": "BillboardGui",
+      "Health": {
+        "$properties": {
+          "Visible": true,
+          "ClipsDescendants": false,
+          "Active": false,
+          "AnchorPoint": [
+            0,
+            0
+          ],
+          "Rotation": 0,
+          "BackgroundTransparency": 0,
+          "Position": {
+            "UDim2": [
+              [
+                0,
+                28
+              ],
+              [
+                0,
+                24
+              ]
+            ]
+          },
+          "BackgroundColor3": [
+            0.0941176488995552,
+            0.13725490868091583,
+            0.1921568661928177
+          ],
+          "ZIndex": 1,
+          "BorderSizePixel": 0,
+          "Size": {
+            "UDim2": [
+              [
+                0,
+                60
+              ],
+              [
+                0,
+                5
+              ]
+            ]
+          }
+        },
+        "$className": "Frame",
+        "Corner": {
+          "$properties": {
+            "CornerRadius": {
+              "UDim": [
+                0,
+                3
+              ]
+            }
+          },
+          "$className": "UICorner"
+        },
+        "Fill": {
+          "$className": "Frame",
+          "Corner": {
+            "$properties": {
+              "CornerRadius": {
+                "UDim": [
+                  0,
+                  3
+                ]
+              }
+            },
+            "$className": "UICorner"
+          },
+          "$properties": {
+            "Visible": true,
+            "ClipsDescendants": false,
+            "Active": false,
+            "AnchorPoint": [
+              0,
+              0
+            ],
+            "Rotation": 0,
+            "BackgroundTransparency": 0,
+            "Position": {
+              "UDim2": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ]
+            },
+            "BackgroundColor3": [
+              0.2980392277240753,
+              0.7411764860153198,
+              0.9333333373069763
+            ],
+            "ZIndex": 1,
+            "BorderSizePixel": 0,
+            "Size": {
+              "UDim2": [
+                [
+                  1,
+                  0
+                ],
+                [
+                  1,
+                  0
+                ]
+              ]
+            }
+          }
+        }
+      },
+      "Label": {
+        "$properties": {
+          "Visible": true,
+          "TextWrapped": false,
+          "Active": false,
+          "TextTransparency": 0,
+          "TextStrokeTransparency": 0.30000001192092896,
+          "AnchorPoint": [
+            0,
+            0
+          ],
+          "ZIndex": 1,
+          "BorderSizePixel": 0,
+          "Size": {
+            "UDim2": [
+              [
+                0,
+                116
+              ],
+              [
+                0,
+                22
+              ]
+            ]
+          },
+          "TextColor3": [
+            0.9411764740943909,
+            0.9529411792755127,
+            0.9137254953384399
+          ],
+          "TextStrokeColor3": [
+            0,
+            0,
+            0
+          ],
+          "Text": "",
+          "ClipsDescendants": false,
+          "TextXAlignment": {
+            "Enum": 2
+          },
+          "Rotation": 0,
+          "Font": {
+            "Enum": 18
+          },
+          "BackgroundTransparency": 1,
+          "Position": {
+            "UDim2": [
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ]
+          },
+          "TextSize": 10,
+          "TextYAlignment": {
+            "Enum": 1
+          },
+          "TextScaled": false,
+          "BackgroundColor3": [
+            0.6392157077789307,
+            0.6352941393852234,
+            0.6470588445663452
+          ]
+        },
+        "$className": "TextLabel"
+      }
+    },
+    "5": {
+      "$properties": {
+        "Enabled": false,
+        "MaxDistance": 160,
+        "StudsOffsetWorldSpace": [
+          0,
+          2.700000047683716,
+          0
+        ],
+        "ResetOnSpawn": true,
+        "AlwaysOnTop": false,
+        "Size": {
+          "UDim2": [
+            [
+              0,
+              116
+            ],
+            [
+              0,
+              38
+            ]
+          ]
+        }
+      },
+      "$className": "BillboardGui",
+      "Health": {
+        "$properties": {
+          "Visible": true,
+          "ClipsDescendants": false,
+          "Active": false,
+          "AnchorPoint": [
+            0,
+            0
+          ],
+          "Rotation": 0,
+          "BackgroundTransparency": 0,
+          "Position": {
+            "UDim2": [
+              [
+                0,
+                28
+              ],
+              [
+                0,
+                24
+              ]
+            ]
+          },
+          "BackgroundColor3": [
+            0.0941176488995552,
+            0.13725490868091583,
+            0.1921568661928177
+          ],
+          "ZIndex": 1,
+          "BorderSizePixel": 0,
+          "Size": {
+            "UDim2": [
+              [
+                0,
+                60
+              ],
+              [
+                0,
+                5
+              ]
+            ]
+          }
+        },
+        "$className": "Frame",
+        "Corner": {
+          "$properties": {
+            "CornerRadius": {
+              "UDim": [
+                0,
+                3
+              ]
+            }
+          },
+          "$className": "UICorner"
+        },
+        "Fill": {
+          "$className": "Frame",
+          "Corner": {
+            "$properties": {
+              "CornerRadius": {
+                "UDim": [
+                  0,
+                  3
+                ]
+              }
+            },
+            "$className": "UICorner"
+          },
+          "$properties": {
+            "Visible": true,
+            "ClipsDescendants": false,
+            "Active": false,
+            "AnchorPoint": [
+              0,
+              0
+            ],
+            "Rotation": 0,
+            "BackgroundTransparency": 0,
+            "Position": {
+              "UDim2": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ]
+            },
+            "BackgroundColor3": [
+              0.2980392277240753,
+              0.7411764860153198,
+              0.9333333373069763
+            ],
+            "ZIndex": 1,
+            "BorderSizePixel": 0,
+            "Size": {
+              "UDim2": [
+                [
+                  1,
+                  0
+                ],
+                [
+                  1,
+                  0
+                ]
+              ]
+            }
+          }
+        }
+      },
+      "Label": {
+        "$properties": {
+          "Visible": true,
+          "TextWrapped": false,
+          "Active": false,
+          "TextTransparency": 0,
+          "TextStrokeTransparency": 0.30000001192092896,
+          "AnchorPoint": [
+            0,
+            0
+          ],
+          "ZIndex": 1,
+          "BorderSizePixel": 0,
+          "Size": {
+            "UDim2": [
+              [
+                0,
+                116
+              ],
+              [
+                0,
+                22
+              ]
+            ]
+          },
+          "TextColor3": [
+            0.9411764740943909,
+            0.9529411792755127,
+            0.9137254953384399
+          ],
+          "TextStrokeColor3": [
+            0,
+            0,
+            0
+          ],
+          "Text": "",
+          "ClipsDescendants": false,
+          "TextXAlignment": {
+            "Enum": 2
+          },
+          "Rotation": 0,
+          "Font": {
+            "Enum": 18
+          },
+          "BackgroundTransparency": 1,
+          "Position": {
+            "UDim2": [
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ]
+          },
+          "TextSize": 10,
+          "TextYAlignment": {
+            "Enum": 1
+          },
+          "TextScaled": false,
+          "BackgroundColor3": [
+            0.6392157077789307,
+            0.6352941393852234,
+            0.6470588445663452
+          ]
+        },
+        "$className": "TextLabel"
+      }
+    },
+    "6": {
+      "$properties": {
+        "Enabled": false,
+        "MaxDistance": 160,
+        "StudsOffsetWorldSpace": [
+          0,
+          2.700000047683716,
+          0
+        ],
+        "ResetOnSpawn": true,
+        "AlwaysOnTop": false,
+        "Size": {
+          "UDim2": [
+            [
+              0,
+              116
+            ],
+            [
+              0,
+              38
+            ]
+          ]
+        }
+      },
+      "$className": "BillboardGui",
+      "Health": {
+        "$properties": {
+          "Visible": true,
+          "ClipsDescendants": false,
+          "Active": false,
+          "AnchorPoint": [
+            0,
+            0
+          ],
+          "Rotation": 0,
+          "BackgroundTransparency": 0,
+          "Position": {
+            "UDim2": [
+              [
+                0,
+                28
+              ],
+              [
+                0,
+                24
+              ]
+            ]
+          },
+          "BackgroundColor3": [
+            0.0941176488995552,
+            0.13725490868091583,
+            0.1921568661928177
+          ],
+          "ZIndex": 1,
+          "BorderSizePixel": 0,
+          "Size": {
+            "UDim2": [
+              [
+                0,
+                60
+              ],
+              [
+                0,
+                5
+              ]
+            ]
+          }
+        },
+        "$className": "Frame",
+        "Corner": {
+          "$properties": {
+            "CornerRadius": {
+              "UDim": [
+                0,
+                3
+              ]
+            }
+          },
+          "$className": "UICorner"
+        },
+        "Fill": {
+          "$className": "Frame",
+          "Corner": {
+            "$properties": {
+              "CornerRadius": {
+                "UDim": [
+                  0,
+                  3
+                ]
+              }
+            },
+            "$className": "UICorner"
+          },
+          "$properties": {
+            "Visible": true,
+            "ClipsDescendants": false,
+            "Active": false,
+            "AnchorPoint": [
+              0,
+              0
+            ],
+            "Rotation": 0,
+            "BackgroundTransparency": 0,
+            "Position": {
+              "UDim2": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ]
+            },
+            "BackgroundColor3": [
+              0.2980392277240753,
+              0.7411764860153198,
+              0.9333333373069763
+            ],
+            "ZIndex": 1,
+            "BorderSizePixel": 0,
+            "Size": {
+              "UDim2": [
+                [
+                  1,
+                  0
+                ],
+                [
+                  1,
+                  0
+                ]
+              ]
+            }
+          }
+        }
+      },
+      "Label": {
+        "$properties": {
+          "Visible": true,
+          "TextWrapped": false,
+          "Active": false,
+          "TextTransparency": 0,
+          "TextStrokeTransparency": 0.30000001192092896,
+          "AnchorPoint": [
+            0,
+            0
+          ],
+          "ZIndex": 1,
+          "BorderSizePixel": 0,
+          "Size": {
+            "UDim2": [
+              [
+                0,
+                116
+              ],
+              [
+                0,
+                22
+              ]
+            ]
+          },
+          "TextColor3": [
+            0.9411764740943909,
+            0.9529411792755127,
+            0.9137254953384399
+          ],
+          "TextStrokeColor3": [
+            0,
+            0,
+            0
+          ],
+          "Text": "",
+          "ClipsDescendants": false,
+          "TextXAlignment": {
+            "Enum": 2
+          },
+          "Rotation": 0,
+          "Font": {
+            "Enum": 18
+          },
+          "BackgroundTransparency": 1,
+          "Position": {
+            "UDim2": [
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ]
+          },
+          "TextSize": 10,
+          "TextYAlignment": {
+            "Enum": 1
+          },
+          "TextScaled": false,
+          "BackgroundColor3": [
+            0.6392157077789307,
+            0.6352941393852234,
+            0.6470588445663452
+          ]
+        },
+        "$className": "TextLabel"
+      }
+    },
+    "7": {
+      "$properties": {
+        "Enabled": false,
+        "MaxDistance": 160,
+        "StudsOffsetWorldSpace": [
+          0,
+          2.700000047683716,
+          0
+        ],
+        "ResetOnSpawn": true,
+        "AlwaysOnTop": false,
+        "Size": {
+          "UDim2": [
+            [
+              0,
+              116
+            ],
+            [
+              0,
+              38
+            ]
+          ]
+        }
+      },
+      "$className": "BillboardGui",
+      "Health": {
+        "$properties": {
+          "Visible": true,
+          "ClipsDescendants": false,
+          "Active": false,
+          "AnchorPoint": [
+            0,
+            0
+          ],
+          "Rotation": 0,
+          "BackgroundTransparency": 0,
+          "Position": {
+            "UDim2": [
+              [
+                0,
+                28
+              ],
+              [
+                0,
+                24
+              ]
+            ]
+          },
+          "BackgroundColor3": [
+            0.0941176488995552,
+            0.13725490868091583,
+            0.1921568661928177
+          ],
+          "ZIndex": 1,
+          "BorderSizePixel": 0,
+          "Size": {
+            "UDim2": [
+              [
+                0,
+                60
+              ],
+              [
+                0,
+                5
+              ]
+            ]
+          }
+        },
+        "$className": "Frame",
+        "Corner": {
+          "$properties": {
+            "CornerRadius": {
+              "UDim": [
+                0,
+                3
+              ]
+            }
+          },
+          "$className": "UICorner"
+        },
+        "Fill": {
+          "$className": "Frame",
+          "Corner": {
+            "$properties": {
+              "CornerRadius": {
+                "UDim": [
+                  0,
+                  3
+                ]
+              }
+            },
+            "$className": "UICorner"
+          },
+          "$properties": {
+            "Visible": true,
+            "ClipsDescendants": false,
+            "Active": false,
+            "AnchorPoint": [
+              0,
+              0
+            ],
+            "Rotation": 0,
+            "BackgroundTransparency": 0,
+            "Position": {
+              "UDim2": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ]
+            },
+            "BackgroundColor3": [
+              0.2980392277240753,
+              0.7411764860153198,
+              0.9333333373069763
+            ],
+            "ZIndex": 1,
+            "BorderSizePixel": 0,
+            "Size": {
+              "UDim2": [
+                [
+                  1,
+                  0
+                ],
+                [
+                  1,
+                  0
+                ]
+              ]
+            }
+          }
+        }
+      },
+      "Label": {
+        "$properties": {
+          "Visible": true,
+          "TextWrapped": false,
+          "Active": false,
+          "TextTransparency": 0,
+          "TextStrokeTransparency": 0.30000001192092896,
+          "AnchorPoint": [
+            0,
+            0
+          ],
+          "ZIndex": 1,
+          "BorderSizePixel": 0,
+          "Size": {
+            "UDim2": [
+              [
+                0,
+                116
+              ],
+              [
+                0,
+                22
+              ]
+            ]
+          },
+          "TextColor3": [
+            0.9411764740943909,
+            0.9529411792755127,
+            0.9137254953384399
+          ],
+          "TextStrokeColor3": [
+            0,
+            0,
+            0
+          ],
+          "Text": "",
+          "ClipsDescendants": false,
+          "TextXAlignment": {
+            "Enum": 2
+          },
+          "Rotation": 0,
+          "Font": {
+            "Enum": 18
+          },
+          "BackgroundTransparency": 1,
+          "Position": {
+            "UDim2": [
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ]
+          },
+          "TextSize": 10,
+          "TextYAlignment": {
+            "Enum": 1
+          },
+          "TextScaled": false,
+          "BackgroundColor3": [
+            0.6392157077789307,
+            0.6352941393852234,
+            0.6470588445663452
+          ]
+        },
+        "$className": "TextLabel"
+      }
+    },
+    "8": {
+      "$properties": {
+        "Enabled": false,
+        "MaxDistance": 160,
+        "StudsOffsetWorldSpace": [
+          0,
+          2.700000047683716,
+          0
+        ],
+        "ResetOnSpawn": true,
+        "AlwaysOnTop": false,
+        "Size": {
+          "UDim2": [
+            [
+              0,
+              116
+            ],
+            [
+              0,
+              38
+            ]
+          ]
+        }
+      },
+      "$className": "BillboardGui",
+      "Health": {
+        "$properties": {
+          "Visible": true,
+          "ClipsDescendants": false,
+          "Active": false,
+          "AnchorPoint": [
+            0,
+            0
+          ],
+          "Rotation": 0,
+          "BackgroundTransparency": 0,
+          "Position": {
+            "UDim2": [
+              [
+                0,
+                28
+              ],
+              [
+                0,
+                24
+              ]
+            ]
+          },
+          "BackgroundColor3": [
+            0.0941176488995552,
+            0.13725490868091583,
+            0.1921568661928177
+          ],
+          "ZIndex": 1,
+          "BorderSizePixel": 0,
+          "Size": {
+            "UDim2": [
+              [
+                0,
+                60
+              ],
+              [
+                0,
+                5
+              ]
+            ]
+          }
+        },
+        "$className": "Frame",
+        "Corner": {
+          "$properties": {
+            "CornerRadius": {
+              "UDim": [
+                0,
+                3
+              ]
+            }
+          },
+          "$className": "UICorner"
+        },
+        "Fill": {
+          "$className": "Frame",
+          "Corner": {
+            "$properties": {
+              "CornerRadius": {
+                "UDim": [
+                  0,
+                  3
+                ]
+              }
+            },
+            "$className": "UICorner"
+          },
+          "$properties": {
+            "Visible": true,
+            "ClipsDescendants": false,
+            "Active": false,
+            "AnchorPoint": [
+              0,
+              0
+            ],
+            "Rotation": 0,
+            "BackgroundTransparency": 0,
+            "Position": {
+              "UDim2": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ]
+            },
+            "BackgroundColor3": [
+              0.2980392277240753,
+              0.7411764860153198,
+              0.9333333373069763
+            ],
+            "ZIndex": 1,
+            "BorderSizePixel": 0,
+            "Size": {
+              "UDim2": [
+                [
+                  1,
+                  0
+                ],
+                [
+                  1,
+                  0
+                ]
+              ]
+            }
+          }
+        }
+      },
+      "Label": {
+        "$properties": {
+          "Visible": true,
+          "TextWrapped": false,
+          "Active": false,
+          "TextTransparency": 0,
+          "TextStrokeTransparency": 0.30000001192092896,
+          "AnchorPoint": [
+            0,
+            0
+          ],
+          "ZIndex": 1,
+          "BorderSizePixel": 0,
+          "Size": {
+            "UDim2": [
+              [
+                0,
+                116
+              ],
+              [
+                0,
+                22
+              ]
+            ]
+          },
+          "TextColor3": [
+            0.9411764740943909,
+            0.9529411792755127,
+            0.9137254953384399
+          ],
+          "TextStrokeColor3": [
+            0,
+            0,
+            0
+          ],
+          "Text": "",
+          "ClipsDescendants": false,
+          "TextXAlignment": {
+            "Enum": 2
+          },
+          "Rotation": 0,
+          "Font": {
+            "Enum": 18
+          },
+          "BackgroundTransparency": 1,
+          "Position": {
+            "UDim2": [
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ]
+          },
+          "TextSize": 10,
+          "TextYAlignment": {
+            "Enum": 1
+          },
+          "TextScaled": false,
+          "BackgroundColor3": [
+            0.6392157077789307,
+            0.6352941393852234,
+            0.6470588445663452
+          ]
+        },
+        "$className": "TextLabel"
+      }
+    },
+    "9": {
+      "$properties": {
+        "Enabled": false,
+        "MaxDistance": 160,
+        "StudsOffsetWorldSpace": [
+          0,
+          2.700000047683716,
+          0
+        ],
+        "ResetOnSpawn": true,
+        "AlwaysOnTop": false,
+        "Size": {
+          "UDim2": [
+            [
+              0,
+              116
+            ],
+            [
+              0,
+              38
+            ]
+          ]
+        }
+      },
+      "$className": "BillboardGui",
+      "Health": {
+        "$properties": {
+          "Visible": true,
+          "ClipsDescendants": false,
+          "Active": false,
+          "AnchorPoint": [
+            0,
+            0
+          ],
+          "Rotation": 0,
+          "BackgroundTransparency": 0,
+          "Position": {
+            "UDim2": [
+              [
+                0,
+                28
+              ],
+              [
+                0,
+                24
+              ]
+            ]
+          },
+          "BackgroundColor3": [
+            0.0941176488995552,
+            0.13725490868091583,
+            0.1921568661928177
+          ],
+          "ZIndex": 1,
+          "BorderSizePixel": 0,
+          "Size": {
+            "UDim2": [
+              [
+                0,
+                60
+              ],
+              [
+                0,
+                5
+              ]
+            ]
+          }
+        },
+        "$className": "Frame",
+        "Corner": {
+          "$properties": {
+            "CornerRadius": {
+              "UDim": [
+                0,
+                3
+              ]
+            }
+          },
+          "$className": "UICorner"
+        },
+        "Fill": {
+          "$className": "Frame",
+          "Corner": {
+            "$properties": {
+              "CornerRadius": {
+                "UDim": [
+                  0,
+                  3
+                ]
+              }
+            },
+            "$className": "UICorner"
+          },
+          "$properties": {
+            "Visible": true,
+            "ClipsDescendants": false,
+            "Active": false,
+            "AnchorPoint": [
+              0,
+              0
+            ],
+            "Rotation": 0,
+            "BackgroundTransparency": 0,
+            "Position": {
+              "UDim2": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ]
+            },
+            "BackgroundColor3": [
+              0.2980392277240753,
+              0.7411764860153198,
+              0.9333333373069763
+            ],
+            "ZIndex": 1,
+            "BorderSizePixel": 0,
+            "Size": {
+              "UDim2": [
+                [
+                  1,
+                  0
+                ],
+                [
+                  1,
+                  0
+                ]
+              ]
+            }
+          }
+        }
+      },
+      "Label": {
+        "$properties": {
+          "Visible": true,
+          "TextWrapped": false,
+          "Active": false,
+          "TextTransparency": 0,
+          "TextStrokeTransparency": 0.30000001192092896,
+          "AnchorPoint": [
+            0,
+            0
+          ],
+          "ZIndex": 1,
+          "BorderSizePixel": 0,
+          "Size": {
+            "UDim2": [
+              [
+                0,
+                116
+              ],
+              [
+                0,
+                22
+              ]
+            ]
+          },
+          "TextColor3": [
+            0.9411764740943909,
+            0.9529411792755127,
+            0.9137254953384399
+          ],
+          "TextStrokeColor3": [
+            0,
+            0,
+            0
+          ],
+          "Text": "",
+          "ClipsDescendants": false,
+          "TextXAlignment": {
+            "Enum": 2
+          },
+          "Rotation": 0,
+          "Font": {
+            "Enum": 18
+          },
+          "BackgroundTransparency": 1,
+          "Position": {
+            "UDim2": [
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ]
+          },
+          "TextSize": 10,
+          "TextYAlignment": {
+            "Enum": 1
+          },
+          "TextScaled": false,
+          "BackgroundColor3": [
+            0.6392157077789307,
+            0.6352941393852234,
+            0.6470588445663452
+          ]
+        },
+        "$className": "TextLabel"
+      }
+    },
+    "10": {
+      "$properties": {
+        "Enabled": false,
+        "MaxDistance": 160,
+        "StudsOffsetWorldSpace": [
+          0,
+          2.700000047683716,
+          0
+        ],
+        "ResetOnSpawn": true,
+        "AlwaysOnTop": false,
+        "Size": {
+          "UDim2": [
+            [
+              0,
+              116
+            ],
+            [
+              0,
+              38
+            ]
+          ]
+        }
+      },
+      "$className": "BillboardGui",
+      "Health": {
+        "$properties": {
+          "Visible": true,
+          "ClipsDescendants": false,
+          "Active": false,
+          "AnchorPoint": [
+            0,
+            0
+          ],
+          "Rotation": 0,
+          "BackgroundTransparency": 0,
+          "Position": {
+            "UDim2": [
+              [
+                0,
+                28
+              ],
+              [
+                0,
+                24
+              ]
+            ]
+          },
+          "BackgroundColor3": [
+            0.0941176488995552,
+            0.13725490868091583,
+            0.1921568661928177
+          ],
+          "ZIndex": 1,
+          "BorderSizePixel": 0,
+          "Size": {
+            "UDim2": [
+              [
+                0,
+                60
+              ],
+              [
+                0,
+                5
+              ]
+            ]
+          }
+        },
+        "$className": "Frame",
+        "Corner": {
+          "$properties": {
+            "CornerRadius": {
+              "UDim": [
+                0,
+                3
+              ]
+            }
+          },
+          "$className": "UICorner"
+        },
+        "Fill": {
+          "$className": "Frame",
+          "Corner": {
+            "$properties": {
+              "CornerRadius": {
+                "UDim": [
+                  0,
+                  3
+                ]
+              }
+            },
+            "$className": "UICorner"
+          },
+          "$properties": {
+            "Visible": true,
+            "ClipsDescendants": false,
+            "Active": false,
+            "AnchorPoint": [
+              0,
+              0
+            ],
+            "Rotation": 0,
+            "BackgroundTransparency": 0,
+            "Position": {
+              "UDim2": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ]
+            },
+            "BackgroundColor3": [
+              0.2980392277240753,
+              0.7411764860153198,
+              0.9333333373069763
+            ],
+            "ZIndex": 1,
+            "BorderSizePixel": 0,
+            "Size": {
+              "UDim2": [
+                [
+                  1,
+                  0
+                ],
+                [
+                  1,
+                  0
+                ]
+              ]
+            }
+          }
+        }
+      },
+      "Label": {
+        "$properties": {
+          "Visible": true,
+          "TextWrapped": false,
+          "Active": false,
+          "TextTransparency": 0,
+          "TextStrokeTransparency": 0.30000001192092896,
+          "AnchorPoint": [
+            0,
+            0
+          ],
+          "ZIndex": 1,
+          "BorderSizePixel": 0,
+          "Size": {
+            "UDim2": [
+              [
+                0,
+                116
+              ],
+              [
+                0,
+                22
+              ]
+            ]
+          },
+          "TextColor3": [
+            0.9411764740943909,
+            0.9529411792755127,
+            0.9137254953384399
+          ],
+          "TextStrokeColor3": [
+            0,
+            0,
+            0
+          ],
+          "Text": "",
+          "ClipsDescendants": false,
+          "TextXAlignment": {
+            "Enum": 2
+          },
+          "Rotation": 0,
+          "Font": {
+            "Enum": 18
+          },
+          "BackgroundTransparency": 1,
+          "Position": {
+            "UDim2": [
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ]
+          },
+          "TextSize": 10,
+          "TextYAlignment": {
+            "Enum": 1
+          },
+          "TextScaled": false,
+          "BackgroundColor3": [
+            0.6392157077789307,
+            0.6352941393852234,
+            0.6470588445663452
+          ]
+        },
+        "$className": "TextLabel"
+      }
+    },
+    "$className": "Folder"
+  }
+}

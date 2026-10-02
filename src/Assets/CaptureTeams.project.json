@@ -1,0 +1,24 @@
+{
+  "name": "CaptureTeams",
+  "tree": {
+    "Coral": {
+      "$properties": {
+        "AutoAssignable": false,
+        "TeamColor": {
+          "BrickColor": 106
+        }
+      },
+      "$className": "Team"
+    },
+    "$className": "Teams",
+    "Azure": {
+      "$properties": {
+        "AutoAssignable": false,
+        "TeamColor": {
+          "BrickColor": 23
+        }
+      },
+      "$className": "Team"
+    }
+  }
+}

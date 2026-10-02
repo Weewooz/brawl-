@@ -32,8 +32,14 @@ export type Stats = {
 	Seconds: number, -- Total playtime
 }
 
+export type Combat = {
+	Grit: number,
+	Weapon: string,
+}
+
 export type Template = {
 	Stats: Stats,
+	Combat: Combat,
 	Flags: { [string]: boolean }, -- Example Collection; replace per game
 	PURCHASED_ID_CACHE: { [string]: boolean },
 }
@@ -44,6 +50,10 @@ local Template = {
 		Last = 0,
 		Joins = 0,
 		Seconds = 0,
+	},
+	Combat = {
+		Grit = 0,
+		Weapon = "Katana",
 	},
 	Flags = Collection({}),
 	PURCHASED_ID_CACHE = Private({}),

@@ -20,4 +20,4 @@ ShapeCastHitbox = "teamswordphin/shapecasthitbox@0.2.9"
 
 [server-dependencies]
 ProfileStore = "lm-loleris/profilestore@1.0.3"
-Cmdr = "evaera/cmdr@1.12.0"
+Cmdr = "evaera/cmdr@=1.12.0"

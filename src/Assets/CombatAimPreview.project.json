@@ -1,0 +1,2577 @@
+{
+  "name": "CombatAimPreview",
+  "tree": {
+    "Charge": {
+      "1": {
+        "$properties": {
+          "Reflectance": 0,
+          "Color": [
+            0.8901960849761963,
+            0.7607843279838562,
+            0.48235294222831726
+          ],
+          "CFrame": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "Material": {
+            "Enum": 288
+          },
+          "Archivable": true,
+          "Size": [
+            0.10999999940395355,
+            0.07000000029802322,
+            0.5
+          ],
+          "BottomSurface": {
+            "Enum": 4
+          },
+          "CanCollide": false,
+          "RootPriority": 0,
+          "CanTouch": false,
+          "Transparency": 1,
+          "Shape": {
+            "Enum": 1
+          },
+          "Massless": false,
+          "CanQuery": false,
+          "Anchored": true,
+          "CastShadow": false,
+          "TopSurface": {
+            "Enum": 3
+          }
+        },
+        "$className": "Part"
+      },
+      "2": {
+        "$properties": {
+          "Reflectance": 0,
+          "Color": [
+            0.8901960849761963,
+            0.7607843279838562,
+            0.48235294222831726
+          ],
+          "CFrame": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "Material": {
+            "Enum": 288
+          },
+          "Archivable": true,
+          "Size": [
+            0.10999999940395355,
+            0.07000000029802322,
+            0.5
+          ],
+          "BottomSurface": {
+            "Enum": 4
+          },
+          "CanCollide": false,
+          "RootPriority": 0,
+          "CanTouch": false,
+          "Transparency": 1,
+          "Shape": {
+            "Enum": 1
+          },
+          "Massless": false,
+          "CanQuery": false,
+          "Anchored": true,
+          "CastShadow": false,
+          "TopSurface": {
+            "Enum": 3
+          }
+        },
+        "$className": "Part"
+      },
+      "3": {
+        "$properties": {
+          "Reflectance": 0,
+          "Color": [
+            0.8901960849761963,
+            0.7607843279838562,
+            0.48235294222831726
+          ],
+          "CFrame": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "Material": {
+            "Enum": 288
+          },
+          "Archivable": true,
+          "Size": [
+            0.10999999940395355,
+            0.07000000029802322,
+            0.5
+          ],
+          "BottomSurface": {
+            "Enum": 4
+          },
+          "CanCollide": false,
+          "RootPriority": 0,
+          "CanTouch": false,
+          "Transparency": 1,
+          "Shape": {
+            "Enum": 1
+          },
+          "Massless": false,
+          "CanQuery": false,
+          "Anchored": true,
+          "CastShadow": false,
+          "TopSurface": {
+            "Enum": 3
+          }
+        },
+        "$className": "Part"
+      },
+      "4": {
+        "$properties": {
+          "Reflectance": 0,
+          "Color": [
+            0.8901960849761963,
+            0.7607843279838562,
+            0.48235294222831726
+          ],
+          "CFrame": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "Material": {
+            "Enum": 288
+          },
+          "Archivable": true,
+          "Size": [
+            0.10999999940395355,
+            0.07000000029802322,
+            0.5
+          ],
+          "BottomSurface": {
+            "Enum": 4
+          },
+          "CanCollide": false,
+          "RootPriority": 0,
+          "CanTouch": false,
+          "Transparency": 1,
+          "Shape": {
+            "Enum": 1
+          },
+          "Massless": false,
+          "CanQuery": false,
+          "Anchored": true,
+          "CastShadow": false,
+          "TopSurface": {
+            "Enum": 3
+          }
+        },
+        "$className": "Part"
+      },
+      "5": {
+        "$properties": {
+          "Reflectance": 0,
+          "Color": [
+            0.8901960849761963,
+            0.7607843279838562,
+            0.48235294222831726
+          ],
+          "CFrame": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "Material": {
+            "Enum": 288
+          },
+          "Archivable": true,
+          "Size": [
+            0.10999999940395355,
+            0.07000000029802322,
+            0.5
+          ],
+          "BottomSurface": {
+            "Enum": 4
+          },
+          "CanCollide": false,
+          "RootPriority": 0,
+          "CanTouch": false,
+          "Transparency": 1,
+          "Shape": {
+            "Enum": 1
+          },
+          "Massless": false,
+          "CanQuery": false,
+          "Anchored": true,
+          "CastShadow": false,
+          "TopSurface": {
+            "Enum": 3
+          }
+        },
+        "$className": "Part"
+      },
+      "6": {
+        "$properties": {
+          "Reflectance": 0,
+          "Color": [
+            0.8901960849761963,
+            0.7607843279838562,
+            0.48235294222831726
+          ],
+          "CFrame": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "Material": {
+            "Enum": 288
+          },
+          "Archivable": true,
+          "Size": [
+            0.10999999940395355,
+            0.07000000029802322,
+            0.5
+          ],
+          "BottomSurface": {
+            "Enum": 4
+          },
+          "CanCollide": false,
+          "RootPriority": 0,
+          "CanTouch": false,
+          "Transparency": 1,
+          "Shape": {
+            "Enum": 1
+          },
+          "Massless": false,
+          "CanQuery": false,
+          "Anchored": true,
+          "CastShadow": false,
+          "TopSurface": {
+            "Enum": 3
+          }
+        },
+        "$className": "Part"
+      },
+      "7": {
+        "$properties": {
+          "Reflectance": 0,
+          "Color": [
+            0.8901960849761963,
+            0.7607843279838562,
+            0.48235294222831726
+          ],
+          "CFrame": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "Material": {
+            "Enum": 288
+          },
+          "Archivable": true,
+          "Size": [
+            0.10999999940395355,
+            0.07000000029802322,
+            0.5
+          ],
+          "BottomSurface": {
+            "Enum": 4
+          },
+          "CanCollide": false,
+          "RootPriority": 0,
+          "CanTouch": false,
+          "Transparency": 1,
+          "Shape": {
+            "Enum": 1
+          },
+          "Massless": false,
+          "CanQuery": false,
+          "Anchored": true,
+          "CastShadow": false,
+          "TopSurface": {
+            "Enum": 3
+          }
+        },
+        "$className": "Part"
+      },
+      "8": {
+        "$properties": {
+          "Reflectance": 0,
+          "Color": [
+            0.8901960849761963,
+            0.7607843279838562,
+            0.48235294222831726
+          ],
+          "CFrame": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "Material": {
+            "Enum": 288
+          },
+          "Archivable": true,
+          "Size": [
+            0.10999999940395355,
+            0.07000000029802322,
+            0.5
+          ],
+          "BottomSurface": {
+            "Enum": 4
+          },
+          "CanCollide": false,
+          "RootPriority": 0,
+          "CanTouch": false,
+          "Transparency": 1,
+          "Shape": {
+            "Enum": 1
+          },
+          "Massless": false,
+          "CanQuery": false,
+          "Anchored": true,
+          "CastShadow": false,
+          "TopSurface": {
+            "Enum": 3
+          }
+        },
+        "$className": "Part"
+      },
+      "9": {
+        "$properties": {
+          "Reflectance": 0,
+          "Color": [
+            0.8901960849761963,
+            0.7607843279838562,
+            0.48235294222831726
+          ],
+          "CFrame": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "Material": {
+            "Enum": 288
+          },
+          "Archivable": true,
+          "Size": [
+            0.10999999940395355,
+            0.07000000029802322,
+            0.5
+          ],
+          "BottomSurface": {
+            "Enum": 4
+          },
+          "CanCollide": false,
+          "RootPriority": 0,
+          "CanTouch": false,
+          "Transparency": 1,
+          "Shape": {
+            "Enum": 1
+          },
+          "Massless": false,
+          "CanQuery": false,
+          "Anchored": true,
+          "CastShadow": false,
+          "TopSurface": {
+            "Enum": 3
+          }
+        },
+        "$className": "Part"
+      },
+      "10": {
+        "$properties": {
+          "Reflectance": 0,
+          "Color": [
+            0.8901960849761963,
+            0.7607843279838562,
+            0.48235294222831726
+          ],
+          "CFrame": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "Material": {
+            "Enum": 288
+          },
+          "Archivable": true,
+          "Size": [
+            0.10999999940395355,
+            0.07000000029802322,
+            0.5
+          ],
+          "BottomSurface": {
+            "Enum": 4
+          },
+          "CanCollide": false,
+          "RootPriority": 0,
+          "CanTouch": false,
+          "Transparency": 1,
+          "Shape": {
+            "Enum": 1
+          },
+          "Massless": false,
+          "CanQuery": false,
+          "Anchored": true,
+          "CastShadow": false,
+          "TopSurface": {
+            "Enum": 3
+          }
+        },
+        "$className": "Part"
+      },
+      "11": {
+        "$properties": {
+          "Reflectance": 0,
+          "Color": [
+            0.8901960849761963,
+            0.7607843279838562,
+            0.48235294222831726
+          ],
+          "CFrame": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "Material": {
+            "Enum": 288
+          },
+          "Archivable": true,
+          "Size": [
+            0.10999999940395355,
+            0.07000000029802322,
+            0.5
+          ],
+          "BottomSurface": {
+            "Enum": 4
+          },
+          "CanCollide": false,
+          "RootPriority": 0,
+          "CanTouch": false,
+          "Transparency": 1,
+          "Shape": {
+            "Enum": 1
+          },
+          "Massless": false,
+          "CanQuery": false,
+          "Anchored": true,
+          "CastShadow": false,
+          "TopSurface": {
+            "Enum": 3
+          }
+        },
+        "$className": "Part"
+      },
+      "12": {
+        "$properties": {
+          "Reflectance": 0,
+          "Color": [
+            0.8901960849761963,
+            0.7607843279838562,
+            0.48235294222831726
+          ],
+          "CFrame": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "Material": {
+            "Enum": 288
+          },
+          "Archivable": true,
+          "Size": [
+            0.10999999940395355,
+            0.07000000029802322,
+            0.5
+          ],
+          "BottomSurface": {
+            "Enum": 4
+          },
+          "CanCollide": false,
+          "RootPriority": 0,
+          "CanTouch": false,
+          "Transparency": 1,
+          "Shape": {
+            "Enum": 1
+          },
+          "Massless": false,
+          "CanQuery": false,
+          "Anchored": true,
+          "CastShadow": false,
+          "TopSurface": {
+            "Enum": 3
+          }
+        },
+        "$className": "Part"
+      },
+      "13": {
+        "$properties": {
+          "Reflectance": 0,
+          "Color": [
+            0.8901960849761963,
+            0.7607843279838562,
+            0.48235294222831726
+          ],
+          "CFrame": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "Material": {
+            "Enum": 288
+          },
+          "Archivable": true,
+          "Size": [
+            0.10999999940395355,
+            0.07000000029802322,
+            0.5
+          ],
+          "BottomSurface": {
+            "Enum": 4
+          },
+          "CanCollide": false,
+          "RootPriority": 0,
+          "CanTouch": false,
+          "Transparency": 1,
+          "Shape": {
+            "Enum": 1
+          },
+          "Massless": false,
+          "CanQuery": false,
+          "Anchored": true,
+          "CastShadow": false,
+          "TopSurface": {
+            "Enum": 3
+          }
+        },
+        "$className": "Part"
+      },
+      "14": {
+        "$properties": {
+          "Reflectance": 0,
+          "Color": [
+            0.8901960849761963,
+            0.7607843279838562,
+            0.48235294222831726
+          ],
+          "CFrame": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "Material": {
+            "Enum": 288
+          },
+          "Archivable": true,
+          "Size": [
+            0.10999999940395355,
+            0.07000000029802322,
+            0.5
+          ],
+          "BottomSurface": {
+            "Enum": 4
+          },
+          "CanCollide": false,
+          "RootPriority": 0,
+          "CanTouch": false,
+          "Transparency": 1,
+          "Shape": {
+            "Enum": 1
+          },
+          "Massless": false,
+          "CanQuery": false,
+          "Anchored": true,
+          "CastShadow": false,
+          "TopSurface": {
+            "Enum": 3
+          }
+        },
+        "$className": "Part"
+      },
+      "15": {
+        "$properties": {
+          "Reflectance": 0,
+          "Color": [
+            0.8901960849761963,
+            0.7607843279838562,
+            0.48235294222831726
+          ],
+          "CFrame": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "Material": {
+            "Enum": 288
+          },
+          "Archivable": true,
+          "Size": [
+            0.10999999940395355,
+            0.07000000029802322,
+            0.5
+          ],
+          "BottomSurface": {
+            "Enum": 4
+          },
+          "CanCollide": false,
+          "RootPriority": 0,
+          "CanTouch": false,
+          "Transparency": 1,
+          "Shape": {
+            "Enum": 1
+          },
+          "Massless": false,
+          "CanQuery": false,
+          "Anchored": true,
+          "CastShadow": false,
+          "TopSurface": {
+            "Enum": 3
+          }
+        },
+        "$className": "Part"
+      },
+      "16": {
+        "$properties": {
+          "Reflectance": 0,
+          "Color": [
+            0.8901960849761963,
+            0.7607843279838562,
+            0.48235294222831726
+          ],
+          "CFrame": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "Material": {
+            "Enum": 288
+          },
+          "Archivable": true,
+          "Size": [
+            0.10999999940395355,
+            0.07000000029802322,
+            0.5
+          ],
+          "BottomSurface": {
+            "Enum": 4
+          },
+          "CanCollide": false,
+          "RootPriority": 0,
+          "CanTouch": false,
+          "Transparency": 1,
+          "Shape": {
+            "Enum": 1
+          },
+          "Massless": false,
+          "CanQuery": false,
+          "Anchored": true,
+          "CastShadow": false,
+          "TopSurface": {
+            "Enum": 3
+          }
+        },
+        "$className": "Part"
+      },
+      "17": {
+        "$properties": {
+          "Reflectance": 0,
+          "Color": [
+            0.8901960849761963,
+            0.7607843279838562,
+            0.48235294222831726
+          ],
+          "CFrame": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "Material": {
+            "Enum": 288
+          },
+          "Archivable": true,
+          "Size": [
+            0.10999999940395355,
+            0.07000000029802322,
+            0.5
+          ],
+          "BottomSurface": {
+            "Enum": 4
+          },
+          "CanCollide": false,
+          "RootPriority": 0,
+          "CanTouch": false,
+          "Transparency": 1,
+          "Shape": {
+            "Enum": 1
+          },
+          "Massless": false,
+          "CanQuery": false,
+          "Anchored": true,
+          "CastShadow": false,
+          "TopSurface": {
+            "Enum": 3
+          }
+        },
+        "$className": "Part"
+      },
+      "18": {
+        "$properties": {
+          "Reflectance": 0,
+          "Color": [
+            0.8901960849761963,
+            0.7607843279838562,
+            0.48235294222831726
+          ],
+          "CFrame": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "Material": {
+            "Enum": 288
+          },
+          "Archivable": true,
+          "Size": [
+            0.10999999940395355,
+            0.07000000029802322,
+            0.5
+          ],
+          "BottomSurface": {
+            "Enum": 4
+          },
+          "CanCollide": false,
+          "RootPriority": 0,
+          "CanTouch": false,
+          "Transparency": 1,
+          "Shape": {
+            "Enum": 1
+          },
+          "Massless": false,
+          "CanQuery": false,
+          "Anchored": true,
+          "CastShadow": false,
+          "TopSurface": {
+            "Enum": 3
+          }
+        },
+        "$className": "Part"
+      },
+      "19": {
+        "$properties": {
+          "Reflectance": 0,
+          "Color": [
+            0.8901960849761963,
+            0.7607843279838562,
+            0.48235294222831726
+          ],
+          "CFrame": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "Material": {
+            "Enum": 288
+          },
+          "Archivable": true,
+          "Size": [
+            0.10999999940395355,
+            0.07000000029802322,
+            0.5
+          ],
+          "BottomSurface": {
+            "Enum": 4
+          },
+          "CanCollide": false,
+          "RootPriority": 0,
+          "CanTouch": false,
+          "Transparency": 1,
+          "Shape": {
+            "Enum": 1
+          },
+          "Massless": false,
+          "CanQuery": false,
+          "Anchored": true,
+          "CastShadow": false,
+          "TopSurface": {
+            "Enum": 3
+          }
+        },
+        "$className": "Part"
+      },
+      "20": {
+        "$properties": {
+          "Reflectance": 0,
+          "Color": [
+            0.8901960849761963,
+            0.7607843279838562,
+            0.48235294222831726
+          ],
+          "CFrame": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "Material": {
+            "Enum": 288
+          },
+          "Archivable": true,
+          "Size": [
+            0.10999999940395355,
+            0.07000000029802322,
+            0.5
+          ],
+          "BottomSurface": {
+            "Enum": 4
+          },
+          "CanCollide": false,
+          "RootPriority": 0,
+          "CanTouch": false,
+          "Transparency": 1,
+          "Shape": {
+            "Enum": 1
+          },
+          "Massless": false,
+          "CanQuery": false,
+          "Anchored": true,
+          "CastShadow": false,
+          "TopSurface": {
+            "Enum": 3
+          }
+        },
+        "$className": "Part"
+      },
+      "21": {
+        "$properties": {
+          "Reflectance": 0,
+          "Color": [
+            0.8901960849761963,
+            0.7607843279838562,
+            0.48235294222831726
+          ],
+          "CFrame": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "Material": {
+            "Enum": 288
+          },
+          "Archivable": true,
+          "Size": [
+            0.10999999940395355,
+            0.07000000029802322,
+            0.5
+          ],
+          "BottomSurface": {
+            "Enum": 4
+          },
+          "CanCollide": false,
+          "RootPriority": 0,
+          "CanTouch": false,
+          "Transparency": 1,
+          "Shape": {
+            "Enum": 1
+          },
+          "Massless": false,
+          "CanQuery": false,
+          "Anchored": true,
+          "CastShadow": false,
+          "TopSurface": {
+            "Enum": 3
+          }
+        },
+        "$className": "Part"
+      },
+      "22": {
+        "$properties": {
+          "Reflectance": 0,
+          "Color": [
+            0.8901960849761963,
+            0.7607843279838562,
+            0.48235294222831726
+          ],
+          "CFrame": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "Material": {
+            "Enum": 288
+          },
+          "Archivable": true,
+          "Size": [
+            0.10999999940395355,
+            0.07000000029802322,
+            0.5
+          ],
+          "BottomSurface": {
+            "Enum": 4
+          },
+          "CanCollide": false,
+          "RootPriority": 0,
+          "CanTouch": false,
+          "Transparency": 1,
+          "Shape": {
+            "Enum": 1
+          },
+          "Massless": false,
+          "CanQuery": false,
+          "Anchored": true,
+          "CastShadow": false,
+          "TopSurface": {
+            "Enum": 3
+          }
+        },
+        "$className": "Part"
+      },
+      "23": {
+        "$properties": {
+          "Reflectance": 0,
+          "Color": [
+            0.8901960849761963,
+            0.7607843279838562,
+            0.48235294222831726
+          ],
+          "CFrame": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "Material": {
+            "Enum": 288
+          },
+          "Archivable": true,
+          "Size": [
+            0.10999999940395355,
+            0.07000000029802322,
+            0.5
+          ],
+          "BottomSurface": {
+            "Enum": 4
+          },
+          "CanCollide": false,
+          "RootPriority": 0,
+          "CanTouch": false,
+          "Transparency": 1,
+          "Shape": {
+            "Enum": 1
+          },
+          "Massless": false,
+          "CanQuery": false,
+          "Anchored": true,
+          "CastShadow": false,
+          "TopSurface": {
+            "Enum": 3
+          }
+        },
+        "$className": "Part"
+      },
+      "24": {
+        "$properties": {
+          "Reflectance": 0,
+          "Color": [
+            0.8901960849761963,
+            0.7607843279838562,
+            0.48235294222831726
+          ],
+          "CFrame": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "Material": {
+            "Enum": 288
+          },
+          "Archivable": true,
+          "Size": [
+            0.10999999940395355,
+            0.07000000029802322,
+            0.5
+          ],
+          "BottomSurface": {
+            "Enum": 4
+          },
+          "CanCollide": false,
+          "RootPriority": 0,
+          "CanTouch": false,
+          "Transparency": 1,
+          "Shape": {
+            "Enum": 1
+          },
+          "Massless": false,
+          "CanQuery": false,
+          "Anchored": true,
+          "CastShadow": false,
+          "TopSurface": {
+            "Enum": 3
+          }
+        },
+        "$className": "Part"
+      },
+      "$className": "Folder",
+      "$properties": {
+        "Archivable": true
+      }
+    },
+    "Path": {
+      "$properties": {
+        "Reflectance": 0,
+        "Color": [
+          0.8901960849761963,
+          0.7607843279838562,
+          0.48235294222831726
+        ],
+        "CFrame": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1
+        ],
+        "Material": {
+          "Enum": 288
+        },
+        "Archivable": true,
+        "Size": [
+          0.11999999731779099,
+          0.07000000029802322,
+          1
+        ],
+        "BottomSurface": {
+          "Enum": 4
+        },
+        "CanCollide": false,
+        "RootPriority": 0,
+        "CanTouch": false,
+        "Transparency": 1,
+        "Shape": {
+          "Enum": 1
+        },
+        "Massless": false,
+        "CanQuery": false,
+        "Anchored": true,
+        "CastShadow": false,
+        "TopSurface": {
+          "Enum": 3
+        }
+      },
+      "$className": "Part"
+    },
+    "Landing": {
+      "$properties": {
+        "Reflectance": 0,
+        "Color": [
+          0.8901960849761963,
+          0.7607843279838562,
+          0.48235294222831726
+        ],
+        "CFrame": [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1
+        ],
+        "Material": {
+          "Enum": 288
+        },
+        "Archivable": true,
+        "Size": [
+          0.11999999731779099,
+          0.07000000029802322,
+          1
+        ],
+        "BottomSurface": {
+          "Enum": 4
+        },
+        "CanCollide": false,
+        "RootPriority": 0,
+        "CanTouch": false,
+        "Transparency": 1,
+        "Shape": {
+          "Enum": 1
+        },
+        "Massless": false,
+        "CanQuery": false,
+        "Anchored": true,
+        "CastShadow": false,
+        "TopSurface": {
+          "Enum": 3
+        }
+      },
+      "$className": "Part"
+    },
+    "RisingCrash": {
+      "1": {
+        "$properties": {
+          "Reflectance": 0,
+          "Color": [
+            0.8901960849761963,
+            0.7607843279838562,
+            0.48235294222831726
+          ],
+          "CFrame": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "Material": {
+            "Enum": 288
+          },
+          "Archivable": true,
+          "Size": [
+            0.10999999940395355,
+            0.07000000029802322,
+            0.5
+          ],
+          "BottomSurface": {
+            "Enum": 4
+          },
+          "CanCollide": false,
+          "RootPriority": 0,
+          "CanTouch": false,
+          "Transparency": 1,
+          "Shape": {
+            "Enum": 1
+          },
+          "Massless": false,
+          "CanQuery": false,
+          "Anchored": true,
+          "CastShadow": false,
+          "TopSurface": {
+            "Enum": 3
+          }
+        },
+        "$className": "Part"
+      },
+      "2": {
+        "$properties": {
+          "Reflectance": 0,
+          "Color": [
+            0.8901960849761963,
+            0.7607843279838562,
+            0.48235294222831726
+          ],
+          "CFrame": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "Material": {
+            "Enum": 288
+          },
+          "Archivable": true,
+          "Size": [
+            0.10999999940395355,
+            0.07000000029802322,
+            0.5
+          ],
+          "BottomSurface": {
+            "Enum": 4
+          },
+          "CanCollide": false,
+          "RootPriority": 0,
+          "CanTouch": false,
+          "Transparency": 1,
+          "Shape": {
+            "Enum": 1
+          },
+          "Massless": false,
+          "CanQuery": false,
+          "Anchored": true,
+          "CastShadow": false,
+          "TopSurface": {
+            "Enum": 3
+          }
+        },
+        "$className": "Part"
+      },
+      "3": {
+        "$properties": {
+          "Reflectance": 0,
+          "Color": [
+            0.8901960849761963,
+            0.7607843279838562,
+            0.48235294222831726
+          ],
+          "CFrame": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "Material": {
+            "Enum": 288
+          },
+          "Archivable": true,
+          "Size": [
+            0.10999999940395355,
+            0.07000000029802322,
+            0.5
+          ],
+          "BottomSurface": {
+            "Enum": 4
+          },
+          "CanCollide": false,
+          "RootPriority": 0,
+          "CanTouch": false,
+          "Transparency": 1,
+          "Shape": {
+            "Enum": 1
+          },
+          "Massless": false,
+          "CanQuery": false,
+          "Anchored": true,
+          "CastShadow": false,
+          "TopSurface": {
+            "Enum": 3
+          }
+        },
+        "$className": "Part"
+      },
+      "4": {
+        "$properties": {
+          "Reflectance": 0,
+          "Color": [
+            0.8901960849761963,
+            0.7607843279838562,
+            0.48235294222831726
+          ],
+          "CFrame": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "Material": {
+            "Enum": 288
+          },
+          "Archivable": true,
+          "Size": [
+            0.10999999940395355,
+            0.07000000029802322,
+            0.5
+          ],
+          "BottomSurface": {
+            "Enum": 4
+          },
+          "CanCollide": false,
+          "RootPriority": 0,
+          "CanTouch": false,
+          "Transparency": 1,
+          "Shape": {
+            "Enum": 1
+          },
+          "Massless": false,
+          "CanQuery": false,
+          "Anchored": true,
+          "CastShadow": false,
+          "TopSurface": {
+            "Enum": 3
+          }
+        },
+        "$className": "Part"
+      },
+      "5": {
+        "$properties": {
+          "Reflectance": 0,
+          "Color": [
+            0.8901960849761963,
+            0.7607843279838562,
+            0.48235294222831726
+          ],
+          "CFrame": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "Material": {
+            "Enum": 288
+          },
+          "Archivable": true,
+          "Size": [
+            0.10999999940395355,
+            0.07000000029802322,
+            0.5
+          ],
+          "BottomSurface": {
+            "Enum": 4
+          },
+          "CanCollide": false,
+          "RootPriority": 0,
+          "CanTouch": false,
+          "Transparency": 1,
+          "Shape": {
+            "Enum": 1
+          },
+          "Massless": false,
+          "CanQuery": false,
+          "Anchored": true,
+          "CastShadow": false,
+          "TopSurface": {
+            "Enum": 3
+          }
+        },
+        "$className": "Part"
+      },
+      "6": {
+        "$properties": {
+          "Reflectance": 0,
+          "Color": [
+            0.8901960849761963,
+            0.7607843279838562,
+            0.48235294222831726
+          ],
+          "CFrame": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "Material": {
+            "Enum": 288
+          },
+          "Archivable": true,
+          "Size": [
+            0.10999999940395355,
+            0.07000000029802322,
+            0.5
+          ],
+          "BottomSurface": {
+            "Enum": 4
+          },
+          "CanCollide": false,
+          "RootPriority": 0,
+          "CanTouch": false,
+          "Transparency": 1,
+          "Shape": {
+            "Enum": 1
+          },
+          "Massless": false,
+          "CanQuery": false,
+          "Anchored": true,
+          "CastShadow": false,
+          "TopSurface": {
+            "Enum": 3
+          }
+        },
+        "$className": "Part"
+      },
+      "7": {
+        "$properties": {
+          "Reflectance": 0,
+          "Color": [
+            0.8901960849761963,
+            0.7607843279838562,
+            0.48235294222831726
+          ],
+          "CFrame": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "Material": {
+            "Enum": 288
+          },
+          "Archivable": true,
+          "Size": [
+            0.10999999940395355,
+            0.07000000029802322,
+            0.5
+          ],
+          "BottomSurface": {
+            "Enum": 4
+          },
+          "CanCollide": false,
+          "RootPriority": 0,
+          "CanTouch": false,
+          "Transparency": 1,
+          "Shape": {
+            "Enum": 1
+          },
+          "Massless": false,
+          "CanQuery": false,
+          "Anchored": true,
+          "CastShadow": false,
+          "TopSurface": {
+            "Enum": 3
+          }
+        },
+        "$className": "Part"
+      },
+      "8": {
+        "$properties": {
+          "Reflectance": 0,
+          "Color": [
+            0.8901960849761963,
+            0.7607843279838562,
+            0.48235294222831726
+          ],
+          "CFrame": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "Material": {
+            "Enum": 288
+          },
+          "Archivable": true,
+          "Size": [
+            0.10999999940395355,
+            0.07000000029802322,
+            0.5
+          ],
+          "BottomSurface": {
+            "Enum": 4
+          },
+          "CanCollide": false,
+          "RootPriority": 0,
+          "CanTouch": false,
+          "Transparency": 1,
+          "Shape": {
+            "Enum": 1
+          },
+          "Massless": false,
+          "CanQuery": false,
+          "Anchored": true,
+          "CastShadow": false,
+          "TopSurface": {
+            "Enum": 3
+          }
+        },
+        "$className": "Part"
+      },
+      "9": {
+        "$properties": {
+          "Reflectance": 0,
+          "Color": [
+            0.8901960849761963,
+            0.7607843279838562,
+            0.48235294222831726
+          ],
+          "CFrame": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "Material": {
+            "Enum": 288
+          },
+          "Archivable": true,
+          "Size": [
+            0.10999999940395355,
+            0.07000000029802322,
+            0.5
+          ],
+          "BottomSurface": {
+            "Enum": 4
+          },
+          "CanCollide": false,
+          "RootPriority": 0,
+          "CanTouch": false,
+          "Transparency": 1,
+          "Shape": {
+            "Enum": 1
+          },
+          "Massless": false,
+          "CanQuery": false,
+          "Anchored": true,
+          "CastShadow": false,
+          "TopSurface": {
+            "Enum": 3
+          }
+        },
+        "$className": "Part"
+      },
+      "10": {
+        "$properties": {
+          "Reflectance": 0,
+          "Color": [
+            0.8901960849761963,
+            0.7607843279838562,
+            0.48235294222831726
+          ],
+          "CFrame": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "Material": {
+            "Enum": 288
+          },
+          "Archivable": true,
+          "Size": [
+            0.10999999940395355,
+            0.07000000029802322,
+            0.5
+          ],
+          "BottomSurface": {
+            "Enum": 4
+          },
+          "CanCollide": false,
+          "RootPriority": 0,
+          "CanTouch": false,
+          "Transparency": 1,
+          "Shape": {
+            "Enum": 1
+          },
+          "Massless": false,
+          "CanQuery": false,
+          "Anchored": true,
+          "CastShadow": false,
+          "TopSurface": {
+            "Enum": 3
+          }
+        },
+        "$className": "Part"
+      },
+      "11": {
+        "$properties": {
+          "Reflectance": 0,
+          "Color": [
+            0.8901960849761963,
+            0.7607843279838562,
+            0.48235294222831726
+          ],
+          "CFrame": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "Material": {
+            "Enum": 288
+          },
+          "Archivable": true,
+          "Size": [
+            0.10999999940395355,
+            0.07000000029802322,
+            0.5
+          ],
+          "BottomSurface": {
+            "Enum": 4
+          },
+          "CanCollide": false,
+          "RootPriority": 0,
+          "CanTouch": false,
+          "Transparency": 1,
+          "Shape": {
+            "Enum": 1
+          },
+          "Massless": false,
+          "CanQuery": false,
+          "Anchored": true,
+          "CastShadow": false,
+          "TopSurface": {
+            "Enum": 3
+          }
+        },
+        "$className": "Part"
+      },
+      "12": {
+        "$properties": {
+          "Reflectance": 0,
+          "Color": [
+            0.8901960849761963,
+            0.7607843279838562,
+            0.48235294222831726
+          ],
+          "CFrame": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "Material": {
+            "Enum": 288
+          },
+          "Archivable": true,
+          "Size": [
+            0.10999999940395355,
+            0.07000000029802322,
+            0.5
+          ],
+          "BottomSurface": {
+            "Enum": 4
+          },
+          "CanCollide": false,
+          "RootPriority": 0,
+          "CanTouch": false,
+          "Transparency": 1,
+          "Shape": {
+            "Enum": 1
+          },
+          "Massless": false,
+          "CanQuery": false,
+          "Anchored": true,
+          "CastShadow": false,
+          "TopSurface": {
+            "Enum": 3
+          }
+        },
+        "$className": "Part"
+      },
+      "$className": "Folder",
+      "$properties": {
+        "Archivable": true
+      }
+    },
+    "$properties": {
+      "Archivable": true
+    },
+    "$className": "Model",
+    "GroundShock": {
+      "1": {
+        "$properties": {
+          "Reflectance": 0,
+          "Color": [
+            0.8901960849761963,
+            0.7607843279838562,
+            0.48235294222831726
+          ],
+          "CFrame": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "Material": {
+            "Enum": 288
+          },
+          "Archivable": true,
+          "Size": [
+            0.10999999940395355,
+            0.07000000029802322,
+            0.5
+          ],
+          "BottomSurface": {
+            "Enum": 4
+          },
+          "CanCollide": false,
+          "RootPriority": 0,
+          "CanTouch": false,
+          "Transparency": 1,
+          "Shape": {
+            "Enum": 1
+          },
+          "Massless": false,
+          "CanQuery": false,
+          "Anchored": true,
+          "CastShadow": false,
+          "TopSurface": {
+            "Enum": 3
+          }
+        },
+        "$className": "Part"
+      },
+      "2": {
+        "$properties": {
+          "Reflectance": 0,
+          "Color": [
+            0.8901960849761963,
+            0.7607843279838562,
+            0.48235294222831726
+          ],
+          "CFrame": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "Material": {
+            "Enum": 288
+          },
+          "Archivable": true,
+          "Size": [
+            0.10999999940395355,
+            0.07000000029802322,
+            0.5
+          ],
+          "BottomSurface": {
+            "Enum": 4
+          },
+          "CanCollide": false,
+          "RootPriority": 0,
+          "CanTouch": false,
+          "Transparency": 1,
+          "Shape": {
+            "Enum": 1
+          },
+          "Massless": false,
+          "CanQuery": false,
+          "Anchored": true,
+          "CastShadow": false,
+          "TopSurface": {
+            "Enum": 3
+          }
+        },
+        "$className": "Part"
+      },
+      "3": {
+        "$properties": {
+          "Reflectance": 0,
+          "Color": [
+            0.8901960849761963,
+            0.7607843279838562,
+            0.48235294222831726
+          ],
+          "CFrame": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "Material": {
+            "Enum": 288
+          },
+          "Archivable": true,
+          "Size": [
+            0.10999999940395355,
+            0.07000000029802322,
+            0.5
+          ],
+          "BottomSurface": {
+            "Enum": 4
+          },
+          "CanCollide": false,
+          "RootPriority": 0,
+          "CanTouch": false,
+          "Transparency": 1,
+          "Shape": {
+            "Enum": 1
+          },
+          "Massless": false,
+          "CanQuery": false,
+          "Anchored": true,
+          "CastShadow": false,
+          "TopSurface": {
+            "Enum": 3
+          }
+        },
+        "$className": "Part"
+      },
+      "4": {
+        "$properties": {
+          "Reflectance": 0,
+          "Color": [
+            0.8901960849761963,
+            0.7607843279838562,
+            0.48235294222831726
+          ],
+          "CFrame": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "Material": {
+            "Enum": 288
+          },
+          "Archivable": true,
+          "Size": [
+            0.10999999940395355,
+            0.07000000029802322,
+            0.5
+          ],
+          "BottomSurface": {
+            "Enum": 4
+          },
+          "CanCollide": false,
+          "RootPriority": 0,
+          "CanTouch": false,
+          "Transparency": 1,
+          "Shape": {
+            "Enum": 1
+          },
+          "Massless": false,
+          "CanQuery": false,
+          "Anchored": true,
+          "CastShadow": false,
+          "TopSurface": {
+            "Enum": 3
+          }
+        },
+        "$className": "Part"
+      },
+      "5": {
+        "$properties": {
+          "Reflectance": 0,
+          "Color": [
+            0.8901960849761963,
+            0.7607843279838562,
+            0.48235294222831726
+          ],
+          "CFrame": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "Material": {
+            "Enum": 288
+          },
+          "Archivable": true,
+          "Size": [
+            0.10999999940395355,
+            0.07000000029802322,
+            0.5
+          ],
+          "BottomSurface": {
+            "Enum": 4
+          },
+          "CanCollide": false,
+          "RootPriority": 0,
+          "CanTouch": false,
+          "Transparency": 1,
+          "Shape": {
+            "Enum": 1
+          },
+          "Massless": false,
+          "CanQuery": false,
+          "Anchored": true,
+          "CastShadow": false,
+          "TopSurface": {
+            "Enum": 3
+          }
+        },
+        "$className": "Part"
+      },
+      "6": {
+        "$properties": {
+          "Reflectance": 0,
+          "Color": [
+            0.8901960849761963,
+            0.7607843279838562,
+            0.48235294222831726
+          ],
+          "CFrame": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "Material": {
+            "Enum": 288
+          },
+          "Archivable": true,
+          "Size": [
+            0.10999999940395355,
+            0.07000000029802322,
+            0.5
+          ],
+          "BottomSurface": {
+            "Enum": 4
+          },
+          "CanCollide": false,
+          "RootPriority": 0,
+          "CanTouch": false,
+          "Transparency": 1,
+          "Shape": {
+            "Enum": 1
+          },
+          "Massless": false,
+          "CanQuery": false,
+          "Anchored": true,
+          "CastShadow": false,
+          "TopSurface": {
+            "Enum": 3
+          }
+        },
+        "$className": "Part"
+      },
+      "7": {
+        "$properties": {
+          "Reflectance": 0,
+          "Color": [
+            0.8901960849761963,
+            0.7607843279838562,
+            0.48235294222831726
+          ],
+          "CFrame": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "Material": {
+            "Enum": 288
+          },
+          "Archivable": true,
+          "Size": [
+            0.10999999940395355,
+            0.07000000029802322,
+            0.5
+          ],
+          "BottomSurface": {
+            "Enum": 4
+          },
+          "CanCollide": false,
+          "RootPriority": 0,
+          "CanTouch": false,
+          "Transparency": 1,
+          "Shape": {
+            "Enum": 1
+          },
+          "Massless": false,
+          "CanQuery": false,
+          "Anchored": true,
+          "CastShadow": false,
+          "TopSurface": {
+            "Enum": 3
+          }
+        },
+        "$className": "Part"
+      },
+      "8": {
+        "$properties": {
+          "Reflectance": 0,
+          "Color": [
+            0.8901960849761963,
+            0.7607843279838562,
+            0.48235294222831726
+          ],
+          "CFrame": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "Material": {
+            "Enum": 288
+          },
+          "Archivable": true,
+          "Size": [
+            0.10999999940395355,
+            0.07000000029802322,
+            0.5
+          ],
+          "BottomSurface": {
+            "Enum": 4
+          },
+          "CanCollide": false,
+          "RootPriority": 0,
+          "CanTouch": false,
+          "Transparency": 1,
+          "Shape": {
+            "Enum": 1
+          },
+          "Massless": false,
+          "CanQuery": false,
+          "Anchored": true,
+          "CastShadow": false,
+          "TopSurface": {
+            "Enum": 3
+          }
+        },
+        "$className": "Part"
+      },
+      "9": {
+        "$properties": {
+          "Reflectance": 0,
+          "Color": [
+            0.8901960849761963,
+            0.7607843279838562,
+            0.48235294222831726
+          ],
+          "CFrame": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "Material": {
+            "Enum": 288
+          },
+          "Archivable": true,
+          "Size": [
+            0.10999999940395355,
+            0.07000000029802322,
+            0.5
+          ],
+          "BottomSurface": {
+            "Enum": 4
+          },
+          "CanCollide": false,
+          "RootPriority": 0,
+          "CanTouch": false,
+          "Transparency": 1,
+          "Shape": {
+            "Enum": 1
+          },
+          "Massless": false,
+          "CanQuery": false,
+          "Anchored": true,
+          "CastShadow": false,
+          "TopSurface": {
+            "Enum": 3
+          }
+        },
+        "$className": "Part"
+      },
+      "10": {
+        "$properties": {
+          "Reflectance": 0,
+          "Color": [
+            0.8901960849761963,
+            0.7607843279838562,
+            0.48235294222831726
+          ],
+          "CFrame": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "Material": {
+            "Enum": 288
+          },
+          "Archivable": true,
+          "Size": [
+            0.10999999940395355,
+            0.07000000029802322,
+            0.5
+          ],
+          "BottomSurface": {
+            "Enum": 4
+          },
+          "CanCollide": false,
+          "RootPriority": 0,
+          "CanTouch": false,
+          "Transparency": 1,
+          "Shape": {
+            "Enum": 1
+          },
+          "Massless": false,
+          "CanQuery": false,
+          "Anchored": true,
+          "CastShadow": false,
+          "TopSurface": {
+            "Enum": 3
+          }
+        },
+        "$className": "Part"
+      },
+      "11": {
+        "$properties": {
+          "Reflectance": 0,
+          "Color": [
+            0.8901960849761963,
+            0.7607843279838562,
+            0.48235294222831726
+          ],
+          "CFrame": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "Material": {
+            "Enum": 288
+          },
+          "Archivable": true,
+          "Size": [
+            0.10999999940395355,
+            0.07000000029802322,
+            0.5
+          ],
+          "BottomSurface": {
+            "Enum": 4
+          },
+          "CanCollide": false,
+          "RootPriority": 0,
+          "CanTouch": false,
+          "Transparency": 1,
+          "Shape": {
+            "Enum": 1
+          },
+          "Massless": false,
+          "CanQuery": false,
+          "Anchored": true,
+          "CastShadow": false,
+          "TopSurface": {
+            "Enum": 3
+          }
+        },
+        "$className": "Part"
+      },
+      "12": {
+        "$properties": {
+          "Reflectance": 0,
+          "Color": [
+            0.8901960849761963,
+            0.7607843279838562,
+            0.48235294222831726
+          ],
+          "CFrame": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "Material": {
+            "Enum": 288
+          },
+          "Archivable": true,
+          "Size": [
+            0.10999999940395355,
+            0.07000000029802322,
+            0.5
+          ],
+          "BottomSurface": {
+            "Enum": 4
+          },
+          "CanCollide": false,
+          "RootPriority": 0,
+          "CanTouch": false,
+          "Transparency": 1,
+          "Shape": {
+            "Enum": 1
+          },
+          "Massless": false,
+          "CanQuery": false,
+          "Anchored": true,
+          "CastShadow": false,
+          "TopSurface": {
+            "Enum": 3
+          }
+        },
+        "$className": "Part"
+      },
+      "$className": "Folder",
+      "$properties": {
+        "Archivable": true
+      }
+    }
+  }
+}

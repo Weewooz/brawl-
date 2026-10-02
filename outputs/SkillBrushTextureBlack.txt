@@ -1,0 +1,5 @@
+Built-in image_gen: black brush texture extraction.
+
+Transparent 1254 x 1254 overlay. Place over an existing color background and below skill art and foreground frame. Match their full-canvas size and position.
+
+Prompt: Extract only the near-black dry-brushed ink from the approved Charge artwork, including broad upper and lower wind brush bodies, circular bristle sweeps, distressed grain and clear holes. Remove gold decoration, teal background, katana, dash, target, frame and text. Keep a transparent horizontal middle area. Preserve the square canvas and brush flow. Output only black brush texture on genuine transparent alpha.

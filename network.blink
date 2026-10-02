@@ -68,3 +68,154 @@ scope Reconnection {
         Data: unknown,
     }
 }
+
+scope Capture {
+    event Ping {
+        From: Client,
+        Type: Reliable,
+        Call: SingleAsync,
+        Data: (string, vector),
+    }
+
+    event Pinged {
+        From: Server,
+        Type: Reliable,
+        Call: ManyAsync,
+        Data: (string, vector, string, f64),
+    }
+
+    event Request {
+        From: Client,
+        Type: Reliable,
+        Call: SingleAsync,
+        Data: boolean,
+    }
+}
+
+scope Combat {
+    event Equip {
+        From: Client,
+        Type: Reliable,
+        Call: SingleAsync,
+        Data: string,
+    }
+
+    event Draw {
+        From: Client,
+        Type: Reliable,
+        Call: SingleAsync,
+        Data: (u32, boolean),
+    }
+
+    event Release {
+        From: Client,
+        Type: Reliable,
+        Call: SingleAsync,
+        Data: (u32, vector),
+    }
+
+    event CastSlot {
+        From: Client,
+        Type: Reliable,
+        Call: SingleAsync,
+        Data: (u8, vector),
+    }
+
+    event Projectile {
+        From: Server,
+        Type: Reliable,
+        Call: ManyAsync,
+        Data: (Instance, vector, vector, f64, f64, f64, u8),
+    }
+
+    event DeathRecap {
+        From: Server,
+        Type: Reliable,
+        Call: ManyAsync,
+        Data: unknown,
+    }
+
+    event Feedback {
+        From: Server,
+        Type: Reliable,
+        Call: ManyAsync,
+        Data: (string, vector),
+    }
+
+    event SkillContact {
+        From: Server,
+        Type: Reliable,
+        Call: ManyAsync,
+        Data: (Instance, boolean),
+    }
+
+    event Attack {
+        From: Client,
+        Type: Reliable,
+        Call: SingleAsync,
+        Data: (u32, f64, vector, u8),
+    }
+
+    event HitCandidate {
+        From: Client,
+        Type: Reliable,
+        Call: SingleAsync,
+        Data: (u32, Instance, f64, vector),
+    }
+
+    event Sprint {
+        From: Client,
+        Type: Reliable,
+        Call: SingleAsync,
+        Data: boolean,
+    }
+
+    event Dash {
+        From: Client,
+        Type: Reliable,
+        Call: SingleAsync,
+        Data: vector,
+    }
+
+    event Spin {
+        From: Client,
+        Type: Reliable,
+        Call: SingleAsync,
+        Data: boolean,
+    }
+
+    event RisingCrash {
+        From: Client,
+        Type: Reliable,
+        Call: SingleAsync,
+        Data: vector,
+    }
+
+    event GroundShock {
+        From: Client,
+        Type: Reliable,
+        Call: SingleAsync,
+        Data: vector,
+    }
+
+    event Charge {
+        From: Client,
+        Type: Reliable,
+        Call: SingleAsync,
+        Data: Instance,
+    }
+
+    event Block {
+        From: Client,
+        Type: Reliable,
+        Call: SingleAsync,
+        Data: boolean,
+    }
+
+    event Knockback {
+        From: Server,
+        Type: Reliable,
+        Call: ManyAsync,
+        Data: vector,
+    }
+}

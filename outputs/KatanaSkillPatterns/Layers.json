@@ -1,0 +1,141 @@
+{
+  "Canvas": {
+    "Width": 1254,
+    "Height": 1254
+  },
+  "Roblox": {
+    "Size": [
+      1,
+      0,
+      1,
+      0
+    ],
+    "AnchorPoint": [
+      0.5,
+      0.5
+    ],
+    "Position": [
+      0.5,
+      0,
+      0.5,
+      0
+    ],
+    "ScaleType": "Fit",
+    "BackgroundTransparency": 1,
+    "ImageColor3": [
+      255,
+      255,
+      255
+    ]
+  },
+  "StackBottomToTop": [
+    "Background",
+    "Brush",
+    "Patterns",
+    "Effects",
+    "Katana",
+    "Frame"
+  ],
+  "Skills": {
+    "RisingCrash": {
+      "Name": "Rising Crash",
+      "Layers": {
+        "Background": "Common/SkillBackgroundWashiRed.png",
+        "Brush": "Common/SkillBrushTextureBlack.png",
+        "Effects": "RisingCrashEffects.png",
+        "Katana": "RisingCrashKatana.png",
+        "Frame": "Common/ChargeFrameVintageGold.png",
+        "Patterns": "RisingCrashPatterns.png"
+      },
+      "Placement": {
+        "Patterns": {
+          "Size": [
+            0.8,
+            0,
+            0.8,
+            0
+          ],
+          "AnchorPoint": [
+            0.5,
+            0.5
+          ],
+          "Position": [
+            0.5,
+            0,
+            0.5,
+            0
+          ]
+        }
+      }
+    },
+    "WindSpin": {
+      "Name": "Wind Spin",
+      "Layers": {
+        "Background": "Common/SkillBackgroundWashiPurple.png",
+        "Brush": "Common/SkillBrushTextureBlack.png",
+        "Effects": "WindSpinEffects.png",
+        "Katana": "WindSpinKatana.png",
+        "Frame": "Common/ChargeFrameVintageGold.png",
+        "Patterns": "WindSpinPatterns.png"
+      },
+      "Placement": {
+        "Patterns": {
+          "Size": [
+            0.8,
+            0,
+            0.8,
+            0
+          ],
+          "AnchorPoint": [
+            0.5,
+            0.5
+          ],
+          "Position": [
+            0.5,
+            0,
+            0.5,
+            0
+          ]
+        }
+      }
+    },
+    "GroundShock": {
+      "Name": "Ground Shock",
+      "Layers": {
+        "Background": "Common/SkillBackgroundWashiAmber.png",
+        "Brush": "Common/SkillBrushTextureBlack.png",
+        "Effects": "GroundShockEffects.png",
+        "Katana": "GroundShockKatana.png",
+        "Frame": "Common/ChargeFrameVintageGold.png",
+        "Patterns": "GroundShockPatterns.png"
+      },
+      "Placement": {
+        "Patterns": {
+          "Size": [
+            0.8,
+            0,
+            0.8,
+            0
+          ],
+          "AnchorPoint": [
+            0.5,
+            0.5
+          ],
+          "Position": [
+            0.5,
+            0,
+            0.5,
+            0
+          ]
+        }
+      }
+    }
+  },
+  "Notes": [
+    "Background colors are examples using existing assets and can be swapped.",
+    "Common files reuse the approved background, black brush, and frame artwork.",
+    "Generated PNG alpha channels are preserved.",
+    "New skill layers have not been uploaded to Roblox.",
+    "Patterns use 80% centered ImageLabels inside Icon; other layers retain full-canvas placement."
+  ]
+}

@@ -1,0 +1,213 @@
+{
+  "Nodes": [
+    {
+      "Visible": true,
+      "Path": "StarterGui.Controls.Charge",
+      "Class": "TextButton",
+      "AnchorPoint": "0.5, 0.5",
+      "Name": "Charge",
+      "Position": "{0.5, 0}, {0.5, 0}",
+      "BackgroundTransparency": 1,
+      "ZIndex": 1,
+      "Rotation": 0,
+      "Size": "{0.5, 0}, {0.5, 0}"
+    },
+    {
+      "Class": "UICorner",
+      "Name": "Corner",
+      "Path": "StarterGui.Controls.Charge.Corner"
+    },
+    {
+      "Class": "UIStroke",
+      "Name": "Stroke",
+      "Path": "StarterGui.Controls.Charge.Stroke"
+    },
+    {
+      "Visible": true,
+      "Path": "StarterGui.Controls.Charge.Hint",
+      "Class": "TextLabel",
+      "AnchorPoint": "0, 0",
+      "Text": "2",
+      "Name": "Hint",
+      "Position": "{0.359999985, 0}, {0.865263164, 8}",
+      "BackgroundTransparency": 1,
+      "ZIndex": 3,
+      "Rotation": 0,
+      "Size": "{0.277894706, 0}, {0.266526341, 12}"
+    },
+    {
+      "Visible": true,
+      "Path": "StarterGui.Controls.Charge.Aim",
+      "Class": "Frame",
+      "AnchorPoint": "0.5, 0.5",
+      "Name": "Aim",
+      "Position": "{0.5, 0}, {0.5, 0}",
+      "BackgroundTransparency": 0,
+      "ZIndex": 4,
+      "Rotation": 0,
+      "Size": "{0.349999994, 0}, {0.349999994, 0}"
+    },
+    {
+      "Class": "UICorner",
+      "Name": "Corner",
+      "Path": "StarterGui.Controls.Charge.Aim.Corner"
+    },
+    {
+      "Visible": true,
+      "Path": "StarterGui.Controls.Charge.Title",
+      "Class": "TextLabel",
+      "AnchorPoint": "0, 0",
+      "Text": "WIND SPIN",
+      "Name": "Title",
+      "Position": "{0.185263142, -5}, {0.800000012, -11}",
+      "BackgroundTransparency": 1,
+      "ZIndex": 5,
+      "Rotation": 0,
+      "Size": "{0.629473686, 10}, {0.152631581, 18}"
+    },
+    {
+      "Visible": true,
+      "Path": "StarterGui.Controls.Charge.Cost",
+      "Class": "TextLabel",
+      "AnchorPoint": "1, 1",
+      "Text": "",
+      "Name": "Cost",
+      "Position": "{1, -3}, {1, -10}",
+      "BackgroundTransparency": 1,
+      "ZIndex": 5,
+      "Rotation": 0,
+      "Size": "{0, 20}, {0, 11}"
+    },
+    {
+      "Class": "UIAspectRatioConstraint",
+      "Name": "UIAspectRatioConstraint",
+      "Path": "StarterGui.Controls.Charge.UIAspectRatioConstraint"
+    },
+    {
+      "Visible": true,
+      "Path": "StarterGui.Controls.Charge.Container",
+      "Class": "Frame",
+      "AnchorPoint": "0.5, 0.5",
+      "Name": "Container",
+      "Position": "{0.5, 0}, {0.5, 0}",
+      "BackgroundTransparency": 1,
+      "ZIndex": 1,
+      "Rotation": 0,
+      "Size": "{1, 0}, {1, 0}"
+    },
+    {
+      "Visible": true,
+      "Path": "StarterGui.Controls.Charge.Container.Background",
+      "ImageTransparency": 0,
+      "Class": "ImageLabel",
+      "ScaleType": "Enum.ScaleType.Fit",
+      "ImageColor3": "1, 1, 1",
+      "AnchorPoint": "0, 0",
+      "Image": "rbxassetid://107599855023793",
+      "Name": "Background",
+      "Position": "{0, 0}, {0, 0}",
+      "BackgroundTransparency": 1,
+      "ZIndex": 1,
+      "Rotation": 0,
+      "Size": "{1, 0}, {1, 0}"
+    },
+    {
+      "Visible": true,
+      "Path": "StarterGui.Controls.Charge.Container.Foreground",
+      "ImageTransparency": 0,
+      "Class": "ImageLabel",
+      "ScaleType": "Enum.ScaleType.Fit",
+      "ImageColor3": "1, 1, 1",
+      "AnchorPoint": "0, 0",
+      "Image": "rbxassetid://71502945814007",
+      "Name": "Foreground",
+      "Position": "{0, 0}, {0, 0}",
+      "BackgroundTransparency": 1,
+      "ZIndex": 6,
+      "Rotation": 0,
+      "Size": "{1, 0}, {1, 0}"
+    },
+    {
+      "Visible": true,
+      "Path": "StarterGui.Controls.Charge.Container.Decoration",
+      "ImageTransparency": 0,
+      "Class": "ImageLabel",
+      "ScaleType": "Enum.ScaleType.Fit",
+      "ImageColor3": "1, 1, 1",
+      "AnchorPoint": "0, 0",
+      "Image": "rbxassetid://71502945814007",
+      "Name": "Decoration",
+      "Position": "{0, 0}, {0, 0}",
+      "BackgroundTransparency": 1,
+      "ZIndex": 3,
+      "Rotation": 0,
+      "Size": "{1, 0}, {1, 0}"
+    },
+    {
+      "Visible": false,
+      "Path": "StarterGui.Controls.Charge.Container.Cooldown",
+      "ImageTransparency": 0.30000001192092896,
+      "Class": "ImageLabel",
+      "ScaleType": "Enum.ScaleType.Fit",
+      "ImageColor3": "1, 1, 1",
+      "AnchorPoint": "0, 0",
+      "Image": "rbxassetid://113222518558676",
+      "Name": "Cooldown",
+      "Position": "{0, 0}, {0, 0}",
+      "BackgroundTransparency": 1,
+      "ZIndex": 5,
+      "Rotation": 0,
+      "Size": "{1, 0}, {1, 0}"
+    },
+    {
+      "Class": "UIGradient",
+      "Name": "UIGradient",
+      "Path": "StarterGui.Controls.Charge.Container.Cooldown.UIGradient"
+    },
+    {
+      "Visible": true,
+      "Path": "StarterGui.Controls.Charge.Container.Icon",
+      "Class": "Frame",
+      "AnchorPoint": "0.5, 0.5",
+      "Name": "Icon",
+      "Position": "{0.5, 0}, {0.5, 0}",
+      "BackgroundTransparency": 1,
+      "ZIndex": 4,
+      "Rotation": 0,
+      "Size": "{1, 0}, {1, 0}"
+    },
+    {
+      "Visible": true,
+      "Path": "StarterGui.Controls.Charge.Container.Icon.Foreground",
+      "ImageTransparency": 0,
+      "Class": "ImageLabel",
+      "ScaleType": "Enum.ScaleType.Fit",
+      "ImageColor3": "1, 1, 1",
+      "AnchorPoint": "0, 0",
+      "Image": "rbxassetid://121301301816360",
+      "Name": "Foreground",
+      "Position": "{0, 0}, {0, 0}",
+      "BackgroundTransparency": 1,
+      "ZIndex": 6,
+      "Rotation": 0,
+      "Size": "{1, 0}, {1, 0}"
+    },
+    {
+      "Visible": true,
+      "Path": "StarterGui.Controls.Charge.Container.Icon.Background",
+      "ImageTransparency": 0,
+      "Class": "ImageLabel",
+      "ScaleType": "Enum.ScaleType.Fit",
+      "ImageColor3": "1, 1, 1",
+      "AnchorPoint": "0, 0",
+      "Image": "rbxassetid://134262848479045",
+      "Name": "Background",
+      "Position": "{0, 0}, {0, 0}",
+      "BackgroundTransparency": 1,
+      "ZIndex": 1,
+      "Rotation": 0,
+      "Size": "{1, 0}, {1, 0}"
+    }
+  ],
+  "Path": "StarterGui.Controls.Charge"
+}

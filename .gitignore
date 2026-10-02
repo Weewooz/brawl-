@@ -15,4 +15,8 @@ AGENTS.md
 # Shared Cursor rules (junction to ~/.cursor/rules)
 .cursor/rules/
 .cursor/rules.bak/
-wally.lock
+
+# Local builds and scratch files
+/tmp/
+/work/
+/NUL.rbxlx

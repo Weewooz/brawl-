@@ -1,0 +1,647 @@
+{
+  "name": "TemporaryDungeonTown",
+  "tree": {
+    "HardDungeonStart": {
+      "StartDungeon": {
+        "$properties": {
+          "ObjectText": "Dungeon Run",
+          "ActionText": "Start Hard",
+          "MaxActivationDistance": 10,
+          "HoldDuration": 0,
+          "RequiresLineOfSight": false
+        },
+        "$className": "ProximityPrompt"
+      },
+      "$className": "Part",
+      "$properties": {
+        "Anchored": true,
+        "BottomSurface": {
+          "Enum": 0
+        },
+        "CanCollide": true,
+        "Transparency": 0,
+        "TopSurface": {
+          "Enum": 0
+        },
+        "CanQuery": true,
+        "Color": [
+          0.7215686440467834,
+          0.35686275362968445,
+          0.32156863808631897
+        ],
+        "Material": {
+          "Enum": 800
+        },
+        "Size": [
+          5,
+          2,
+          5
+        ],
+        "CanTouch": true,
+        "Shape": {
+          "Enum": 1
+        },
+        "CFrame": [
+          10,
+          2,
+          177,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "Label": {
+        "$className": "BillboardGui",
+        "TextLabel": {
+          "$properties": {
+            "TextWrapped": true,
+            "TextStrokeTransparency": 0.6000000238418579,
+            "BorderSizePixel": 1,
+            "TextScaled": true,
+            "BackgroundColor3": [
+              0.0784313753247261,
+              0.0941176488995552,
+              0.12156862765550613
+            ],
+            "TextSize": 8,
+            "Size": {
+              "UDim2": [
+                [
+                  1,
+                  0
+                ],
+                [
+                  1,
+                  0
+                ]
+              ]
+            },
+            "TextColor3": [
+              1,
+              1,
+              1
+            ],
+            "Text": "Hard Dungeon",
+            "Font": {
+              "Enum": 19
+            },
+            "BackgroundTransparency": 0.15000000596046448,
+            "Position": {
+              "UDim2": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ]
+            }
+          },
+          "$className": "TextLabel"
+        },
+        "$properties": {
+          "AlwaysOnTop": true,
+          "Size": {
+            "UDim2": [
+              [
+                0,
+                240
+              ],
+              [
+                0,
+                56
+              ]
+            ]
+          },
+          "StudsOffsetWorldSpace": [
+            0,
+            3,
+            0
+          ]
+        }
+      }
+    },
+    "PartyStagingZone": {
+      "$properties": {
+        "Anchored": true,
+        "BottomSurface": {
+          "Enum": 0
+        },
+        "CanCollide": false,
+        "Transparency": 0.550000011920929,
+        "TopSurface": {
+          "Enum": 0
+        },
+        "CanQuery": true,
+        "Color": [
+          0.29411765933036804,
+          0.4431372582912445,
+          0.6352941393852234
+        ],
+        "Material": {
+          "Enum": 288
+        },
+        "Size": [
+          36,
+          0.30000001192092896,
+          28
+        ],
+        "CanTouch": true,
+        "Shape": {
+          "Enum": 1
+        },
+        "CFrame": [
+          0,
+          1.149999976158142,
+          168,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "$className": "Part"
+    },
+    "DungeonTownSpawn": {
+      "$properties": {
+        "Neutral": true,
+        "Anchored": true,
+        "BottomSurface": {
+          "Enum": 4
+        },
+        "CanCollide": true,
+        "Transparency": 0,
+        "TopSurface": {
+          "Enum": 3
+        },
+        "CanQuery": true,
+        "Color": [
+          0.43529412150382996,
+          0.6705882549285889,
+          0.5333333611488342
+        ],
+        "Material": {
+          "Enum": 288
+        },
+        "Size": [
+          8,
+          1,
+          8
+        ],
+        "CanTouch": true,
+        "Shape": {
+          "Enum": 1
+        },
+        "CFrame": [
+          0,
+          1.5,
+          135,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "$className": "SpawnLocation"
+    },
+    "NormalDungeonStart": {
+      "StartDungeon": {
+        "$properties": {
+          "ObjectText": "Dungeon Run",
+          "ActionText": "Start Normal",
+          "MaxActivationDistance": 10,
+          "HoldDuration": 0,
+          "RequiresLineOfSight": false
+        },
+        "$className": "ProximityPrompt"
+      },
+      "$className": "Part",
+      "$properties": {
+        "Anchored": true,
+        "BottomSurface": {
+          "Enum": 0
+        },
+        "CanCollide": true,
+        "Transparency": 0,
+        "TopSurface": {
+          "Enum": 0
+        },
+        "CanQuery": true,
+        "Color": [
+          0.3529411852359772,
+          0.49803921580314636,
+          0.7647058963775635
+        ],
+        "Material": {
+          "Enum": 800
+        },
+        "Size": [
+          5,
+          2,
+          5
+        ],
+        "CanTouch": true,
+        "Shape": {
+          "Enum": 1
+        },
+        "CFrame": [
+          0,
+          2,
+          177,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "Label": {
+        "$className": "BillboardGui",
+        "TextLabel": {
+          "$properties": {
+            "TextWrapped": true,
+            "TextStrokeTransparency": 0.6000000238418579,
+            "BorderSizePixel": 1,
+            "TextScaled": true,
+            "BackgroundColor3": [
+              0.0784313753247261,
+              0.0941176488995552,
+              0.12156862765550613
+            ],
+            "TextSize": 8,
+            "Size": {
+              "UDim2": [
+                [
+                  1,
+                  0
+                ],
+                [
+                  1,
+                  0
+                ]
+              ]
+            },
+            "TextColor3": [
+              1,
+              1,
+              1
+            ],
+            "Text": "Normal Dungeon",
+            "Font": {
+              "Enum": 19
+            },
+            "BackgroundTransparency": 0.15000000596046448,
+            "Position": {
+              "UDim2": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ]
+            }
+          },
+          "$className": "TextLabel"
+        },
+        "$properties": {
+          "AlwaysOnTop": true,
+          "Size": {
+            "UDim2": [
+              [
+                0,
+                240
+              ],
+              [
+                0,
+                56
+              ]
+            ]
+          },
+          "StudsOffsetWorldSpace": [
+            0,
+            3,
+            0
+          ]
+        }
+      }
+    },
+    "TownFloor": {
+      "$properties": {
+        "Anchored": true,
+        "BottomSurface": {
+          "Enum": 0
+        },
+        "CanCollide": true,
+        "Transparency": 0,
+        "TopSurface": {
+          "Enum": 0
+        },
+        "CanQuery": true,
+        "Color": [
+          0.250980406999588,
+          0.29411765933036804,
+          0.2862745225429535
+        ],
+        "Material": {
+          "Enum": 800
+        },
+        "Size": [
+          80,
+          2,
+          80
+        ],
+        "CanTouch": true,
+        "Shape": {
+          "Enum": 1
+        },
+        "CFrame": [
+          0,
+          0,
+          160,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "$className": "Part"
+    },
+    "$className": "Model",
+    "PartySign": {
+      "$className": "Part",
+      "$properties": {
+        "Anchored": true,
+        "BottomSurface": {
+          "Enum": 0
+        },
+        "CanCollide": false,
+        "Transparency": 0,
+        "TopSurface": {
+          "Enum": 0
+        },
+        "CanQuery": true,
+        "Color": [
+          0.14901961386203766,
+          0.16862745583057404,
+          0.20392157137393951
+        ],
+        "Material": {
+          "Enum": 800
+        },
+        "Size": [
+          22,
+          4,
+          1
+        ],
+        "CanTouch": true,
+        "Shape": {
+          "Enum": 1
+        },
+        "CFrame": [
+          0,
+          4,
+          153,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "Label": {
+        "$className": "BillboardGui",
+        "TextLabel": {
+          "$properties": {
+            "TextWrapped": true,
+            "TextStrokeTransparency": 0.6000000238418579,
+            "BorderSizePixel": 1,
+            "TextScaled": true,
+            "BackgroundColor3": [
+              0.0784313753247261,
+              0.0941176488995552,
+              0.12156862765550613
+            ],
+            "TextSize": 8,
+            "Size": {
+              "UDim2": [
+                [
+                  1,
+                  0
+                ],
+                [
+                  1,
+                  0
+                ]
+              ]
+            },
+            "TextColor3": [
+              1,
+              1,
+              1
+            ],
+            "Text": "Stand in the blue zone to join a dungeon party",
+            "Font": {
+              "Enum": 19
+            },
+            "BackgroundTransparency": 0.15000000596046448,
+            "Position": {
+              "UDim2": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ]
+            }
+          },
+          "$className": "TextLabel"
+        },
+        "$properties": {
+          "AlwaysOnTop": true,
+          "Size": {
+            "UDim2": [
+              [
+                0,
+                240
+              ],
+              [
+                0,
+                56
+              ]
+            ]
+          },
+          "StudsOffsetWorldSpace": [
+            0,
+            3,
+            0
+          ]
+        }
+      }
+    },
+    "EasyDungeonStart": {
+      "StartDungeon": {
+        "$properties": {
+          "ObjectText": "Dungeon Run",
+          "ActionText": "Start Easy",
+          "MaxActivationDistance": 10,
+          "HoldDuration": 0,
+          "RequiresLineOfSight": false
+        },
+        "$className": "ProximityPrompt"
+      },
+      "$className": "Part",
+      "$properties": {
+        "Anchored": true,
+        "BottomSurface": {
+          "Enum": 0
+        },
+        "CanCollide": true,
+        "Transparency": 0,
+        "TopSurface": {
+          "Enum": 0
+        },
+        "CanQuery": true,
+        "Color": [
+          0.29019609093666077,
+          0.572549045085907,
+          0.37254902720451355
+        ],
+        "Material": {
+          "Enum": 800
+        },
+        "Size": [
+          5,
+          2,
+          5
+        ],
+        "CanTouch": true,
+        "Shape": {
+          "Enum": 1
+        },
+        "CFrame": [
+          -10,
+          2,
+          177,
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1
+        ]
+      },
+      "Label": {
+        "$className": "BillboardGui",
+        "TextLabel": {
+          "$properties": {
+            "TextWrapped": true,
+            "TextStrokeTransparency": 0.6000000238418579,
+            "BorderSizePixel": 1,
+            "TextScaled": true,
+            "BackgroundColor3": [
+              0.0784313753247261,
+              0.0941176488995552,
+              0.12156862765550613
+            ],
+            "TextSize": 8,
+            "Size": {
+              "UDim2": [
+                [
+                  1,
+                  0
+                ],
+                [
+                  1,
+                  0
+                ]
+              ]
+            },
+            "TextColor3": [
+              1,
+              1,
+              1
+            ],
+            "Text": "Easy Dungeon",
+            "Font": {
+              "Enum": 19
+            },
+            "BackgroundTransparency": 0.15000000596046448,
+            "Position": {
+              "UDim2": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ]
+            }
+          },
+          "$className": "TextLabel"
+        },
+        "$properties": {
+          "AlwaysOnTop": true,
+          "Size": {
+            "UDim2": [
+              [
+                0,
+                240
+              ],
+              [
+                0,
+                56
+              ]
+            ]
+          },
+          "StudsOffsetWorldSpace": [
+            0,
+            3,
+            0
+          ]
+        }
+      }
+    }
+  }
+}

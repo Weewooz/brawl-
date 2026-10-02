@@ -1,0 +1,5441 @@
+{
+  "name": "CombatAudioPool",
+  "tree": {
+    "RisingCrash": {
+      "1": {
+        "Player": {
+          "$properties": {
+            "PlaybackSpeed": 0.9,
+            "Volume": 0.9895296692848206,
+            "AutoLoad": true,
+            "PlaybackRegion": {
+              "NumberRange": [
+                0.015590520575642586,
+                0.3155905306339264
+              ]
+            },
+            "Asset": "rbxassetid://9119750029",
+            "Looping": false
+          },
+          "$className": "AudioPlayer"
+        },
+        "Emitter": {
+          "$className": "AudioEmitter"
+        },
+        "Wire": {
+          "$className": "Wire"
+        },
+        "$className": "Part",
+        "$properties": {
+          "CFrame": [
+            0,
+            -1000,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "Transparency": 1,
+          "CanQuery": false,
+          "CanCollide": false,
+          "CastShadow": false,
+          "Anchored": true,
+          "CanTouch": false,
+          "Size": [
+            0.20000000298023224,
+            0.20000000298023224,
+            0.20000000298023224
+          ]
+        }
+      },
+      "2": {
+        "Player": {
+          "$properties": {
+            "PlaybackSpeed": 0.9,
+            "Volume": 0.7439297437667847,
+            "AutoLoad": true,
+            "PlaybackRegion": {
+              "NumberRange": [
+                0.020656146109104156,
+                0.3206561505794525
+              ]
+            },
+            "Asset": "rbxassetid://9119750035",
+            "Looping": false
+          },
+          "$className": "AudioPlayer"
+        },
+        "Emitter": {
+          "$className": "AudioEmitter"
+        },
+        "Wire": {
+          "$className": "Wire"
+        },
+        "$className": "Part",
+        "$properties": {
+          "CFrame": [
+            0,
+            -1000,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "Transparency": 1,
+          "CanQuery": false,
+          "CanCollide": false,
+          "CastShadow": false,
+          "Anchored": true,
+          "CanTouch": false,
+          "Size": [
+            0.20000000298023224,
+            0.20000000298023224,
+            0.20000000298023224
+          ]
+        }
+      },
+      "3": {
+        "Player": {
+          "$properties": {
+            "PlaybackSpeed": 0.9,
+            "Volume": 0.5,
+            "AutoLoad": true,
+            "PlaybackRegion": {
+              "NumberRange": [
+                0.019213875755667686,
+                0.3192138671875
+              ]
+            },
+            "Asset": "rbxassetid://9119750131",
+            "Looping": false
+          },
+          "$className": "AudioPlayer"
+        },
+        "Emitter": {
+          "$className": "AudioEmitter"
+        },
+        "Wire": {
+          "$className": "Wire"
+        },
+        "$className": "Part",
+        "$properties": {
+          "CFrame": [
+            0,
+            -1000,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "Transparency": 1,
+          "CanQuery": false,
+          "CanCollide": false,
+          "CastShadow": false,
+          "Anchored": true,
+          "CanTouch": false,
+          "Size": [
+            0.20000000298023224,
+            0.20000000298023224,
+            0.20000000298023224
+          ]
+        }
+      },
+      "4": {
+        "Player": {
+          "$properties": {
+            "PlaybackSpeed": 0.9,
+            "Volume": 1.9340659379959106,
+            "AutoLoad": true,
+            "PlaybackRegion": {
+              "NumberRange": [
+                0.057861436158418655,
+                0.3578614294528961
+              ]
+            },
+            "Asset": "rbxassetid://9119750223",
+            "Looping": false
+          },
+          "$className": "AudioPlayer"
+        },
+        "Emitter": {
+          "$className": "AudioEmitter"
+        },
+        "Wire": {
+          "$className": "Wire"
+        },
+        "$className": "Part",
+        "$properties": {
+          "CFrame": [
+            0,
+            -1000,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "Transparency": 1,
+          "CanQuery": false,
+          "CanCollide": false,
+          "CastShadow": false,
+          "Anchored": true,
+          "CanTouch": false,
+          "Size": [
+            0.20000000298023224,
+            0.20000000298023224,
+            0.20000000298023224
+          ]
+        }
+      },
+      "5": {
+        "Player": {
+          "$properties": {
+            "PlaybackSpeed": 0.9,
+            "Volume": 0.9895296692848206,
+            "AutoLoad": true,
+            "PlaybackRegion": {
+              "NumberRange": [
+                0.015590520575642586,
+                0.3155905306339264
+              ]
+            },
+            "Asset": "rbxassetid://9119750029",
+            "Looping": false
+          },
+          "$className": "AudioPlayer"
+        },
+        "Emitter": {
+          "$className": "AudioEmitter"
+        },
+        "Wire": {
+          "$className": "Wire"
+        },
+        "$className": "Part",
+        "$properties": {
+          "CFrame": [
+            0,
+            -1000,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "Transparency": 1,
+          "CanQuery": false,
+          "CanCollide": false,
+          "CastShadow": false,
+          "Anchored": true,
+          "CanTouch": false,
+          "Size": [
+            0.20000000298023224,
+            0.20000000298023224,
+            0.20000000298023224
+          ]
+        }
+      },
+      "6": {
+        "Player": {
+          "$properties": {
+            "PlaybackSpeed": 0.9,
+            "Volume": 0.7439297437667847,
+            "AutoLoad": true,
+            "PlaybackRegion": {
+              "NumberRange": [
+                0.020656146109104156,
+                0.3206561505794525
+              ]
+            },
+            "Asset": "rbxassetid://9119750035",
+            "Looping": false
+          },
+          "$className": "AudioPlayer"
+        },
+        "Emitter": {
+          "$className": "AudioEmitter"
+        },
+        "Wire": {
+          "$className": "Wire"
+        },
+        "$className": "Part",
+        "$properties": {
+          "CFrame": [
+            0,
+            -1000,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "Transparency": 1,
+          "CanQuery": false,
+          "CanCollide": false,
+          "CastShadow": false,
+          "Anchored": true,
+          "CanTouch": false,
+          "Size": [
+            0.20000000298023224,
+            0.20000000298023224,
+            0.20000000298023224
+          ]
+        }
+      },
+      "7": {
+        "Player": {
+          "$properties": {
+            "PlaybackSpeed": 0.9,
+            "Volume": 0.5,
+            "AutoLoad": true,
+            "PlaybackRegion": {
+              "NumberRange": [
+                0.019213875755667686,
+                0.3192138671875
+              ]
+            },
+            "Asset": "rbxassetid://9119750131",
+            "Looping": false
+          },
+          "$className": "AudioPlayer"
+        },
+        "Emitter": {
+          "$className": "AudioEmitter"
+        },
+        "Wire": {
+          "$className": "Wire"
+        },
+        "$className": "Part",
+        "$properties": {
+          "CFrame": [
+            0,
+            -1000,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "Transparency": 1,
+          "CanQuery": false,
+          "CanCollide": false,
+          "CastShadow": false,
+          "Anchored": true,
+          "CanTouch": false,
+          "Size": [
+            0.20000000298023224,
+            0.20000000298023224,
+            0.20000000298023224
+          ]
+        }
+      },
+      "8": {
+        "Player": {
+          "$properties": {
+            "PlaybackSpeed": 0.9,
+            "Volume": 1.9340659379959106,
+            "AutoLoad": true,
+            "PlaybackRegion": {
+              "NumberRange": [
+                0.057861436158418655,
+                0.3578614294528961
+              ]
+            },
+            "Asset": "rbxassetid://9119750223",
+            "Looping": false
+          },
+          "$className": "AudioPlayer"
+        },
+        "Emitter": {
+          "$className": "AudioEmitter"
+        },
+        "Wire": {
+          "$className": "Wire"
+        },
+        "$className": "Part",
+        "$properties": {
+          "CFrame": [
+            0,
+            -1000,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "Transparency": 1,
+          "CanQuery": false,
+          "CanCollide": false,
+          "CastShadow": false,
+          "Anchored": true,
+          "CanTouch": false,
+          "Size": [
+            0.20000000298023224,
+            0.20000000298023224,
+            0.20000000298023224
+          ]
+        }
+      },
+      "$className": "Folder"
+    },
+    "Charge": {
+      "1": {
+        "Player": {
+          "$properties": {
+            "PlaybackSpeed": 1.08,
+            "Volume": 3.03024959564209,
+            "AutoLoad": true,
+            "PlaybackRegion": {
+              "NumberRange": [
+                0.028477707877755165,
+                0.34847772121429443
+              ]
+            },
+            "Asset": "rbxassetid://9120708588",
+            "Looping": false
+          },
+          "$className": "AudioPlayer"
+        },
+        "Emitter": {
+          "$className": "AudioEmitter"
+        },
+        "Wire": {
+          "$className": "Wire"
+        },
+        "$className": "Part",
+        "$properties": {
+          "CFrame": [
+            0,
+            -1000,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "Transparency": 1,
+          "CanQuery": false,
+          "CanCollide": false,
+          "CastShadow": false,
+          "Anchored": true,
+          "CanTouch": false,
+          "Size": [
+            0.20000000298023224,
+            0.20000000298023224,
+            0.20000000298023224
+          ]
+        }
+      },
+      "2": {
+        "Player": {
+          "$properties": {
+            "PlaybackSpeed": 1.08,
+            "Volume": 4,
+            "AutoLoad": true,
+            "PlaybackRegion": {
+              "NumberRange": [
+                0.1912090927362442,
+                0.5112090706825256
+              ]
+            },
+            "Asset": "rbxassetid://9120708589",
+            "Looping": false
+          },
+          "$className": "AudioPlayer"
+        },
+        "Emitter": {
+          "$className": "AudioEmitter"
+        },
+        "Wire": {
+          "$className": "Wire"
+        },
+        "$className": "Part",
+        "$properties": {
+          "CFrame": [
+            0,
+            -1000,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "Transparency": 1,
+          "CanQuery": false,
+          "CanCollide": false,
+          "CastShadow": false,
+          "Anchored": true,
+          "CanTouch": false,
+          "Size": [
+            0.20000000298023224,
+            0.20000000298023224,
+            0.20000000298023224
+          ]
+        }
+      },
+      "3": {
+        "Player": {
+          "$properties": {
+            "PlaybackSpeed": 1.08,
+            "Volume": 0.7872402667999268,
+            "AutoLoad": true,
+            "PlaybackRegion": {
+              "NumberRange": [
+                0.11540549993515015,
+                0.4354054927825928
+              ]
+            },
+            "Asset": "rbxassetid://9120708319",
+            "Looping": false
+          },
+          "$className": "AudioPlayer"
+        },
+        "Emitter": {
+          "$className": "AudioEmitter"
+        },
+        "Wire": {
+          "$className": "Wire"
+        },
+        "$className": "Part",
+        "$properties": {
+          "CFrame": [
+            0,
+            -1000,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "Transparency": 1,
+          "CanQuery": false,
+          "CanCollide": false,
+          "CastShadow": false,
+          "Anchored": true,
+          "CanTouch": false,
+          "Size": [
+            0.20000000298023224,
+            0.20000000298023224,
+            0.20000000298023224
+          ]
+        }
+      },
+      "4": {
+        "Player": {
+          "$properties": {
+            "PlaybackSpeed": 1.08,
+            "Volume": 2.2306838035583496,
+            "AutoLoad": true,
+            "PlaybackRegion": {
+              "NumberRange": [
+                0.20480702817440033,
+                0.5248070359230042
+              ]
+            },
+            "Asset": "rbxassetid://9120708595",
+            "Looping": false
+          },
+          "$className": "AudioPlayer"
+        },
+        "Emitter": {
+          "$className": "AudioEmitter"
+        },
+        "Wire": {
+          "$className": "Wire"
+        },
+        "$className": "Part",
+        "$properties": {
+          "CFrame": [
+            0,
+            -1000,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "Transparency": 1,
+          "CanQuery": false,
+          "CanCollide": false,
+          "CastShadow": false,
+          "Anchored": true,
+          "CanTouch": false,
+          "Size": [
+            0.20000000298023224,
+            0.20000000298023224,
+            0.20000000298023224
+          ]
+        }
+      },
+      "5": {
+        "Player": {
+          "$properties": {
+            "PlaybackSpeed": 1.08,
+            "Volume": 3.03024959564209,
+            "AutoLoad": true,
+            "PlaybackRegion": {
+              "NumberRange": [
+                0.028477707877755165,
+                0.34847772121429443
+              ]
+            },
+            "Asset": "rbxassetid://9120708588",
+            "Looping": false
+          },
+          "$className": "AudioPlayer"
+        },
+        "Emitter": {
+          "$className": "AudioEmitter"
+        },
+        "Wire": {
+          "$className": "Wire"
+        },
+        "$className": "Part",
+        "$properties": {
+          "CFrame": [
+            0,
+            -1000,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "Transparency": 1,
+          "CanQuery": false,
+          "CanCollide": false,
+          "CastShadow": false,
+          "Anchored": true,
+          "CanTouch": false,
+          "Size": [
+            0.20000000298023224,
+            0.20000000298023224,
+            0.20000000298023224
+          ]
+        }
+      },
+      "6": {
+        "Player": {
+          "$properties": {
+            "PlaybackSpeed": 1.08,
+            "Volume": 4,
+            "AutoLoad": true,
+            "PlaybackRegion": {
+              "NumberRange": [
+                0.1912090927362442,
+                0.5112090706825256
+              ]
+            },
+            "Asset": "rbxassetid://9120708589",
+            "Looping": false
+          },
+          "$className": "AudioPlayer"
+        },
+        "Emitter": {
+          "$className": "AudioEmitter"
+        },
+        "Wire": {
+          "$className": "Wire"
+        },
+        "$className": "Part",
+        "$properties": {
+          "CFrame": [
+            0,
+            -1000,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "Transparency": 1,
+          "CanQuery": false,
+          "CanCollide": false,
+          "CastShadow": false,
+          "Anchored": true,
+          "CanTouch": false,
+          "Size": [
+            0.20000000298023224,
+            0.20000000298023224,
+            0.20000000298023224
+          ]
+        }
+      },
+      "7": {
+        "Player": {
+          "$properties": {
+            "PlaybackSpeed": 1.08,
+            "Volume": 0.7872402667999268,
+            "AutoLoad": true,
+            "PlaybackRegion": {
+              "NumberRange": [
+                0.11540549993515015,
+                0.4354054927825928
+              ]
+            },
+            "Asset": "rbxassetid://9120708319",
+            "Looping": false
+          },
+          "$className": "AudioPlayer"
+        },
+        "Emitter": {
+          "$className": "AudioEmitter"
+        },
+        "Wire": {
+          "$className": "Wire"
+        },
+        "$className": "Part",
+        "$properties": {
+          "CFrame": [
+            0,
+            -1000,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "Transparency": 1,
+          "CanQuery": false,
+          "CanCollide": false,
+          "CastShadow": false,
+          "Anchored": true,
+          "CanTouch": false,
+          "Size": [
+            0.20000000298023224,
+            0.20000000298023224,
+            0.20000000298023224
+          ]
+        }
+      },
+      "8": {
+        "Player": {
+          "$properties": {
+            "PlaybackSpeed": 1.08,
+            "Volume": 2.2306838035583496,
+            "AutoLoad": true,
+            "PlaybackRegion": {
+              "NumberRange": [
+                0.20480702817440033,
+                0.5248070359230042
+              ]
+            },
+            "Asset": "rbxassetid://9120708595",
+            "Looping": false
+          },
+          "$className": "AudioPlayer"
+        },
+        "Emitter": {
+          "$className": "AudioEmitter"
+        },
+        "Wire": {
+          "$className": "Wire"
+        },
+        "$className": "Part",
+        "$properties": {
+          "CFrame": [
+            0,
+            -1000,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "Transparency": 1,
+          "CanQuery": false,
+          "CanCollide": false,
+          "CastShadow": false,
+          "Anchored": true,
+          "CanTouch": false,
+          "Size": [
+            0.20000000298023224,
+            0.20000000298023224,
+            0.20000000298023224
+          ]
+        }
+      },
+      "$className": "Folder"
+    },
+    "WindSpin": {
+      "1": {
+        "Player": {
+          "$properties": {
+            "PlaybackSpeed": 1.05,
+            "Volume": 0.8481683135032654,
+            "AutoLoad": true,
+            "PlaybackRegion": {
+              "NumberRange": [
+                0.015590520575642586,
+                0.2855905294418335
+              ]
+            },
+            "Asset": "rbxassetid://9119750029",
+            "Looping": false
+          },
+          "$className": "AudioPlayer"
+        },
+        "Emitter": {
+          "$className": "AudioEmitter"
+        },
+        "Wire": {
+          "$className": "Wire"
+        },
+        "$className": "Part",
+        "$properties": {
+          "CFrame": [
+            0,
+            -1000,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "Transparency": 1,
+          "CanQuery": false,
+          "CanCollide": false,
+          "CastShadow": false,
+          "Anchored": true,
+          "CanTouch": false,
+          "Size": [
+            0.20000000298023224,
+            0.20000000298023224,
+            0.20000000298023224
+          ]
+        }
+      },
+      "2": {
+        "Player": {
+          "$properties": {
+            "PlaybackSpeed": 1.05,
+            "Volume": 0.6376540660858154,
+            "AutoLoad": true,
+            "PlaybackRegion": {
+              "NumberRange": [
+                0.020656146109104156,
+                0.2906561493873596
+              ]
+            },
+            "Asset": "rbxassetid://9119750035",
+            "Looping": false
+          },
+          "$className": "AudioPlayer"
+        },
+        "Emitter": {
+          "$className": "AudioEmitter"
+        },
+        "Wire": {
+          "$className": "Wire"
+        },
+        "$className": "Part",
+        "$properties": {
+          "CFrame": [
+            0,
+            -1000,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "Transparency": 1,
+          "CanQuery": false,
+          "CanCollide": false,
+          "CastShadow": false,
+          "Anchored": true,
+          "CanTouch": false,
+          "Size": [
+            0.20000000298023224,
+            0.20000000298023224,
+            0.20000000298023224
+          ]
+        }
+      },
+      "3": {
+        "Player": {
+          "$properties": {
+            "PlaybackSpeed": 1.05,
+            "Volume": 0.5,
+            "AutoLoad": true,
+            "PlaybackRegion": {
+              "NumberRange": [
+                0.019213875755667686,
+                0.2892138659954071
+              ]
+            },
+            "Asset": "rbxassetid://9119750131",
+            "Looping": false
+          },
+          "$className": "AudioPlayer"
+        },
+        "Emitter": {
+          "$className": "AudioEmitter"
+        },
+        "Wire": {
+          "$className": "Wire"
+        },
+        "$className": "Part",
+        "$properties": {
+          "CFrame": [
+            0,
+            -1000,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "Transparency": 1,
+          "CanQuery": false,
+          "CanCollide": false,
+          "CastShadow": false,
+          "Anchored": true,
+          "CanTouch": false,
+          "Size": [
+            0.20000000298023224,
+            0.20000000298023224,
+            0.20000000298023224
+          ]
+        }
+      },
+      "4": {
+        "Player": {
+          "$properties": {
+            "PlaybackSpeed": 1.05,
+            "Volume": 1.6577708721160889,
+            "AutoLoad": true,
+            "PlaybackRegion": {
+              "NumberRange": [
+                0.057861436158418655,
+                0.3278614282608032
+              ]
+            },
+            "Asset": "rbxassetid://9119750223",
+            "Looping": false
+          },
+          "$className": "AudioPlayer"
+        },
+        "Emitter": {
+          "$className": "AudioEmitter"
+        },
+        "Wire": {
+          "$className": "Wire"
+        },
+        "$className": "Part",
+        "$properties": {
+          "CFrame": [
+            0,
+            -1000,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "Transparency": 1,
+          "CanQuery": false,
+          "CanCollide": false,
+          "CastShadow": false,
+          "Anchored": true,
+          "CanTouch": false,
+          "Size": [
+            0.20000000298023224,
+            0.20000000298023224,
+            0.20000000298023224
+          ]
+        }
+      },
+      "5": {
+        "Player": {
+          "$properties": {
+            "PlaybackSpeed": 1.05,
+            "Volume": 0.8481683135032654,
+            "AutoLoad": true,
+            "PlaybackRegion": {
+              "NumberRange": [
+                0.015590520575642586,
+                0.2855905294418335
+              ]
+            },
+            "Asset": "rbxassetid://9119750029",
+            "Looping": false
+          },
+          "$className": "AudioPlayer"
+        },
+        "Emitter": {
+          "$className": "AudioEmitter"
+        },
+        "Wire": {
+          "$className": "Wire"
+        },
+        "$className": "Part",
+        "$properties": {
+          "CFrame": [
+            0,
+            -1000,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "Transparency": 1,
+          "CanQuery": false,
+          "CanCollide": false,
+          "CastShadow": false,
+          "Anchored": true,
+          "CanTouch": false,
+          "Size": [
+            0.20000000298023224,
+            0.20000000298023224,
+            0.20000000298023224
+          ]
+        }
+      },
+      "6": {
+        "Player": {
+          "$properties": {
+            "PlaybackSpeed": 1.05,
+            "Volume": 0.6376540660858154,
+            "AutoLoad": true,
+            "PlaybackRegion": {
+              "NumberRange": [
+                0.020656146109104156,
+                0.2906561493873596
+              ]
+            },
+            "Asset": "rbxassetid://9119750035",
+            "Looping": false
+          },
+          "$className": "AudioPlayer"
+        },
+        "Emitter": {
+          "$className": "AudioEmitter"
+        },
+        "Wire": {
+          "$className": "Wire"
+        },
+        "$className": "Part",
+        "$properties": {
+          "CFrame": [
+            0,
+            -1000,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "Transparency": 1,
+          "CanQuery": false,
+          "CanCollide": false,
+          "CastShadow": false,
+          "Anchored": true,
+          "CanTouch": false,
+          "Size": [
+            0.20000000298023224,
+            0.20000000298023224,
+            0.20000000298023224
+          ]
+        }
+      },
+      "7": {
+        "Player": {
+          "$properties": {
+            "PlaybackSpeed": 1.05,
+            "Volume": 0.5,
+            "AutoLoad": true,
+            "PlaybackRegion": {
+              "NumberRange": [
+                0.019213875755667686,
+                0.2892138659954071
+              ]
+            },
+            "Asset": "rbxassetid://9119750131",
+            "Looping": false
+          },
+          "$className": "AudioPlayer"
+        },
+        "Emitter": {
+          "$className": "AudioEmitter"
+        },
+        "Wire": {
+          "$className": "Wire"
+        },
+        "$className": "Part",
+        "$properties": {
+          "CFrame": [
+            0,
+            -1000,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "Transparency": 1,
+          "CanQuery": false,
+          "CanCollide": false,
+          "CastShadow": false,
+          "Anchored": true,
+          "CanTouch": false,
+          "Size": [
+            0.20000000298023224,
+            0.20000000298023224,
+            0.20000000298023224
+          ]
+        }
+      },
+      "8": {
+        "Player": {
+          "$properties": {
+            "PlaybackSpeed": 1.05,
+            "Volume": 1.6577708721160889,
+            "AutoLoad": true,
+            "PlaybackRegion": {
+              "NumberRange": [
+                0.057861436158418655,
+                0.3278614282608032
+              ]
+            },
+            "Asset": "rbxassetid://9119750223",
+            "Looping": false
+          },
+          "$className": "AudioPlayer"
+        },
+        "Emitter": {
+          "$className": "AudioEmitter"
+        },
+        "Wire": {
+          "$className": "Wire"
+        },
+        "$className": "Part",
+        "$properties": {
+          "CFrame": [
+            0,
+            -1000,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "Transparency": 1,
+          "CanQuery": false,
+          "CanCollide": false,
+          "CastShadow": false,
+          "Anchored": true,
+          "CanTouch": false,
+          "Size": [
+            0.20000000298023224,
+            0.20000000298023224,
+            0.20000000298023224
+          ]
+        }
+      },
+      "$className": "Folder"
+    },
+    "GroundShock": {
+      "1": {
+        "Player": {
+          "$properties": {
+            "PlaybackSpeed": 1.1,
+            "Volume": 0.6505209803581238,
+            "AutoLoad": true,
+            "PlaybackRegion": {
+              "NumberRange": [
+                0.015162077732384205,
+                0.3751620650291443
+              ]
+            },
+            "Asset": "rbxassetid://9118587493",
+            "Looping": false
+          },
+          "$className": "AudioPlayer"
+        },
+        "Emitter": {
+          "$className": "AudioEmitter"
+        },
+        "Wire": {
+          "$className": "Wire"
+        },
+        "$className": "Part",
+        "$properties": {
+          "CFrame": [
+            0,
+            -1000,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "Transparency": 1,
+          "CanQuery": false,
+          "CanCollide": false,
+          "CastShadow": false,
+          "Anchored": true,
+          "CanTouch": false,
+          "Size": [
+            0.20000000298023224,
+            0.20000000298023224,
+            0.20000000298023224
+          ]
+        }
+      },
+      "2": {
+        "Player": {
+          "$properties": {
+            "PlaybackSpeed": 1.1,
+            "Volume": 0.625664234161377,
+            "AutoLoad": true,
+            "PlaybackRegion": {
+              "NumberRange": [
+                0.20857082307338715,
+                0.5685708522796631
+              ]
+            },
+            "Asset": "rbxassetid://9118587494",
+            "Looping": false
+          },
+          "$className": "AudioPlayer"
+        },
+        "Emitter": {
+          "$className": "AudioEmitter"
+        },
+        "Wire": {
+          "$className": "Wire"
+        },
+        "$className": "Part",
+        "$properties": {
+          "CFrame": [
+            0,
+            -1000,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "Transparency": 1,
+          "CanQuery": false,
+          "CanCollide": false,
+          "CastShadow": false,
+          "Anchored": true,
+          "CanTouch": false,
+          "Size": [
+            0.20000000298023224,
+            0.20000000298023224,
+            0.20000000298023224
+          ]
+        }
+      },
+      "3": {
+        "Player": {
+          "$properties": {
+            "PlaybackSpeed": 1.1,
+            "Volume": 0.6892551183700562,
+            "AutoLoad": true,
+            "PlaybackRegion": {
+              "NumberRange": [
+                0.18592500686645508,
+                0.5459250211715698
+              ]
+            },
+            "Asset": "rbxassetid://9118587716",
+            "Looping": false
+          },
+          "$className": "AudioPlayer"
+        },
+        "Emitter": {
+          "$className": "AudioEmitter"
+        },
+        "Wire": {
+          "$className": "Wire"
+        },
+        "$className": "Part",
+        "$properties": {
+          "CFrame": [
+            0,
+            -1000,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "Transparency": 1,
+          "CanQuery": false,
+          "CanCollide": false,
+          "CastShadow": false,
+          "Anchored": true,
+          "CanTouch": false,
+          "Size": [
+            0.20000000298023224,
+            0.20000000298023224,
+            0.20000000298023224
+          ]
+        }
+      },
+      "4": {
+        "Player": {
+          "$properties": {
+            "PlaybackSpeed": 1.1,
+            "Volume": 0.677599310874939,
+            "AutoLoad": true,
+            "PlaybackRegion": {
+              "NumberRange": [
+                0.06612703949213028,
+                0.42612704634666443
+              ]
+            },
+            "Asset": "rbxassetid://9118588165",
+            "Looping": false
+          },
+          "$className": "AudioPlayer"
+        },
+        "Emitter": {
+          "$className": "AudioEmitter"
+        },
+        "Wire": {
+          "$className": "Wire"
+        },
+        "$className": "Part",
+        "$properties": {
+          "CFrame": [
+            0,
+            -1000,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "Transparency": 1,
+          "CanQuery": false,
+          "CanCollide": false,
+          "CastShadow": false,
+          "Anchored": true,
+          "CanTouch": false,
+          "Size": [
+            0.20000000298023224,
+            0.20000000298023224,
+            0.20000000298023224
+          ]
+        }
+      },
+      "5": {
+        "Player": {
+          "$properties": {
+            "PlaybackSpeed": 1.1,
+            "Volume": 0.6505209803581238,
+            "AutoLoad": true,
+            "PlaybackRegion": {
+              "NumberRange": [
+                0.015162077732384205,
+                0.3751620650291443
+              ]
+            },
+            "Asset": "rbxassetid://9118587493",
+            "Looping": false
+          },
+          "$className": "AudioPlayer"
+        },
+        "Emitter": {
+          "$className": "AudioEmitter"
+        },
+        "Wire": {
+          "$className": "Wire"
+        },
+        "$className": "Part",
+        "$properties": {
+          "CFrame": [
+            0,
+            -1000,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "Transparency": 1,
+          "CanQuery": false,
+          "CanCollide": false,
+          "CastShadow": false,
+          "Anchored": true,
+          "CanTouch": false,
+          "Size": [
+            0.20000000298023224,
+            0.20000000298023224,
+            0.20000000298023224
+          ]
+        }
+      },
+      "6": {
+        "Player": {
+          "$properties": {
+            "PlaybackSpeed": 1.1,
+            "Volume": 0.625664234161377,
+            "AutoLoad": true,
+            "PlaybackRegion": {
+              "NumberRange": [
+                0.20857082307338715,
+                0.5685708522796631
+              ]
+            },
+            "Asset": "rbxassetid://9118587494",
+            "Looping": false
+          },
+          "$className": "AudioPlayer"
+        },
+        "Emitter": {
+          "$className": "AudioEmitter"
+        },
+        "Wire": {
+          "$className": "Wire"
+        },
+        "$className": "Part",
+        "$properties": {
+          "CFrame": [
+            0,
+            -1000,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "Transparency": 1,
+          "CanQuery": false,
+          "CanCollide": false,
+          "CastShadow": false,
+          "Anchored": true,
+          "CanTouch": false,
+          "Size": [
+            0.20000000298023224,
+            0.20000000298023224,
+            0.20000000298023224
+          ]
+        }
+      },
+      "7": {
+        "Player": {
+          "$properties": {
+            "PlaybackSpeed": 1.1,
+            "Volume": 0.6892551183700562,
+            "AutoLoad": true,
+            "PlaybackRegion": {
+              "NumberRange": [
+                0.18592500686645508,
+                0.5459250211715698
+              ]
+            },
+            "Asset": "rbxassetid://9118587716",
+            "Looping": false
+          },
+          "$className": "AudioPlayer"
+        },
+        "Emitter": {
+          "$className": "AudioEmitter"
+        },
+        "Wire": {
+          "$className": "Wire"
+        },
+        "$className": "Part",
+        "$properties": {
+          "CFrame": [
+            0,
+            -1000,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "Transparency": 1,
+          "CanQuery": false,
+          "CanCollide": false,
+          "CastShadow": false,
+          "Anchored": true,
+          "CanTouch": false,
+          "Size": [
+            0.20000000298023224,
+            0.20000000298023224,
+            0.20000000298023224
+          ]
+        }
+      },
+      "8": {
+        "Player": {
+          "$properties": {
+            "PlaybackSpeed": 1.1,
+            "Volume": 0.677599310874939,
+            "AutoLoad": true,
+            "PlaybackRegion": {
+              "NumberRange": [
+                0.06612703949213028,
+                0.42612704634666443
+              ]
+            },
+            "Asset": "rbxassetid://9118588165",
+            "Looping": false
+          },
+          "$className": "AudioPlayer"
+        },
+        "Emitter": {
+          "$className": "AudioEmitter"
+        },
+        "Wire": {
+          "$className": "Wire"
+        },
+        "$className": "Part",
+        "$properties": {
+          "CFrame": [
+            0,
+            -1000,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "Transparency": 1,
+          "CanQuery": false,
+          "CanCollide": false,
+          "CastShadow": false,
+          "Anchored": true,
+          "CanTouch": false,
+          "Size": [
+            0.20000000298023224,
+            0.20000000298023224,
+            0.20000000298023224
+          ]
+        }
+      },
+      "$className": "Folder"
+    },
+"CaptureCue": {
+  "1": {
+    "Player": {
+      "$properties": {
+        "PlaybackSpeed": 0.98,
+        "Volume": 0.6000000238418579,
+        "Looping": false,
+        "PlaybackRegion": {
+          "NumberRange": [
+            0,
+            0.5
+          ]
+        },
+        "Asset": "rbxassetid://17208361335",
+        "AutoLoad": true
+      },
+      "$className": "AudioPlayer"
+    },
+    "Emitter": {
+      "$className": "AudioEmitter"
+    },
+    "Wire": {
+      "$className": "Wire"
+    },
+    "$className": "Part",
+    "$properties": {
+      "CanQuery": false,
+      "CanCollide": false,
+      "Color": [
+        0.6392157077789307,
+        0.6352941393852234,
+        0.6470588445663452
+      ],
+      "Anchored": true,
+      "CanTouch": false,
+      "Shape": {
+        "Enum": 1
+      },
+      "Transparency": 1,
+      "BottomSurface": {
+        "Enum": 4
+      },
+      "TopSurface": {
+        "Enum": 3
+      },
+      "CFrame": [
+        0,
+        -1000,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "Material": {
+        "Enum": 256
+      },
+      "CastShadow": true,
+      "Size": [
+        0.20000000298023224,
+        0.20000000298023224,
+        0.20000000298023224
+      ]
+    }
+  },
+  "2": {
+    "Player": {
+      "$properties": {
+        "PlaybackSpeed": 1,
+        "Volume": 0.6000000238418579,
+        "Looping": false,
+        "PlaybackRegion": {
+          "NumberRange": [
+            0,
+            0.5
+          ]
+        },
+        "Asset": "rbxassetid://17208361335",
+        "AutoLoad": true
+      },
+      "$className": "AudioPlayer"
+    },
+    "Emitter": {
+      "$className": "AudioEmitter"
+    },
+    "Wire": {
+      "$className": "Wire"
+    },
+    "$className": "Part",
+    "$properties": {
+      "CanQuery": false,
+      "CanCollide": false,
+      "Color": [
+        0.6392157077789307,
+        0.6352941393852234,
+        0.6470588445663452
+      ],
+      "Anchored": true,
+      "CanTouch": false,
+      "Shape": {
+        "Enum": 1
+      },
+      "Transparency": 1,
+      "BottomSurface": {
+        "Enum": 4
+      },
+      "TopSurface": {
+        "Enum": 3
+      },
+      "CFrame": [
+        0,
+        -1000,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "Material": {
+        "Enum": 256
+      },
+      "CastShadow": true,
+      "Size": [
+        0.20000000298023224,
+        0.20000000298023224,
+        0.20000000298023224
+      ]
+    }
+  },
+  "3": {
+    "Player": {
+      "$properties": {
+        "PlaybackSpeed": 1.02,
+        "Volume": 0.6000000238418579,
+        "Looping": false,
+        "PlaybackRegion": {
+          "NumberRange": [
+            0,
+            0.5
+          ]
+        },
+        "Asset": "rbxassetid://17208361335",
+        "AutoLoad": true
+      },
+      "$className": "AudioPlayer"
+    },
+    "Emitter": {
+      "$className": "AudioEmitter"
+    },
+    "Wire": {
+      "$className": "Wire"
+    },
+    "$className": "Part",
+    "$properties": {
+      "CanQuery": false,
+      "CanCollide": false,
+      "Color": [
+        0.6392157077789307,
+        0.6352941393852234,
+        0.6470588445663452
+      ],
+      "Anchored": true,
+      "CanTouch": false,
+      "Shape": {
+        "Enum": 1
+      },
+      "Transparency": 1,
+      "BottomSurface": {
+        "Enum": 4
+      },
+      "TopSurface": {
+        "Enum": 3
+      },
+      "CFrame": [
+        0,
+        -1000,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "Material": {
+        "Enum": 256
+      },
+      "CastShadow": true,
+      "Size": [
+        0.20000000298023224,
+        0.20000000298023224,
+        0.20000000298023224
+      ]
+    }
+  },
+  "4": {
+    "Player": {
+      "$properties": {
+        "PlaybackSpeed": 1.01,
+        "Volume": 0.6000000238418579,
+        "Looping": false,
+        "PlaybackRegion": {
+          "NumberRange": [
+            0,
+            0.5
+          ]
+        },
+        "Asset": "rbxassetid://17208361335",
+        "AutoLoad": true
+      },
+      "$className": "AudioPlayer"
+    },
+    "Emitter": {
+      "$className": "AudioEmitter"
+    },
+    "Wire": {
+      "$className": "Wire"
+    },
+    "$className": "Part",
+    "$properties": {
+      "CanQuery": false,
+      "CanCollide": false,
+      "Color": [
+        0.6392157077789307,
+        0.6352941393852234,
+        0.6470588445663452
+      ],
+      "Anchored": true,
+      "CanTouch": false,
+      "Shape": {
+        "Enum": 1
+      },
+      "Transparency": 1,
+      "BottomSurface": {
+        "Enum": 4
+      },
+      "TopSurface": {
+        "Enum": 3
+      },
+      "CFrame": [
+        0,
+        -1000,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "Material": {
+        "Enum": 256
+      },
+      "CastShadow": true,
+      "Size": [
+        0.20000000298023224,
+        0.20000000298023224,
+        0.20000000298023224
+      ]
+    }
+  },
+  "$className": "Folder"
+},
+"VictoryCue": {
+  "1": {
+    "Player": {
+      "$properties": {
+        "PlaybackSpeed": 1.0388,
+        "Volume": 0.6000000238418579,
+        "Looping": false,
+        "PlaybackRegion": {
+          "NumberRange": [
+            0,
+            0.8999999761581421
+          ]
+        },
+        "Asset": "rbxassetid://17208361335",
+        "AutoLoad": true
+      },
+      "$className": "AudioPlayer"
+    },
+    "Emitter": {
+      "$className": "AudioEmitter"
+    },
+    "Wire": {
+      "$className": "Wire"
+    },
+    "$className": "Part",
+    "$properties": {
+      "CanQuery": false,
+      "CanCollide": false,
+      "Color": [
+        0.6392157077789307,
+        0.6352941393852234,
+        0.6470588445663452
+      ],
+      "Anchored": true,
+      "CanTouch": false,
+      "Shape": {
+        "Enum": 1
+      },
+      "Transparency": 1,
+      "BottomSurface": {
+        "Enum": 4
+      },
+      "TopSurface": {
+        "Enum": 3
+      },
+      "CFrame": [
+        0,
+        -1000,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "Material": {
+        "Enum": 256
+      },
+      "CastShadow": true,
+      "Size": [
+        0.20000000298023224,
+        0.20000000298023224,
+        0.20000000298023224
+      ]
+    }
+  },
+  "2": {
+    "Player": {
+      "$properties": {
+        "PlaybackSpeed": 1.06,
+        "Volume": 0.6000000238418579,
+        "Looping": false,
+        "PlaybackRegion": {
+          "NumberRange": [
+            0,
+            0.8999999761581421
+          ]
+        },
+        "Asset": "rbxassetid://17208361335",
+        "AutoLoad": true
+      },
+      "$className": "AudioPlayer"
+    },
+    "Emitter": {
+      "$className": "AudioEmitter"
+    },
+    "Wire": {
+      "$className": "Wire"
+    },
+    "$className": "Part",
+    "$properties": {
+      "CanQuery": false,
+      "CanCollide": false,
+      "Color": [
+        0.6392157077789307,
+        0.6352941393852234,
+        0.6470588445663452
+      ],
+      "Anchored": true,
+      "CanTouch": false,
+      "Shape": {
+        "Enum": 1
+      },
+      "Transparency": 1,
+      "BottomSurface": {
+        "Enum": 4
+      },
+      "TopSurface": {
+        "Enum": 3
+      },
+      "CFrame": [
+        0,
+        -1000,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "Material": {
+        "Enum": 256
+      },
+      "CastShadow": true,
+      "Size": [
+        0.20000000298023224,
+        0.20000000298023224,
+        0.20000000298023224
+      ]
+    }
+  },
+  "3": {
+    "Player": {
+      "$properties": {
+        "PlaybackSpeed": 1.0812000000000002,
+        "Volume": 0.6000000238418579,
+        "Looping": false,
+        "PlaybackRegion": {
+          "NumberRange": [
+            0,
+            0.8999999761581421
+          ]
+        },
+        "Asset": "rbxassetid://17208361335",
+        "AutoLoad": true
+      },
+      "$className": "AudioPlayer"
+    },
+    "Emitter": {
+      "$className": "AudioEmitter"
+    },
+    "Wire": {
+      "$className": "Wire"
+    },
+    "$className": "Part",
+    "$properties": {
+      "CanQuery": false,
+      "CanCollide": false,
+      "Color": [
+        0.6392157077789307,
+        0.6352941393852234,
+        0.6470588445663452
+      ],
+      "Anchored": true,
+      "CanTouch": false,
+      "Shape": {
+        "Enum": 1
+      },
+      "Transparency": 1,
+      "BottomSurface": {
+        "Enum": 4
+      },
+      "TopSurface": {
+        "Enum": 3
+      },
+      "CFrame": [
+        0,
+        -1000,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "Material": {
+        "Enum": 256
+      },
+      "CastShadow": true,
+      "Size": [
+        0.20000000298023224,
+        0.20000000298023224,
+        0.20000000298023224
+      ]
+    }
+  },
+  "4": {
+    "Player": {
+      "$properties": {
+        "PlaybackSpeed": 1.0706,
+        "Volume": 0.6000000238418579,
+        "Looping": false,
+        "PlaybackRegion": {
+          "NumberRange": [
+            0,
+            0.8999999761581421
+          ]
+        },
+        "Asset": "rbxassetid://17208361335",
+        "AutoLoad": true
+      },
+      "$className": "AudioPlayer"
+    },
+    "Emitter": {
+      "$className": "AudioEmitter"
+    },
+    "Wire": {
+      "$className": "Wire"
+    },
+    "$className": "Part",
+    "$properties": {
+      "CanQuery": false,
+      "CanCollide": false,
+      "Color": [
+        0.6392157077789307,
+        0.6352941393852234,
+        0.6470588445663452
+      ],
+      "Anchored": true,
+      "CanTouch": false,
+      "Shape": {
+        "Enum": 1
+      },
+      "Transparency": 1,
+      "BottomSurface": {
+        "Enum": 4
+      },
+      "TopSurface": {
+        "Enum": 3
+      },
+      "CFrame": [
+        0,
+        -1000,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "Material": {
+        "Enum": 256
+      },
+      "CastShadow": true,
+      "Size": [
+        0.20000000298023224,
+        0.20000000298023224,
+        0.20000000298023224
+      ]
+    }
+  },
+  "$className": "Folder"
+},
+"DefeatCue": {
+  "1": {
+    "Player": {
+      "$properties": {
+        "PlaybackSpeed": 0.98,
+        "Volume": 0.6000000238418579,
+        "Looping": false,
+        "PlaybackRegion": {
+          "NumberRange": [
+            0,
+            0.699999988079071
+          ]
+        },
+        "Asset": "rbxassetid://17208372272",
+        "AutoLoad": true
+      },
+      "$className": "AudioPlayer"
+    },
+    "Emitter": {
+      "$className": "AudioEmitter"
+    },
+    "Wire": {
+      "$className": "Wire"
+    },
+    "$className": "Part",
+    "$properties": {
+      "CanQuery": false,
+      "CanCollide": false,
+      "Color": [
+        0.6392157077789307,
+        0.6352941393852234,
+        0.6470588445663452
+      ],
+      "Anchored": true,
+      "CanTouch": false,
+      "Shape": {
+        "Enum": 1
+      },
+      "Transparency": 1,
+      "BottomSurface": {
+        "Enum": 4
+      },
+      "TopSurface": {
+        "Enum": 3
+      },
+      "CFrame": [
+        0,
+        -1000,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "Material": {
+        "Enum": 256
+      },
+      "CastShadow": true,
+      "Size": [
+        0.20000000298023224,
+        0.20000000298023224,
+        0.20000000298023224
+      ]
+    }
+  },
+  "2": {
+    "Player": {
+      "$properties": {
+        "PlaybackSpeed": 1,
+        "Volume": 0.6000000238418579,
+        "Looping": false,
+        "PlaybackRegion": {
+          "NumberRange": [
+            0,
+            0.699999988079071
+          ]
+        },
+        "Asset": "rbxassetid://17208372272",
+        "AutoLoad": true
+      },
+      "$className": "AudioPlayer"
+    },
+    "Emitter": {
+      "$className": "AudioEmitter"
+    },
+    "Wire": {
+      "$className": "Wire"
+    },
+    "$className": "Part",
+    "$properties": {
+      "CanQuery": false,
+      "CanCollide": false,
+      "Color": [
+        0.6392157077789307,
+        0.6352941393852234,
+        0.6470588445663452
+      ],
+      "Anchored": true,
+      "CanTouch": false,
+      "Shape": {
+        "Enum": 1
+      },
+      "Transparency": 1,
+      "BottomSurface": {
+        "Enum": 4
+      },
+      "TopSurface": {
+        "Enum": 3
+      },
+      "CFrame": [
+        0,
+        -1000,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "Material": {
+        "Enum": 256
+      },
+      "CastShadow": true,
+      "Size": [
+        0.20000000298023224,
+        0.20000000298023224,
+        0.20000000298023224
+      ]
+    }
+  },
+  "3": {
+    "Player": {
+      "$properties": {
+        "PlaybackSpeed": 1.02,
+        "Volume": 0.6000000238418579,
+        "Looping": false,
+        "PlaybackRegion": {
+          "NumberRange": [
+            0,
+            0.699999988079071
+          ]
+        },
+        "Asset": "rbxassetid://17208372272",
+        "AutoLoad": true
+      },
+      "$className": "AudioPlayer"
+    },
+    "Emitter": {
+      "$className": "AudioEmitter"
+    },
+    "Wire": {
+      "$className": "Wire"
+    },
+    "$className": "Part",
+    "$properties": {
+      "CanQuery": false,
+      "CanCollide": false,
+      "Color": [
+        0.6392157077789307,
+        0.6352941393852234,
+        0.6470588445663452
+      ],
+      "Anchored": true,
+      "CanTouch": false,
+      "Shape": {
+        "Enum": 1
+      },
+      "Transparency": 1,
+      "BottomSurface": {
+        "Enum": 4
+      },
+      "TopSurface": {
+        "Enum": 3
+      },
+      "CFrame": [
+        0,
+        -1000,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "Material": {
+        "Enum": 256
+      },
+      "CastShadow": true,
+      "Size": [
+        0.20000000298023224,
+        0.20000000298023224,
+        0.20000000298023224
+      ]
+    }
+  },
+  "4": {
+    "Player": {
+      "$properties": {
+        "PlaybackSpeed": 1.01,
+        "Volume": 0.6000000238418579,
+        "Looping": false,
+        "PlaybackRegion": {
+          "NumberRange": [
+            0,
+            0.699999988079071
+          ]
+        },
+        "Asset": "rbxassetid://17208372272",
+        "AutoLoad": true
+      },
+      "$className": "AudioPlayer"
+    },
+    "Emitter": {
+      "$className": "AudioEmitter"
+    },
+    "Wire": {
+      "$className": "Wire"
+    },
+    "$className": "Part",
+    "$properties": {
+      "CanQuery": false,
+      "CanCollide": false,
+      "Color": [
+        0.6392157077789307,
+        0.6352941393852234,
+        0.6470588445663452
+      ],
+      "Anchored": true,
+      "CanTouch": false,
+      "Shape": {
+        "Enum": 1
+      },
+      "Transparency": 1,
+      "BottomSurface": {
+        "Enum": 4
+      },
+      "TopSurface": {
+        "Enum": 3
+      },
+      "CFrame": [
+        0,
+        -1000,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        1
+      ],
+      "Material": {
+        "Enum": 256
+      },
+      "CastShadow": true,
+      "Size": [
+        0.20000000298023224,
+        0.20000000298023224,
+        0.20000000298023224
+      ]
+    }
+  },
+  "$className": "Folder"
+},
+    "$className": "Folder",
+    "Swing": {
+      "$className": "Folder",
+      "1": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": false,
+          "CanTouch": false,
+          "CanQuery": false,
+          "Transparency": 1,
+          "Size": [
+            0.2,
+            0.2,
+            0.2
+          ],
+          "Position": [
+            0,
+            -1000,
+            0
+          ]
+        },
+        "Emitter": {
+          "$className": "AudioEmitter"
+        },
+        "Player": {
+          "$className": "AudioPlayer",
+          "$properties": {
+            "Asset": "rbxassetid://9119750029",
+            "PlaybackSpeed": 1.0,
+            "PlaybackRegion": {
+              "NumberRange": [
+                0.0,
+                0.3
+              ]
+            },
+            "Volume": 1
+          }
+        },
+        "Wire": {
+          "$className": "Wire"
+        }
+      },
+      "2": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": false,
+          "CanTouch": false,
+          "CanQuery": false,
+          "Transparency": 1,
+          "Size": [
+            0.2,
+            0.2,
+            0.2
+          ],
+          "Position": [
+            0,
+            -1000,
+            0
+          ]
+        },
+        "Emitter": {
+          "$className": "AudioEmitter"
+        },
+        "Player": {
+          "$className": "AudioPlayer",
+          "$properties": {
+            "Asset": "rbxassetid://9119750035",
+            "PlaybackSpeed": 1.0,
+            "PlaybackRegion": {
+              "NumberRange": [
+                0.0,
+                0.3
+              ]
+            },
+            "Volume": 1
+          }
+        },
+        "Wire": {
+          "$className": "Wire"
+        }
+      },
+      "3": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": false,
+          "CanTouch": false,
+          "CanQuery": false,
+          "Transparency": 1,
+          "Size": [
+            0.2,
+            0.2,
+            0.2
+          ],
+          "Position": [
+            0,
+            -1000,
+            0
+          ]
+        },
+        "Emitter": {
+          "$className": "AudioEmitter"
+        },
+        "Player": {
+          "$className": "AudioPlayer",
+          "$properties": {
+            "Asset": "rbxassetid://9119750131",
+            "PlaybackSpeed": 1.0,
+            "PlaybackRegion": {
+              "NumberRange": [
+                0.0,
+                0.3
+              ]
+            },
+            "Volume": 1
+          }
+        },
+        "Wire": {
+          "$className": "Wire"
+        }
+      },
+      "4": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": false,
+          "CanTouch": false,
+          "CanQuery": false,
+          "Transparency": 1,
+          "Size": [
+            0.2,
+            0.2,
+            0.2
+          ],
+          "Position": [
+            0,
+            -1000,
+            0
+          ]
+        },
+        "Emitter": {
+          "$className": "AudioEmitter"
+        },
+        "Player": {
+          "$className": "AudioPlayer",
+          "$properties": {
+            "Asset": "rbxassetid://9119750223",
+            "PlaybackSpeed": 1.0,
+            "PlaybackRegion": {
+              "NumberRange": [
+                0.0,
+                0.3
+              ]
+            },
+            "Volume": 1
+          }
+        },
+        "Wire": {
+          "$className": "Wire"
+        }
+      }
+    },
+    "Hit": {
+      "$className": "Folder",
+      "1": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": false,
+          "CanTouch": false,
+          "CanQuery": false,
+          "Transparency": 1,
+          "Size": [
+            0.2,
+            0.2,
+            0.2
+          ],
+          "Position": [
+            0,
+            -1000,
+            0
+          ]
+        },
+        "Emitter": {
+          "$className": "AudioEmitter"
+        },
+        "Player": {
+          "$className": "AudioPlayer",
+          "$properties": {
+            "Asset": "rbxassetid://9119059834",
+            "PlaybackSpeed": 1.0,
+            "PlaybackRegion": {
+              "NumberRange": [
+                0.0,
+                0.36
+              ]
+            },
+            "Volume": 1
+          }
+        },
+        "Wire": {
+          "$className": "Wire"
+        }
+      },
+      "2": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": false,
+          "CanTouch": false,
+          "CanQuery": false,
+          "Transparency": 1,
+          "Size": [
+            0.2,
+            0.2,
+            0.2
+          ],
+          "Position": [
+            0,
+            -1000,
+            0
+          ]
+        },
+        "Emitter": {
+          "$className": "AudioEmitter"
+        },
+        "Player": {
+          "$className": "AudioPlayer",
+          "$properties": {
+            "Asset": "rbxassetid://9119060148",
+            "PlaybackSpeed": 1.0,
+            "PlaybackRegion": {
+              "NumberRange": [
+                0.0,
+                0.36
+              ]
+            },
+            "Volume": 1
+          }
+        },
+        "Wire": {
+          "$className": "Wire"
+        }
+      },
+      "3": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": false,
+          "CanTouch": false,
+          "CanQuery": false,
+          "Transparency": 1,
+          "Size": [
+            0.2,
+            0.2,
+            0.2
+          ],
+          "Position": [
+            0,
+            -1000,
+            0
+          ]
+        },
+        "Emitter": {
+          "$className": "AudioEmitter"
+        },
+        "Player": {
+          "$className": "AudioPlayer",
+          "$properties": {
+            "Asset": "rbxassetid://9119060679",
+            "PlaybackSpeed": 1.0,
+            "PlaybackRegion": {
+              "NumberRange": [
+                0.0,
+                0.36
+              ]
+            },
+            "Volume": 1
+          }
+        },
+        "Wire": {
+          "$className": "Wire"
+        }
+      },
+      "4": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": false,
+          "CanTouch": false,
+          "CanQuery": false,
+          "Transparency": 1,
+          "Size": [
+            0.2,
+            0.2,
+            0.2
+          ],
+          "Position": [
+            0,
+            -1000,
+            0
+          ]
+        },
+        "Emitter": {
+          "$className": "AudioEmitter"
+        },
+        "Player": {
+          "$className": "AudioPlayer",
+          "$properties": {
+            "Asset": "rbxassetid://9119059920",
+            "PlaybackSpeed": 1,
+            "PlaybackRegion": {
+              "NumberRange": [
+                0.0,
+                0.36
+              ]
+            },
+            "Volume": 1
+          }
+        },
+        "Wire": {
+          "$className": "Wire"
+        }
+      },
+      "5": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": false,
+          "CanTouch": false,
+          "CanQuery": false,
+          "Transparency": 1,
+          "Size": [
+            0.2,
+            0.2,
+            0.2
+          ],
+          "Position": [
+            0,
+            -1000,
+            0
+          ]
+        },
+        "Emitter": {
+          "$className": "AudioEmitter"
+        },
+        "Player": {
+          "$className": "AudioPlayer",
+          "$properties": {
+            "Asset": "rbxassetid://9119059834",
+            "PlaybackSpeed": 1.0,
+            "PlaybackRegion": {
+              "NumberRange": [
+                0.0,
+                0.36
+              ]
+            },
+            "Volume": 1
+          }
+        },
+        "Wire": {
+          "$className": "Wire"
+        }
+      },
+      "6": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": false,
+          "CanTouch": false,
+          "CanQuery": false,
+          "Transparency": 1,
+          "Size": [
+            0.2,
+            0.2,
+            0.2
+          ],
+          "Position": [
+            0,
+            -1000,
+            0
+          ]
+        },
+        "Emitter": {
+          "$className": "AudioEmitter"
+        },
+        "Player": {
+          "$className": "AudioPlayer",
+          "$properties": {
+            "Asset": "rbxassetid://9119060148",
+            "PlaybackSpeed": 1.0,
+            "PlaybackRegion": {
+              "NumberRange": [
+                0.0,
+                0.36
+              ]
+            },
+            "Volume": 1
+          }
+        },
+        "Wire": {
+          "$className": "Wire"
+        }
+      },
+      "7": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": false,
+          "CanTouch": false,
+          "CanQuery": false,
+          "Transparency": 1,
+          "Size": [
+            0.2,
+            0.2,
+            0.2
+          ],
+          "Position": [
+            0,
+            -1000,
+            0
+          ]
+        },
+        "Emitter": {
+          "$className": "AudioEmitter"
+        },
+        "Player": {
+          "$className": "AudioPlayer",
+          "$properties": {
+            "Asset": "rbxassetid://9119060679",
+            "PlaybackSpeed": 1.0,
+            "PlaybackRegion": {
+              "NumberRange": [
+                0.0,
+                0.36
+              ]
+            },
+            "Volume": 1
+          }
+        },
+        "Wire": {
+          "$className": "Wire"
+        }
+      },
+      "8": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": false,
+          "CanTouch": false,
+          "CanQuery": false,
+          "Transparency": 1,
+          "Size": [
+            0.2,
+            0.2,
+            0.2
+          ],
+          "Position": [
+            0,
+            -1000,
+            0
+          ]
+        },
+        "Emitter": {
+          "$className": "AudioEmitter"
+        },
+        "Player": {
+          "$className": "AudioPlayer",
+          "$properties": {
+            "Asset": "rbxassetid://9119059920",
+            "PlaybackSpeed": 1,
+            "PlaybackRegion": {
+              "NumberRange": [
+                0.0,
+                0.36
+              ]
+            },
+            "Volume": 1
+          }
+        },
+        "Wire": {
+          "$className": "Wire"
+        }
+      }
+    },
+    "Block": {
+      "$className": "Folder",
+      "1": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": false,
+          "CanTouch": false,
+          "CanQuery": false,
+          "Transparency": 1,
+          "Size": [
+            0.2,
+            0.2,
+            0.2
+          ],
+          "Position": [
+            0,
+            -1000,
+            0
+          ]
+        },
+        "Emitter": {
+          "$className": "AudioEmitter"
+        },
+        "Player": {
+          "$className": "AudioPlayer",
+          "$properties": {
+            "Asset": "rbxassetid://9113449244",
+            "PlaybackSpeed": 1,
+            "PlaybackRegion": {
+              "NumberRange": [
+                0,
+                0.35
+              ]
+            },
+            "Volume": 0.45
+          }
+        },
+        "Wire": {
+          "$className": "Wire"
+        }
+      },
+      "2": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": false,
+          "CanTouch": false,
+          "CanQuery": false,
+          "Transparency": 1,
+          "Size": [
+            0.2,
+            0.2,
+            0.2
+          ],
+          "Position": [
+            0,
+            -1000,
+            0
+          ]
+        },
+        "Emitter": {
+          "$className": "AudioEmitter"
+        },
+        "Player": {
+          "$className": "AudioPlayer",
+          "$properties": {
+            "Asset": "rbxassetid://9113449297",
+            "PlaybackSpeed": 1,
+            "PlaybackRegion": {
+              "NumberRange": [
+                0,
+                0.35
+              ]
+            },
+            "Volume": 0.85
+          }
+        },
+        "Wire": {
+          "$className": "Wire"
+        }
+      },
+      "3": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": false,
+          "CanTouch": false,
+          "CanQuery": false,
+          "Transparency": 1,
+          "Size": [
+            0.2,
+            0.2,
+            0.2
+          ],
+          "Position": [
+            0,
+            -1000,
+            0
+          ]
+        },
+        "Emitter": {
+          "$className": "AudioEmitter"
+        },
+        "Player": {
+          "$className": "AudioPlayer",
+          "$properties": {
+            "Asset": "rbxassetid://9113449364",
+            "PlaybackSpeed": 1,
+            "PlaybackRegion": {
+              "NumberRange": [
+                0,
+                0.35
+              ]
+            },
+            "Volume": 0.5
+          }
+        },
+        "Wire": {
+          "$className": "Wire"
+        }
+      },
+      "4": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": false,
+          "CanTouch": false,
+          "CanQuery": false,
+          "Transparency": 1,
+          "Size": [
+            0.2,
+            0.2,
+            0.2
+          ],
+          "Position": [
+            0,
+            -1000,
+            0
+          ]
+        },
+        "Emitter": {
+          "$className": "AudioEmitter"
+        },
+        "Player": {
+          "$className": "AudioPlayer",
+          "$properties": {
+            "Asset": "rbxassetid://9113449377",
+            "PlaybackSpeed": 1,
+            "PlaybackRegion": {
+              "NumberRange": [
+                0,
+                0.35
+              ]
+            },
+            "Volume": 0.65
+          }
+        },
+        "Wire": {
+          "$className": "Wire"
+        }
+      }
+    },
+    "Dash": {
+      "$className": "Folder",
+      "1": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": false,
+          "CanTouch": false,
+          "CanQuery": false,
+          "Transparency": 1,
+          "Size": [
+            0.2,
+            0.2,
+            0.2
+          ],
+          "Position": [
+            0,
+            -1000,
+            0
+          ]
+        },
+        "Emitter": {
+          "$className": "AudioEmitter"
+        },
+        "Player": {
+          "$className": "AudioPlayer",
+          "$properties": {
+            "Asset": "rbxassetid://9120704519",
+            "PlaybackSpeed": 1.0,
+            "PlaybackRegion": {
+              "NumberRange": [
+                0.0,
+                0.34
+              ]
+            },
+            "Volume": 1
+          }
+        },
+        "Wire": {
+          "$className": "Wire"
+        }
+      },
+      "2": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": false,
+          "CanTouch": false,
+          "CanQuery": false,
+          "Transparency": 1,
+          "Size": [
+            0.2,
+            0.2,
+            0.2
+          ],
+          "Position": [
+            0,
+            -1000,
+            0
+          ]
+        },
+        "Emitter": {
+          "$className": "AudioEmitter"
+        },
+        "Player": {
+          "$className": "AudioPlayer",
+          "$properties": {
+            "Asset": "rbxassetid://9120704709",
+            "PlaybackSpeed": 1.0,
+            "PlaybackRegion": {
+              "NumberRange": [
+                0.0,
+                0.34
+              ]
+            },
+            "Volume": 1.5
+          }
+        },
+        "Wire": {
+          "$className": "Wire"
+        }
+      },
+      "3": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": false,
+          "CanTouch": false,
+          "CanQuery": false,
+          "Transparency": 1,
+          "Size": [
+            0.2,
+            0.2,
+            0.2
+          ],
+          "Position": [
+            0,
+            -1000,
+            0
+          ]
+        },
+        "Emitter": {
+          "$className": "AudioEmitter"
+        },
+        "Player": {
+          "$className": "AudioPlayer",
+          "$properties": {
+            "Asset": "rbxassetid://9120704522",
+            "PlaybackSpeed": 1.0,
+            "PlaybackRegion": {
+              "NumberRange": [
+                0.0,
+                0.34
+              ]
+            },
+            "Volume": 1
+          }
+        },
+        "Wire": {
+          "$className": "Wire"
+        }
+      },
+      "4": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": false,
+          "CanTouch": false,
+          "CanQuery": false,
+          "Transparency": 1,
+          "Size": [
+            0.2,
+            0.2,
+            0.2
+          ],
+          "Position": [
+            0,
+            -1000,
+            0
+          ]
+        },
+        "Emitter": {
+          "$className": "AudioEmitter"
+        },
+        "Player": {
+          "$className": "AudioPlayer",
+          "$properties": {
+            "Asset": "rbxassetid://9120704519",
+            "PlaybackSpeed": 1.04,
+            "PlaybackRegion": {
+              "NumberRange": [
+                0.0,
+                0.34
+              ]
+            },
+            "Volume": 1
+          }
+        },
+        "Wire": {
+          "$className": "Wire"
+        }
+      }
+    },
+    "HitConfirm": {
+      "$className": "Folder",
+      "1": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": false,
+          "CanTouch": false,
+          "CanQuery": false,
+          "Transparency": 1,
+          "Size": [
+            0.2,
+            0.2,
+            0.2
+          ],
+          "Position": [
+            0,
+            -1000,
+            0
+          ]
+        },
+        "Emitter": {
+          "$className": "AudioEmitter"
+        },
+        "Player": {
+          "$className": "AudioPlayer",
+          "$properties": {
+            "Asset": "rbxassetid://15675059323",
+            "PlaybackSpeed": 0.97,
+            "PlaybackRegion": {
+              "NumberRange": [
+                0,
+                0.18
+              ]
+            },
+            "Volume": 0.75
+          }
+        },
+        "Wire": {
+          "$className": "Wire"
+        }
+      },
+      "2": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": false,
+          "CanTouch": false,
+          "CanQuery": false,
+          "Transparency": 1,
+          "Size": [
+            0.2,
+            0.2,
+            0.2
+          ],
+          "Position": [
+            0,
+            -1000,
+            0
+          ]
+        },
+        "Emitter": {
+          "$className": "AudioEmitter"
+        },
+        "Player": {
+          "$className": "AudioPlayer",
+          "$properties": {
+            "Asset": "rbxassetid://15675059323",
+            "PlaybackSpeed": 1,
+            "PlaybackRegion": {
+              "NumberRange": [
+                0,
+                0.18
+              ]
+            },
+            "Volume": 0.75
+          }
+        },
+        "Wire": {
+          "$className": "Wire"
+        }
+      },
+      "3": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": false,
+          "CanTouch": false,
+          "CanQuery": false,
+          "Transparency": 1,
+          "Size": [
+            0.2,
+            0.2,
+            0.2
+          ],
+          "Position": [
+            0,
+            -1000,
+            0
+          ]
+        },
+        "Emitter": {
+          "$className": "AudioEmitter"
+        },
+        "Player": {
+          "$className": "AudioPlayer",
+          "$properties": {
+            "Asset": "rbxassetid://15675059323",
+            "PlaybackSpeed": 1.03,
+            "PlaybackRegion": {
+              "NumberRange": [
+                0,
+                0.18
+              ]
+            },
+            "Volume": 0.75
+          }
+        },
+        "Wire": {
+          "$className": "Wire"
+        }
+      },
+      "4": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": false,
+          "CanTouch": false,
+          "CanQuery": false,
+          "Transparency": 1,
+          "Size": [
+            0.2,
+            0.2,
+            0.2
+          ],
+          "Position": [
+            0,
+            -1000,
+            0
+          ]
+        },
+        "Emitter": {
+          "$className": "AudioEmitter"
+        },
+        "Player": {
+          "$className": "AudioPlayer",
+          "$properties": {
+            "Asset": "rbxassetid://15675059323",
+            "PlaybackSpeed": 1.06,
+            "PlaybackRegion": {
+              "NumberRange": [
+                0,
+                0.18
+              ]
+            },
+            "Volume": 0.75
+          }
+        },
+        "Wire": {
+          "$className": "Wire"
+        }
+      }
+    },
+    "Hurt": {
+      "$className": "Folder",
+      "1": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": false,
+          "CanTouch": false,
+          "CanQuery": false,
+          "Transparency": 1,
+          "Size": [
+            0.2,
+            0.2,
+            0.2
+          ],
+          "Position": [
+            0,
+            -1000,
+            0
+          ]
+        },
+        "Emitter": {
+          "$className": "AudioEmitter"
+        },
+        "Player": {
+          "$className": "AudioPlayer",
+          "$properties": {
+            "Asset": "rbxassetid://9119059834",
+            "PlaybackSpeed": 1.0,
+            "PlaybackRegion": {
+              "NumberRange": [
+                0.0,
+                0.36
+              ]
+            },
+            "Volume": 1
+          }
+        },
+        "Wire": {
+          "$className": "Wire"
+        }
+      },
+      "2": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": false,
+          "CanTouch": false,
+          "CanQuery": false,
+          "Transparency": 1,
+          "Size": [
+            0.2,
+            0.2,
+            0.2
+          ],
+          "Position": [
+            0,
+            -1000,
+            0
+          ]
+        },
+        "Emitter": {
+          "$className": "AudioEmitter"
+        },
+        "Player": {
+          "$className": "AudioPlayer",
+          "$properties": {
+            "Asset": "rbxassetid://9119060148",
+            "PlaybackSpeed": 1.0,
+            "PlaybackRegion": {
+              "NumberRange": [
+                0.0,
+                0.36
+              ]
+            },
+            "Volume": 1
+          }
+        },
+        "Wire": {
+          "$className": "Wire"
+        }
+      },
+      "3": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": false,
+          "CanTouch": false,
+          "CanQuery": false,
+          "Transparency": 1,
+          "Size": [
+            0.2,
+            0.2,
+            0.2
+          ],
+          "Position": [
+            0,
+            -1000,
+            0
+          ]
+        },
+        "Emitter": {
+          "$className": "AudioEmitter"
+        },
+        "Player": {
+          "$className": "AudioPlayer",
+          "$properties": {
+            "Asset": "rbxassetid://9119060679",
+            "PlaybackSpeed": 1.0,
+            "PlaybackRegion": {
+              "NumberRange": [
+                0.0,
+                0.36
+              ]
+            },
+            "Volume": 1
+          }
+        },
+        "Wire": {
+          "$className": "Wire"
+        }
+      },
+      "4": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": false,
+          "CanTouch": false,
+          "CanQuery": false,
+          "Transparency": 1,
+          "Size": [
+            0.2,
+            0.2,
+            0.2
+          ],
+          "Position": [
+            0,
+            -1000,
+            0
+          ]
+        },
+        "Emitter": {
+          "$className": "AudioEmitter"
+        },
+        "Player": {
+          "$className": "AudioPlayer",
+          "$properties": {
+            "Asset": "rbxassetid://9119059920",
+            "PlaybackSpeed": 1,
+            "PlaybackRegion": {
+              "NumberRange": [
+                0.0,
+                0.36
+              ]
+            },
+            "Volume": 1
+          }
+        },
+        "Wire": {
+          "$className": "Wire"
+        }
+      }
+    },
+    "KatanaMetal": {
+      "$className": "Folder",
+      "1": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": false,
+          "CanTouch": false,
+          "CanQuery": false,
+          "Transparency": 1,
+          "Size": [
+            0.2,
+            0.2,
+            0.2
+          ],
+          "Position": [
+            0,
+            -1000,
+            0
+          ]
+        },
+        "Emitter": {
+          "$className": "AudioEmitter"
+        },
+        "Player": {
+          "$className": "AudioPlayer",
+          "$properties": {
+            "Asset": "rbxassetid://9113449244",
+            "PlaybackSpeed": 0.96,
+            "PlaybackRegion": {
+              "NumberRange": [
+                0,
+                0.38
+              ]
+            },
+            "Volume": 0.45
+          }
+        },
+        "Wire": {
+          "$className": "Wire"
+        }
+      },
+      "2": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": false,
+          "CanTouch": false,
+          "CanQuery": false,
+          "Transparency": 1,
+          "Size": [
+            0.2,
+            0.2,
+            0.2
+          ],
+          "Position": [
+            0,
+            -1000,
+            0
+          ]
+        },
+        "Emitter": {
+          "$className": "AudioEmitter"
+        },
+        "Player": {
+          "$className": "AudioPlayer",
+          "$properties": {
+            "Asset": "rbxassetid://9113449297",
+            "PlaybackSpeed": 0.96,
+            "PlaybackRegion": {
+              "NumberRange": [
+                0,
+                0.38
+              ]
+            },
+            "Volume": 0.85
+          }
+        },
+        "Wire": {
+          "$className": "Wire"
+        }
+      },
+      "3": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": false,
+          "CanTouch": false,
+          "CanQuery": false,
+          "Transparency": 1,
+          "Size": [
+            0.2,
+            0.2,
+            0.2
+          ],
+          "Position": [
+            0,
+            -1000,
+            0
+          ]
+        },
+        "Emitter": {
+          "$className": "AudioEmitter"
+        },
+        "Player": {
+          "$className": "AudioPlayer",
+          "$properties": {
+            "Asset": "rbxassetid://9113449364",
+            "PlaybackSpeed": 0.96,
+            "PlaybackRegion": {
+              "NumberRange": [
+                0,
+                0.38
+              ]
+            },
+            "Volume": 0.5
+          }
+        },
+        "Wire": {
+          "$className": "Wire"
+        }
+      },
+      "4": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": false,
+          "CanTouch": false,
+          "CanQuery": false,
+          "Transparency": 1,
+          "Size": [
+            0.2,
+            0.2,
+            0.2
+          ],
+          "Position": [
+            0,
+            -1000,
+            0
+          ]
+        },
+        "Emitter": {
+          "$className": "AudioEmitter"
+        },
+        "Player": {
+          "$className": "AudioPlayer",
+          "$properties": {
+            "Asset": "rbxassetid://9113449377",
+            "PlaybackSpeed": 0.96,
+            "PlaybackRegion": {
+              "NumberRange": [
+                0,
+                0.38
+              ]
+            },
+            "Volume": 0.65
+          }
+        },
+        "Wire": {
+          "$className": "Wire"
+        }
+      },
+      "5": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": false,
+          "CanTouch": false,
+          "CanQuery": false,
+          "Transparency": 1,
+          "Size": [
+            0.2,
+            0.2,
+            0.2
+          ],
+          "Position": [
+            0,
+            -1000,
+            0
+          ]
+        },
+        "Emitter": {
+          "$className": "AudioEmitter"
+        },
+        "Player": {
+          "$className": "AudioPlayer",
+          "$properties": {
+            "Asset": "rbxassetid://9113449244",
+            "PlaybackSpeed": 0.96,
+            "PlaybackRegion": {
+              "NumberRange": [
+                0,
+                0.38
+              ]
+            },
+            "Volume": 0.45
+          }
+        },
+        "Wire": {
+          "$className": "Wire"
+        }
+      },
+      "6": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": false,
+          "CanTouch": false,
+          "CanQuery": false,
+          "Transparency": 1,
+          "Size": [
+            0.2,
+            0.2,
+            0.2
+          ],
+          "Position": [
+            0,
+            -1000,
+            0
+          ]
+        },
+        "Emitter": {
+          "$className": "AudioEmitter"
+        },
+        "Player": {
+          "$className": "AudioPlayer",
+          "$properties": {
+            "Asset": "rbxassetid://9113449297",
+            "PlaybackSpeed": 0.96,
+            "PlaybackRegion": {
+              "NumberRange": [
+                0,
+                0.38
+              ]
+            },
+            "Volume": 0.85
+          }
+        },
+        "Wire": {
+          "$className": "Wire"
+        }
+      },
+      "7": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": false,
+          "CanTouch": false,
+          "CanQuery": false,
+          "Transparency": 1,
+          "Size": [
+            0.2,
+            0.2,
+            0.2
+          ],
+          "Position": [
+            0,
+            -1000,
+            0
+          ]
+        },
+        "Emitter": {
+          "$className": "AudioEmitter"
+        },
+        "Player": {
+          "$className": "AudioPlayer",
+          "$properties": {
+            "Asset": "rbxassetid://9113449364",
+            "PlaybackSpeed": 0.96,
+            "PlaybackRegion": {
+              "NumberRange": [
+                0,
+                0.38
+              ]
+            },
+            "Volume": 0.5
+          }
+        },
+        "Wire": {
+          "$className": "Wire"
+        }
+      },
+      "8": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": false,
+          "CanTouch": false,
+          "CanQuery": false,
+          "Transparency": 1,
+          "Size": [
+            0.2,
+            0.2,
+            0.2
+          ],
+          "Position": [
+            0,
+            -1000,
+            0
+          ]
+        },
+        "Emitter": {
+          "$className": "AudioEmitter"
+        },
+        "Player": {
+          "$className": "AudioPlayer",
+          "$properties": {
+            "Asset": "rbxassetid://9113449377",
+            "PlaybackSpeed": 0.96,
+            "PlaybackRegion": {
+              "NumberRange": [
+                0,
+                0.38
+              ]
+            },
+            "Volume": 0.65
+          }
+        },
+        "Wire": {
+          "$className": "Wire"
+        }
+      }
+    },
+    "KatanaFlesh": {
+      "$className": "Folder",
+      "1": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": false,
+          "CanTouch": false,
+          "CanQuery": false,
+          "Transparency": 1,
+          "Size": [
+            0.2,
+            0.2,
+            0.2
+          ],
+          "Position": [
+            0,
+            -1000,
+            0
+          ]
+        },
+        "Emitter": {
+          "$className": "AudioEmitter"
+        },
+        "Player": {
+          "$className": "AudioPlayer",
+          "$properties": {
+            "Asset": "rbxassetid://9114487361",
+            "PlaybackSpeed": 1.0,
+            "PlaybackRegion": {
+              "NumberRange": [
+                0.0,
+                0.3
+              ]
+            },
+            "Volume": 1
+          }
+        },
+        "Wire": {
+          "$className": "Wire"
+        }
+      },
+      "2": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": false,
+          "CanTouch": false,
+          "CanQuery": false,
+          "Transparency": 1,
+          "Size": [
+            0.2,
+            0.2,
+            0.2
+          ],
+          "Position": [
+            0,
+            -1000,
+            0
+          ]
+        },
+        "Emitter": {
+          "$className": "AudioEmitter"
+        },
+        "Player": {
+          "$className": "AudioPlayer",
+          "$properties": {
+            "Asset": "rbxassetid://9114487369",
+            "PlaybackSpeed": 1.0,
+            "PlaybackRegion": {
+              "NumberRange": [
+                0.0,
+                0.3
+              ]
+            },
+            "Volume": 0.6
+          }
+        },
+        "Wire": {
+          "$className": "Wire"
+        }
+      },
+      "3": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": false,
+          "CanTouch": false,
+          "CanQuery": false,
+          "Transparency": 1,
+          "Size": [
+            0.2,
+            0.2,
+            0.2
+          ],
+          "Position": [
+            0,
+            -1000,
+            0
+          ]
+        },
+        "Emitter": {
+          "$className": "AudioEmitter"
+        },
+        "Player": {
+          "$className": "AudioPlayer",
+          "$properties": {
+            "Asset": "rbxassetid://9114487004",
+            "PlaybackSpeed": 1.0,
+            "PlaybackRegion": {
+              "NumberRange": [
+                0.0,
+                0.3
+              ]
+            },
+            "Volume": 1
+          }
+        },
+        "Wire": {
+          "$className": "Wire"
+        }
+      },
+      "4": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": false,
+          "CanTouch": false,
+          "CanQuery": false,
+          "Transparency": 1,
+          "Size": [
+            0.2,
+            0.2,
+            0.2
+          ],
+          "Position": [
+            0,
+            -1000,
+            0
+          ]
+        },
+        "Emitter": {
+          "$className": "AudioEmitter"
+        },
+        "Player": {
+          "$className": "AudioPlayer",
+          "$properties": {
+            "Asset": "rbxassetid://9114487427",
+            "PlaybackSpeed": 1.0,
+            "PlaybackRegion": {
+              "NumberRange": [
+                0.0,
+                0.3
+              ]
+            },
+            "Volume": 1.6
+          }
+        },
+        "Wire": {
+          "$className": "Wire"
+        }
+      },
+      "5": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": false,
+          "CanTouch": false,
+          "CanQuery": false,
+          "Transparency": 1,
+          "Size": [
+            0.2,
+            0.2,
+            0.2
+          ],
+          "Position": [
+            0,
+            -1000,
+            0
+          ]
+        },
+        "Emitter": {
+          "$className": "AudioEmitter"
+        },
+        "Player": {
+          "$className": "AudioPlayer",
+          "$properties": {
+            "Asset": "rbxassetid://9114487361",
+            "PlaybackSpeed": 1.0,
+            "PlaybackRegion": {
+              "NumberRange": [
+                0.0,
+                0.3
+              ]
+            },
+            "Volume": 1
+          }
+        },
+        "Wire": {
+          "$className": "Wire"
+        }
+      },
+      "6": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": false,
+          "CanTouch": false,
+          "CanQuery": false,
+          "Transparency": 1,
+          "Size": [
+            0.2,
+            0.2,
+            0.2
+          ],
+          "Position": [
+            0,
+            -1000,
+            0
+          ]
+        },
+        "Emitter": {
+          "$className": "AudioEmitter"
+        },
+        "Player": {
+          "$className": "AudioPlayer",
+          "$properties": {
+            "Asset": "rbxassetid://9114487369",
+            "PlaybackSpeed": 1.0,
+            "PlaybackRegion": {
+              "NumberRange": [
+                0.0,
+                0.3
+              ]
+            },
+            "Volume": 0.6
+          }
+        },
+        "Wire": {
+          "$className": "Wire"
+        }
+      },
+      "7": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": false,
+          "CanTouch": false,
+          "CanQuery": false,
+          "Transparency": 1,
+          "Size": [
+            0.2,
+            0.2,
+            0.2
+          ],
+          "Position": [
+            0,
+            -1000,
+            0
+          ]
+        },
+        "Emitter": {
+          "$className": "AudioEmitter"
+        },
+        "Player": {
+          "$className": "AudioPlayer",
+          "$properties": {
+            "Asset": "rbxassetid://9114487004",
+            "PlaybackSpeed": 1.0,
+            "PlaybackRegion": {
+              "NumberRange": [
+                0.0,
+                0.3
+              ]
+            },
+            "Volume": 1
+          }
+        },
+        "Wire": {
+          "$className": "Wire"
+        }
+      },
+      "8": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": false,
+          "CanTouch": false,
+          "CanQuery": false,
+          "Transparency": 1,
+          "Size": [
+            0.2,
+            0.2,
+            0.2
+          ],
+          "Position": [
+            0,
+            -1000,
+            0
+          ]
+        },
+        "Emitter": {
+          "$className": "AudioEmitter"
+        },
+        "Player": {
+          "$className": "AudioPlayer",
+          "$properties": {
+            "Asset": "rbxassetid://9114487427",
+            "PlaybackSpeed": 1.0,
+            "PlaybackRegion": {
+              "NumberRange": [
+                0.0,
+                0.3
+              ]
+            },
+            "Volume": 1.6
+          }
+        },
+        "Wire": {
+          "$className": "Wire"
+        }
+      }
+    },
+    "BodyImpact": {
+      "$className": "Folder",
+      "1": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": false,
+          "CanTouch": false,
+          "CanQuery": false,
+          "Transparency": 1,
+          "Size": [
+            0.2,
+            0.2,
+            0.2
+          ],
+          "Position": [
+            0,
+            -1000,
+            0
+          ]
+        },
+        "Emitter": {
+          "$className": "AudioEmitter"
+        },
+        "Player": {
+          "$className": "AudioPlayer",
+          "$properties": {
+            "Asset": "rbxassetid://9119059920",
+            "PlaybackSpeed": 1,
+            "PlaybackRegion": {
+              "NumberRange": [
+                0,
+                0.5
+              ]
+            },
+            "Volume": 0.85
+          }
+        },
+        "Wire": {
+          "$className": "Wire"
+        }
+      },
+      "2": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": false,
+          "CanTouch": false,
+          "CanQuery": false,
+          "Transparency": 1,
+          "Size": [
+            0.2,
+            0.2,
+            0.2
+          ],
+          "Position": [
+            0,
+            -1000,
+            0
+          ]
+        },
+        "Emitter": {
+          "$className": "AudioEmitter"
+        },
+        "Player": {
+          "$className": "AudioPlayer",
+          "$properties": {
+            "Asset": "rbxassetid://9119059945",
+            "PlaybackSpeed": 1,
+            "PlaybackRegion": {
+              "NumberRange": [
+                0,
+                0.5
+              ]
+            },
+            "Volume": 1.6
+          }
+        },
+        "Wire": {
+          "$className": "Wire"
+        }
+      },
+      "3": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": false,
+          "CanTouch": false,
+          "CanQuery": false,
+          "Transparency": 1,
+          "Size": [
+            0.2,
+            0.2,
+            0.2
+          ],
+          "Position": [
+            0,
+            -1000,
+            0
+          ]
+        },
+        "Emitter": {
+          "$className": "AudioEmitter"
+        },
+        "Player": {
+          "$className": "AudioPlayer",
+          "$properties": {
+            "Asset": "rbxassetid://9119060116",
+            "PlaybackSpeed": 1,
+            "PlaybackRegion": {
+              "NumberRange": [
+                0,
+                0.5
+              ]
+            },
+            "Volume": 1.15
+          }
+        },
+        "Wire": {
+          "$className": "Wire"
+        }
+      },
+      "4": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": false,
+          "CanTouch": false,
+          "CanQuery": false,
+          "Transparency": 1,
+          "Size": [
+            0.2,
+            0.2,
+            0.2
+          ],
+          "Position": [
+            0,
+            -1000,
+            0
+          ]
+        },
+        "Emitter": {
+          "$className": "AudioEmitter"
+        },
+        "Player": {
+          "$className": "AudioPlayer",
+          "$properties": {
+            "Asset": "rbxassetid://9119060148",
+            "PlaybackSpeed": 1,
+            "PlaybackRegion": {
+              "NumberRange": [
+                0,
+                0.5
+              ]
+            },
+            "Volume": 0.85
+          }
+        },
+        "Wire": {
+          "$className": "Wire"
+        }
+      },
+      "5": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": false,
+          "CanTouch": false,
+          "CanQuery": false,
+          "Transparency": 1,
+          "Size": [
+            0.2,
+            0.2,
+            0.2
+          ],
+          "Position": [
+            0,
+            -1000,
+            0
+          ]
+        },
+        "Emitter": {
+          "$className": "AudioEmitter"
+        },
+        "Player": {
+          "$className": "AudioPlayer",
+          "$properties": {
+            "Asset": "rbxassetid://9119059920",
+            "PlaybackSpeed": 1,
+            "PlaybackRegion": {
+              "NumberRange": [
+                0,
+                0.5
+              ]
+            },
+            "Volume": 0.85
+          }
+        },
+        "Wire": {
+          "$className": "Wire"
+        }
+      },
+      "6": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": false,
+          "CanTouch": false,
+          "CanQuery": false,
+          "Transparency": 1,
+          "Size": [
+            0.2,
+            0.2,
+            0.2
+          ],
+          "Position": [
+            0,
+            -1000,
+            0
+          ]
+        },
+        "Emitter": {
+          "$className": "AudioEmitter"
+        },
+        "Player": {
+          "$className": "AudioPlayer",
+          "$properties": {
+            "Asset": "rbxassetid://9119059945",
+            "PlaybackSpeed": 1,
+            "PlaybackRegion": {
+              "NumberRange": [
+                0,
+                0.5
+              ]
+            },
+            "Volume": 1.6
+          }
+        },
+        "Wire": {
+          "$className": "Wire"
+        }
+      },
+      "7": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": false,
+          "CanTouch": false,
+          "CanQuery": false,
+          "Transparency": 1,
+          "Size": [
+            0.2,
+            0.2,
+            0.2
+          ],
+          "Position": [
+            0,
+            -1000,
+            0
+          ]
+        },
+        "Emitter": {
+          "$className": "AudioEmitter"
+        },
+        "Player": {
+          "$className": "AudioPlayer",
+          "$properties": {
+            "Asset": "rbxassetid://9119060116",
+            "PlaybackSpeed": 1,
+            "PlaybackRegion": {
+              "NumberRange": [
+                0,
+                0.5
+              ]
+            },
+            "Volume": 1.15
+          }
+        },
+        "Wire": {
+          "$className": "Wire"
+        }
+      },
+      "8": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": false,
+          "CanTouch": false,
+          "CanQuery": false,
+          "Transparency": 1,
+          "Size": [
+            0.2,
+            0.2,
+            0.2
+          ],
+          "Position": [
+            0,
+            -1000,
+            0
+          ]
+        },
+        "Emitter": {
+          "$className": "AudioEmitter"
+        },
+        "Player": {
+          "$className": "AudioPlayer",
+          "$properties": {
+            "Asset": "rbxassetid://9119060148",
+            "PlaybackSpeed": 1,
+            "PlaybackRegion": {
+              "NumberRange": [
+                0,
+                0.5
+              ]
+            },
+            "Volume": 0.85
+          }
+        },
+        "Wire": {
+          "$className": "Wire"
+        }
+      }
+    },
+    "HeavyImpact": {
+      "$className": "Folder",
+      "1": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": false,
+          "CanTouch": false,
+          "CanQuery": false,
+          "Transparency": 1,
+          "Size": [
+            0.2,
+            0.2,
+            0.2
+          ],
+          "Position": [
+            0,
+            -1000,
+            0
+          ]
+        },
+        "Emitter": {
+          "$className": "AudioEmitter"
+        },
+        "Player": {
+          "$className": "AudioPlayer",
+          "$properties": {
+            "Asset": "rbxassetid://9119059920",
+            "PlaybackSpeed": 0.88,
+            "PlaybackRegion": {
+              "NumberRange": [
+                0,
+                0.5
+              ]
+            },
+            "Volume": 0.85
+          }
+        },
+        "Wire": {
+          "$className": "Wire"
+        }
+      },
+      "2": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": false,
+          "CanTouch": false,
+          "CanQuery": false,
+          "Transparency": 1,
+          "Size": [
+            0.2,
+            0.2,
+            0.2
+          ],
+          "Position": [
+            0,
+            -1000,
+            0
+          ]
+        },
+        "Emitter": {
+          "$className": "AudioEmitter"
+        },
+        "Player": {
+          "$className": "AudioPlayer",
+          "$properties": {
+            "Asset": "rbxassetid://9119059945",
+            "PlaybackSpeed": 0.9,
+            "PlaybackRegion": {
+              "NumberRange": [
+                0,
+                0.5
+              ]
+            },
+            "Volume": 1.6
+          }
+        },
+        "Wire": {
+          "$className": "Wire"
+        }
+      },
+      "3": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": false,
+          "CanTouch": false,
+          "CanQuery": false,
+          "Transparency": 1,
+          "Size": [
+            0.2,
+            0.2,
+            0.2
+          ],
+          "Position": [
+            0,
+            -1000,
+            0
+          ]
+        },
+        "Emitter": {
+          "$className": "AudioEmitter"
+        },
+        "Player": {
+          "$className": "AudioPlayer",
+          "$properties": {
+            "Asset": "rbxassetid://9119060116",
+            "PlaybackSpeed": 0.88,
+            "PlaybackRegion": {
+              "NumberRange": [
+                0,
+                0.5
+              ]
+            },
+            "Volume": 1.15
+          }
+        },
+        "Wire": {
+          "$className": "Wire"
+        }
+      },
+      "4": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": false,
+          "CanTouch": false,
+          "CanQuery": false,
+          "Transparency": 1,
+          "Size": [
+            0.2,
+            0.2,
+            0.2
+          ],
+          "Position": [
+            0,
+            -1000,
+            0
+          ]
+        },
+        "Emitter": {
+          "$className": "AudioEmitter"
+        },
+        "Player": {
+          "$className": "AudioPlayer",
+          "$properties": {
+            "Asset": "rbxassetid://9119060148",
+            "PlaybackSpeed": 0.9,
+            "PlaybackRegion": {
+              "NumberRange": [
+                0,
+                0.5
+              ]
+            },
+            "Volume": 0.85
+          }
+        },
+        "Wire": {
+          "$className": "Wire"
+        }
+      }
+    },
+    "GuardBreak": {
+      "$className": "Folder",
+      "1": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": false,
+          "CanTouch": false,
+          "CanQuery": false,
+          "Transparency": 1,
+          "Size": [
+            0.2,
+            0.2,
+            0.2
+          ],
+          "Position": [
+            0,
+            -1000,
+            0
+          ]
+        },
+        "Emitter": {
+          "$className": "AudioEmitter"
+        },
+        "Player": {
+          "$className": "AudioPlayer",
+          "$properties": {
+            "Asset": "rbxassetid://9113541960",
+            "PlaybackSpeed": 1,
+            "PlaybackRegion": {
+              "NumberRange": [
+                0.07,
+                0.3
+              ]
+            },
+            "Volume": 0.7
+          }
+        },
+        "Wire": {
+          "$className": "Wire"
+        }
+      },
+      "2": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": false,
+          "CanTouch": false,
+          "CanQuery": false,
+          "Transparency": 1,
+          "Size": [
+            0.2,
+            0.2,
+            0.2
+          ],
+          "Position": [
+            0,
+            -1000,
+            0
+          ]
+        },
+        "Emitter": {
+          "$className": "AudioEmitter"
+        },
+        "Player": {
+          "$className": "AudioPlayer",
+          "$properties": {
+            "Asset": "rbxassetid://9113542208",
+            "PlaybackSpeed": 1,
+            "PlaybackRegion": {
+              "NumberRange": [
+                0.075,
+                0.3
+              ]
+            },
+            "Volume": 0.5
+          }
+        },
+        "Wire": {
+          "$className": "Wire"
+        }
+      },
+      "3": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": false,
+          "CanTouch": false,
+          "CanQuery": false,
+          "Transparency": 1,
+          "Size": [
+            0.2,
+            0.2,
+            0.2
+          ],
+          "Position": [
+            0,
+            -1000,
+            0
+          ]
+        },
+        "Emitter": {
+          "$className": "AudioEmitter"
+        },
+        "Player": {
+          "$className": "AudioPlayer",
+          "$properties": {
+            "Asset": "rbxassetid://9113542386",
+            "PlaybackSpeed": 1,
+            "PlaybackRegion": {
+              "NumberRange": [
+                0.095,
+                0.225
+              ]
+            },
+            "Volume": 0.65
+          }
+        },
+        "Wire": {
+          "$className": "Wire"
+        }
+      },
+      "4": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": false,
+          "CanTouch": false,
+          "CanQuery": false,
+          "Transparency": 1,
+          "Size": [
+            0.2,
+            0.2,
+            0.2
+          ],
+          "Position": [
+            0,
+            -1000,
+            0
+          ]
+        },
+        "Emitter": {
+          "$className": "AudioEmitter"
+        },
+        "Player": {
+          "$className": "AudioPlayer",
+          "$properties": {
+            "Asset": "rbxassetid://9113542363",
+            "PlaybackSpeed": 1,
+            "PlaybackRegion": {
+              "NumberRange": [
+                0.09,
+                0.28
+              ]
+            },
+            "Volume": 0.7
+          }
+        },
+        "Wire": {
+          "$className": "Wire"
+        }
+      }
+    },
+    "Elimination": {
+      "$className": "Folder",
+      "1": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": false,
+          "CanTouch": false,
+          "CanQuery": false,
+          "Transparency": 1,
+          "Size": [
+            0.2,
+            0.2,
+            0.2
+          ],
+          "Position": [
+            0,
+            -1000,
+            0
+          ]
+        },
+        "Emitter": {
+          "$className": "AudioEmitter"
+        },
+        "Player": {
+          "$className": "AudioPlayer",
+          "$properties": {
+            "Asset": "rbxassetid://10066947742",
+            "PlaybackSpeed": 0.99,
+            "PlaybackRegion": {
+              "NumberRange": [
+                0,
+                0.65
+              ]
+            },
+            "Volume": 1.8
+          }
+        },
+        "Wire": {
+          "$className": "Wire"
+        }
+      },
+      "2": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": false,
+          "CanTouch": false,
+          "CanQuery": false,
+          "Transparency": 1,
+          "Size": [
+            0.2,
+            0.2,
+            0.2
+          ],
+          "Position": [
+            0,
+            -1000,
+            0
+          ]
+        },
+        "Emitter": {
+          "$className": "AudioEmitter"
+        },
+        "Player": {
+          "$className": "AudioPlayer",
+          "$properties": {
+            "Asset": "rbxassetid://10066947742",
+            "PlaybackSpeed": 1,
+            "PlaybackRegion": {
+              "NumberRange": [
+                0,
+                0.65
+              ]
+            },
+            "Volume": 1.8
+          }
+        },
+        "Wire": {
+          "$className": "Wire"
+        }
+      },
+      "3": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": false,
+          "CanTouch": false,
+          "CanQuery": false,
+          "Transparency": 1,
+          "Size": [
+            0.2,
+            0.2,
+            0.2
+          ],
+          "Position": [
+            0,
+            -1000,
+            0
+          ]
+        },
+        "Emitter": {
+          "$className": "AudioEmitter"
+        },
+        "Player": {
+          "$className": "AudioPlayer",
+          "$properties": {
+            "Asset": "rbxassetid://10066947742",
+            "PlaybackSpeed": 1.01,
+            "PlaybackRegion": {
+              "NumberRange": [
+                0,
+                0.65
+              ]
+            },
+            "Volume": 1.8
+          }
+        },
+        "Wire": {
+          "$className": "Wire"
+        }
+      },
+      "4": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": false,
+          "CanTouch": false,
+          "CanQuery": false,
+          "Transparency": 1,
+          "Size": [
+            0.2,
+            0.2,
+            0.2
+          ],
+          "Position": [
+            0,
+            -1000,
+            0
+          ]
+        },
+        "Emitter": {
+          "$className": "AudioEmitter"
+        },
+        "Player": {
+          "$className": "AudioPlayer",
+          "$properties": {
+            "Asset": "rbxassetid://10066947742",
+            "PlaybackSpeed": 1.02,
+            "PlaybackRegion": {
+              "NumberRange": [
+                0,
+                0.65
+              ]
+            },
+            "Volume": 1.8
+          }
+        },
+        "Wire": {
+          "$className": "Wire"
+        }
+      }
+    },
+    "MultiKill": {
+      "$className": "Folder",
+      "1": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": false,
+          "CanTouch": false,
+          "CanQuery": false,
+          "Transparency": 1,
+          "Size": [
+            0.2,
+            0.2,
+            0.2
+          ],
+          "Position": [
+            0,
+            -1000,
+            0
+          ]
+        },
+        "Emitter": {
+          "$className": "AudioEmitter"
+        },
+        "Player": {
+          "$className": "AudioPlayer",
+          "$properties": {
+            "Asset": "rbxassetid://10066947742",
+            "PlaybackSpeed": 1.08,
+            "PlaybackRegion": {
+              "NumberRange": [
+                0,
+                0.65
+              ]
+            },
+            "Volume": 2
+          }
+        },
+        "Wire": {
+          "$className": "Wire"
+        }
+      },
+      "2": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": false,
+          "CanTouch": false,
+          "CanQuery": false,
+          "Transparency": 1,
+          "Size": [
+            0.2,
+            0.2,
+            0.2
+          ],
+          "Position": [
+            0,
+            -1000,
+            0
+          ]
+        },
+        "Emitter": {
+          "$className": "AudioEmitter"
+        },
+        "Player": {
+          "$className": "AudioPlayer",
+          "$properties": {
+            "Asset": "rbxassetid://10066947742",
+            "PlaybackSpeed": 1.1,
+            "PlaybackRegion": {
+              "NumberRange": [
+                0,
+                0.65
+              ]
+            },
+            "Volume": 2
+          }
+        },
+        "Wire": {
+          "$className": "Wire"
+        }
+      },
+      "3": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": false,
+          "CanTouch": false,
+          "CanQuery": false,
+          "Transparency": 1,
+          "Size": [
+            0.2,
+            0.2,
+            0.2
+          ],
+          "Position": [
+            0,
+            -1000,
+            0
+          ]
+        },
+        "Emitter": {
+          "$className": "AudioEmitter"
+        },
+        "Player": {
+          "$className": "AudioPlayer",
+          "$properties": {
+            "Asset": "rbxassetid://10066947742",
+            "PlaybackSpeed": 1.12,
+            "PlaybackRegion": {
+              "NumberRange": [
+                0,
+                0.65
+              ]
+            },
+            "Volume": 2
+          }
+        },
+        "Wire": {
+          "$className": "Wire"
+        }
+      },
+      "4": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": false,
+          "CanTouch": false,
+          "CanQuery": false,
+          "Transparency": 1,
+          "Size": [
+            0.2,
+            0.2,
+            0.2
+          ],
+          "Position": [
+            0,
+            -1000,
+            0
+          ]
+        },
+        "Emitter": {
+          "$className": "AudioEmitter"
+        },
+        "Player": {
+          "$className": "AudioPlayer",
+          "$properties": {
+            "Asset": "rbxassetid://10066947742",
+            "PlaybackSpeed": 1.14,
+            "PlaybackRegion": {
+              "NumberRange": [
+                0,
+                0.65
+              ]
+            },
+            "Volume": 2
+          }
+        },
+        "Wire": {
+          "$className": "Wire"
+        }
+      }
+    },
+    "BlockClank": {
+      "$className": "Folder",
+      "1": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": false,
+          "CanTouch": false,
+          "CanQuery": false,
+          "Transparency": 1,
+          "Size": [
+            0.2,
+            0.2,
+            0.2
+          ],
+          "Position": [
+            0,
+            -1000,
+            0
+          ]
+        },
+        "Emitter": {
+          "$className": "AudioEmitter"
+        },
+        "Player": {
+          "$className": "AudioPlayer",
+          "$properties": {
+            "Asset": "rbxassetid://9116673678",
+            "PlaybackSpeed": 0.96,
+            "PlaybackRegion": {
+              "NumberRange": [
+                0.005,
+                0.45
+              ]
+            },
+            "Volume": 0.65
+          }
+        },
+        "Wire": {
+          "$className": "Wire"
+        }
+      },
+      "2": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": false,
+          "CanTouch": false,
+          "CanQuery": false,
+          "Transparency": 1,
+          "Size": [
+            0.2,
+            0.2,
+            0.2
+          ],
+          "Position": [
+            0,
+            -1000,
+            0
+          ]
+        },
+        "Emitter": {
+          "$className": "AudioEmitter"
+        },
+        "Player": {
+          "$className": "AudioPlayer",
+          "$properties": {
+            "Asset": "rbxassetid://9116673771",
+            "PlaybackSpeed": 0.96,
+            "PlaybackRegion": {
+              "NumberRange": [
+                0.305,
+                0.7
+              ]
+            },
+            "Volume": 0.65
+          }
+        },
+        "Wire": {
+          "$className": "Wire"
+        }
+      },
+      "3": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": false,
+          "CanTouch": false,
+          "CanQuery": false,
+          "Transparency": 1,
+          "Size": [
+            0.2,
+            0.2,
+            0.2
+          ],
+          "Position": [
+            0,
+            -1000,
+            0
+          ]
+        },
+        "Emitter": {
+          "$className": "AudioEmitter"
+        },
+        "Player": {
+          "$className": "AudioPlayer",
+          "$properties": {
+            "Asset": "rbxassetid://9116673915",
+            "PlaybackSpeed": 0.96,
+            "PlaybackRegion": {
+              "NumberRange": [
+                0.025,
+                0.43
+              ]
+            },
+            "Volume": 0.65
+          }
+        },
+        "Wire": {
+          "$className": "Wire"
+        }
+      },
+      "4": {
+        "$className": "Part",
+        "$properties": {
+          "Anchored": true,
+          "CanCollide": false,
+          "CanTouch": false,
+          "CanQuery": false,
+          "Transparency": 1,
+          "Size": [
+            0.2,
+            0.2,
+            0.2
+          ],
+          "Position": [
+            0,
+            -1000,
+            0
+          ]
+        },
+        "Emitter": {
+          "$className": "AudioEmitter"
+        },
+        "Player": {
+          "$className": "AudioPlayer",
+          "$properties": {
+            "Asset": "rbxassetid://9116673944",
+            "PlaybackSpeed": 0.96,
+            "PlaybackRegion": {
+              "NumberRange": [
+                0.3,
+                0.7
+              ]
+            },
+            "Volume": 0.65
+          }
+        },
+        "Wire": {
+          "$className": "Wire"
+        }
+      }
+    }
+  }
+}

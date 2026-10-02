@@ -1,0 +1,43 @@
+{
+  "name": "CaptureState",
+  "tree": {
+    "$properties": {
+      "Attributes": {
+        "CoralScore": {
+          "Float64": 0
+        },
+        "AzureScore": {
+          "Float64": 0
+        },
+        "Phase": {
+          "String": "Waiting"
+        },
+        "Owner": {
+          "String": ""
+        },
+        "CaptureTeam": {
+          "String": ""
+        },
+        "EndsAt": {
+          "Float64": 0
+        },
+        "Message": {
+          "String": "Join the fight"
+        },
+        "Round": {
+          "Float64": 0
+        },
+        "Winner": {
+          "String": ""
+        },
+        "CaptureProgress": {
+          "Float64": 0
+        },
+        "Contested": {
+          "Bool": false
+        }
+      }
+    },
+    "$className": "Folder"
+  }
+}

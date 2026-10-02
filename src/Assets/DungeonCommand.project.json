@@ -1,0 +1,10 @@
+{
+  "name": "DungeonCommand",
+  "tree": {
+    "$className": "TextChatCommand",
+    "$properties": {
+      "PrimaryAlias": "/dungeon",
+      "AutocompleteVisible": true
+    }
+  }
+}

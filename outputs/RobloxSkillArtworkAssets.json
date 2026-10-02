@@ -1,0 +1,719 @@
+{
+  "Creator": "Weewoo_JP",
+  "CreatorId": "10500660062",
+  "PlaceId": "127512254096488",
+  "StudioFolder": "ServerStorage.GeneratedSkillArtwork",
+  "UploadedCount": 24,
+  "ReusedCount": 21,
+  "Note": "MCP batch upload assigns generic cloud titles; descriptive filenames are retained in the Studio folder and this manifest. Uploaded image size is 1024x1024; source PNGs remain 1254x1254. Nine matching Katana weapon/effect/pattern layers were subsequently uploaded and verified in the rebuilt input UI.",
+  "Assets": [
+    {
+      "Name": "SkillFrameGold",
+      "File": "C:\\Users\\admin\\Documents\\Codex\\2026-10-01\\base\\outputs\\ButtonFrame.png",
+      "Sha256": "5f74cac05ad04bc46047ee8902ec78ac6738f98709edc255d7852ac807c2a294",
+      "Size": [
+        1254,
+        1254
+      ],
+      "Aliases": [
+        "C:\\Users\\admin\\Documents\\Codex\\2026-10-01\\base\\outputs\\SkillBackgroundVariants\\SkillFrameGold.png"
+      ],
+      "Status": "Existing",
+      "AssetId": "71502945814007",
+      "ContentId": "rbxassetid://71502945814007"
+    },
+    {
+      "Name": "ButtonFrameDarkGold",
+      "File": "C:\\Users\\admin\\Documents\\Codex\\2026-10-01\\base\\outputs\\ButtonFrameDarkGold.png",
+      "Sha256": "fda24a73a5026ddfeaa12d706186725b5eb1f47fb555ede3348d6d1f34ce5cea",
+      "Size": [
+        1254,
+        1254
+      ],
+      "Aliases": [],
+      "Status": "Uploaded",
+      "UploadUrl": "http://127.0.0.1:8767/ButtonFrameDarkGold.png",
+      "ContentId": "rbxassetid://76465210954238",
+      "AssetId": "76465210954238",
+      "CloudName": "Assistant_45260b4fcb64ba8aafc0db5e59e801e3.png",
+      "UploadedSize": [
+        1024,
+        1024
+      ],
+      "Verified": true
+    },
+    {
+      "Name": "SkillBackgroundGold",
+      "File": "C:\\Users\\admin\\Documents\\Codex\\2026-10-01\\base\\outputs\\SkillBackgroundDarkGold.png",
+      "Sha256": "c9044cd1ae9a1639bc32b09a2f76d0a5ede8e9fe85370816a836609cb54629c2",
+      "Size": [
+        1254,
+        1254
+      ],
+      "Aliases": [
+        "C:\\Users\\admin\\Documents\\Codex\\2026-10-01\\base\\outputs\\SkillBackgroundVariants\\SkillBackgroundGold.png"
+      ],
+      "Status": "Existing",
+      "AssetId": "75402199872143",
+      "ContentId": "rbxassetid://75402199872143"
+    },
+    {
+      "Name": "SkillBackgroundTealWashiSample",
+      "File": "C:\\Users\\admin\\Documents\\Codex\\2026-10-01\\base\\outputs\\SkillBackgroundTealWashiSample.png",
+      "Sha256": "1ea6dcfed81590322727aa38b89464512acf83bfb3a7ff8e495e332bc820a6c4",
+      "Size": [
+        1254,
+        1254
+      ],
+      "Aliases": [],
+      "Status": "Uploaded",
+      "UploadUrl": "http://127.0.0.1:8767/SkillBackgroundTealWashiSample.png",
+      "ContentId": "rbxassetid://83567860190318",
+      "AssetId": "83567860190318",
+      "CloudName": "Assistant_5150ae62bf679166c5e5290075bbf2aa.png",
+      "UploadedSize": [
+        1024,
+        1024
+      ],
+      "Verified": true
+    },
+    {
+      "Name": "Skill Background Washi Teal",
+      "File": "C:\\Users\\admin\\Documents\\Codex\\2026-10-01\\base\\outputs\\SkillBackgroundTealWashiSubtleSample.png",
+      "Sha256": "0eebc24d00362af8d2a41d6b939c11007df1597d079758a0de8aebc524d5ed97",
+      "Size": [
+        1254,
+        1254
+      ],
+      "Aliases": [
+        "C:\\Users\\admin\\Documents\\Codex\\2026-10-01\\base\\outputs\\SkillBackgroundWashi\\SkillBackgroundWashiTeal.png"
+      ],
+      "Status": "Existing",
+      "AssetId": "139751609122567",
+      "ContentId": "rbxassetid://139751609122567"
+    },
+    {
+      "Name": "SkillIconCharge",
+      "File": "C:\\Users\\admin\\Documents\\Codex\\2026-10-01\\base\\outputs\\SkillIconCharge.png",
+      "Sha256": "69c286027e75b2c68da338021198bb72678397e522152e44161bc2350ebb655a",
+      "Size": [
+        1254,
+        1254
+      ],
+      "Aliases": [],
+      "Status": "Uploaded",
+      "UploadUrl": "http://127.0.0.1:8767/SkillIconCharge.png",
+      "ContentId": "rbxassetid://81049941862411",
+      "AssetId": "81049941862411",
+      "CloudName": "Assistant_3f31fcdc41e28c2bfd9e23d36995633f.png",
+      "UploadedSize": [
+        1024,
+        1024
+      ],
+      "Verified": true
+    },
+    {
+      "Name": "SkillIconChargeCharacter",
+      "File": "C:\\Users\\admin\\Documents\\Codex\\2026-10-01\\base\\outputs\\SkillIconChargeCharacter.png",
+      "Sha256": "842969ec67d4951c4e526e69fc4456a8e6a0cbfa451fb67df6e7c7dde4cb365a",
+      "Size": [
+        1254,
+        1254
+      ],
+      "Aliases": [],
+      "Status": "Uploaded",
+      "UploadUrl": "http://127.0.0.1:8767/SkillIconChargeCharacter.png",
+      "ContentId": "rbxassetid://138202278145507",
+      "AssetId": "138202278145507",
+      "CloudName": "Assistant_775d2c677bbb32527899e50ddb4ea25f.png",
+      "UploadedSize": [
+        1024,
+        1024
+      ],
+      "Verified": true
+    },
+    {
+      "Name": "SkillIconChargeDash",
+      "File": "C:\\Users\\admin\\Documents\\Codex\\2026-10-01\\base\\outputs\\SkillIconChargeDash.png",
+      "Sha256": "879b423ec4bf089084efa97a3a210a7db8d54a768ae6f2439dcad9a773ab5458",
+      "Size": [
+        1254,
+        1254
+      ],
+      "Aliases": [],
+      "Status": "Uploaded",
+      "UploadUrl": "http://127.0.0.1:8767/SkillIconChargeDash.png",
+      "ContentId": "rbxassetid://83107421324063",
+      "AssetId": "83107421324063",
+      "CloudName": "Assistant_76814237c302c66198e4358e9039bce1.png",
+      "UploadedSize": [
+        1024,
+        1024
+      ],
+      "Verified": true
+    },
+    {
+      "Name": "SkillIconChargeEffects",
+      "File": "C:\\Users\\admin\\Documents\\Codex\\2026-10-01\\base\\outputs\\SkillIconChargeEffects.png",
+      "Sha256": "0d91e92327ce7bd8d73670ce8daf1d5d097640da396ab9b7d2a21be016804b61",
+      "Size": [
+        1254,
+        1254
+      ],
+      "Aliases": [],
+      "Status": "Uploaded",
+      "UploadUrl": "http://127.0.0.1:8767/SkillIconChargeEffects.png",
+      "ContentId": "rbxassetid://94163307407218",
+      "AssetId": "94163307407218",
+      "CloudName": "Assistant_53c2a444a74b39313ab65f2dc4ce8b5e.png",
+      "UploadedSize": [
+        1024,
+        1024
+      ],
+      "Verified": true
+    },
+    {
+      "Name": "SkillIconChargeEffectsHorizontal",
+      "File": "C:\\Users\\admin\\Documents\\Codex\\2026-10-01\\base\\outputs\\SkillIconChargeEffectsHorizontal.png",
+      "Sha256": "6be2564c755d9e108c2ef5e86ec8ad654aedec4eee3ca703837158af8e66357c",
+      "Size": [
+        1254,
+        1254
+      ],
+      "Aliases": [],
+      "Status": "Existing",
+      "AssetId": "121301301816360",
+      "MatchEvidence": "Studio image pixel sampling",
+      "ContentId": "rbxassetid://121301301816360"
+    },
+    {
+      "Name": "SkillIconChargeKatana",
+      "File": "C:\\Users\\admin\\Documents\\Codex\\2026-10-01\\base\\outputs\\SkillIconChargeKatana.png",
+      "Sha256": "715b5b3ec942508540e901bed320b947115b59684f2cc78817b3fcf2cff447b5",
+      "Size": [
+        1254,
+        1254
+      ],
+      "Aliases": [],
+      "Status": "Uploaded",
+      "UploadUrl": "http://127.0.0.1:8767/SkillIconChargeKatana.png",
+      "ContentId": "rbxassetid://89715373829902",
+      "AssetId": "89715373829902",
+      "CloudName": "Assistant_916323209de937e7c2b37af645868c0f.png",
+      "UploadedSize": [
+        1024,
+        1024
+      ],
+      "Verified": true
+    },
+    {
+      "Name": "SkillIconChargeKatanaHorizontal",
+      "File": "C:\\Users\\admin\\Documents\\Codex\\2026-10-01\\base\\outputs\\SkillIconChargeKatanaHorizontal.png",
+      "Sha256": "0ef31300c5c29a82bc303d8720f7fd3a9836de035108b3162e62dc8b937a7f64",
+      "Size": [
+        1254,
+        1254
+      ],
+      "Aliases": [],
+      "Status": "Existing",
+      "AssetId": "134262848479045",
+      "MatchEvidence": "Studio image pixel sampling",
+      "ContentId": "rbxassetid://134262848479045"
+    },
+    {
+      "Name": "ChargeBackgroundTeal",
+      "File": "C:\\Users\\admin\\Documents\\Codex\\2026-10-01\\base\\outputs\\ChargeMajestic\\ChargeBackgroundTeal.png",
+      "Sha256": "438b62a2d8bfe8601230ac29ef25350c84d7144d14fdc69bd0b696ba9f013876",
+      "Size": [
+        1254,
+        1254
+      ],
+      "Aliases": [],
+      "Status": "Uploaded",
+      "UploadUrl": "http://127.0.0.1:8767/ChargeBackgroundTeal.png",
+      "ContentId": "rbxassetid://123904916319574",
+      "AssetId": "123904916319574",
+      "CloudName": "Assistant_ea91373329e57ad52d5b658403417e62.png",
+      "UploadedSize": [
+        1024,
+        1024
+      ],
+      "Verified": true
+    },
+    {
+      "Name": "ChargeCompositionReference",
+      "File": "C:\\Users\\admin\\Documents\\Codex\\2026-10-01\\base\\outputs\\ChargeMajestic\\ChargeCompositionReference.png",
+      "Sha256": "063e5e4c2646cfd81283e0e6c2a85da931e334d000ea687cccee171629df8e28",
+      "Size": [
+        1254,
+        1254
+      ],
+      "Aliases": [],
+      "Status": "Uploaded",
+      "UploadUrl": "http://127.0.0.1:8767/ChargeCompositionReference.png",
+      "ContentId": "rbxassetid://124412628656747",
+      "AssetId": "124412628656747",
+      "CloudName": "Assistant_b5c1df0b853da543e6e7e24a6e602f7c.png",
+      "UploadedSize": [
+        1024,
+        1024
+      ],
+      "Verified": true
+    },
+    {
+      "Name": "ChargeDash",
+      "File": "C:\\Users\\admin\\Documents\\Codex\\2026-10-01\\base\\outputs\\ChargeMajestic\\ChargeDash.png",
+      "Sha256": "96ac1188e5a1f3926dffae83a94678e1faba4267ff3a5689c991dcb677836089",
+      "Size": [
+        1254,
+        1254
+      ],
+      "Aliases": [
+        "C:\\Users\\admin\\Documents\\ChatGPT\\Brawl Stars\\outputs\\ChargeBrushLayers\\ChargeDash.png"
+      ],
+      "Status": "Uploaded",
+      "UploadUrl": "http://127.0.0.1:8767/ChargeDash.png",
+      "ContentId": "rbxassetid://98932789717643",
+      "AssetId": "98932789717643",
+      "CloudName": "Assistant_2bbcac4e1bdadd9c878b449875129a37.png",
+      "UploadedSize": [
+        1024,
+        1024
+      ],
+      "Verified": true
+    },
+    {
+      "Name": "ChargeFrameVintageGold",
+      "File": "C:\\Users\\admin\\Documents\\Codex\\2026-10-01\\base\\outputs\\ChargeMajestic\\ChargeFrameVintageGold.png",
+      "Sha256": "312140a1812f53771c26ecdc4c6eefa9f528c4d0564d07e46de653c241f9246f",
+      "Size": [
+        1254,
+        1254
+      ],
+      "Aliases": [
+        "C:\\Users\\admin\\Documents\\ChatGPT\\Brawl Stars\\outputs\\ChargeBrushLayers\\ChargeFrameVintageGold.png"
+      ],
+      "Status": "Uploaded",
+      "UploadUrl": "http://127.0.0.1:8767/ChargeFrameVintageGold.png",
+      "ContentId": "rbxassetid://122399349451023",
+      "AssetId": "122399349451023",
+      "CloudName": "##############################################",
+      "UploadedSize": [
+        1024,
+        1024
+      ],
+      "Verified": true
+    },
+    {
+      "Name": "ChargeKatana",
+      "File": "C:\\Users\\admin\\Documents\\Codex\\2026-10-01\\base\\outputs\\ChargeMajestic\\ChargeKatana.png",
+      "Sha256": "ecc17f4c0c62a5dd6a012569727710739f8d0d016c4dc287dcb9708982f1c5ec",
+      "Size": [
+        1254,
+        1254
+      ],
+      "Aliases": [
+        "C:\\Users\\admin\\Documents\\ChatGPT\\Brawl Stars\\outputs\\ChargeBrushLayers\\ChargeKatana.png"
+      ],
+      "Status": "Uploaded",
+      "UploadUrl": "http://127.0.0.1:8767/ChargeKatana.png",
+      "ContentId": "rbxassetid://131162068996658",
+      "AssetId": "131162068996658",
+      "CloudName": "Assistant_bf396562a3f501da6568035912c55ab3.png",
+      "UploadedSize": [
+        1024,
+        1024
+      ],
+      "Verified": true
+    },
+    {
+      "Name": "ChargeTarget",
+      "File": "C:\\Users\\admin\\Documents\\Codex\\2026-10-01\\base\\outputs\\ChargeMajestic\\ChargeTarget.png",
+      "Sha256": "221572b4a60c3c98f47b4d5ba5354a2b0e6136a4afa23d8c04fce9c5ac8739db",
+      "Size": [
+        1254,
+        1254
+      ],
+      "Aliases": [
+        "C:\\Users\\admin\\Documents\\ChatGPT\\Brawl Stars\\outputs\\ChargeBrushLayers\\ChargeTarget.png"
+      ],
+      "Status": "Uploaded",
+      "UploadUrl": "http://127.0.0.1:8767/ChargeTarget.png",
+      "ContentId": "rbxassetid://138890220933355",
+      "AssetId": "138890220933355",
+      "CloudName": "Assistant_999cc58fc9ebff1032daf9f177b17e3f.png",
+      "UploadedSize": [
+        1024,
+        1024
+      ],
+      "Verified": true
+    },
+    {
+      "Name": "ChargeWindScrolls",
+      "File": "C:\\Users\\admin\\Documents\\Codex\\2026-10-01\\base\\outputs\\ChargeMajestic\\ChargeWindScrolls.png",
+      "Sha256": "5f90c79889e7ae30e5c4e6258168857917257a992be7849cbc920722da3f6ac2",
+      "Size": [
+        1254,
+        1254
+      ],
+      "Aliases": [
+        "C:\\Users\\admin\\Documents\\ChatGPT\\Brawl Stars\\outputs\\ChargeBrushLayers\\ChargeWindScrolls.png"
+      ],
+      "Status": "Uploaded",
+      "UploadUrl": "http://127.0.0.1:8767/ChargeWindScrolls.png",
+      "ContentId": "rbxassetid://122372029049248",
+      "AssetId": "122372029049248",
+      "CloudName": "Assistant_91d9c7180c712af5390ab88ce17a64f0.png",
+      "UploadedSize": [
+        1024,
+        1024
+      ],
+      "Verified": true
+    },
+    {
+      "Name": "SkillBackgroundAmber",
+      "File": "C:\\Users\\admin\\Documents\\Codex\\2026-10-01\\base\\outputs\\SkillBackgroundVariants\\SkillBackgroundAmber.png",
+      "Sha256": "ee1444fe6983ef3ec087448edec339c3c918f42f3a647157a1d7e7fe7a3ea0e3",
+      "Size": [
+        1254,
+        1254
+      ],
+      "Aliases": [],
+      "Status": "Existing",
+      "AssetId": "121264564557087",
+      "ContentId": "rbxassetid://121264564557087"
+    },
+    {
+      "Name": "SkillBackgroundBlack",
+      "File": "C:\\Users\\admin\\Documents\\Codex\\2026-10-01\\base\\outputs\\SkillBackgroundVariants\\SkillBackgroundBlack.png",
+      "Sha256": "009bbc082e07612261741d3aef4979f4eeb481ca7d6e01fd7f8868ba0c78a23d",
+      "Size": [
+        1254,
+        1254
+      ],
+      "Aliases": [],
+      "Status": "Existing",
+      "AssetId": "113222518558676",
+      "ContentId": "rbxassetid://113222518558676"
+    },
+    {
+      "Name": "SkillBackgroundBlue",
+      "File": "C:\\Users\\admin\\Documents\\Codex\\2026-10-01\\base\\outputs\\SkillBackgroundVariants\\SkillBackgroundBlue.png",
+      "Sha256": "fb2ae276b61aad3570ef5869f3b944f5a04c408aeed44ebfbc714c2a558a6e82",
+      "Size": [
+        1254,
+        1254
+      ],
+      "Aliases": [],
+      "Status": "Existing",
+      "AssetId": "116238389011147",
+      "ContentId": "rbxassetid://116238389011147"
+    },
+    {
+      "Name": "SkillBackgroundGreen",
+      "File": "C:\\Users\\admin\\Documents\\Codex\\2026-10-01\\base\\outputs\\SkillBackgroundVariants\\SkillBackgroundGreen.png",
+      "Sha256": "ea8102a9a5f432caa40576676f2404b6307f2aaf64fcd6abdd2c29776f6e58ef",
+      "Size": [
+        1254,
+        1254
+      ],
+      "Aliases": [],
+      "Status": "Existing",
+      "AssetId": "75283204197360",
+      "ContentId": "rbxassetid://75283204197360"
+    },
+    {
+      "Name": "SkillBackgroundGrey",
+      "File": "C:\\Users\\admin\\Documents\\Codex\\2026-10-01\\base\\outputs\\SkillBackgroundVariants\\SkillBackgroundGrey.png",
+      "Sha256": "9980545e018ff7f0c646fbaa29c34526bee7a600d02de2244c448d63c16c5d3a",
+      "Size": [
+        1254,
+        1254
+      ],
+      "Aliases": [],
+      "Status": "Existing",
+      "AssetId": "85088266716033",
+      "ContentId": "rbxassetid://85088266716033"
+    },
+    {
+      "Name": "SkillBackgroundPurple",
+      "File": "C:\\Users\\admin\\Documents\\Codex\\2026-10-01\\base\\outputs\\SkillBackgroundVariants\\SkillBackgroundPurple.png",
+      "Sha256": "cf8755367d53cd6e493664939569ffea97470b337da5af414ec78f1e5b689d82",
+      "Size": [
+        1254,
+        1254
+      ],
+      "Aliases": [],
+      "Status": "Existing",
+      "AssetId": "102306218626433",
+      "ContentId": "rbxassetid://102306218626433"
+    },
+    {
+      "Name": "SkillBackgroundRed",
+      "File": "C:\\Users\\admin\\Documents\\Codex\\2026-10-01\\base\\outputs\\SkillBackgroundVariants\\SkillBackgroundRed.png",
+      "Sha256": "46c7b8bddc47d13ab68e6eb53a2d24d9ec9a85a2d327dfaba0ad32fc88e55d38",
+      "Size": [
+        1254,
+        1254
+      ],
+      "Aliases": [],
+      "Status": "Existing",
+      "AssetId": "81874933707089",
+      "ContentId": "rbxassetid://81874933707089"
+    },
+    {
+      "Name": "SkillBackgroundTeal",
+      "File": "C:\\Users\\admin\\Documents\\Codex\\2026-10-01\\base\\outputs\\SkillBackgroundVariants\\SkillBackgroundTeal.png",
+      "Sha256": "bdc4e14e684cab9f247dfa48878e00ebfa791c5493df3667a084978b833ede1b",
+      "Size": [
+        1254,
+        1254
+      ],
+      "Aliases": [],
+      "Status": "Existing",
+      "AssetId": "107599855023793",
+      "ContentId": "rbxassetid://107599855023793"
+    },
+    {
+      "Name": "SkillBackgroundWashiAmber",
+      "File": "C:\\Users\\admin\\Documents\\Codex\\2026-10-01\\base\\outputs\\SkillBackgroundWashi\\SkillBackgroundWashiAmber.png",
+      "Sha256": "0fec459504f050ed633f183136d9a2b274af933f92f935e0fca1191c29b5fe40",
+      "Size": [
+        1254,
+        1254
+      ],
+      "Aliases": [],
+      "Status": "Existing",
+      "AssetId": "73592488866229",
+      "ContentId": "rbxassetid://73592488866229"
+    },
+    {
+      "Name": "SkillBackgroundWashiBlack",
+      "File": "C:\\Users\\admin\\Documents\\Codex\\2026-10-01\\base\\outputs\\SkillBackgroundWashi\\SkillBackgroundWashiBlack.png",
+      "Sha256": "b80ce05a77543b2ae25e63d1f33288e22c7926e2977d01f473648b0944dd72e7",
+      "Size": [
+        1254,
+        1254
+      ],
+      "Aliases": [],
+      "Status": "Existing",
+      "AssetId": "106673974330758",
+      "ContentId": "rbxassetid://106673974330758"
+    },
+    {
+      "Name": "SkillBackgroundWashiBlue",
+      "File": "C:\\Users\\admin\\Documents\\Codex\\2026-10-01\\base\\outputs\\SkillBackgroundWashi\\SkillBackgroundWashiBlue.png",
+      "Sha256": "920de53cfe0e4f738936944a2723d62938ce446cf3322640763d4ac1036e0e4b",
+      "Size": [
+        1254,
+        1254
+      ],
+      "Aliases": [],
+      "Status": "Existing",
+      "AssetId": "85601907082374",
+      "ContentId": "rbxassetid://85601907082374"
+    },
+    {
+      "Name": "SkillBackgroundWashiGold",
+      "File": "C:\\Users\\admin\\Documents\\Codex\\2026-10-01\\base\\outputs\\SkillBackgroundWashi\\SkillBackgroundWashiGold.png",
+      "Sha256": "87849bd9aed2fb99da6a752c4e7c7193d788ebead9517a86153a22aa37b11591",
+      "Size": [
+        1254,
+        1254
+      ],
+      "Aliases": [],
+      "Status": "Existing",
+      "AssetId": "104345496505935",
+      "ContentId": "rbxassetid://104345496505935"
+    },
+    {
+      "Name": "SkillBackgroundWashiGreen",
+      "File": "C:\\Users\\admin\\Documents\\Codex\\2026-10-01\\base\\outputs\\SkillBackgroundWashi\\SkillBackgroundWashiGreen.png",
+      "Sha256": "09f679a8102f95342c2335445d74e5a5d99c1943f4a9253e0557eb3052e88eae",
+      "Size": [
+        1254,
+        1254
+      ],
+      "Aliases": [],
+      "Status": "Existing",
+      "AssetId": "79220966729439",
+      "ContentId": "rbxassetid://79220966729439"
+    },
+    {
+      "Name": "SkillBackgroundWashiGrey",
+      "File": "C:\\Users\\admin\\Documents\\Codex\\2026-10-01\\base\\outputs\\SkillBackgroundWashi\\SkillBackgroundWashiGrey.png",
+      "Sha256": "8577452dbec72017132d8ef6afce1ed6979bf1c023d2c356e8591964709a5d41",
+      "Size": [
+        1254,
+        1254
+      ],
+      "Aliases": [],
+      "Status": "Existing",
+      "AssetId": "81487382219486",
+      "ContentId": "rbxassetid://81487382219486"
+    },
+    {
+      "Name": "SkillBackgroundWashiPurple",
+      "File": "C:\\Users\\admin\\Documents\\Codex\\2026-10-01\\base\\outputs\\SkillBackgroundWashi\\SkillBackgroundWashiPurple.png",
+      "Sha256": "3a88feb58737ff94c04e0b6e44f1fa157749cccf150f9b371ddcbc2c7f819553",
+      "Size": [
+        1254,
+        1254
+      ],
+      "Aliases": [],
+      "Status": "Existing",
+      "AssetId": "106801642554970",
+      "ContentId": "rbxassetid://106801642554970"
+    },
+    {
+      "Name": "SkillBackgroundWashiRed",
+      "File": "C:\\Users\\admin\\Documents\\Codex\\2026-10-01\\base\\outputs\\SkillBackgroundWashi\\SkillBackgroundWashiRed.png",
+      "Sha256": "0d2fbf447faa73409a333b11102fe9486a87e24ac35ace38f7a2802a32fea151",
+      "Size": [
+        1254,
+        1254
+      ],
+      "Aliases": [],
+      "Status": "Existing",
+      "AssetId": "99134915816391",
+      "ContentId": "rbxassetid://99134915816391"
+    },
+    {
+      "Name": "SkillBrushTextureBlack",
+      "File": "C:\\Users\\admin\\Documents\\ChatGPT\\Brawl Stars\\outputs\\SkillBrushTextureBlack.png",
+      "Sha256": "8812d2643aa4cb4caa14bcef0a80fe0ddf34ef3204ef8f2b7778768453a4daf2",
+      "Size": [
+        1254,
+        1254
+      ],
+      "Aliases": [],
+      "Status": "Uploaded",
+      "UploadUrl": "http://127.0.0.1:8767/SkillBrushTextureBlack.png",
+      "ContentId": "rbxassetid://134142006452038",
+      "AssetId": "134142006452038",
+      "CloudName": "Assistant_faa0e3eab7a52f17ad5e4ea112bbd09f.png",
+      "UploadedSize": [
+        1024,
+        1024
+      ],
+      "Verified": true
+    },
+    {
+      "Name": "GroundShockEffects",
+      "File": "C:\\Users\\admin\\Documents\\ChatGPT\\Brawl Stars\\outputs\\KatanaSkillPatterns\\GroundShockEffects.png",
+      "Sha256": "a617814aa7222ea71dbb3b6e0a661b126da38b2bce33b229b734939cb2e2dc83",
+      "Size": [
+        1254,
+        1254
+      ],
+      "Status": "Uploaded",
+      "ContentId": "rbxassetid://136783138955530",
+      "AssetId": "136783138955530",
+      "Verified": true
+    },
+    {
+      "Name": "RisingCrashPatterns",
+      "File": "C:\\Users\\admin\\Documents\\ChatGPT\\Brawl Stars\\outputs\\KatanaSkillPatterns\\RisingCrashPatterns.png",
+      "Sha256": "865f90822b618614fdf98311834754259edf92aa4149ac55852ec6055b6aec1d",
+      "Size": [
+        1254,
+        1254
+      ],
+      "Status": "Uploaded",
+      "ContentId": "rbxassetid://106912137358351",
+      "AssetId": "106912137358351",
+      "Verified": true
+    },
+    {
+      "Name": "GroundShockKatana",
+      "File": "C:\\Users\\admin\\Documents\\ChatGPT\\Brawl Stars\\outputs\\KatanaSkillPatterns\\GroundShockKatana.png",
+      "Sha256": "6f06dc6da71446ce1b6581ac9be127b0fd22f9eaddbb939e5ee762aac241ab8e",
+      "Size": [
+        1254,
+        1254
+      ],
+      "Status": "Uploaded",
+      "ContentId": "rbxassetid://133582933091394",
+      "AssetId": "133582933091394",
+      "Verified": true
+    },
+    {
+      "Name": "WindSpinPatterns",
+      "File": "C:\\Users\\admin\\Documents\\ChatGPT\\Brawl Stars\\outputs\\KatanaSkillPatterns\\WindSpinPatterns.png",
+      "Sha256": "b5c50dfa1eff4ce9f3e0b11ebec8a6cfb91beb849f41489cf0524cba0cb951fa",
+      "Size": [
+        1254,
+        1254
+      ],
+      "Status": "Uploaded",
+      "ContentId": "rbxassetid://128803305506693",
+      "AssetId": "128803305506693",
+      "Verified": true
+    },
+    {
+      "Name": "WindSpinEffects",
+      "File": "C:\\Users\\admin\\Documents\\ChatGPT\\Brawl Stars\\outputs\\KatanaSkillPatterns\\WindSpinEffects.png",
+      "Sha256": "dfa22def4f9b502e291c450e037d290585626ff4db2bb2a7262373739cb96d92",
+      "Size": [
+        1254,
+        1254
+      ],
+      "Status": "Uploaded",
+      "ContentId": "rbxassetid://134094950640514",
+      "AssetId": "134094950640514",
+      "Verified": true
+    },
+    {
+      "Name": "RisingCrashKatana",
+      "File": "C:\\Users\\admin\\Documents\\ChatGPT\\Brawl Stars\\outputs\\KatanaSkillPatterns\\RisingCrashKatana.png",
+      "Sha256": "7ed88cdb0e65e6db33572f189a5dbb2ece1db6cb3b7c3895a1d333625ec71548",
+      "Size": [
+        1254,
+        1254
+      ],
+      "Status": "Uploaded",
+      "ContentId": "rbxassetid://128426923445328",
+      "AssetId": "128426923445328",
+      "Verified": true
+    },
+    {
+      "Name": "WindSpinKatana",
+      "File": "C:\\Users\\admin\\Documents\\ChatGPT\\Brawl Stars\\outputs\\KatanaSkillPatterns\\WindSpinKatana.png",
+      "Sha256": "04e0d37a072f11636aa058a045b5cfe663092bef4c34a78ed8d6819802397910",
+      "Size": [
+        1254,
+        1254
+      ],
+      "Status": "Uploaded",
+      "ContentId": "rbxassetid://138990562851709",
+      "AssetId": "138990562851709",
+      "Verified": true
+    },
+    {
+      "Name": "RisingCrashEffects",
+      "File": "C:\\Users\\admin\\Documents\\ChatGPT\\Brawl Stars\\outputs\\KatanaSkillPatterns\\RisingCrashEffects.png",
+      "Sha256": "d71bdbf57c267195678e57d1e7f5c5f7003268c8bcdd4b9f77787e99b27698fd",
+      "Size": [
+        1254,
+        1254
+      ],
+      "Status": "Uploaded",
+      "ContentId": "rbxassetid://72452549973821",
+      "AssetId": "72452549973821",
+      "Verified": true
+    },
+    {
+      "Name": "GroundShockPatterns",
+      "File": "C:\\Users\\admin\\Documents\\ChatGPT\\Brawl Stars\\outputs\\KatanaSkillPatterns\\GroundShockPatterns.png",
+      "Sha256": "422257415f4a4be3f1b42dac4d8374ded1bec49168bd8c4768033bf230c7d1da",
+      "Size": [
+        1254,
+        1254
+      ],
+      "Status": "Uploaded",
+      "ContentId": "rbxassetid://106814492288646",
+      "AssetId": "106814492288646",
+      "Verified": true
+    }
+  ]
+}

@@ -1,0 +1,5074 @@
+{
+  "name": "CaptureHUD",
+  "tree": {
+    "Direction": {
+      "UICorner": {
+        "$properties": {
+          "Archivable": true,
+          "CornerRadius": {
+            "UDim": [
+              0,
+              8
+            ]
+          }
+        },
+        "$className": "UICorner"
+      },
+      "$className": "TextLabel",
+      "$properties": {
+        "Visible": false,
+        "TextWrapped": false,
+        "Active": false,
+        "TextTransparency": 0,
+        "TextStrokeTransparency": 1,
+        "AnchorPoint": [
+          0.5,
+          0.5
+        ],
+        "ZIndex": 1,
+        "Archivable": true,
+        "Size": {
+          "UDim2": [
+            [
+              0,
+              120
+            ],
+            [
+              0,
+              28
+            ]
+          ]
+        },
+        "TextColor3": [
+          0.95686274766922,
+          0.8274509906768799,
+          0.5137255191802979
+        ],
+        "AutomaticSize": {
+          "Enum": 0
+        },
+        "ClipsDescendants": false,
+        "TextXAlignment": {
+          "Enum": 2
+        },
+        "Text": "Label",
+        "BorderSizePixel": 0,
+        "TextStrokeColor3": [
+          0,
+          0,
+          0
+        ],
+        "Rotation": 0,
+        "Font": {
+          "Enum": 19
+        },
+        "BackgroundTransparency": 0.11999999731779099,
+        "Position": {
+          "UDim2": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              0
+            ]
+          ]
+        },
+        "TextSize": 12,
+        "TextYAlignment": {
+          "Enum": 1
+        },
+        "TextScaled": false,
+        "BackgroundColor3": [
+          0.0941176488995552,
+          0.13725490868091583,
+          0.1921568661928177
+        ]
+      }
+    },
+    "Objective": {
+      "Track": {
+        "$properties": {
+          "Visible": true,
+          "ClipsDescendants": false,
+          "AutomaticSize": {
+            "Enum": 0
+          },
+          "Active": false,
+          "BackgroundColor3": [
+            0.0941176488995552,
+            0.13725490868091583,
+            0.1921568661928177
+          ],
+          "Rotation": 0,
+          "BorderSizePixel": 0,
+          "BackgroundTransparency": 0,
+          "Position": {
+            "UDim2": [
+              [
+                0,
+                12
+              ],
+              [
+                1,
+                -5
+              ]
+            ]
+          },
+          "AnchorPoint": [
+            0,
+            0
+          ],
+          "ZIndex": 1,
+          "Archivable": true,
+          "Size": {
+            "UDim2": [
+              [
+                1,
+                -24
+              ],
+              [
+                0,
+                3
+              ]
+            ]
+          }
+        },
+        "$className": "Frame",
+        "Corner": {
+          "$properties": {
+            "Archivable": true,
+            "CornerRadius": {
+              "UDim": [
+                0,
+                3
+              ]
+            }
+          },
+          "$className": "UICorner"
+        },
+        "Fill": {
+          "$className": "Frame",
+          "Corner": {
+            "$properties": {
+              "Archivable": true,
+              "CornerRadius": {
+                "UDim": [
+                  0,
+                  3
+                ]
+              }
+            },
+            "$className": "UICorner"
+          },
+          "$properties": {
+            "Visible": true,
+            "ClipsDescendants": false,
+            "AutomaticSize": {
+              "Enum": 0
+            },
+            "Active": false,
+            "BackgroundColor3": [
+              0.95686274766922,
+              0.8274509906768799,
+              0.5137255191802979
+            ],
+            "Rotation": 0,
+            "BorderSizePixel": 0,
+            "BackgroundTransparency": 0,
+            "Position": {
+              "UDim2": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ]
+            },
+            "AnchorPoint": [
+              0,
+              0
+            ],
+            "ZIndex": 1,
+            "Archivable": true,
+            "Size": {
+              "UDim2": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  1,
+                  0
+                ]
+              ]
+            }
+          }
+        }
+      },
+      "Corner": {
+        "$properties": {
+          "Archivable": true,
+          "CornerRadius": {
+            "UDim": [
+              0,
+              10
+            ]
+          }
+        },
+        "$className": "UICorner"
+      },
+      "$className": "Frame",
+      "Scale": {
+        "$properties": {
+          "Archivable": true,
+          "Scale": 1
+        },
+        "$className": "UIScale"
+      },
+      "$properties": {
+        "Visible": true,
+        "ClipsDescendants": false,
+        "AutomaticSize": {
+          "Enum": 0
+        },
+        "Active": false,
+        "BackgroundColor3": [
+          0.13725490868091583,
+          0.1921568661928177,
+          0.250980406999588
+        ],
+        "Rotation": 0,
+        "BorderSizePixel": 0,
+        "BackgroundTransparency": 0.11999999731779099,
+        "Position": {
+          "UDim2": [
+            [
+              0.5,
+              0
+            ],
+            [
+              0,
+              70
+            ]
+          ]
+        },
+        "AnchorPoint": [
+          0.5,
+          0
+        ],
+        "ZIndex": 1,
+        "Archivable": true,
+        "Size": {
+          "UDim2": [
+            [
+              0,
+              270
+            ],
+            [
+              0,
+              40
+            ]
+          ]
+        }
+      },
+      "Title": {
+        "$properties": {
+          "Visible": true,
+          "TextWrapped": false,
+          "Active": false,
+          "TextTransparency": 0,
+          "TextStrokeTransparency": 1,
+          "AnchorPoint": [
+            0,
+            0
+          ],
+          "ZIndex": 1,
+          "Archivable": true,
+          "Size": {
+            "UDim2": [
+              [
+                1,
+                -16
+              ],
+              [
+                0,
+                16
+              ]
+            ]
+          },
+          "TextColor3": [
+            0.95686274766922,
+            0.8274509906768799,
+            0.5137255191802979
+          ],
+          "AutomaticSize": {
+            "Enum": 0
+          },
+          "ClipsDescendants": false,
+          "TextXAlignment": {
+            "Enum": 2
+          },
+          "Text": "CAPTURE THE POINT",
+          "BorderSizePixel": 0,
+          "TextStrokeColor3": [
+            0,
+            0,
+            0
+          ],
+          "Rotation": 0,
+          "Font": {
+            "Enum": 19
+          },
+          "BackgroundTransparency": 1,
+          "Position": {
+            "UDim2": [
+              [
+                0,
+                8
+              ],
+              [
+                0,
+                2
+              ]
+            ]
+          },
+          "TextSize": 11,
+          "TextYAlignment": {
+            "Enum": 1
+          },
+          "TextScaled": false,
+          "BackgroundColor3": [
+            0.6392157077789307,
+            0.6352941393852234,
+            0.6470588445663452
+          ]
+        },
+        "$className": "TextLabel"
+      },
+      "Detail": {
+        "$properties": {
+          "Visible": true,
+          "TextWrapped": false,
+          "Active": false,
+          "TextTransparency": 0,
+          "TextStrokeTransparency": 1,
+          "AnchorPoint": [
+            0,
+            0
+          ],
+          "ZIndex": 1,
+          "Archivable": true,
+          "Size": {
+            "UDim2": [
+              [
+                1,
+                -16
+              ],
+              [
+                0,
+                15
+              ]
+            ]
+          },
+          "TextColor3": [
+            0.9411764740943909,
+            0.9529411792755127,
+            0.9137254953384399
+          ],
+          "AutomaticSize": {
+            "Enum": 0
+          },
+          "ClipsDescendants": false,
+          "TextXAlignment": {
+            "Enum": 2
+          },
+          "Text": "Stand inside the circle",
+          "BorderSizePixel": 0,
+          "TextStrokeColor3": [
+            0,
+            0,
+            0
+          ],
+          "Rotation": 0,
+          "Font": {
+            "Enum": 18
+          },
+          "BackgroundTransparency": 1,
+          "Position": {
+            "UDim2": [
+              [
+                0,
+                8
+              ],
+              [
+                0,
+                18
+              ]
+            ]
+          },
+          "TextSize": 10,
+          "TextYAlignment": {
+            "Enum": 1
+          },
+          "TextScaled": false,
+          "BackgroundColor3": [
+            0.6392157077789307,
+            0.6352941393852234,
+            0.6470588445663452
+          ]
+        },
+        "$className": "TextLabel"
+      }
+    },
+    "ExitPractice": {
+      "UICorner": {
+        "$properties": {
+          "Archivable": true,
+          "CornerRadius": {
+            "UDim": [
+              0,
+              6
+            ]
+          }
+        },
+        "$className": "UICorner"
+      },
+      "$className": "TextButton",
+      "UIStroke": {
+        "$properties": {
+          "Thickness": 1,
+          "Transparency": 0,
+          "Color": [
+            0.8901960849761963,
+            0.7607843279838562,
+            0.48235294222831726
+          ],
+          "LineJoinMode": {
+            "Enum": 0
+          },
+          "Archivable": true,
+          "ApplyStrokeMode": {
+            "Enum": 1
+          }
+        },
+        "$className": "UIStroke"
+      },
+      "$properties": {
+        "Visible": false,
+        "TextWrapped": true,
+        "Active": true,
+        "TextTransparency": 0,
+        "TextStrokeTransparency": 1,
+        "AnchorPoint": [
+          1,
+          0
+        ],
+        "Modal": false,
+        "ZIndex": 5,
+        "Archivable": true,
+        "Size": {
+          "UDim2": [
+            [
+              0,
+              100
+            ],
+            [
+              0,
+              32
+            ]
+          ]
+        },
+        "TextStrokeColor3": [
+          0,
+          0,
+          0
+        ],
+        "TextColor3": [
+          0.8901960849761963,
+          0.7607843279838562,
+          0.48235294222831726
+        ],
+        "AutomaticSize": {
+          "Enum": 0
+        },
+        "ClipsDescendants": false,
+        "TextXAlignment": {
+          "Enum": 2
+        },
+        "Text": "LEAVE PRACTICE",
+        "BorderSizePixel": 0,
+        "AutoButtonColor": true,
+        "Rotation": 0,
+        "Font": {
+          "Enum": 19
+        },
+        "BackgroundTransparency": 0.10000000149011612,
+        "Position": {
+          "UDim2": [
+            [
+              1,
+              -12
+            ],
+            [
+              0,
+              102
+            ]
+          ]
+        },
+        "TextSize": 9,
+        "TextYAlignment": {
+          "Enum": 1
+        },
+        "TextScaled": false,
+        "BackgroundColor3": [
+          0.11764705926179886,
+          0.09019608050584793,
+          0.08627451211214066
+        ]
+      }
+    },
+    "Recap": {
+      "1": {
+        "$properties": {
+          "Visible": true,
+          "TextWrapped": false,
+          "Active": false,
+          "TextTransparency": 0,
+          "TextStrokeTransparency": 0.4000000059604645,
+          "AnchorPoint": [
+            0,
+            0
+          ],
+          "ZIndex": 13,
+          "Archivable": true,
+          "Size": {
+            "UDim2": [
+              [
+                1,
+                -24
+              ],
+              [
+                0,
+                16
+              ]
+            ]
+          },
+          "TextColor3": [
+            0.9803921580314636,
+            0.9176470637321472,
+            0.7764706015586853
+          ],
+          "AutomaticSize": {
+            "Enum": 0
+          },
+          "ClipsDescendants": false,
+          "TextXAlignment": {
+            "Enum": 0
+          },
+          "Text": "",
+          "BorderSizePixel": 0,
+          "TextStrokeColor3": [
+            0.11764705926179886,
+            0.09019608050584793,
+            0.08627451211214066
+          ],
+          "Rotation": 0,
+          "Font": {
+            "Enum": 19
+          },
+          "BackgroundTransparency": 1,
+          "Position": {
+            "UDim2": [
+              [
+                0,
+                12
+              ],
+              [
+                0,
+                42
+              ]
+            ]
+          },
+          "TextSize": 9,
+          "TextYAlignment": {
+            "Enum": 1
+          },
+          "TextScaled": false,
+          "BackgroundColor3": [
+            0.6392157077789307,
+            0.6352941393852234,
+            0.6470588445663452
+          ]
+        },
+        "$className": "TextLabel"
+      },
+      "2": {
+        "$properties": {
+          "Visible": true,
+          "TextWrapped": false,
+          "Active": false,
+          "TextTransparency": 0,
+          "TextStrokeTransparency": 0.4000000059604645,
+          "AnchorPoint": [
+            0,
+            0
+          ],
+          "ZIndex": 13,
+          "Archivable": true,
+          "Size": {
+            "UDim2": [
+              [
+                1,
+                -24
+              ],
+              [
+                0,
+                16
+              ]
+            ]
+          },
+          "TextColor3": [
+            0.9803921580314636,
+            0.9176470637321472,
+            0.7764706015586853
+          ],
+          "AutomaticSize": {
+            "Enum": 0
+          },
+          "ClipsDescendants": false,
+          "TextXAlignment": {
+            "Enum": 0
+          },
+          "Text": "",
+          "BorderSizePixel": 0,
+          "TextStrokeColor3": [
+            0.11764705926179886,
+            0.09019608050584793,
+            0.08627451211214066
+          ],
+          "Rotation": 0,
+          "Font": {
+            "Enum": 19
+          },
+          "BackgroundTransparency": 1,
+          "Position": {
+            "UDim2": [
+              [
+                0,
+                12
+              ],
+              [
+                0,
+                59
+              ]
+            ]
+          },
+          "TextSize": 9,
+          "TextYAlignment": {
+            "Enum": 1
+          },
+          "TextScaled": false,
+          "BackgroundColor3": [
+            0.6392157077789307,
+            0.6352941393852234,
+            0.6470588445663452
+          ]
+        },
+        "$className": "TextLabel"
+      },
+      "3": {
+        "$properties": {
+          "Visible": true,
+          "TextWrapped": false,
+          "Active": false,
+          "TextTransparency": 0,
+          "TextStrokeTransparency": 0.4000000059604645,
+          "AnchorPoint": [
+            0,
+            0
+          ],
+          "ZIndex": 13,
+          "Archivable": true,
+          "Size": {
+            "UDim2": [
+              [
+                1,
+                -24
+              ],
+              [
+                0,
+                16
+              ]
+            ]
+          },
+          "TextColor3": [
+            0.9803921580314636,
+            0.9176470637321472,
+            0.7764706015586853
+          ],
+          "AutomaticSize": {
+            "Enum": 0
+          },
+          "ClipsDescendants": false,
+          "TextXAlignment": {
+            "Enum": 0
+          },
+          "Text": "",
+          "BorderSizePixel": 0,
+          "TextStrokeColor3": [
+            0.11764705926179886,
+            0.09019608050584793,
+            0.08627451211214066
+          ],
+          "Rotation": 0,
+          "Font": {
+            "Enum": 19
+          },
+          "BackgroundTransparency": 1,
+          "Position": {
+            "UDim2": [
+              [
+                0,
+                12
+              ],
+              [
+                0,
+                76
+              ]
+            ]
+          },
+          "TextSize": 9,
+          "TextYAlignment": {
+            "Enum": 1
+          },
+          "TextScaled": false,
+          "BackgroundColor3": [
+            0.6392157077789307,
+            0.6352941393852234,
+            0.6470588445663452
+          ]
+        },
+        "$className": "TextLabel"
+      },
+      "4": {
+        "$properties": {
+          "Visible": true,
+          "TextWrapped": false,
+          "Active": false,
+          "TextTransparency": 0,
+          "TextStrokeTransparency": 0.4000000059604645,
+          "AnchorPoint": [
+            0,
+            0
+          ],
+          "ZIndex": 13,
+          "Archivable": true,
+          "Size": {
+            "UDim2": [
+              [
+                1,
+                -24
+              ],
+              [
+                0,
+                16
+              ]
+            ]
+          },
+          "TextColor3": [
+            0.9803921580314636,
+            0.9176470637321472,
+            0.7764706015586853
+          ],
+          "AutomaticSize": {
+            "Enum": 0
+          },
+          "ClipsDescendants": false,
+          "TextXAlignment": {
+            "Enum": 0
+          },
+          "Text": "",
+          "BorderSizePixel": 0,
+          "TextStrokeColor3": [
+            0.11764705926179886,
+            0.09019608050584793,
+            0.08627451211214066
+          ],
+          "Rotation": 0,
+          "Font": {
+            "Enum": 19
+          },
+          "BackgroundTransparency": 1,
+          "Position": {
+            "UDim2": [
+              [
+                0,
+                12
+              ],
+              [
+                0,
+                93
+              ]
+            ]
+          },
+          "TextSize": 9,
+          "TextYAlignment": {
+            "Enum": 1
+          },
+          "TextScaled": false,
+          "BackgroundColor3": [
+            0.6392157077789307,
+            0.6352941393852234,
+            0.6470588445663452
+          ]
+        },
+        "$className": "TextLabel"
+      },
+      "UICorner": {
+        "$properties": {
+          "Archivable": true,
+          "CornerRadius": {
+            "UDim": [
+              0,
+              6
+            ]
+          }
+        },
+        "$className": "UICorner"
+      },
+      "Title": {
+        "$properties": {
+          "Visible": true,
+          "TextWrapped": false,
+          "Active": false,
+          "TextTransparency": 0,
+          "TextStrokeTransparency": 0.4000000059604645,
+          "AnchorPoint": [
+            0,
+            0
+          ],
+          "ZIndex": 13,
+          "Archivable": true,
+          "Size": {
+            "UDim2": [
+              [
+                1,
+                -24
+              ],
+              [
+                0,
+                18
+              ]
+            ]
+          },
+          "TextColor3": [
+            0.9803921580314636,
+            0.9176470637321472,
+            0.7764706015586853
+          ],
+          "AutomaticSize": {
+            "Enum": 0
+          },
+          "ClipsDescendants": false,
+          "TextXAlignment": {
+            "Enum": 0
+          },
+          "Text": "LAST FIGHT",
+          "BorderSizePixel": 0,
+          "TextStrokeColor3": [
+            0.11764705926179886,
+            0.09019608050584793,
+            0.08627451211214066
+          ],
+          "Rotation": 0,
+          "Font": {
+            "Enum": 19
+          },
+          "BackgroundTransparency": 1,
+          "Position": {
+            "UDim2": [
+              [
+                0,
+                12
+              ],
+              [
+                0,
+                8
+              ]
+            ]
+          },
+          "TextSize": 12,
+          "TextYAlignment": {
+            "Enum": 1
+          },
+          "TextScaled": false,
+          "BackgroundColor3": [
+            0.6392157077789307,
+            0.6352941393852234,
+            0.6470588445663452
+          ]
+        },
+        "$className": "TextLabel"
+      },
+      "UIStroke": {
+        "$properties": {
+          "Thickness": 1,
+          "Transparency": 0.3499999940395355,
+          "Color": [
+            0.8901960849761963,
+            0.7607843279838562,
+            0.48235294222831726
+          ],
+          "LineJoinMode": {
+            "Enum": 0
+          },
+          "Archivable": true,
+          "ApplyStrokeMode": {
+            "Enum": 1
+          }
+        },
+        "$className": "UIStroke"
+      },
+      "$properties": {
+        "Visible": false,
+        "ClipsDescendants": false,
+        "AutomaticSize": {
+          "Enum": 0
+        },
+        "Active": false,
+        "BackgroundColor3": [
+          0.11764705926179886,
+          0.09019608050584793,
+          0.08627451211214066
+        ],
+        "Rotation": 0,
+        "BorderSizePixel": 0,
+        "BackgroundTransparency": 0.07999999821186066,
+        "Position": {
+          "UDim2": [
+            [
+              0.5,
+              0
+            ],
+            [
+              0.3799999952316284,
+              0
+            ]
+          ]
+        },
+        "AnchorPoint": [
+          0.5,
+          0.5
+        ],
+        "ZIndex": 12,
+        "Archivable": true,
+        "Size": {
+          "UDim2": [
+            [
+              0,
+              282
+            ],
+            [
+              0,
+              112
+            ]
+          ]
+        }
+      },
+      "$className": "Frame"
+    },
+    "Score": {
+      "Azure": {
+        "$properties": {
+          "Visible": true,
+          "TextWrapped": false,
+          "Active": false,
+          "TextTransparency": 0,
+          "TextStrokeTransparency": 1,
+          "AnchorPoint": [
+            0,
+            0
+          ],
+          "ZIndex": 1,
+          "Archivable": true,
+          "Size": {
+            "UDim2": [
+              [
+                0,
+                96
+              ],
+              [
+                0,
+                36
+              ]
+            ]
+          },
+          "TextColor3": [
+            0.2980392277240753,
+            0.7411764860153198,
+            0.9333333373069763
+          ],
+          "AutomaticSize": {
+            "Enum": 0
+          },
+          "ClipsDescendants": false,
+          "TextXAlignment": {
+            "Enum": 2
+          },
+          "Text": "0",
+          "BorderSizePixel": 0,
+          "TextStrokeColor3": [
+            0,
+            0,
+            0
+          ],
+          "Rotation": 0,
+          "Font": {
+            "Enum": 19
+          },
+          "BackgroundTransparency": 1,
+          "Position": {
+            "UDim2": [
+              [
+                0,
+                6
+              ],
+              [
+                0,
+                3
+              ]
+            ]
+          },
+          "TextSize": 28,
+          "TextYAlignment": {
+            "Enum": 1
+          },
+          "TextScaled": false,
+          "BackgroundColor3": [
+            0.6392157077789307,
+            0.6352941393852234,
+            0.6470588445663452
+          ]
+        },
+        "$className": "TextLabel"
+      },
+      "Phase": {
+        "$properties": {
+          "Visible": true,
+          "TextWrapped": false,
+          "Active": false,
+          "TextTransparency": 0,
+          "TextStrokeTransparency": 1,
+          "AnchorPoint": [
+            0,
+            0
+          ],
+          "ZIndex": 1,
+          "Archivable": true,
+          "Size": {
+            "UDim2": [
+              [
+                0,
+                120
+              ],
+              [
+                0,
+                16
+              ]
+            ]
+          },
+          "TextColor3": [
+            0.6666666865348816,
+            0.7490196228027344,
+            0.7843137383460999
+          ],
+          "AutomaticSize": {
+            "Enum": 0
+          },
+          "ClipsDescendants": false,
+          "TextXAlignment": {
+            "Enum": 2
+          },
+          "Text": "CONTROL / FIRST TO 100",
+          "BorderSizePixel": 0,
+          "TextStrokeColor3": [
+            0,
+            0,
+            0
+          ],
+          "Rotation": 0,
+          "Font": {
+            "Enum": 18
+          },
+          "BackgroundTransparency": 1,
+          "Position": {
+            "UDim2": [
+              [
+                0,
+                102
+              ],
+              [
+                0,
+                37
+              ]
+            ]
+          },
+          "TextSize": 8,
+          "TextYAlignment": {
+            "Enum": 1
+          },
+          "TextScaled": false,
+          "BackgroundColor3": [
+            0.6392157077789307,
+            0.6352941393852234,
+            0.6470588445663452
+          ]
+        },
+        "$className": "TextLabel"
+      },
+      "AzureName": {
+        "$properties": {
+          "Visible": true,
+          "TextWrapped": false,
+          "Active": false,
+          "TextTransparency": 0,
+          "TextStrokeTransparency": 1,
+          "AnchorPoint": [
+            0,
+            0
+          ],
+          "ZIndex": 1,
+          "Archivable": true,
+          "Size": {
+            "UDim2": [
+              [
+                0,
+                96
+              ],
+              [
+                0,
+                16
+              ]
+            ]
+          },
+          "TextColor3": [
+            0.2980392277240753,
+            0.7411764860153198,
+            0.9333333373069763
+          ],
+          "AutomaticSize": {
+            "Enum": 0
+          },
+          "ClipsDescendants": false,
+          "TextXAlignment": {
+            "Enum": 2
+          },
+          "Text": "AZURE",
+          "BorderSizePixel": 1,
+          "TextStrokeColor3": [
+            0,
+            0,
+            0
+          ],
+          "Rotation": 0,
+          "Font": {
+            "Enum": 19
+          },
+          "BackgroundTransparency": 1,
+          "Position": {
+            "UDim2": [
+              [
+                0,
+                6
+              ],
+              [
+                0,
+                37
+              ]
+            ]
+          },
+          "TextSize": 9,
+          "TextYAlignment": {
+            "Enum": 1
+          },
+          "TextScaled": false,
+          "BackgroundColor3": [
+            0.6392157077789307,
+            0.6352941393852234,
+            0.6470588445663452
+          ]
+        },
+        "$className": "TextLabel"
+      },
+      "$properties": {
+        "Visible": true,
+        "ClipsDescendants": false,
+        "AutomaticSize": {
+          "Enum": 0
+        },
+        "Active": false,
+        "BackgroundColor3": [
+          0.0941176488995552,
+          0.13725490868091583,
+          0.1921568661928177
+        ],
+        "Rotation": 0,
+        "BorderSizePixel": 0,
+        "BackgroundTransparency": 0,
+        "Position": {
+          "UDim2": [
+            [
+              0.5,
+              0
+            ],
+            [
+              0,
+              8
+            ]
+          ]
+        },
+        "AnchorPoint": [
+          0.5,
+          0
+        ],
+        "ZIndex": 1,
+        "Archivable": true,
+        "Size": {
+          "UDim2": [
+            [
+              0,
+              324
+            ],
+            [
+              0,
+              58
+            ]
+          ]
+        }
+      },
+      "Corner": {
+        "$properties": {
+          "Archivable": true,
+          "CornerRadius": {
+            "UDim": [
+              0,
+              14
+            ]
+          }
+        },
+        "$className": "UICorner"
+      },
+      "Scale": {
+        "$properties": {
+          "Archivable": true,
+          "Scale": 1
+        },
+        "$className": "UIScale"
+      },
+      "Coral": {
+        "$properties": {
+          "Visible": true,
+          "TextWrapped": false,
+          "Active": false,
+          "TextTransparency": 0,
+          "TextStrokeTransparency": 1,
+          "AnchorPoint": [
+            0,
+            0
+          ],
+          "ZIndex": 1,
+          "Archivable": true,
+          "Size": {
+            "UDim2": [
+              [
+                0,
+                96
+              ],
+              [
+                0,
+                36
+              ]
+            ]
+          },
+          "TextColor3": [
+            0.9686274528503418,
+            0.5215686559677124,
+            0.3960784375667572
+          ],
+          "AutomaticSize": {
+            "Enum": 0
+          },
+          "ClipsDescendants": false,
+          "TextXAlignment": {
+            "Enum": 2
+          },
+          "Text": "0",
+          "BorderSizePixel": 0,
+          "TextStrokeColor3": [
+            0,
+            0,
+            0
+          ],
+          "Rotation": 0,
+          "Font": {
+            "Enum": 19
+          },
+          "BackgroundTransparency": 1,
+          "Position": {
+            "UDim2": [
+              [
+                0,
+                222
+              ],
+              [
+                0,
+                3
+              ]
+            ]
+          },
+          "TextSize": 28,
+          "TextYAlignment": {
+            "Enum": 1
+          },
+          "TextScaled": false,
+          "BackgroundColor3": [
+            0.6392157077789307,
+            0.6352941393852234,
+            0.6470588445663452
+          ]
+        },
+        "$className": "TextLabel"
+      },
+      "$className": "Frame",
+      "Timer": {
+        "$properties": {
+          "Visible": true,
+          "TextWrapped": false,
+          "Active": false,
+          "TextTransparency": 0,
+          "TextStrokeTransparency": 1,
+          "AnchorPoint": [
+            0,
+            0
+          ],
+          "ZIndex": 1,
+          "Archivable": true,
+          "Size": {
+            "UDim2": [
+              [
+                0,
+                120
+              ],
+              [
+                0,
+                28
+              ]
+            ]
+          },
+          "TextColor3": [
+            0.9411764740943909,
+            0.9529411792755127,
+            0.9137254953384399
+          ],
+          "AutomaticSize": {
+            "Enum": 0
+          },
+          "ClipsDescendants": false,
+          "TextXAlignment": {
+            "Enum": 2
+          },
+          "Text": "3:00",
+          "BorderSizePixel": 0,
+          "TextStrokeColor3": [
+            0,
+            0,
+            0
+          ],
+          "Rotation": 0,
+          "Font": {
+            "Enum": 19
+          },
+          "BackgroundTransparency": 1,
+          "Position": {
+            "UDim2": [
+              [
+                0,
+                102
+              ],
+              [
+                0,
+                3
+              ]
+            ]
+          },
+          "TextSize": 20,
+          "TextYAlignment": {
+            "Enum": 1
+          },
+          "TextScaled": false,
+          "BackgroundColor3": [
+            0.6392157077789307,
+            0.6352941393852234,
+            0.6470588445663452
+          ]
+        },
+        "$className": "TextLabel"
+      },
+      "CoralName": {
+        "$properties": {
+          "Visible": true,
+          "TextWrapped": false,
+          "Active": false,
+          "TextTransparency": 0,
+          "TextStrokeTransparency": 1,
+          "AnchorPoint": [
+            0,
+            0
+          ],
+          "ZIndex": 1,
+          "Archivable": true,
+          "Size": {
+            "UDim2": [
+              [
+                0,
+                96
+              ],
+              [
+                0,
+                16
+              ]
+            ]
+          },
+          "TextColor3": [
+            0.9686274528503418,
+            0.5215686559677124,
+            0.3960784375667572
+          ],
+          "AutomaticSize": {
+            "Enum": 0
+          },
+          "ClipsDescendants": false,
+          "TextXAlignment": {
+            "Enum": 2
+          },
+          "Text": "CORAL",
+          "BorderSizePixel": 1,
+          "TextStrokeColor3": [
+            0,
+            0,
+            0
+          ],
+          "Rotation": 0,
+          "Font": {
+            "Enum": 19
+          },
+          "BackgroundTransparency": 1,
+          "Position": {
+            "UDim2": [
+              [
+                0,
+                222
+              ],
+              [
+                0,
+                37
+              ]
+            ]
+          },
+          "TextSize": 9,
+          "TextYAlignment": {
+            "Enum": 1
+          },
+          "TextScaled": false,
+          "BackgroundColor3": [
+            0.6392157077789307,
+            0.6352941393852234,
+            0.6470588445663452
+          ]
+        },
+        "$className": "TextLabel"
+      }
+    },
+    "TeamStrip": {
+      "1": {
+        "State": {
+          "$properties": {
+            "Visible": true,
+            "TextWrapped": false,
+            "Active": false,
+            "TextTransparency": 0,
+            "TextStrokeTransparency": 0.4000000059604645,
+            "AnchorPoint": [
+              1,
+              0
+            ],
+            "ZIndex": 5,
+            "Archivable": true,
+            "Size": {
+              "UDim2": [
+                [
+                  0,
+                  14
+                ],
+                [
+                  0,
+                  17
+                ]
+              ]
+            },
+            "TextColor3": [
+              0.9803921580314636,
+              0.9176470637321472,
+              0.7764706015586853
+            ],
+            "AutomaticSize": {
+              "Enum": 0
+            },
+            "ClipsDescendants": false,
+            "TextXAlignment": {
+              "Enum": 2
+            },
+            "Text": "",
+            "BorderSizePixel": 0,
+            "TextStrokeColor3": [
+              0.11764705926179886,
+              0.09019608050584793,
+              0.08627451211214066
+            ],
+            "Rotation": 0,
+            "Font": {
+              "Enum": 19
+            },
+            "BackgroundTransparency": 1,
+            "Position": {
+              "UDim2": [
+                [
+                  1,
+                  -1
+                ],
+                [
+                  0,
+                  3
+                ]
+              ]
+            },
+            "TextSize": 8,
+            "TextYAlignment": {
+              "Enum": 1
+            },
+            "TextScaled": false,
+            "BackgroundColor3": [
+              0.6392157077789307,
+              0.6352941393852234,
+              0.6470588445663452
+            ]
+          },
+          "$className": "TextLabel"
+        },
+        "Track": {
+          "$className": "Frame",
+          "$properties": {
+            "Visible": true,
+            "ClipsDescendants": false,
+            "AutomaticSize": {
+              "Enum": 0
+            },
+            "Active": false,
+            "BackgroundColor3": [
+              0.20392157137393951,
+              0.1568627506494522,
+              0.14509804546833038
+            ],
+            "Rotation": 0,
+            "BorderSizePixel": 0,
+            "BackgroundTransparency": 0,
+            "Position": {
+              "UDim2": [
+                [
+                  0,
+                  2
+                ],
+                [
+                  0,
+                  20
+                ]
+              ]
+            },
+            "AnchorPoint": [
+              0,
+              0
+            ],
+            "ZIndex": 5,
+            "Archivable": true,
+            "Size": {
+              "UDim2": [
+                [
+                  1,
+                  -4
+                ],
+                [
+                  0,
+                  3
+                ]
+              ]
+            }
+          },
+          "Fill": {
+            "$properties": {
+              "Visible": true,
+              "ClipsDescendants": false,
+              "AutomaticSize": {
+                "Enum": 0
+              },
+              "Active": false,
+              "BackgroundColor3": [
+                0.35686275362968445,
+                0.6509804129600525,
+                0.5803921818733215
+              ],
+              "Rotation": 0,
+              "BorderSizePixel": 0,
+              "BackgroundTransparency": 0,
+              "Position": {
+                "UDim2": [
+                  [
+                    0,
+                    0
+                  ],
+                  [
+                    0,
+                    0
+                  ]
+                ]
+              },
+              "AnchorPoint": [
+                0,
+                0
+              ],
+              "ZIndex": 6,
+              "Archivable": true,
+              "Size": {
+                "UDim2": [
+                  [
+                    1,
+                    0
+                  ],
+                  [
+                    1,
+                    0
+                  ]
+                ]
+              }
+            },
+            "$className": "Frame"
+          }
+        },
+        "Portrait": {
+          "$className": "ImageLabel",
+          "$attributes": {
+            "BotPortrait": "rbxassetid://71882201106444"
+          },
+          "$properties": {
+            "ImageColor3": [
+              1,
+              1,
+              1
+            ],
+            "Active": false,
+            "AnchorPoint": [
+              0,
+              0
+            ],
+            "Image": "",
+            "ImageRectSize": [
+              0,
+              0
+            ],
+            "ZIndex": 5,
+            "Archivable": true,
+            "Size": {
+              "UDim2": [
+                [
+                  0,
+                  22
+                ],
+                [
+                  0,
+                  22
+                ]
+              ]
+            },
+            "ScaleType": {
+              "Enum": 0
+            },
+            "ClipsDescendants": false,
+            "ImageRectOffset": [
+              0,
+              0
+            ],
+            "Visible": true,
+            "Rotation": 0,
+            "ResampleMode": {
+              "Enum": 0
+            },
+            "BackgroundTransparency": 1,
+            "Position": {
+              "UDim2": [
+                [
+                  0,
+                  3
+                ],
+                [
+                  0,
+                  1
+                ]
+              ]
+            },
+            "ImageTransparency": 0,
+            "BorderSizePixel": 1,
+            "AutomaticSize": {
+              "Enum": 0
+            },
+            "BackgroundColor3": [
+              0.6392157077789307,
+              0.6352941393852234,
+              0.6470588445663452
+            ]
+          }
+        },
+        "Name": {
+          "$properties": {
+            "Visible": true,
+            "TextWrapped": true,
+            "Active": false,
+            "TextTransparency": 0,
+            "TextStrokeTransparency": 0.4000000059604645,
+            "AnchorPoint": [
+              0,
+              0
+            ],
+            "ZIndex": 5,
+            "Archivable": true,
+            "Size": {
+              "UDim2": [
+                [
+                  1,
+                  -2
+                ],
+                [
+                  0,
+                  8
+                ]
+              ]
+            },
+            "TextColor3": [
+              0.9803921580314636,
+              0.9176470637321472,
+              0.7764706015586853
+            ],
+            "AutomaticSize": {
+              "Enum": 0
+            },
+            "ClipsDescendants": false,
+            "TextXAlignment": {
+              "Enum": 2
+            },
+            "Text": "",
+            "BorderSizePixel": 0,
+            "TextStrokeColor3": [
+              0.11764705926179886,
+              0.09019608050584793,
+              0.08627451211214066
+            ],
+            "Rotation": 0,
+            "Font": {
+              "Enum": 19
+            },
+            "BackgroundTransparency": 1,
+            "Position": {
+              "UDim2": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  0,
+                  23
+                ]
+              ]
+            },
+            "TextSize": 6,
+            "TextYAlignment": {
+              "Enum": 1
+            },
+            "TextScaled": true,
+            "BackgroundColor3": [
+              0.6392157077789307,
+              0.6352941393852234,
+              0.6470588445663452
+            ]
+          },
+          "$className": "TextLabel"
+        },
+        "UICorner": {
+          "$properties": {
+            "Archivable": true,
+            "CornerRadius": {
+              "UDim": [
+                0,
+                6
+              ]
+            }
+          },
+          "$className": "UICorner"
+        },
+        "$properties": {
+          "Visible": true,
+          "ClipsDescendants": false,
+          "AutomaticSize": {
+            "Enum": 0
+          },
+          "Active": false,
+          "BackgroundColor3": [
+            0.11764705926179886,
+            0.09019608050584793,
+            0.08627451211214066
+          ],
+          "Rotation": 0,
+          "BorderSizePixel": 0,
+          "BackgroundTransparency": 0.15000000596046448,
+          "Position": {
+            "UDim2": [
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ]
+          },
+          "AnchorPoint": [
+            0,
+            0
+          ],
+          "ZIndex": 4,
+          "Archivable": true,
+          "Size": {
+            "UDim2": [
+              [
+                0,
+                29
+              ],
+              [
+                0,
+                34
+              ]
+            ]
+          }
+        },
+        "$className": "Frame",
+        "UIStroke": {
+          "$properties": {
+            "Thickness": 1,
+            "Transparency": 0.3499999940395355,
+            "Color": [
+              0.8901960849761963,
+              0.7607843279838562,
+              0.48235294222831726
+            ],
+            "LineJoinMode": {
+              "Enum": 0
+            },
+            "Archivable": true,
+            "ApplyStrokeMode": {
+              "Enum": 1
+            }
+          },
+          "$className": "UIStroke"
+        }
+      },
+      "2": {
+        "State": {
+          "$properties": {
+            "Visible": true,
+            "TextWrapped": false,
+            "Active": false,
+            "TextTransparency": 0,
+            "TextStrokeTransparency": 0.4000000059604645,
+            "AnchorPoint": [
+              1,
+              0
+            ],
+            "ZIndex": 5,
+            "Archivable": true,
+            "Size": {
+              "UDim2": [
+                [
+                  0,
+                  14
+                ],
+                [
+                  0,
+                  17
+                ]
+              ]
+            },
+            "TextColor3": [
+              0.9803921580314636,
+              0.9176470637321472,
+              0.7764706015586853
+            ],
+            "AutomaticSize": {
+              "Enum": 0
+            },
+            "ClipsDescendants": false,
+            "TextXAlignment": {
+              "Enum": 2
+            },
+            "Text": "",
+            "BorderSizePixel": 0,
+            "TextStrokeColor3": [
+              0.11764705926179886,
+              0.09019608050584793,
+              0.08627451211214066
+            ],
+            "Rotation": 0,
+            "Font": {
+              "Enum": 19
+            },
+            "BackgroundTransparency": 1,
+            "Position": {
+              "UDim2": [
+                [
+                  1,
+                  -1
+                ],
+                [
+                  0,
+                  3
+                ]
+              ]
+            },
+            "TextSize": 8,
+            "TextYAlignment": {
+              "Enum": 1
+            },
+            "TextScaled": false,
+            "BackgroundColor3": [
+              0.6392157077789307,
+              0.6352941393852234,
+              0.6470588445663452
+            ]
+          },
+          "$className": "TextLabel"
+        },
+        "Track": {
+          "$className": "Frame",
+          "$properties": {
+            "Visible": true,
+            "ClipsDescendants": false,
+            "AutomaticSize": {
+              "Enum": 0
+            },
+            "Active": false,
+            "BackgroundColor3": [
+              0.20392157137393951,
+              0.1568627506494522,
+              0.14509804546833038
+            ],
+            "Rotation": 0,
+            "BorderSizePixel": 0,
+            "BackgroundTransparency": 0,
+            "Position": {
+              "UDim2": [
+                [
+                  0,
+                  2
+                ],
+                [
+                  0,
+                  20
+                ]
+              ]
+            },
+            "AnchorPoint": [
+              0,
+              0
+            ],
+            "ZIndex": 5,
+            "Archivable": true,
+            "Size": {
+              "UDim2": [
+                [
+                  1,
+                  -4
+                ],
+                [
+                  0,
+                  3
+                ]
+              ]
+            }
+          },
+          "Fill": {
+            "$properties": {
+              "Visible": true,
+              "ClipsDescendants": false,
+              "AutomaticSize": {
+                "Enum": 0
+              },
+              "Active": false,
+              "BackgroundColor3": [
+                0.35686275362968445,
+                0.6509804129600525,
+                0.5803921818733215
+              ],
+              "Rotation": 0,
+              "BorderSizePixel": 0,
+              "BackgroundTransparency": 0,
+              "Position": {
+                "UDim2": [
+                  [
+                    0,
+                    0
+                  ],
+                  [
+                    0,
+                    0
+                  ]
+                ]
+              },
+              "AnchorPoint": [
+                0,
+                0
+              ],
+              "ZIndex": 6,
+              "Archivable": true,
+              "Size": {
+                "UDim2": [
+                  [
+                    1,
+                    0
+                  ],
+                  [
+                    1,
+                    0
+                  ]
+                ]
+              }
+            },
+            "$className": "Frame"
+          }
+        },
+        "Portrait": {
+          "$className": "ImageLabel",
+          "$attributes": {
+            "BotPortrait": "rbxassetid://71882201106444"
+          },
+          "$properties": {
+            "ImageColor3": [
+              1,
+              1,
+              1
+            ],
+            "Active": false,
+            "AnchorPoint": [
+              0,
+              0
+            ],
+            "Image": "",
+            "ImageRectSize": [
+              0,
+              0
+            ],
+            "ZIndex": 5,
+            "Archivable": true,
+            "Size": {
+              "UDim2": [
+                [
+                  0,
+                  22
+                ],
+                [
+                  0,
+                  22
+                ]
+              ]
+            },
+            "ScaleType": {
+              "Enum": 0
+            },
+            "ClipsDescendants": false,
+            "ImageRectOffset": [
+              0,
+              0
+            ],
+            "Visible": true,
+            "Rotation": 0,
+            "ResampleMode": {
+              "Enum": 0
+            },
+            "BackgroundTransparency": 1,
+            "Position": {
+              "UDim2": [
+                [
+                  0,
+                  3
+                ],
+                [
+                  0,
+                  1
+                ]
+              ]
+            },
+            "ImageTransparency": 0,
+            "BorderSizePixel": 1,
+            "AutomaticSize": {
+              "Enum": 0
+            },
+            "BackgroundColor3": [
+              0.6392157077789307,
+              0.6352941393852234,
+              0.6470588445663452
+            ]
+          }
+        },
+        "Name": {
+          "$properties": {
+            "Visible": true,
+            "TextWrapped": true,
+            "Active": false,
+            "TextTransparency": 0,
+            "TextStrokeTransparency": 0.4000000059604645,
+            "AnchorPoint": [
+              0,
+              0
+            ],
+            "ZIndex": 5,
+            "Archivable": true,
+            "Size": {
+              "UDim2": [
+                [
+                  1,
+                  -2
+                ],
+                [
+                  0,
+                  8
+                ]
+              ]
+            },
+            "TextColor3": [
+              0.9803921580314636,
+              0.9176470637321472,
+              0.7764706015586853
+            ],
+            "AutomaticSize": {
+              "Enum": 0
+            },
+            "ClipsDescendants": false,
+            "TextXAlignment": {
+              "Enum": 2
+            },
+            "Text": "",
+            "BorderSizePixel": 0,
+            "TextStrokeColor3": [
+              0.11764705926179886,
+              0.09019608050584793,
+              0.08627451211214066
+            ],
+            "Rotation": 0,
+            "Font": {
+              "Enum": 19
+            },
+            "BackgroundTransparency": 1,
+            "Position": {
+              "UDim2": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  0,
+                  23
+                ]
+              ]
+            },
+            "TextSize": 6,
+            "TextYAlignment": {
+              "Enum": 1
+            },
+            "TextScaled": true,
+            "BackgroundColor3": [
+              0.6392157077789307,
+              0.6352941393852234,
+              0.6470588445663452
+            ]
+          },
+          "$className": "TextLabel"
+        },
+        "UICorner": {
+          "$properties": {
+            "Archivable": true,
+            "CornerRadius": {
+              "UDim": [
+                0,
+                6
+              ]
+            }
+          },
+          "$className": "UICorner"
+        },
+        "$properties": {
+          "Visible": true,
+          "ClipsDescendants": false,
+          "AutomaticSize": {
+            "Enum": 0
+          },
+          "Active": false,
+          "BackgroundColor3": [
+            0.11764705926179886,
+            0.09019608050584793,
+            0.08627451211214066
+          ],
+          "Rotation": 0,
+          "BorderSizePixel": 0,
+          "BackgroundTransparency": 0.15000000596046448,
+          "Position": {
+            "UDim2": [
+              [
+                0,
+                32
+              ],
+              [
+                0,
+                0
+              ]
+            ]
+          },
+          "AnchorPoint": [
+            0,
+            0
+          ],
+          "ZIndex": 4,
+          "Archivable": true,
+          "Size": {
+            "UDim2": [
+              [
+                0,
+                29
+              ],
+              [
+                0,
+                34
+              ]
+            ]
+          }
+        },
+        "$className": "Frame",
+        "UIStroke": {
+          "$properties": {
+            "Thickness": 1,
+            "Transparency": 0.3499999940395355,
+            "Color": [
+              0.8901960849761963,
+              0.7607843279838562,
+              0.48235294222831726
+            ],
+            "LineJoinMode": {
+              "Enum": 0
+            },
+            "Archivable": true,
+            "ApplyStrokeMode": {
+              "Enum": 1
+            }
+          },
+          "$className": "UIStroke"
+        }
+      },
+      "3": {
+        "State": {
+          "$properties": {
+            "Visible": true,
+            "TextWrapped": false,
+            "Active": false,
+            "TextTransparency": 0,
+            "TextStrokeTransparency": 0.4000000059604645,
+            "AnchorPoint": [
+              1,
+              0
+            ],
+            "ZIndex": 5,
+            "Archivable": true,
+            "Size": {
+              "UDim2": [
+                [
+                  0,
+                  14
+                ],
+                [
+                  0,
+                  17
+                ]
+              ]
+            },
+            "TextColor3": [
+              0.9803921580314636,
+              0.9176470637321472,
+              0.7764706015586853
+            ],
+            "AutomaticSize": {
+              "Enum": 0
+            },
+            "ClipsDescendants": false,
+            "TextXAlignment": {
+              "Enum": 2
+            },
+            "Text": "",
+            "BorderSizePixel": 0,
+            "TextStrokeColor3": [
+              0.11764705926179886,
+              0.09019608050584793,
+              0.08627451211214066
+            ],
+            "Rotation": 0,
+            "Font": {
+              "Enum": 19
+            },
+            "BackgroundTransparency": 1,
+            "Position": {
+              "UDim2": [
+                [
+                  1,
+                  -1
+                ],
+                [
+                  0,
+                  3
+                ]
+              ]
+            },
+            "TextSize": 8,
+            "TextYAlignment": {
+              "Enum": 1
+            },
+            "TextScaled": false,
+            "BackgroundColor3": [
+              0.6392157077789307,
+              0.6352941393852234,
+              0.6470588445663452
+            ]
+          },
+          "$className": "TextLabel"
+        },
+        "Track": {
+          "$className": "Frame",
+          "$properties": {
+            "Visible": true,
+            "ClipsDescendants": false,
+            "AutomaticSize": {
+              "Enum": 0
+            },
+            "Active": false,
+            "BackgroundColor3": [
+              0.20392157137393951,
+              0.1568627506494522,
+              0.14509804546833038
+            ],
+            "Rotation": 0,
+            "BorderSizePixel": 0,
+            "BackgroundTransparency": 0,
+            "Position": {
+              "UDim2": [
+                [
+                  0,
+                  2
+                ],
+                [
+                  0,
+                  20
+                ]
+              ]
+            },
+            "AnchorPoint": [
+              0,
+              0
+            ],
+            "ZIndex": 5,
+            "Archivable": true,
+            "Size": {
+              "UDim2": [
+                [
+                  1,
+                  -4
+                ],
+                [
+                  0,
+                  3
+                ]
+              ]
+            }
+          },
+          "Fill": {
+            "$properties": {
+              "Visible": true,
+              "ClipsDescendants": false,
+              "AutomaticSize": {
+                "Enum": 0
+              },
+              "Active": false,
+              "BackgroundColor3": [
+                0.35686275362968445,
+                0.6509804129600525,
+                0.5803921818733215
+              ],
+              "Rotation": 0,
+              "BorderSizePixel": 0,
+              "BackgroundTransparency": 0,
+              "Position": {
+                "UDim2": [
+                  [
+                    0,
+                    0
+                  ],
+                  [
+                    0,
+                    0
+                  ]
+                ]
+              },
+              "AnchorPoint": [
+                0,
+                0
+              ],
+              "ZIndex": 6,
+              "Archivable": true,
+              "Size": {
+                "UDim2": [
+                  [
+                    1,
+                    0
+                  ],
+                  [
+                    1,
+                    0
+                  ]
+                ]
+              }
+            },
+            "$className": "Frame"
+          }
+        },
+        "Portrait": {
+          "$className": "ImageLabel",
+          "$attributes": {
+            "BotPortrait": "rbxassetid://71882201106444"
+          },
+          "$properties": {
+            "ImageColor3": [
+              1,
+              1,
+              1
+            ],
+            "Active": false,
+            "AnchorPoint": [
+              0,
+              0
+            ],
+            "Image": "",
+            "ImageRectSize": [
+              0,
+              0
+            ],
+            "ZIndex": 5,
+            "Archivable": true,
+            "Size": {
+              "UDim2": [
+                [
+                  0,
+                  22
+                ],
+                [
+                  0,
+                  22
+                ]
+              ]
+            },
+            "ScaleType": {
+              "Enum": 0
+            },
+            "ClipsDescendants": false,
+            "ImageRectOffset": [
+              0,
+              0
+            ],
+            "Visible": true,
+            "Rotation": 0,
+            "ResampleMode": {
+              "Enum": 0
+            },
+            "BackgroundTransparency": 1,
+            "Position": {
+              "UDim2": [
+                [
+                  0,
+                  3
+                ],
+                [
+                  0,
+                  1
+                ]
+              ]
+            },
+            "ImageTransparency": 0,
+            "BorderSizePixel": 1,
+            "AutomaticSize": {
+              "Enum": 0
+            },
+            "BackgroundColor3": [
+              0.6392157077789307,
+              0.6352941393852234,
+              0.6470588445663452
+            ]
+          }
+        },
+        "Name": {
+          "$properties": {
+            "Visible": true,
+            "TextWrapped": true,
+            "Active": false,
+            "TextTransparency": 0,
+            "TextStrokeTransparency": 0.4000000059604645,
+            "AnchorPoint": [
+              0,
+              0
+            ],
+            "ZIndex": 5,
+            "Archivable": true,
+            "Size": {
+              "UDim2": [
+                [
+                  1,
+                  -2
+                ],
+                [
+                  0,
+                  8
+                ]
+              ]
+            },
+            "TextColor3": [
+              0.9803921580314636,
+              0.9176470637321472,
+              0.7764706015586853
+            ],
+            "AutomaticSize": {
+              "Enum": 0
+            },
+            "ClipsDescendants": false,
+            "TextXAlignment": {
+              "Enum": 2
+            },
+            "Text": "",
+            "BorderSizePixel": 0,
+            "TextStrokeColor3": [
+              0.11764705926179886,
+              0.09019608050584793,
+              0.08627451211214066
+            ],
+            "Rotation": 0,
+            "Font": {
+              "Enum": 19
+            },
+            "BackgroundTransparency": 1,
+            "Position": {
+              "UDim2": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  0,
+                  23
+                ]
+              ]
+            },
+            "TextSize": 6,
+            "TextYAlignment": {
+              "Enum": 1
+            },
+            "TextScaled": true,
+            "BackgroundColor3": [
+              0.6392157077789307,
+              0.6352941393852234,
+              0.6470588445663452
+            ]
+          },
+          "$className": "TextLabel"
+        },
+        "UICorner": {
+          "$properties": {
+            "Archivable": true,
+            "CornerRadius": {
+              "UDim": [
+                0,
+                6
+              ]
+            }
+          },
+          "$className": "UICorner"
+        },
+        "$properties": {
+          "Visible": true,
+          "ClipsDescendants": false,
+          "AutomaticSize": {
+            "Enum": 0
+          },
+          "Active": false,
+          "BackgroundColor3": [
+            0.11764705926179886,
+            0.09019608050584793,
+            0.08627451211214066
+          ],
+          "Rotation": 0,
+          "BorderSizePixel": 0,
+          "BackgroundTransparency": 0.15000000596046448,
+          "Position": {
+            "UDim2": [
+              [
+                0,
+                64
+              ],
+              [
+                0,
+                0
+              ]
+            ]
+          },
+          "AnchorPoint": [
+            0,
+            0
+          ],
+          "ZIndex": 4,
+          "Archivable": true,
+          "Size": {
+            "UDim2": [
+              [
+                0,
+                29
+              ],
+              [
+                0,
+                34
+              ]
+            ]
+          }
+        },
+        "$className": "Frame",
+        "UIStroke": {
+          "$properties": {
+            "Thickness": 1,
+            "Transparency": 0.3499999940395355,
+            "Color": [
+              0.8901960849761963,
+              0.7607843279838562,
+              0.48235294222831726
+            ],
+            "LineJoinMode": {
+              "Enum": 0
+            },
+            "Archivable": true,
+            "ApplyStrokeMode": {
+              "Enum": 1
+            }
+          },
+          "$className": "UIStroke"
+        }
+      },
+      "4": {
+        "State": {
+          "$properties": {
+            "Visible": true,
+            "TextWrapped": false,
+            "Active": false,
+            "TextTransparency": 0,
+            "TextStrokeTransparency": 0.4000000059604645,
+            "AnchorPoint": [
+              1,
+              0
+            ],
+            "ZIndex": 5,
+            "Archivable": true,
+            "Size": {
+              "UDim2": [
+                [
+                  0,
+                  14
+                ],
+                [
+                  0,
+                  17
+                ]
+              ]
+            },
+            "TextColor3": [
+              0.9803921580314636,
+              0.9176470637321472,
+              0.7764706015586853
+            ],
+            "AutomaticSize": {
+              "Enum": 0
+            },
+            "ClipsDescendants": false,
+            "TextXAlignment": {
+              "Enum": 2
+            },
+            "Text": "",
+            "BorderSizePixel": 0,
+            "TextStrokeColor3": [
+              0.11764705926179886,
+              0.09019608050584793,
+              0.08627451211214066
+            ],
+            "Rotation": 0,
+            "Font": {
+              "Enum": 19
+            },
+            "BackgroundTransparency": 1,
+            "Position": {
+              "UDim2": [
+                [
+                  1,
+                  -1
+                ],
+                [
+                  0,
+                  3
+                ]
+              ]
+            },
+            "TextSize": 8,
+            "TextYAlignment": {
+              "Enum": 1
+            },
+            "TextScaled": false,
+            "BackgroundColor3": [
+              0.6392157077789307,
+              0.6352941393852234,
+              0.6470588445663452
+            ]
+          },
+          "$className": "TextLabel"
+        },
+        "Track": {
+          "$className": "Frame",
+          "$properties": {
+            "Visible": true,
+            "ClipsDescendants": false,
+            "AutomaticSize": {
+              "Enum": 0
+            },
+            "Active": false,
+            "BackgroundColor3": [
+              0.20392157137393951,
+              0.1568627506494522,
+              0.14509804546833038
+            ],
+            "Rotation": 0,
+            "BorderSizePixel": 0,
+            "BackgroundTransparency": 0,
+            "Position": {
+              "UDim2": [
+                [
+                  0,
+                  2
+                ],
+                [
+                  0,
+                  20
+                ]
+              ]
+            },
+            "AnchorPoint": [
+              0,
+              0
+            ],
+            "ZIndex": 5,
+            "Archivable": true,
+            "Size": {
+              "UDim2": [
+                [
+                  1,
+                  -4
+                ],
+                [
+                  0,
+                  3
+                ]
+              ]
+            }
+          },
+          "Fill": {
+            "$properties": {
+              "Visible": true,
+              "ClipsDescendants": false,
+              "AutomaticSize": {
+                "Enum": 0
+              },
+              "Active": false,
+              "BackgroundColor3": [
+                0.35686275362968445,
+                0.6509804129600525,
+                0.5803921818733215
+              ],
+              "Rotation": 0,
+              "BorderSizePixel": 0,
+              "BackgroundTransparency": 0,
+              "Position": {
+                "UDim2": [
+                  [
+                    0,
+                    0
+                  ],
+                  [
+                    0,
+                    0
+                  ]
+                ]
+              },
+              "AnchorPoint": [
+                0,
+                0
+              ],
+              "ZIndex": 6,
+              "Archivable": true,
+              "Size": {
+                "UDim2": [
+                  [
+                    1,
+                    0
+                  ],
+                  [
+                    1,
+                    0
+                  ]
+                ]
+              }
+            },
+            "$className": "Frame"
+          }
+        },
+        "Portrait": {
+          "$className": "ImageLabel",
+          "$attributes": {
+            "BotPortrait": "rbxassetid://71882201106444"
+          },
+          "$properties": {
+            "ImageColor3": [
+              1,
+              1,
+              1
+            ],
+            "Active": false,
+            "AnchorPoint": [
+              0,
+              0
+            ],
+            "Image": "",
+            "ImageRectSize": [
+              0,
+              0
+            ],
+            "ZIndex": 5,
+            "Archivable": true,
+            "Size": {
+              "UDim2": [
+                [
+                  0,
+                  22
+                ],
+                [
+                  0,
+                  22
+                ]
+              ]
+            },
+            "ScaleType": {
+              "Enum": 0
+            },
+            "ClipsDescendants": false,
+            "ImageRectOffset": [
+              0,
+              0
+            ],
+            "Visible": true,
+            "Rotation": 0,
+            "ResampleMode": {
+              "Enum": 0
+            },
+            "BackgroundTransparency": 1,
+            "Position": {
+              "UDim2": [
+                [
+                  0,
+                  3
+                ],
+                [
+                  0,
+                  1
+                ]
+              ]
+            },
+            "ImageTransparency": 0,
+            "BorderSizePixel": 1,
+            "AutomaticSize": {
+              "Enum": 0
+            },
+            "BackgroundColor3": [
+              0.6392157077789307,
+              0.6352941393852234,
+              0.6470588445663452
+            ]
+          }
+        },
+        "Name": {
+          "$properties": {
+            "Visible": true,
+            "TextWrapped": true,
+            "Active": false,
+            "TextTransparency": 0,
+            "TextStrokeTransparency": 0.4000000059604645,
+            "AnchorPoint": [
+              0,
+              0
+            ],
+            "ZIndex": 5,
+            "Archivable": true,
+            "Size": {
+              "UDim2": [
+                [
+                  1,
+                  -2
+                ],
+                [
+                  0,
+                  8
+                ]
+              ]
+            },
+            "TextColor3": [
+              0.9803921580314636,
+              0.9176470637321472,
+              0.7764706015586853
+            ],
+            "AutomaticSize": {
+              "Enum": 0
+            },
+            "ClipsDescendants": false,
+            "TextXAlignment": {
+              "Enum": 2
+            },
+            "Text": "",
+            "BorderSizePixel": 0,
+            "TextStrokeColor3": [
+              0.11764705926179886,
+              0.09019608050584793,
+              0.08627451211214066
+            ],
+            "Rotation": 0,
+            "Font": {
+              "Enum": 19
+            },
+            "BackgroundTransparency": 1,
+            "Position": {
+              "UDim2": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  0,
+                  23
+                ]
+              ]
+            },
+            "TextSize": 6,
+            "TextYAlignment": {
+              "Enum": 1
+            },
+            "TextScaled": true,
+            "BackgroundColor3": [
+              0.6392157077789307,
+              0.6352941393852234,
+              0.6470588445663452
+            ]
+          },
+          "$className": "TextLabel"
+        },
+        "UICorner": {
+          "$properties": {
+            "Archivable": true,
+            "CornerRadius": {
+              "UDim": [
+                0,
+                6
+              ]
+            }
+          },
+          "$className": "UICorner"
+        },
+        "$properties": {
+          "Visible": true,
+          "ClipsDescendants": false,
+          "AutomaticSize": {
+            "Enum": 0
+          },
+          "Active": false,
+          "BackgroundColor3": [
+            0.11764705926179886,
+            0.09019608050584793,
+            0.08627451211214066
+          ],
+          "Rotation": 0,
+          "BorderSizePixel": 0,
+          "BackgroundTransparency": 0.15000000596046448,
+          "Position": {
+            "UDim2": [
+              [
+                0,
+                96
+              ],
+              [
+                0,
+                0
+              ]
+            ]
+          },
+          "AnchorPoint": [
+            0,
+            0
+          ],
+          "ZIndex": 4,
+          "Archivable": true,
+          "Size": {
+            "UDim2": [
+              [
+                0,
+                29
+              ],
+              [
+                0,
+                34
+              ]
+            ]
+          }
+        },
+        "$className": "Frame",
+        "UIStroke": {
+          "$properties": {
+            "Thickness": 1,
+            "Transparency": 0.3499999940395355,
+            "Color": [
+              0.8901960849761963,
+              0.7607843279838562,
+              0.48235294222831726
+            ],
+            "LineJoinMode": {
+              "Enum": 0
+            },
+            "Archivable": true,
+            "ApplyStrokeMode": {
+              "Enum": 1
+            }
+          },
+          "$className": "UIStroke"
+        }
+      },
+      "5": {
+        "State": {
+          "$properties": {
+            "Visible": true,
+            "TextWrapped": false,
+            "Active": false,
+            "TextTransparency": 0,
+            "TextStrokeTransparency": 0.4000000059604645,
+            "AnchorPoint": [
+              1,
+              0
+            ],
+            "ZIndex": 5,
+            "Archivable": true,
+            "Size": {
+              "UDim2": [
+                [
+                  0,
+                  14
+                ],
+                [
+                  0,
+                  17
+                ]
+              ]
+            },
+            "TextColor3": [
+              0.9803921580314636,
+              0.9176470637321472,
+              0.7764706015586853
+            ],
+            "AutomaticSize": {
+              "Enum": 0
+            },
+            "ClipsDescendants": false,
+            "TextXAlignment": {
+              "Enum": 2
+            },
+            "Text": "",
+            "BorderSizePixel": 0,
+            "TextStrokeColor3": [
+              0.11764705926179886,
+              0.09019608050584793,
+              0.08627451211214066
+            ],
+            "Rotation": 0,
+            "Font": {
+              "Enum": 19
+            },
+            "BackgroundTransparency": 1,
+            "Position": {
+              "UDim2": [
+                [
+                  1,
+                  -1
+                ],
+                [
+                  0,
+                  3
+                ]
+              ]
+            },
+            "TextSize": 8,
+            "TextYAlignment": {
+              "Enum": 1
+            },
+            "TextScaled": false,
+            "BackgroundColor3": [
+              0.6392157077789307,
+              0.6352941393852234,
+              0.6470588445663452
+            ]
+          },
+          "$className": "TextLabel"
+        },
+        "Track": {
+          "$className": "Frame",
+          "$properties": {
+            "Visible": true,
+            "ClipsDescendants": false,
+            "AutomaticSize": {
+              "Enum": 0
+            },
+            "Active": false,
+            "BackgroundColor3": [
+              0.20392157137393951,
+              0.1568627506494522,
+              0.14509804546833038
+            ],
+            "Rotation": 0,
+            "BorderSizePixel": 0,
+            "BackgroundTransparency": 0,
+            "Position": {
+              "UDim2": [
+                [
+                  0,
+                  2
+                ],
+                [
+                  0,
+                  20
+                ]
+              ]
+            },
+            "AnchorPoint": [
+              0,
+              0
+            ],
+            "ZIndex": 5,
+            "Archivable": true,
+            "Size": {
+              "UDim2": [
+                [
+                  1,
+                  -4
+                ],
+                [
+                  0,
+                  3
+                ]
+              ]
+            }
+          },
+          "Fill": {
+            "$properties": {
+              "Visible": true,
+              "ClipsDescendants": false,
+              "AutomaticSize": {
+                "Enum": 0
+              },
+              "Active": false,
+              "BackgroundColor3": [
+                0.35686275362968445,
+                0.6509804129600525,
+                0.5803921818733215
+              ],
+              "Rotation": 0,
+              "BorderSizePixel": 0,
+              "BackgroundTransparency": 0,
+              "Position": {
+                "UDim2": [
+                  [
+                    0,
+                    0
+                  ],
+                  [
+                    0,
+                    0
+                  ]
+                ]
+              },
+              "AnchorPoint": [
+                0,
+                0
+              ],
+              "ZIndex": 6,
+              "Archivable": true,
+              "Size": {
+                "UDim2": [
+                  [
+                    1,
+                    0
+                  ],
+                  [
+                    1,
+                    0
+                  ]
+                ]
+              }
+            },
+            "$className": "Frame"
+          }
+        },
+        "Portrait": {
+          "$className": "ImageLabel",
+          "$attributes": {
+            "BotPortrait": "rbxassetid://71882201106444"
+          },
+          "$properties": {
+            "ImageColor3": [
+              1,
+              1,
+              1
+            ],
+            "Active": false,
+            "AnchorPoint": [
+              0,
+              0
+            ],
+            "Image": "",
+            "ImageRectSize": [
+              0,
+              0
+            ],
+            "ZIndex": 5,
+            "Archivable": true,
+            "Size": {
+              "UDim2": [
+                [
+                  0,
+                  22
+                ],
+                [
+                  0,
+                  22
+                ]
+              ]
+            },
+            "ScaleType": {
+              "Enum": 0
+            },
+            "ClipsDescendants": false,
+            "ImageRectOffset": [
+              0,
+              0
+            ],
+            "Visible": true,
+            "Rotation": 0,
+            "ResampleMode": {
+              "Enum": 0
+            },
+            "BackgroundTransparency": 1,
+            "Position": {
+              "UDim2": [
+                [
+                  0,
+                  3
+                ],
+                [
+                  0,
+                  1
+                ]
+              ]
+            },
+            "ImageTransparency": 0,
+            "BorderSizePixel": 1,
+            "AutomaticSize": {
+              "Enum": 0
+            },
+            "BackgroundColor3": [
+              0.6392157077789307,
+              0.6352941393852234,
+              0.6470588445663452
+            ]
+          }
+        },
+        "Name": {
+          "$properties": {
+            "Visible": true,
+            "TextWrapped": true,
+            "Active": false,
+            "TextTransparency": 0,
+            "TextStrokeTransparency": 0.4000000059604645,
+            "AnchorPoint": [
+              0,
+              0
+            ],
+            "ZIndex": 5,
+            "Archivable": true,
+            "Size": {
+              "UDim2": [
+                [
+                  1,
+                  -2
+                ],
+                [
+                  0,
+                  8
+                ]
+              ]
+            },
+            "TextColor3": [
+              0.9803921580314636,
+              0.9176470637321472,
+              0.7764706015586853
+            ],
+            "AutomaticSize": {
+              "Enum": 0
+            },
+            "ClipsDescendants": false,
+            "TextXAlignment": {
+              "Enum": 2
+            },
+            "Text": "",
+            "BorderSizePixel": 0,
+            "TextStrokeColor3": [
+              0.11764705926179886,
+              0.09019608050584793,
+              0.08627451211214066
+            ],
+            "Rotation": 0,
+            "Font": {
+              "Enum": 19
+            },
+            "BackgroundTransparency": 1,
+            "Position": {
+              "UDim2": [
+                [
+                  0,
+                  1
+                ],
+                [
+                  0,
+                  23
+                ]
+              ]
+            },
+            "TextSize": 6,
+            "TextYAlignment": {
+              "Enum": 1
+            },
+            "TextScaled": true,
+            "BackgroundColor3": [
+              0.6392157077789307,
+              0.6352941393852234,
+              0.6470588445663452
+            ]
+          },
+          "$className": "TextLabel"
+        },
+        "UICorner": {
+          "$properties": {
+            "Archivable": true,
+            "CornerRadius": {
+              "UDim": [
+                0,
+                6
+              ]
+            }
+          },
+          "$className": "UICorner"
+        },
+        "$properties": {
+          "Visible": true,
+          "ClipsDescendants": false,
+          "AutomaticSize": {
+            "Enum": 0
+          },
+          "Active": false,
+          "BackgroundColor3": [
+            0.11764705926179886,
+            0.09019608050584793,
+            0.08627451211214066
+          ],
+          "Rotation": 0,
+          "BorderSizePixel": 0,
+          "BackgroundTransparency": 0.15000000596046448,
+          "Position": {
+            "UDim2": [
+              [
+                0,
+                128
+              ],
+              [
+                0,
+                0
+              ]
+            ]
+          },
+          "AnchorPoint": [
+            0,
+            0
+          ],
+          "ZIndex": 4,
+          "Archivable": true,
+          "Size": {
+            "UDim2": [
+              [
+                0,
+                29
+              ],
+              [
+                0,
+                34
+              ]
+            ]
+          }
+        },
+        "$className": "Frame",
+        "UIStroke": {
+          "$properties": {
+            "Thickness": 1,
+            "Transparency": 0.3499999940395355,
+            "Color": [
+              0.8901960849761963,
+              0.7607843279838562,
+              0.48235294222831726
+            ],
+            "LineJoinMode": {
+              "Enum": 0
+            },
+            "Archivable": true,
+            "ApplyStrokeMode": {
+              "Enum": 1
+            }
+          },
+          "$className": "UIStroke"
+        }
+      },
+      "$properties": {
+        "Visible": false,
+        "ClipsDescendants": false,
+        "AutomaticSize": {
+          "Enum": 0
+        },
+        "Active": false,
+        "BackgroundColor3": [
+          0.6392157077789307,
+          0.6352941393852234,
+          0.6470588445663452
+        ],
+        "Rotation": 0,
+        "BorderSizePixel": 0,
+        "BackgroundTransparency": 1,
+        "Position": {
+          "UDim2": [
+            [
+              0,
+              12
+            ],
+            [
+              0,
+              52
+            ]
+          ]
+        },
+        "AnchorPoint": [
+          0,
+          0
+        ],
+        "ZIndex": 4,
+        "Archivable": true,
+        "Size": {
+          "UDim2": [
+            [
+              0,
+              157
+            ],
+            [
+              0,
+              34
+            ]
+          ]
+        }
+      },
+      "$attributes": {
+        "BotPortrait": "rbxassetid://71882201106444"
+      },
+      "$className": "Frame"
+    },
+    "Practice": {
+      "$className": "TextButton",
+      "Corner": {
+        "$properties": {
+          "Archivable": true,
+          "CornerRadius": {
+            "UDim": [
+              0,
+              12
+            ]
+          }
+        },
+        "$className": "UICorner"
+      },
+      "$properties": {
+        "Visible": false,
+        "TextWrapped": false,
+        "Active": true,
+        "TextTransparency": 0,
+        "TextStrokeTransparency": 1,
+        "AnchorPoint": [
+          0.5,
+          0
+        ],
+        "Modal": false,
+        "ZIndex": 1,
+        "Archivable": true,
+        "Size": {
+          "UDim2": [
+            [
+              0,
+              200
+            ],
+            [
+              0,
+              48
+            ]
+          ]
+        },
+        "TextStrokeColor3": [
+          0,
+          0,
+          0
+        ],
+        "TextColor3": [
+          0.8901960849761963,
+          0.7607843279838562,
+          0.48235294222831726
+        ],
+        "AutomaticSize": {
+          "Enum": 0
+        },
+        "ClipsDescendants": false,
+        "TextXAlignment": {
+          "Enum": 2
+        },
+        "Text": "PRACTICE  •  PLAY CAPTURE",
+        "BorderSizePixel": 0,
+        "AutoButtonColor": false,
+        "Rotation": 0,
+        "Font": {
+          "Enum": 19
+        },
+        "BackgroundTransparency": 0,
+        "Position": {
+          "UDim2": [
+            [
+              0.5,
+              0
+            ],
+            [
+              0,
+              12
+            ]
+          ]
+        },
+        "TextSize": 13,
+        "TextYAlignment": {
+          "Enum": 1
+        },
+        "TextScaled": false,
+        "BackgroundColor3": [
+          0.11764705926179886,
+          0.09019608050584793,
+          0.08627451211214066
+        ]
+      }
+    },
+    "Feedback": {
+      "$properties": {
+        "Visible": true,
+        "TextWrapped": false,
+        "Active": false,
+        "TextTransparency": 0,
+        "TextStrokeTransparency": 0.44999998807907104,
+        "AnchorPoint": [
+          0.5,
+          0
+        ],
+        "ZIndex": 1,
+        "Archivable": true,
+        "Size": {
+          "UDim2": [
+            [
+              0,
+              180
+            ],
+            [
+              0,
+              24
+            ]
+          ]
+        },
+        "TextColor3": [
+          0.95686274766922,
+          0.8274509906768799,
+          0.5137255191802979
+        ],
+        "AutomaticSize": {
+          "Enum": 0
+        },
+        "ClipsDescendants": false,
+        "TextXAlignment": {
+          "Enum": 2
+        },
+        "Text": "",
+        "BorderSizePixel": 0,
+        "TextStrokeColor3": [
+          0,
+          0,
+          0
+        ],
+        "Rotation": 0,
+        "Font": {
+          "Enum": 19
+        },
+        "BackgroundTransparency": 1,
+        "Position": {
+          "UDim2": [
+            [
+              0.5,
+              0
+            ],
+            [
+              0,
+              116
+            ]
+          ]
+        },
+        "TextSize": 13,
+        "TextYAlignment": {
+          "Enum": 1
+        },
+        "TextScaled": false,
+        "BackgroundColor3": [
+          0.6392157077789307,
+          0.6352941393852234,
+          0.6470588445663452
+        ]
+      },
+      "$className": "TextLabel"
+    },
+    "Respawn": {
+      "Countdown": {
+        "$properties": {
+          "Visible": true,
+          "TextWrapped": false,
+          "Active": false,
+          "TextTransparency": 0,
+          "TextStrokeTransparency": 1,
+          "AnchorPoint": [
+            0,
+            0
+          ],
+          "ZIndex": 1,
+          "Archivable": true,
+          "Size": {
+            "UDim2": [
+              [
+                1,
+                0
+              ],
+              [
+                0,
+                48
+              ]
+            ]
+          },
+          "TextColor3": [
+            0.9411764740943909,
+            0.9529411792755127,
+            0.9137254953384399
+          ],
+          "AutomaticSize": {
+            "Enum": 0
+          },
+          "ClipsDescendants": false,
+          "TextXAlignment": {
+            "Enum": 2
+          },
+          "Text": "5",
+          "BorderSizePixel": 0,
+          "TextStrokeColor3": [
+            0,
+            0,
+            0
+          ],
+          "Rotation": 0,
+          "Font": {
+            "Enum": 18
+          },
+          "BackgroundTransparency": 1,
+          "Position": {
+            "UDim2": [
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                38
+              ]
+            ]
+          },
+          "TextSize": 34,
+          "TextYAlignment": {
+            "Enum": 1
+          },
+          "TextScaled": false,
+          "BackgroundColor3": [
+            0.6392157077789307,
+            0.6352941393852234,
+            0.6470588445663452
+          ]
+        },
+        "$className": "TextLabel"
+      },
+      "Corner": {
+        "$properties": {
+          "Archivable": true,
+          "CornerRadius": {
+            "UDim": [
+              0,
+              14
+            ]
+          }
+        },
+        "$className": "UICorner"
+      },
+      "$properties": {
+        "Visible": false,
+        "ClipsDescendants": false,
+        "AutomaticSize": {
+          "Enum": 0
+        },
+        "Active": false,
+        "BackgroundColor3": [
+          0.0941176488995552,
+          0.13725490868091583,
+          0.1921568661928177
+        ],
+        "Rotation": 0,
+        "BorderSizePixel": 0,
+        "BackgroundTransparency": 0,
+        "Position": {
+          "UDim2": [
+            [
+              0.5,
+              0
+            ],
+            [
+              0.44999998807907104,
+              0
+            ]
+          ]
+        },
+        "AnchorPoint": [
+          0.5,
+          0.5
+        ],
+        "ZIndex": 1,
+        "Archivable": true,
+        "Size": {
+          "UDim2": [
+            [
+              0,
+              250
+            ],
+            [
+              0,
+              100
+            ]
+          ]
+        }
+      },
+      "Title": {
+        "$properties": {
+          "Visible": true,
+          "TextWrapped": false,
+          "Active": false,
+          "TextTransparency": 0,
+          "TextStrokeTransparency": 1,
+          "AnchorPoint": [
+            0,
+            0
+          ],
+          "ZIndex": 1,
+          "Archivable": true,
+          "Size": {
+            "UDim2": [
+              [
+                1,
+                0
+              ],
+              [
+                0,
+                30
+              ]
+            ]
+          },
+          "TextColor3": [
+            0.95686274766922,
+            0.8274509906768799,
+            0.5137255191802979
+          ],
+          "AutomaticSize": {
+            "Enum": 0
+          },
+          "ClipsDescendants": false,
+          "TextXAlignment": {
+            "Enum": 2
+          },
+          "Text": "BACK IN THE FIGHT",
+          "BorderSizePixel": 0,
+          "TextStrokeColor3": [
+            0,
+            0,
+            0
+          ],
+          "Rotation": 0,
+          "Font": {
+            "Enum": 18
+          },
+          "BackgroundTransparency": 1,
+          "Position": {
+            "UDim2": [
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                10
+              ]
+            ]
+          },
+          "TextSize": 14,
+          "TextYAlignment": {
+            "Enum": 1
+          },
+          "TextScaled": false,
+          "BackgroundColor3": [
+            0.6392157077789307,
+            0.6352941393852234,
+            0.6470588445663452
+          ]
+        },
+        "$className": "TextLabel"
+      },
+      "$className": "Frame"
+    },
+    "Result": {
+      "Leave": {
+        "$className": "TextButton",
+        "Corner": {
+          "$properties": {
+            "Archivable": true,
+            "CornerRadius": {
+              "UDim": [
+                0,
+                12
+              ]
+            }
+          },
+          "$className": "UICorner"
+        },
+        "$properties": {
+          "Visible": true,
+          "TextWrapped": false,
+          "Active": true,
+          "TextTransparency": 0,
+          "TextStrokeTransparency": 1,
+          "AnchorPoint": [
+            0,
+            0
+          ],
+          "Modal": false,
+          "ZIndex": 1,
+          "Archivable": true,
+          "Size": {
+            "UDim2": [
+              [
+                0,
+                120
+              ],
+              [
+                0,
+                52
+              ]
+            ]
+          },
+          "TextStrokeColor3": [
+            0,
+            0,
+            0
+          ],
+          "TextColor3": [
+            0.8901960849761963,
+            0.7607843279838562,
+            0.48235294222831726
+          ],
+          "AutomaticSize": {
+            "Enum": 0
+          },
+          "ClipsDescendants": false,
+          "TextXAlignment": {
+            "Enum": 2
+          },
+          "Text": "LOBBY",
+          "BorderSizePixel": 0,
+          "AutoButtonColor": false,
+          "Rotation": 0,
+          "Font": {
+            "Enum": 19
+          },
+          "BackgroundTransparency": 0,
+          "Position": {
+            "UDim2": [
+              [
+                0,
+                220
+              ],
+              [
+                0,
+                154
+              ]
+            ]
+          },
+          "TextSize": 16,
+          "TextYAlignment": {
+            "Enum": 1
+          },
+          "TextScaled": false,
+          "BackgroundColor3": [
+            0.11764705926179886,
+            0.09019608050584793,
+            0.08627451211214066
+          ]
+        }
+      },
+      "Title": {
+        "$properties": {
+          "Visible": true,
+          "TextWrapped": false,
+          "Active": false,
+          "TextTransparency": 0,
+          "TextStrokeTransparency": 1,
+          "AnchorPoint": [
+            0,
+            0
+          ],
+          "ZIndex": 1,
+          "Archivable": true,
+          "Size": {
+            "UDim2": [
+              [
+                1,
+                -32
+              ],
+              [
+                0,
+                48
+              ]
+            ]
+          },
+          "TextColor3": [
+            0.95686274766922,
+            0.8274509906768799,
+            0.5137255191802979
+          ],
+          "AutomaticSize": {
+            "Enum": 0
+          },
+          "ClipsDescendants": false,
+          "TextXAlignment": {
+            "Enum": 2
+          },
+          "Text": "VICTORY",
+          "BorderSizePixel": 0,
+          "TextStrokeColor3": [
+            0,
+            0,
+            0
+          ],
+          "Rotation": 0,
+          "Font": {
+            "Enum": 19
+          },
+          "BackgroundTransparency": 1,
+          "Position": {
+            "UDim2": [
+              [
+                0,
+                16
+              ],
+              [
+                0,
+                12
+              ]
+            ]
+          },
+          "TextSize": 30,
+          "TextYAlignment": {
+            "Enum": 1
+          },
+          "TextScaled": false,
+          "BackgroundColor3": [
+            0.6392157077789307,
+            0.6352941393852234,
+            0.6470588445663452
+          ]
+        },
+        "$className": "TextLabel"
+      },
+      "Corner": {
+        "$properties": {
+          "Archivable": true,
+          "CornerRadius": {
+            "UDim": [
+              0,
+              16
+            ]
+          }
+        },
+        "$className": "UICorner"
+      },
+      "$className": "Frame",
+      "Scale": {
+        "$properties": {
+          "Archivable": true,
+          "Scale": 1
+        },
+        "$className": "UIScale"
+      },
+      "$properties": {
+        "Visible": false,
+        "ClipsDescendants": false,
+        "AutomaticSize": {
+          "Enum": 0
+        },
+        "Active": false,
+        "BackgroundColor3": [
+          0.0941176488995552,
+          0.13725490868091583,
+          0.1921568661928177
+        ],
+        "Rotation": 0,
+        "BorderSizePixel": 0,
+        "BackgroundTransparency": 0,
+        "Position": {
+          "UDim2": [
+            [
+              0.5,
+              0
+            ],
+            [
+              0.5,
+              0
+            ]
+          ]
+        },
+        "AnchorPoint": [
+          0.5,
+          0.5
+        ],
+        "ZIndex": 1,
+        "Archivable": true,
+        "Size": {
+          "UDim2": [
+            [
+              0,
+              360
+            ],
+            [
+              0,
+              224
+            ]
+          ]
+        }
+      },
+      "Play": {
+        "$className": "TextButton",
+        "Corner": {
+          "$properties": {
+            "Archivable": true,
+            "CornerRadius": {
+              "UDim": [
+                0,
+                12
+              ]
+            }
+          },
+          "$className": "UICorner"
+        },
+        "$properties": {
+          "Visible": true,
+          "TextWrapped": false,
+          "Active": true,
+          "TextTransparency": 0,
+          "TextStrokeTransparency": 1,
+          "AnchorPoint": [
+            0,
+            0
+          ],
+          "Modal": false,
+          "ZIndex": 1,
+          "Archivable": true,
+          "Size": {
+            "UDim2": [
+              [
+                0,
+                184
+              ],
+              [
+                0,
+                52
+              ]
+            ]
+          },
+          "TextStrokeColor3": [
+            0,
+            0,
+            0
+          ],
+          "TextColor3": [
+            0.8901960849761963,
+            0.7607843279838562,
+            0.48235294222831726
+          ],
+          "AutomaticSize": {
+            "Enum": 0
+          },
+          "ClipsDescendants": false,
+          "TextXAlignment": {
+            "Enum": 2
+          },
+          "Text": "PLAY AGAIN",
+          "BorderSizePixel": 0,
+          "AutoButtonColor": false,
+          "Rotation": 0,
+          "Font": {
+            "Enum": 19
+          },
+          "BackgroundTransparency": 0,
+          "Position": {
+            "UDim2": [
+              [
+                0,
+                20
+              ],
+              [
+                0,
+                154
+              ]
+            ]
+          },
+          "TextSize": 16,
+          "TextYAlignment": {
+            "Enum": 1
+          },
+          "TextScaled": false,
+          "BackgroundColor3": [
+            0.11764705926179886,
+            0.09019608050584793,
+            0.08627451211214066
+          ]
+        }
+      },
+      "Detail": {
+        "$properties": {
+          "Visible": true,
+          "TextWrapped": true,
+          "Active": false,
+          "TextTransparency": 0,
+          "TextStrokeTransparency": 1,
+          "AnchorPoint": [
+            0,
+            0
+          ],
+          "ZIndex": 1,
+          "Archivable": true,
+          "Size": {
+            "UDim2": [
+              [
+                1,
+                -40
+              ],
+              [
+                0,
+                74
+              ]
+            ]
+          },
+          "TextColor3": [
+            0.6666666865348816,
+            0.7490196228027344,
+            0.7843137383460999
+          ],
+          "AutomaticSize": {
+            "Enum": 0
+          },
+          "ClipsDescendants": false,
+          "TextXAlignment": {
+            "Enum": 2
+          },
+          "Text": "",
+          "BorderSizePixel": 0,
+          "TextStrokeColor3": [
+            0,
+            0,
+            0
+          ],
+          "Rotation": 0,
+          "Font": {
+            "Enum": 18
+          },
+          "BackgroundTransparency": 1,
+          "Position": {
+            "UDim2": [
+              [
+                0,
+                20
+              ],
+              [
+                0,
+                66
+              ]
+            ]
+          },
+          "TextSize": 14,
+          "TextYAlignment": {
+            "Enum": 1
+          },
+          "TextScaled": false,
+          "BackgroundColor3": [
+            0.6392157077789307,
+            0.6352941393852234,
+            0.6470588445663452
+          ]
+        },
+        "$className": "TextLabel"
+      }
+    },
+    "Pings": {
+      "Regroup": {
+        "UICorner": {
+          "$properties": {
+            "Archivable": true,
+            "CornerRadius": {
+              "UDim": [
+                0,
+                6
+              ]
+            }
+          },
+          "$className": "UICorner"
+        },
+        "$className": "TextButton",
+        "UIStroke": {
+          "$properties": {
+            "Thickness": 1,
+            "Transparency": 0.3499999940395355,
+            "Color": [
+              0.8901960849761963,
+              0.7607843279838562,
+              0.48235294222831726
+            ],
+            "LineJoinMode": {
+              "Enum": 0
+            },
+            "Archivable": true,
+            "ApplyStrokeMode": {
+              "Enum": 1
+            }
+          },
+          "$className": "UIStroke"
+        },
+        "$properties": {
+          "Visible": true,
+          "TextWrapped": false,
+          "Active": true,
+          "TextTransparency": 0,
+          "TextStrokeTransparency": 1,
+          "AnchorPoint": [
+            0,
+            0
+          ],
+          "Modal": false,
+          "ZIndex": 6,
+          "Archivable": true,
+          "Size": {
+            "UDim2": [
+              [
+                0,
+                48
+              ],
+              [
+                0,
+                44
+              ]
+            ]
+          },
+          "TextStrokeColor3": [
+            0,
+            0,
+            0
+          ],
+          "TextColor3": [
+            0.8901960849761963,
+            0.7607843279838562,
+            0.48235294222831726
+          ],
+          "AutomaticSize": {
+            "Enum": 0
+          },
+          "ClipsDescendants": false,
+          "TextXAlignment": {
+            "Enum": 2
+          },
+          "Text": "GROUP",
+          "BorderSizePixel": 0,
+          "AutoButtonColor": true,
+          "Rotation": 0,
+          "Font": {
+            "Enum": 19
+          },
+          "BackgroundTransparency": 0.05000000074505806,
+          "Position": {
+            "UDim2": [
+              [
+                0,
+                108
+              ],
+              [
+                0,
+                0
+              ]
+            ]
+          },
+          "TextSize": 9,
+          "TextYAlignment": {
+            "Enum": 1
+          },
+          "TextScaled": false,
+          "BackgroundColor3": [
+            0.11764705926179886,
+            0.09019608050584793,
+            0.08627451211214066
+          ]
+        }
+      },
+      "$properties": {
+        "Visible": false,
+        "ClipsDescendants": false,
+        "AutomaticSize": {
+          "Enum": 0
+        },
+        "Active": false,
+        "BackgroundColor3": [
+          0.6392157077789307,
+          0.6352941393852234,
+          0.6470588445663452
+        ],
+        "Rotation": 0,
+        "BorderSizePixel": 0,
+        "BackgroundTransparency": 1,
+        "Position": {
+          "UDim2": [
+            [
+              1,
+              -12
+            ],
+            [
+              0,
+              52
+            ]
+          ]
+        },
+        "AnchorPoint": [
+          1,
+          0
+        ],
+        "ZIndex": 5,
+        "Archivable": true,
+        "Size": {
+          "UDim2": [
+            [
+              0,
+              156
+            ],
+            [
+              0,
+              44
+            ]
+          ]
+        }
+      },
+      "$className": "Frame",
+      "Defend": {
+        "UICorner": {
+          "$properties": {
+            "Archivable": true,
+            "CornerRadius": {
+              "UDim": [
+                0,
+                6
+              ]
+            }
+          },
+          "$className": "UICorner"
+        },
+        "$className": "TextButton",
+        "UIStroke": {
+          "$properties": {
+            "Thickness": 1,
+            "Transparency": 0.3499999940395355,
+            "Color": [
+              0.8901960849761963,
+              0.7607843279838562,
+              0.48235294222831726
+            ],
+            "LineJoinMode": {
+              "Enum": 0
+            },
+            "Archivable": true,
+            "ApplyStrokeMode": {
+              "Enum": 1
+            }
+          },
+          "$className": "UIStroke"
+        },
+        "$properties": {
+          "Visible": true,
+          "TextWrapped": false,
+          "Active": true,
+          "TextTransparency": 0,
+          "TextStrokeTransparency": 1,
+          "AnchorPoint": [
+            0,
+            0
+          ],
+          "Modal": false,
+          "ZIndex": 6,
+          "Archivable": true,
+          "Size": {
+            "UDim2": [
+              [
+                0,
+                48
+              ],
+              [
+                0,
+                44
+              ]
+            ]
+          },
+          "TextStrokeColor3": [
+            0,
+            0,
+            0
+          ],
+          "TextColor3": [
+            0.8901960849761963,
+            0.7607843279838562,
+            0.48235294222831726
+          ],
+          "AutomaticSize": {
+            "Enum": 0
+          },
+          "ClipsDescendants": false,
+          "TextXAlignment": {
+            "Enum": 2
+          },
+          "Text": "DEF",
+          "BorderSizePixel": 0,
+          "AutoButtonColor": true,
+          "Rotation": 0,
+          "Font": {
+            "Enum": 19
+          },
+          "BackgroundTransparency": 0.05000000074505806,
+          "Position": {
+            "UDim2": [
+              [
+                0,
+                54
+              ],
+              [
+                0,
+                0
+              ]
+            ]
+          },
+          "TextSize": 9,
+          "TextYAlignment": {
+            "Enum": 1
+          },
+          "TextScaled": false,
+          "BackgroundColor3": [
+            0.11764705926179886,
+            0.09019608050584793,
+            0.08627451211214066
+          ]
+        }
+      },
+      "Attack": {
+        "UICorner": {
+          "$properties": {
+            "Archivable": true,
+            "CornerRadius": {
+              "UDim": [
+                0,
+                6
+              ]
+            }
+          },
+          "$className": "UICorner"
+        },
+        "$className": "TextButton",
+        "UIStroke": {
+          "$properties": {
+            "Thickness": 1,
+            "Transparency": 0.3499999940395355,
+            "Color": [
+              0.8901960849761963,
+              0.7607843279838562,
+              0.48235294222831726
+            ],
+            "LineJoinMode": {
+              "Enum": 0
+            },
+            "Archivable": true,
+            "ApplyStrokeMode": {
+              "Enum": 1
+            }
+          },
+          "$className": "UIStroke"
+        },
+        "$properties": {
+          "Visible": true,
+          "TextWrapped": false,
+          "Active": true,
+          "TextTransparency": 0,
+          "TextStrokeTransparency": 1,
+          "AnchorPoint": [
+            0,
+            0
+          ],
+          "Modal": false,
+          "ZIndex": 6,
+          "Archivable": true,
+          "Size": {
+            "UDim2": [
+              [
+                0,
+                48
+              ],
+              [
+                0,
+                44
+              ]
+            ]
+          },
+          "TextStrokeColor3": [
+            0,
+            0,
+            0
+          ],
+          "TextColor3": [
+            0.8901960849761963,
+            0.7607843279838562,
+            0.48235294222831726
+          ],
+          "AutomaticSize": {
+            "Enum": 0
+          },
+          "ClipsDescendants": false,
+          "TextXAlignment": {
+            "Enum": 2
+          },
+          "Text": "ATK",
+          "BorderSizePixel": 0,
+          "AutoButtonColor": true,
+          "Rotation": 0,
+          "Font": {
+            "Enum": 19
+          },
+          "BackgroundTransparency": 0.05000000074505806,
+          "Position": {
+            "UDim2": [
+              [
+                0,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ]
+          },
+          "TextSize": 9,
+          "TextYAlignment": {
+            "Enum": 1
+          },
+          "TextScaled": false,
+          "BackgroundColor3": [
+            0.11764705926179886,
+            0.09019608050584793,
+            0.08627451211214066
+          ]
+        }
+      }
+    },
+    "Team": {
+      "$properties": {
+        "Visible": true,
+        "TextWrapped": false,
+        "Active": false,
+        "TextTransparency": 0,
+        "TextStrokeTransparency": 1,
+        "AnchorPoint": [
+          0,
+          0
+        ],
+        "ZIndex": 1,
+        "Archivable": true,
+        "Size": {
+          "UDim2": [
+            [
+              0,
+              160
+            ],
+            [
+              0,
+              28
+            ]
+          ]
+        },
+        "TextColor3": [
+          0.2980392277240753,
+          0.7411764860153198,
+          0.9333333373069763
+        ],
+        "AutomaticSize": {
+          "Enum": 0
+        },
+        "ClipsDescendants": false,
+        "TextXAlignment": {
+          "Enum": 0
+        },
+        "Text": "",
+        "BorderSizePixel": 0,
+        "TextStrokeColor3": [
+          0,
+          0,
+          0
+        ],
+        "Rotation": 0,
+        "Font": {
+          "Enum": 18
+        },
+        "BackgroundTransparency": 1,
+        "Position": {
+          "UDim2": [
+            [
+              0,
+              12
+            ],
+            [
+              0,
+              58
+            ]
+          ]
+        },
+        "TextSize": 12,
+        "TextYAlignment": {
+          "Enum": 1
+        },
+        "TextScaled": false,
+        "BackgroundColor3": [
+          0.6392157077789307,
+          0.6352941393852234,
+          0.6470588445663452
+        ]
+      },
+      "$className": "TextLabel"
+    },
+    "$className": "ScreenGui",
+    "Lobby": {
+      "Title": {
+        "$properties": {
+          "Visible": true,
+          "TextWrapped": false,
+          "Active": false,
+          "TextTransparency": 0,
+          "TextStrokeTransparency": 1,
+          "AnchorPoint": [
+            0,
+            0
+          ],
+          "ZIndex": 1,
+          "Archivable": true,
+          "Size": {
+            "UDim2": [
+              [
+                1,
+                -32
+              ],
+              [
+                0,
+                44
+              ]
+            ]
+          },
+          "TextColor3": [
+            0.95686274766922,
+            0.8274509906768799,
+            0.5137255191802979
+          ],
+          "AutomaticSize": {
+            "Enum": 0
+          },
+          "ClipsDescendants": false,
+          "TextXAlignment": {
+            "Enum": 2
+          },
+          "Text": "CITADEL",
+          "BorderSizePixel": 0,
+          "TextStrokeColor3": [
+            0,
+            0,
+            0
+          ],
+          "Rotation": 0,
+          "Font": {
+            "Enum": 19
+          },
+          "BackgroundTransparency": 1,
+          "Position": {
+            "UDim2": [
+              [
+                0,
+                16
+              ],
+              [
+                0,
+                15
+              ]
+            ]
+          },
+          "TextSize": 30,
+          "TextYAlignment": {
+            "Enum": 1
+          },
+          "TextScaled": false,
+          "BackgroundColor3": [
+            0.6392157077789307,
+            0.6352941393852234,
+            0.6470588445663452
+          ]
+        },
+        "$className": "TextLabel"
+      },
+      "Corner": {
+        "$properties": {
+          "Archivable": true,
+          "CornerRadius": {
+            "UDim": [
+              0,
+              16
+            ]
+          }
+        },
+        "$className": "UICorner"
+      },
+      "Description": {
+        "$properties": {
+          "Visible": true,
+          "TextWrapped": true,
+          "Active": false,
+          "TextTransparency": 0,
+          "TextStrokeTransparency": 1,
+          "AnchorPoint": [
+            0,
+            0
+          ],
+          "ZIndex": 1,
+          "Archivable": true,
+          "Size": {
+            "UDim2": [
+              [
+                1,
+                -40
+              ],
+              [
+                0,
+                74
+              ]
+            ]
+          },
+          "TextColor3": [
+            0.6666666865348816,
+            0.7490196228027344,
+            0.7843137383460999
+          ],
+          "AutomaticSize": {
+            "Enum": 0
+          },
+          "ClipsDescendants": false,
+          "TextXAlignment": {
+            "Enum": 2
+          },
+          "Text": "5v5 CONTROL\nHold the point. Break their guard.\nFirst team to 100 wins.",
+          "BorderSizePixel": 0,
+          "TextStrokeColor3": [
+            0,
+            0,
+            0
+          ],
+          "Rotation": 0,
+          "Font": {
+            "Enum": 18
+          },
+          "BackgroundTransparency": 1,
+          "Position": {
+            "UDim2": [
+              [
+                0,
+                20
+              ],
+              [
+                0,
+                64
+              ]
+            ]
+          },
+          "TextSize": 14,
+          "TextYAlignment": {
+            "Enum": 1
+          },
+          "TextScaled": false,
+          "BackgroundColor3": [
+            0.6392157077789307,
+            0.6352941393852234,
+            0.6470588445663452
+          ]
+        },
+        "$className": "TextLabel"
+      },
+      "Scale": {
+        "$properties": {
+          "Archivable": true,
+          "Scale": 1
+        },
+        "$className": "UIScale"
+      },
+      "$properties": {
+        "Visible": true,
+        "ClipsDescendants": false,
+        "AutomaticSize": {
+          "Enum": 0
+        },
+        "Active": false,
+        "BackgroundColor3": [
+          0.0941176488995552,
+          0.13725490868091583,
+          0.1921568661928177
+        ],
+        "Rotation": 0,
+        "BorderSizePixel": 0,
+        "BackgroundTransparency": 0,
+        "Position": {
+          "UDim2": [
+            [
+              0.5,
+              0
+            ],
+            [
+              0.5,
+              0
+            ]
+          ]
+        },
+        "AnchorPoint": [
+          0.5,
+          0.5
+        ],
+        "ZIndex": 1,
+        "Archivable": true,
+        "Size": {
+          "UDim2": [
+            [
+              0,
+              360
+            ],
+            [
+              0,
+              216
+            ]
+          ]
+        }
+      },
+      "Play": {
+        "$className": "TextButton",
+        "Corner": {
+          "$properties": {
+            "Archivable": true,
+            "CornerRadius": {
+              "UDim": [
+                0,
+                12
+              ]
+            }
+          },
+          "$className": "UICorner"
+        },
+        "$properties": {
+          "Visible": true,
+          "TextWrapped": false,
+          "Active": true,
+          "TextTransparency": 0,
+          "TextStrokeTransparency": 1,
+          "AnchorPoint": [
+            0,
+            0
+          ],
+          "Modal": false,
+          "ZIndex": 1,
+          "Archivable": true,
+          "Size": {
+            "UDim2": [
+              [
+                1,
+                -40
+              ],
+              [
+                0,
+                52
+              ]
+            ]
+          },
+          "TextStrokeColor3": [
+            0,
+            0,
+            0
+          ],
+          "TextColor3": [
+            0.8901960849761963,
+            0.7607843279838562,
+            0.48235294222831726
+          ],
+          "AutomaticSize": {
+            "Enum": 0
+          },
+          "ClipsDescendants": false,
+          "TextXAlignment": {
+            "Enum": 2
+          },
+          "Text": "JOIN MATCH",
+          "BorderSizePixel": 0,
+          "AutoButtonColor": false,
+          "Rotation": 0,
+          "Font": {
+            "Enum": 19
+          },
+          "BackgroundTransparency": 0,
+          "Position": {
+            "UDim2": [
+              [
+                0,
+                20
+              ],
+              [
+                0,
+                148
+              ]
+            ]
+          },
+          "TextSize": 16,
+          "TextYAlignment": {
+            "Enum": 1
+          },
+          "TextScaled": false,
+          "BackgroundColor3": [
+            0.11764705926179886,
+            0.09019608050584793,
+            0.08627451211214066
+          ]
+        }
+      },
+      "$className": "Frame"
+    },
+    "$properties": {
+      "Enabled": true,
+      "ScreenInsets": {
+        "Enum": 2
+      },
+      "ResetOnSpawn": false,
+      "IgnoreGuiInset": false,
+      "ZIndexBehavior": {
+        "Enum": 1
+      },
+      "SafeAreaCompatibility": {
+        "Enum": 1
+      },
+      "ClipToDeviceSafeArea": true,
+      "Archivable": true,
+      "DisplayOrder": 10
+    }
+  }
+}
