@@ -9,11 +9,14 @@ local UserInputService = game:GetService("UserInputService")
 local Client = require(ReplicatedStorage.Shared.Network.Client)
 local Config = require(ReplicatedStorage.Shared.Combat.Config)
 local Weapons = require(ReplicatedStorage.Shared.Combat.Weapons)
+local SkillDefinitions = require(ReplicatedStorage.Shared.Combat.SkillDefinitions)
 local Melee = require(ReplicatedStorage.Shared.Combat.Melee)
 local Knockback = require(ReplicatedStorage.Shared.Utilities.Knockback)
+local Audio = require(ReplicatedStorage.Shared.Utilities.AudioUtilities)
 local Camera = require(script.Parent.Camera)
 local Feedback = require(script.Feedback)
 local CharacterAnimations = require(script.CharacterAnimations)
+local SkillEffects = require(script.SkillEffects)
 local Telegraphs = require(script.Telegraphs)
 local StatusIndicators = require(script.StatusIndicators)
 local Targeting = require(script.Targeting)
@@ -34,7 +37,6 @@ local DRAG_DEADZONE = 12
 local INPUT_BUFFER = 0.15
 local ATTACK_NAMES = { "Slash", "Reverse" }
 local M1_ATTACK = 1
-local SPIN_HIT_TIMES = table.freeze({ Config.Spin.FirstHit, Config.Spin.FirstHit + Config.Spin.Interval })
 
 export type System = {
 	Init: (self: System) -> (),
@@ -45,6 +47,12 @@ export type System = {
 	Dash: (self: System, direction: Vector3?) -> (),
 	Spin: (self: System) -> (),
 	Charge: (self: System) -> (),
+	ChargeTarget: (self: System, target: Instance?) -> (),
+	RequestSkill: (self: System, slot: string, direction: Vector3?, target: Instance?) -> (),
+	CastSkill: (self: System, id: string, direction: Vector3?, target: Instance?) -> (),
+	PlaySkillEffect: (self: System, character: Model, id: string, direction: Vector3?, target: Instance?) -> boolean,
+	RegisterSkillEffects: (self: System, id: string, handler: SkillEffects.Handler) -> boolean,
+	UnregisterSkillEffects: (self: System, id: string) -> (),
 	SetSprinting: (self: System, enabled: boolean) -> (),
 	SetBlocking: (self: System, enabled: boolean) -> (),
 	CanAct: (self: System) -> boolean,
@@ -66,7 +74,7 @@ local Vitals: Frame? = nil
 local Buttons: { [string]: TextButton } = {}
 local Cooldowns: { [string]: TextLabel } = {}
 local LocalReadyAt: { [string]: number } = {}
-local PendingSkill: { Name: string, Direction: Vector3?, Touch: boolean?, Expires: number }? = nil
+local PendingSkill: { Name: string, Direction: Vector3?, Touch: boolean?, Target: Instance?, Expires: number }? = nil
 local InputController: InputActionController.Controller? = nil
 local SettingsOpen = false
 local SprintRequested = false
@@ -83,7 +91,7 @@ local PendingDashDirection: Vector3? = nil
 local Spinning = false
 local SpinStartedAt = 0
 local SpinSweep = 0
-local CueAt: { [string]: { Until: number, At: number } } = {}
+local CueAt: { [string]: { Until: number, StartedAt: number, Next: number, Cues: { SkillDefinitions.Cue } } } = {}
 local DrawId: number? = nil
 local DrawStartedAt = 0
 local DrawAcknowledged = false
@@ -93,6 +101,20 @@ local DesktopHint: TextLabel? = nil
 
 local function Ranged(): boolean
 	return Weapons.Weapon(Character) == "Yumi"
+end
+
+local function SendSkill(slot: string, direction: Vector3, target: Instance?)
+	local index = SkillDefinitions.Index(slot)
+	if index then
+		Client.Combat.CastSlot.Fire(index, direction, target)
+	end
+end
+
+local function PlayCue(cue: SkillDefinitions.Cue)
+	Feedback:Play(cue.Sound, Root, cue.Volume or 0.34)
+	if cue.Shake then
+		Camera:Shake(cue.Shake, cue.ShakeDuration or 0.16)
+	end
 end
 
 local function CancelDraw()
@@ -138,6 +160,64 @@ local function Interrupted(): boolean
 		or Active("StaggeredUntil")
 		or GuiService.MenuIsOpen
 		or UserInputService:GetFocusedTextBox() ~= nil
+end
+
+local SkillPresentation = SkillEffects.new({
+	Sound = function(name, position, volume, context)
+		if context.Skill.Weapon == "Yumi" then
+			Audio.PlayAtPosition(name, position, volume)
+		end
+	end,
+	Shake = function(amplitude, duration, context)
+		if context.Skill.Weapon == "Yumi" then
+			Camera:Shake(amplitude, duration)
+		end
+	end,
+	IsLocal = function(character)
+		return character == Character
+	end,
+	CanPresent = function(character)
+		return character:GetAttribute("DungeonDowned") ~= true and (character ~= Character or MatchActive())
+	end,
+	OnCast = function(context)
+		if
+			context.Character == Character
+			and context.Skill.Weapon == "Yumi"
+			and context.Skill.Presentation.Animation
+		then
+			CharacterAnimations:Play(context.Skill.Slot, 0.04)
+		end
+	end,
+	OnEnd = function(context)
+		if context.Character == Character and context.Skill.Weapon == "Yumi" then
+			CharacterAnimations:Stop(context.Skill.Slot, 0.06)
+		end
+	end,
+})
+local ObservedActors: { [Model]: boolean } = {}
+
+local function UpdateSkillEffects()
+	local visible: { [Model]: boolean } = {}
+	for _, instance in CollectionService:GetTagged("Combatant") do
+		if not instance:IsA("Model") then
+			continue
+		end
+		local root = instance:FindFirstChild("HumanoidRootPart")
+		if
+			instance == Character
+			or (Root and root and root:IsA("BasePart") and (root.Position - Root.Position).Magnitude <= 64)
+		then
+			visible[instance] = true
+			SkillPresentation:Observe(instance)
+		end
+	end
+	for actor in ObservedActors do
+		if not visible[actor] then
+			SkillPresentation:Forget(actor)
+		end
+	end
+	ObservedActors = visible
+	SkillPresentation:Step(workspace:GetServerTimeNow())
 end
 
 local function Blocked(): boolean
@@ -312,18 +392,27 @@ local function SyncSkillVisuals()
 	local spinning = character ~= nil and Active("SpinUntil")
 	if spinning ~= Spinning then
 		Spinning = spinning
+		local skill = SkillDefinitions.Get("WindSpin")
 		SpinStartedAt = if spinning and character
-			then (character:GetAttribute("SpinUntil") :: number) - Config.Spin.Duration
+			then (character:GetAttribute("SpinUntil") :: number) - (if skill then skill.Duration else 0)
 			else 0
 		SpinSweep = 0
 		if character then
-			CharacterAnimations.Trail(character, spinning)
+			CharacterAnimations.Trail(character, spinning and skill ~= nil and skill.Presentation.Trail == true)
 		end
 		if spinning then
 			CharacterAnimations:Play("Spin", 0.06)
 		else
 			CharacterAnimations:Stop("Spin", 0.08)
 		end
+	end
+end
+
+local function QueueSkillCues(name: string, definition: SkillDefinitions.Definition, endsAt: number)
+	CueAt[name] = nil
+	if #definition.Presentation.Cues > 0 then
+		CueAt[name] =
+			{ Until = endsAt, StartedAt = endsAt - definition.Duration, Next = 1, Cues = definition.Presentation.Cues }
 	end
 end
 
@@ -346,10 +435,14 @@ local function UpdateSkillCues()
 			or Active("ControlDisabledUntil")
 		then
 			CueAt[name] = nil
-		elseif now >= cue.At then
-			CueAt[name] = nil
-			Feedback:Play(name, Root, 0.34)
-			Camera:Shake(if name == "GroundShock" then 0.24 else 0.15, 0.16)
+		else
+			while cue.Next <= #cue.Cues and now >= cue.StartedAt + cue.Cues[cue.Next].At do
+				PlayCue(cue.Cues[cue.Next])
+				cue.Next += 1
+			end
+			if cue.Next > #cue.Cues then
+				CueAt[name] = nil
+			end
 		end
 	end
 end
@@ -447,10 +540,11 @@ local function SyncStatus()
 			else 0
 		local protection = Character and Character:GetAttribute("CaptureProtectedUntil")
 		local protectedFor = if typeof(protection) == "number" then protection - now else 0
+		local isBlock = name == "Block"
 		local reason = if protectedFor > 0
 			then string.format("SPAWN %.1f", protectedFor)
 			elseif blocked then "WAIT"
-			elseif Guarding() and name ~= "Block" then "GUARD"
+			elseif Guarding() and not isBlock then "GUARD"
 			elseif
 				(
 					name == "Dash"
@@ -517,6 +611,7 @@ local function BindCharacter(character: Model)
 		return
 	end
 	if Character then
+		SkillPresentation:Forget(Character)
 		Melee:Unbind(Character)
 	end
 	if Humanoid then
@@ -647,10 +742,16 @@ local function BindCharacter(character: Model)
 					local skill = if name == "RisingCrashUntil" then "RisingCrash" else "GroundShock"
 					if Active(name) then
 						CharacterAnimations:Play(skill, 0.04)
-						CharacterAnimations.Trail(character, true)
 						local endsAt = character:GetAttribute(name) :: number
-						local config = if skill == "RisingCrash" then Config.RisingCrash else Config.GroundShock
-						CueAt[skill] = { Until = endsAt, At = endsAt - config.Duration + config.Windup }
+						local definition = SkillDefinitions.Resolve(Weapons.Weapon(character), skill)
+						CharacterAnimations.Trail(
+							character,
+							definition ~= nil and definition.Presentation.Trail == true
+						)
+						if definition then
+							QueueSkillCues(skill, definition, endsAt)
+							UpdateSkillCues()
+						end
 					else
 						CueAt[skill] = nil
 						CharacterAnimations:Stop(skill, 0.06)
@@ -658,8 +759,13 @@ local function BindCharacter(character: Model)
 					end
 				elseif name == "ChargeUntil" then
 					if Active(name) then
-						Feedback:Play("Charge", Root, 0.35)
-						Camera:Shake(0.18, 0.14)
+						local skill = SkillDefinitions.Get("Charge")
+						if skill then
+							QueueSkillCues("Charge", skill, character:GetAttribute(name) :: number)
+							UpdateSkillCues()
+						end
+					else
+						UpdateSkillCues()
 					end
 					if Active(name) then
 						CharacterAnimations:Play("Charge", 0.04)
@@ -717,6 +823,7 @@ local function BindCharacter(character: Model)
 	end
 	SyncStatus()
 	SyncSkillVisuals()
+	SkillPresentation:Observe(character)
 end
 
 local function TapAim(): Vector3
@@ -766,7 +873,12 @@ local function TapAim(): Vector3
 	return aim
 end
 
-local function RequestSkill(name: string, direction: Vector3?, touch: boolean?)
+local function RequestSkill(name: string, direction: Vector3?, touch: boolean?, target: Instance?)
+	local skill = SkillDefinitions.Resolve(Weapons.Weapon(Character), name)
+	local isDash = name == "Dash"
+	if not isDash and not skill then
+		return
+	end
 	if Ranged() then
 		CancelDraw()
 	end
@@ -786,31 +898,29 @@ local function RequestSkill(name: string, direction: Vector3?, touch: boolean?)
 			Name = name,
 			Direction = direction,
 			Touch = touch,
+			Target = target,
 			Expires = now + INPUT_BUFFER,
 		}
 		return
 	end
 	PendingSkill = nil
-	if Ranged() and name ~= "Dash" then
-		local definition = Weapons.Get("Yumi")
-		local skill = definition and definition.Skills[name]
+	if Ranged() and not isDash then
 		if not skill or Stamina() < skill.Stamina or Active("DashingUntil") then
 			return
 		end
-		for index, slot in Weapons.Slots do
-			if slot == name then
-				LocalReadyAt[name] = now + 0.2
-				Client.Combat.CastSlot.Fire(
-					index,
-					Flat(direction or Targeting:Direction() or (if touch then TapAim() else System:GetAimDirection()))
-						or Facing()
-				)
-				return
-			end
+		local index = SkillDefinitions.Index(name)
+		if index then
+			LocalReadyAt[name] = now + 0.2
+			Client.Combat.CastSlot.Fire(
+				index,
+				Flat(direction or Targeting:Direction() or (if touch then TapAim() else System:GetAimDirection()))
+					or Facing(),
+				nil
+			)
 		end
 		return
 	end
-	if touch and not direction and (name == "RisingCrash" or name == "GroundShock") then
+	if touch and not direction and skill and skill.Aim == "Direction" then
 		direction = Targeting:Direction() or TapAim()
 	end
 	if name == "RisingCrash" then
@@ -820,10 +930,33 @@ local function RequestSkill(name: string, direction: Vector3?, touch: boolean?)
 	elseif name == "Spin" then
 		System:Spin()
 	elseif name == "Charge" then
-		System:Charge()
+		System:ChargeTarget(target)
 	elseif name == "Dash" then
 		System:Dash(direction)
 	end
+end
+
+function System:RequestSkill(slot: string, direction: Vector3?, target: Instance?)
+	RequestSkill(slot, direction, nil, target)
+end
+
+function System:CastSkill(id: string, direction: Vector3?, target: Instance?)
+	local definition = SkillDefinitions.Get(id)
+	if definition and definition.Weapon == Weapons.Weapon(Character) then
+		RequestSkill(definition.Slot, direction, nil, target)
+	end
+end
+
+function System:PlaySkillEffect(character: Model, id: string, direction: Vector3?, target: Instance?): boolean
+	return SkillPresentation:Play(character, id, direction, target)
+end
+
+function System:RegisterSkillEffects(id: string, handler: SkillEffects.Handler): boolean
+	return SkillPresentation:Register(id, handler)
+end
+
+function System:UnregisterSkillEffects(id: string)
+	SkillPresentation:Unregister(id)
 end
 
 local function HideEditorPreview(instance: Instance)
@@ -862,6 +995,10 @@ local function BindControls()
 		ReleaseDraw = ReleaseDraw,
 		CancelDraw = CancelDraw,
 		RequestSkill = RequestSkill,
+		AimMode = function(name)
+			local definition = SkillDefinitions.Resolve(Weapons.Weapon(Character), name)
+			return definition and definition.Aim
+		end,
 		SetBlocking = function(enabled)
 			System:SetBlocking(enabled)
 		end,
@@ -921,8 +1058,9 @@ local function BindControls()
 	local health = vitals:WaitForChild("Health")
 	HealthFill = health:WaitForChild("Fill") :: Frame
 	HealthLabel = health:WaitForChild("Value") :: TextLabel
-	DesktopHint = gui:WaitForChild("DesktopHint") :: TextLabel
-	DesktopHint.Visible = not UserInputService.TouchEnabled
+	local desktopHint = gui:WaitForChild("DesktopHint") :: TextLabel
+	DesktopHint = desktopHint
+	desktopHint.Visible = not UserInputService.TouchEnabled
 	local panel = gui:WaitForChild("SettingsPanel") :: Frame
 	local settings = gui:WaitForChild("Settings") :: TextButton
 	settings.Activated:Connect(function()
@@ -1018,6 +1156,7 @@ local function Update(dt: number)
 	Telegraphs:Step(dt)
 	StatusIndicators:Step(dt)
 	RemoteCues:Step(dt)
+	UpdateSkillEffects()
 	Feedback:Step()
 	SyncStatus()
 	SyncSkillVisuals()
@@ -1054,7 +1193,7 @@ local function Update(dt: number)
 			PendingSkill = nil
 		elseif SkillRecovery(pending.Name) <= 0 and ReadyAt(pending.Name) <= workspace:GetServerTimeNow() then
 			PendingSkill = nil
-			RequestSkill(pending.Name, pending.Direction, pending.Touch)
+			RequestSkill(pending.Name, pending.Direction, pending.Touch, pending.Target)
 		end
 	end
 	if
@@ -1071,11 +1210,12 @@ local function Update(dt: number)
 	if Spinning and Root then
 		Root.CFrame *= CFrame.Angles(0, Config.Spin.TurnSpeed * dt, 0)
 		local elapsed = workspace:GetServerTimeNow() - SpinStartedAt
-		for index, hitTime in SPIN_HIT_TIMES do
-			if index > SpinSweep and elapsed >= hitTime then
+		local skill = SkillDefinitions.Get("WindSpin")
+		local cues: { SkillDefinitions.Cue } = if skill then skill.Presentation.Cues else {}
+		for index, cue in cues do
+			if index > SpinSweep and elapsed >= cue.At then
 				SpinSweep = index
-				Feedback:Play("WindSpin", Root, 0.32)
-				Camera:Shake(0.13, 0.12)
+				PlayCue(cue)
 			end
 		end
 	end
@@ -1180,19 +1320,21 @@ local function CanCast(system: System, name: string, cost: number): boolean
 end
 
 function System:RisingCrash(direction: Vector3?)
-	if not CanCast(self, "RisingCrash", Config.RisingCrash.Stamina) then
+	local skill = SkillDefinitions.Get("RisingCrash")
+	if Ranged() or not skill or not CanCast(self, skill.Slot, skill.Stamina) then
 		return
 	end
 	LocalReadyAt.RisingCrash = workspace:GetServerTimeNow() + 0.2
-	Client.Combat.RisingCrash.Fire(Flat(direction or self:GetAimDirection()) or Facing())
+	SendSkill(skill.Slot, Flat(direction or self:GetAimDirection()) or Facing(), nil)
 end
 
 function System:GroundShock(direction: Vector3?)
-	if not CanCast(self, "GroundShock", Config.GroundShock.Stamina) then
+	local skill = SkillDefinitions.Get("GroundShock")
+	if Ranged() or not skill or not CanCast(self, skill.Slot, skill.Stamina) then
 		return
 	end
 	LocalReadyAt.GroundShock = workspace:GetServerTimeNow() + 0.2
-	Client.Combat.GroundShock.Fire(Flat(direction or self:GetAimDirection()) or Facing())
+	SendSkill(skill.Slot, Flat(direction or self:GetAimDirection()) or Facing(), nil)
 end
 
 function System:Dash(direction: Vector3?)
@@ -1213,52 +1355,65 @@ function System:Dash(direction: Vector3?)
 end
 
 function System:Spin()
+	local skill = SkillDefinitions.Get("WindSpin")
 	if
-		Blocked()
+		Ranged()
+		or not skill
+		or Blocked()
 		or Guarding()
 		or BlockRequested
 		or Active("RootedUntil")
 		or Active("AttackReadyAt")
 		or workspace:GetServerTimeNow() < LocalAttackReadyAt
 		or ReadyAt("Spin") > workspace:GetServerTimeNow()
-		or Stamina() < Config.Spin.Stamina
+		or Stamina() < skill.Stamina
 		or Active("DashingUntil")
 	then
 		return
 	end
-	LocalReadyAt.Spin = workspace:GetServerTimeNow() + Config.Spin.Cooldown
-	LocalAttackReadyAt = workspace:GetServerTimeNow() + Config.Spin.Duration
-	Client.Combat.Spin.Fire(true)
+	LocalReadyAt.Spin = workspace:GetServerTimeNow() + skill.Cooldown
+	LocalAttackReadyAt = workspace:GetServerTimeNow() + skill.Duration
+	SendSkill(skill.Slot, Facing(), nil)
 end
 
 function System:Charge()
+	self:ChargeTarget(nil)
+end
+
+function System:ChargeTarget(requestedTarget: Instance?)
+	local skill = SkillDefinitions.Get("Charge")
 	if
-		Blocked()
+		Ranged()
+		or not skill
+		or Blocked()
 		or Guarding()
 		or BlockRequested
 		or Active("RootedUntil")
 		or Active("AttackReadyAt")
 		or workspace:GetServerTimeNow() < LocalAttackReadyAt
 		or ReadyAt("Charge") > workspace:GetServerTimeNow()
-		or Stamina() < Config.Charge.Stamina
+		or Stamina() < skill.Stamina
 		or Active("DashingUntil")
 	then
 		return
 	end
-	local target = Targeting.Target
-	local aim = Targeting:Direction()
+	local target = requestedTarget or Targeting.Target
 	local root = Root
 	local targetRoot = target and target:FindFirstChild("HumanoidRootPart")
-	if not aim or not target or not root or not targetRoot or not targetRoot:IsA("BasePart") then
+	if not target or not target:IsA("Model") or not root or not targetRoot or not targetRoot:IsA("BasePart") then
 		return
 	end
 	local offset = targetRoot.Position - root.Position
-	if Vector3.new(offset.X, 0, offset.Z).Magnitude > Config.Charge.Range or math.abs(offset.Y) > 5 then
+	if
+		offset.Magnitude < 0.01
+		or Vector3.new(offset.X, 0, offset.Z).Magnitude > skill.Range
+		or math.abs(offset.Y) > (skill.Presentation.Height or 5)
+	then
 		return
 	end
 	-- Only reserve a short request interval; the server owns the actual cooldown.
 	LocalReadyAt.Charge = workspace:GetServerTimeNow() + 0.2
-	Client.Combat.Charge.Fire(target)
+	SendSkill(skill.Slot, Flat(offset) or Facing(), target)
 end
 
 function System:SetSprinting(enabled: boolean)
@@ -1290,6 +1445,8 @@ function System:Init()
 	Player.CharacterAdded:Connect(BindCharacter)
 	Player.CharacterRemoving:Connect(function(character)
 		if Character == character then
+			SkillPresentation:Forget(character)
+			ObservedActors[character] = nil
 			ReleaseControls()
 			Targeting:Clear()
 			AttackFacingUntil = 0

@@ -8,9 +8,7 @@ local function GetTemplate(): Model?
 	local weapons = assets and assets:FindFirstChild("Weapons")
 	local template = weapons and weapons:FindFirstChild("Katana")
 	if not template or not template:IsA("Model") then
-		warn(
-			"[Combat] Missing authored ReplicatedStorage.Assets.Weapons.Katana Model; sync the preview asset with Rojo"
-		)
+		warn("[Combat] Missing authored ReplicatedStorage.Assets.Weapons.Katana Model; restore it in the Studio place")
 		return nil
 	end
 	local handle = template:FindFirstChild("Handle")

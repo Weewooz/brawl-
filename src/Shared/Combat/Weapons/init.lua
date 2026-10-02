@@ -1,13 +1,9 @@
 --!strict
 local Config = require(script.Parent.Config)
+local SkillDefinitions = require(script.Parent.SkillDefinitions)
 
 export type Id = "Katana" | "Yumi"
-export type Skill = {
-	Name: string,
-	Cooldown: number,
-	Stamina: number,
-	Range: number,
-}
+export type Skill = SkillDefinitions.Definition
 export type Definition = {
 	Name: string,
 	Range: number,
@@ -21,7 +17,7 @@ export type Definition = {
 }
 
 local Weapons = {}
-Weapons.Slots = table.freeze({ "RisingCrash", "Spin", "Charge", "GroundShock" })
+Weapons.Slots = SkillDefinitions.Slots
 
 local DEFINITIONS: { [string]: Definition } = {
 	Katana = {
@@ -29,32 +25,7 @@ local DEFINITIONS: { [string]: Definition } = {
 		Range = Config.Charge.Range,
 		IsRanged = false,
 		Attack = { Cooldown = Config.Attack.Cooldown, Stamina = 0 },
-		Skills = {
-			RisingCrash = {
-				Name = "Rising Crash",
-				Cooldown = Config.RisingCrash.Cooldown,
-				Stamina = Config.RisingCrash.Stamina,
-				Range = Config.RisingCrash.Range,
-			},
-			Spin = {
-				Name = "Wind Spin",
-				Cooldown = Config.Spin.Cooldown,
-				Stamina = Config.Spin.Stamina,
-				Range = Config.Spin.Radius,
-			},
-			Charge = {
-				Name = "Charge",
-				Cooldown = Config.Charge.Cooldown,
-				Stamina = Config.Charge.Stamina,
-				Range = Config.Charge.Range,
-			},
-			GroundShock = {
-				Name = "Ground Shock",
-				Cooldown = Config.GroundShock.Cooldown,
-				Stamina = Config.GroundShock.Stamina,
-				Range = Config.GroundShock.Range,
-			},
-		},
+		Skills = SkillDefinitions.ForWeapon("Katana") :: { [string]: Skill },
 	},
 	Yumi = {
 		Name = "Yumi",
@@ -65,21 +36,12 @@ local DEFINITIONS: { [string]: Definition } = {
 		MaxDamage = 28,
 		Speed = 100,
 		Attack = { Cooldown = 0.8, Stamina = 8 },
-		Skills = {
-			RisingCrash = { Name = "Piercing Shot", Cooldown = 7, Stamina = 20, Range = 60 },
-			Spin = { Name = "Volley", Cooldown = 8, Stamina = 25, Range = 45 },
-			Charge = { Name = "Quick Shot", Cooldown = 4, Stamina = 12, Range = 45 },
-			GroundShock = { Name = "Pinning Shot", Cooldown = 10, Stamina = 20, Range = 50 },
-		},
+		Skills = SkillDefinitions.ForWeapon("Yumi") :: { [string]: Skill },
 	},
 }
 
 for _, definition in DEFINITIONS do
 	table.freeze(definition.Attack)
-	for _, skill in definition.Skills do
-		table.freeze(skill)
-	end
-	table.freeze(definition.Skills)
 	table.freeze(definition)
 end
 table.freeze(DEFINITIONS)

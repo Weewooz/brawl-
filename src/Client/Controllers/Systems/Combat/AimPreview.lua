@@ -4,6 +4,7 @@ local ReplicatedStorage = game:GetService("ReplicatedStorage")
 
 local Config = require(ReplicatedStorage.Shared.Combat.Config)
 local Weapons = require(ReplicatedStorage.Shared.Combat.Weapons)
+local SkillDefinitions = require(ReplicatedStorage.Shared.Combat.SkillDefinitions)
 local GOLD = Color3.fromRGB(245, 210, 135)
 local INVALID = Color3.fromRGB(214, 104, 91)
 local ARROW_SIZE = Vector3.new(0.25, 0.25, 0.8)
@@ -170,12 +171,15 @@ function Preview:Show(
 	local floor = root.Position - Vector3.yAxis * (clearance - 0.08)
 	local color = if cancelled then INVALID else GOLD
 	local definition = Weapons.Get(Weapons.Weapon(character))
-	if definition and definition.IsRanged then
+	local skill = SkillDefinitions.Resolve(Weapons.Weapon(character), name)
+	if
+		definition
+		and ((skill and skill.Presentation.Preview == "Projectile") or (name == "Attack" and definition.IsRanged))
+	then
 		local path = self.Path
 		if not path then
 			return false
 		end
-		local skill = definition.Skills[name]
 		local range = if skill then skill.Range else definition.Range
 		local params = RaycastParams.new()
 		params.FilterType = Enum.RaycastFilterType.Exclude
@@ -193,12 +197,16 @@ function Preview:Show(
 		local height = if aimPosition then aimPosition.Y + 0.04 else floor.Y
 		local groundOrigin = Vector3.new(origin.X, height, origin.Z)
 		path.CFrame = CFrame.lookAt(groundOrigin + direction * distance * 0.5, groundOrigin + direction * distance)
-		path.Size = Vector3.new(if name == "Spin" then 1.4 else 0.16, 0.06, math.max(0.1, distance))
+		path.Size = Vector3.new(
+			if skill and skill.Projectile and #skill.Projectile.Angles > 1 then 1.4 else 0.16,
+			0.06,
+			math.max(0.1, distance)
+		)
 		path.Color = color
 		path.Transparency = 0.25
 		return not cancelled
 	end
-	if name == "Charge" then
+	if skill and skill.Presentation.Preview == "Charge" then
 		local destination, valid = Destination(character, root, target)
 		color = if valid and not cancelled then GOLD else INVALID
 		if not destination then
@@ -221,8 +229,16 @@ function Preview:Show(
 		end
 		return valid
 	end
-	local config = if name == "RisingCrash" then Config.RisingCrash else Config.GroundShock
-	Arc(self.Parts[name], CFrame.lookAt(floor, floor + direction), config.Range, math.rad(config.HalfAngle), color)
+	if not skill or skill.Presentation.Preview ~= "Cone" then
+		return false
+	end
+	Arc(
+		self.Parts[name],
+		CFrame.lookAt(floor, floor + direction),
+		skill.Range,
+		math.rad(skill.Presentation.HalfAngle or 0),
+		color
+	)
 	return true
 end
 

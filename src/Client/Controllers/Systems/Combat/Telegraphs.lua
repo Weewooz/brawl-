@@ -3,8 +3,8 @@ local Players = game:GetService("Players")
 local CollectionService = game:GetService("CollectionService")
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 
-local Config = require(ReplicatedStorage.Shared.Combat.Config)
 local Weapons = require(ReplicatedStorage.Shared.Combat.Weapons)
+local SkillDefinitions = require(ReplicatedStorage.Shared.Combat.SkillDefinitions)
 local Player = Players.LocalPlayer
 local INTERVAL = 1 / 30
 local GUARD_ANGLE = math.acos(0.2)
@@ -248,20 +248,23 @@ function Telegraphs:Step(dt: number)
 		end
 		slot.GuardVisible = guard
 		local katana = Weapons.Weapon(character) == "Katana"
+		local spinSkill = SkillDefinitions.Get("WindSpin")
+		local risingSkill = SkillDefinitions.Get("RisingCrash")
+		local shockSkill = SkillDefinitions.Get("GroundShock")
 		local spin = katana and Active(character, "SpinUntil", now)
-		if spin then
-			Arc(slot.Spin, CFrame.new(floor), Config.Spin.Radius, 0, math.pi * 2, color, transparency)
+		if spin and spinSkill then
+			Arc(slot.Spin, CFrame.new(floor), spinSkill.Range, 0, math.pi * 2, color, transparency)
 		elseif slot.SpinVisible then
 			Hide(slot.Spin)
 		end
 		slot.SpinVisible = spin
 		local rising = katana and Active(character, "RisingCrashUntil", now)
-		if rising then
-			local angle = math.rad(Config.RisingCrash.HalfAngle)
+		if rising and risingSkill then
+			local angle = math.rad(risingSkill.Presentation.HalfAngle or 0)
 			Arc(
 				slot.RisingCrash,
 				SkillFrame(character, "RisingCrash", floor, frame),
-				Config.RisingCrash.Range,
+				risingSkill.Range,
 				-angle,
 				angle * 2,
 				color,
@@ -272,23 +275,19 @@ function Telegraphs:Step(dt: number)
 		end
 		slot.RisingCrashVisible = rising
 		local shock = katana and Active(character, "GroundShockUntil", now)
-		if shock then
+		if shock and shockSkill then
 			local endsAt = character:GetAttribute("GroundShockUntil") :: number
-			local elapsed = Config.GroundShock.Duration - (endsAt - now)
-			local winding = elapsed < Config.GroundShock.Windup
+			local elapsed = shockSkill.Duration - (endsAt - now)
+			local winding = elapsed < shockSkill.Windup
 			local progress = if winding
 				then 1
-				else math.clamp(
-					(elapsed - Config.GroundShock.Windup) / (Config.GroundShock.Duration - Config.GroundShock.Windup),
-					0.2,
-					1
-				)
+				else math.clamp((elapsed - shockSkill.Windup) / (shockSkill.Duration - shockSkill.Windup), 0.2, 1)
 			local opacity = if winding then math.max(0.6, transparency) else transparency
-			local angle = math.rad(Config.GroundShock.HalfAngle)
+			local angle = math.rad(shockSkill.Presentation.HalfAngle or 0)
 			Arc(
 				slot.GroundShock,
 				SkillFrame(character, "GroundShock", floor, frame),
-				Config.GroundShock.Range * progress,
+				shockSkill.Range * progress,
 				-angle,
 				angle * 2,
 				color,

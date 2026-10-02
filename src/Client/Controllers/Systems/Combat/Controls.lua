@@ -24,28 +24,13 @@ local Controls: System = { Slots = {} } :: System
 local COLORS = { Ready = Color3.fromRGB(232, 205, 150), Waiting = Color3.fromRGB(127, 113, 97) }
 local DURATIONS = {
 	Attack = Config.Attack.Cooldown,
-	RisingCrash = Config.RisingCrash.Cooldown,
-	GroundShock = Config.GroundShock.Cooldown,
-	Spin = Config.Spin.Cooldown,
-	Charge = Config.Charge.Cooldown,
 	Dash = Config.DashCooldown,
 }
 local COSTS = {
 	Attack = "",
-	RisingCrash = tostring(Config.RisingCrash.Stamina),
-	GroundShock = tostring(Config.GroundShock.Stamina),
-	Spin = tostring(Config.Spin.Stamina),
-	Charge = tostring(Config.Charge.Stamina),
 	Dash = tostring(Config.Stamina.Dash),
 	Block = tostring(Config.Stamina.BlockPerSecond) .. "/s",
 	Sprint = tostring(Config.Stamina.SprintPerSecond) .. "/s",
-}
-local TITLES = {
-	Attack = "SLASH",
-	RisingCrash = "RISING CRASH",
-	Spin = "WIND SPIN",
-	Charge = "CHARGE",
-	GroundShock = "GROUND SHOCK",
 }
 
 function Controls:Weapon(id: string)
@@ -57,11 +42,11 @@ function Controls:Weapon(id: string)
 		local skill = definition.Skills[name]
 		if name == "Attack" then
 			DURATIONS[name] = definition.Attack.Cooldown
-			slot.Title.Text = if definition.IsRanged then "DRAW" else TITLES.Attack
+			slot.Title.Text = if definition.IsRanged then "DRAW" else "SLASH"
 			slot.Cost.Text = if definition.Attack.Stamina > 0 then tostring(definition.Attack.Stamina) else ""
 		elseif skill then
 			DURATIONS[name] = skill.Cooldown
-			slot.Title.Text = if definition.IsRanged then string.upper(skill.Name) else TITLES[name]
+			slot.Title.Text = string.upper(skill.Name)
 			slot.Cost.Text = tostring(skill.Stamina)
 		end
 		-- Melee artwork must not misrepresent the ranged actions.
@@ -100,6 +85,7 @@ function Controls:Bind(buttons: { [string]: TextButton })
 			Stroke = button:FindFirstChildOfClass("UIStroke"),
 		}
 	end
+	self:Weapon("Katana")
 end
 
 function Controls:Update(name: string, ready: boolean, remaining: number, active: boolean)

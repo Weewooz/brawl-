@@ -207,5 +207,29 @@ return function(Controller: typeof(require(script.Parent)))
 	allowed = false
 	controller:Press("Dash")
 	assert(#requests == 2, "Menu/text focus gates reject native actions")
+	allowed = true
+	controller.Callbacks.AimMode = function()
+		return "Direction"
+	end
+	controller.Buttons.Charge = { AbsoluteSize = Vector2.new(60, 60) } :: any
+	local directional = Touch(300, 300)
+	controller:BeginSkillAim(directional, "Charge")
+	assert(controller.Aiming)
+	controller.Aiming.Valid = false
+	directional.Position = Vector3.new(340, 300, 0)
+	directional:Finish(false)
+	assert(
+		#requests == 3 and requests[3].Direction == Vector3.xAxis,
+		"Definition aim mode must override slot-specific target rules"
+	)
+	controller.Callbacks.AimMode = function()
+		return "Target"
+	end
+	local targeted = Touch(300, 300)
+	controller:BeginSkillAim(targeted, "Charge")
+	assert(controller.Aiming)
+	controller.Aiming.Valid = false
+	targeted:Finish(false)
+	assert(#requests == 3, "Targeted aim must reject an invalid target")
 	return "Input action and touch gesture checks passed"
 end

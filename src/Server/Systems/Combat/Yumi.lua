@@ -6,6 +6,7 @@ local Workspace = game:GetService("Workspace")
 
 local Server = require(ReplicatedStorage.Shared.Network.Server)
 local Weapons = require(ReplicatedStorage.Shared.Combat.Weapons)
+local SkillDefinitions = require(ReplicatedStorage.Shared.Combat.SkillDefinitions)
 local Rules = require(ReplicatedStorage.Shared.Combat.YumiRules)
 local CaptureAuthority = require(ReplicatedStorage.Shared.Capture.Authority)
 local Tags = require(ReplicatedStorage.Shared.Core.Tags)
@@ -26,7 +27,7 @@ export type API = {
 type Pending = {
 	At: number,
 	Direction: Vector3,
-	Slot: string,
+	Definition: SkillDefinitions.Definition,
 	Hit: Hit,
 }
 type State = {
@@ -47,7 +48,6 @@ local Yumi = {} :: API
 local States: { [Model]: State } = {}
 local Config = Weapons.Get("Yumi")
 assert(Config, "[Combat] Yumi weapon configuration is missing")
-local WINDUP = 0.15
 local RECOVERY = 0.2
 local INTERRUPTS = {
 	"Weapon",
@@ -225,7 +225,8 @@ local function Launch(
 	damage: number,
 	label: string,
 	maximum: number,
-	hit: Hit
+	hit: Hit,
+	slow: SkillDefinitions.Slow?
 ): boolean
 	local root = Living(character)
 	local _, arrow = Templates()
@@ -306,8 +307,8 @@ local function Launch(
 				return
 			end
 			applied[target] = true
-			if hit(character, target, damage, label) and label == "Pinning Shot" then
-				Status.ApplySlow(target, 0.65, 2, "YumiPinning")
+			if hit(character, target, damage, label) and slow then
+				Status.ApplySlow(target, slow.Ratio, slow.Duration, slow.Key)
 			end
 		end,
 		OnDestroy = function(flight)
@@ -325,6 +326,10 @@ function Yumi:Cancel(character: Model, id: number?)
 		return
 	end
 	state.Epoch += 1
+	local endsAt = character:GetAttribute("SkillUntil")
+	if typeof(endsAt) == "number" and endsAt > Workspace:GetServerTimeNow() then
+		character:SetAttribute("SkillUntil", 0)
+	end
 	state.Pending = nil
 	character:SetAttribute("BowDrawStartedAt", 0)
 	local flights = {}
@@ -468,14 +473,14 @@ function Yumi:Release(character: Model, id: number, requested: Vector3, hit: Hit
 	end
 	character:SetAttribute("AttackReadyAt", now + Config.Attack.Cooldown)
 	character:SetAttribute("ActionRecoveryUntil", now + RECOVERY)
-	return Launch(character, state, direction, Config.Range, damage, "Yumi", 1, hit)
+	return Launch(character, state, direction, Config.Range, damage, "Yumi", 1, hit, nil)
 end
 
 function Yumi:Cast(character: Model, slotIndex: number, requested: Vector3, hit: Hit): boolean
 	if not Rules.Finite(slotIndex) or slotIndex % 1 ~= 0 then
 		return false
 	end
-	local slot = Weapons.Slots[slotIndex]
+	local slot = SkillDefinitions.Slot(slotIndex)
 	local state = States[character]
 	local direction = Direction(character, requested)
 	if
@@ -488,16 +493,27 @@ function Yumi:Cast(character: Model, slotIndex: number, requested: Vector3, hit:
 	then
 		return false
 	end
-	local skill = Config.Skills[slot]
-	if not skill or not Ready(character, slot .. "ReadyAt") or not Status.ConsumeStamina(character, skill.Stamina) then
+	local skill = SkillDefinitions.Resolve("Yumi", slot)
+	if
+		not skill
+		or not skill.Projectile
+		or not Ready(character, slot .. "ReadyAt")
+		or not Status.ConsumeStamina(character, skill.Stamina)
+	then
 		return false
 	end
 	Yumi:Cancel(character)
 	local now = Workspace:GetServerTimeNow()
 	character:SetAttribute(slot .. "ReadyAt", now + skill.Cooldown)
-	character:SetAttribute("ActionRecoveryUntil", now + WINDUP + RECOVERY)
+	character:SetAttribute("ActionRecoveryUntil", now + skill.Duration)
 	character:SetAttribute("Sprinting", false)
-	state.Pending = { At = now + WINDUP, Direction = direction, Slot = slot, Hit = hit }
+	state.Pending = { At = now + skill.Windup, Direction = direction, Definition = skill, Hit = hit }
+	character:SetAttribute("SkillId", skill.Id)
+	character:SetAttribute("SkillStartedAt", now)
+	character:SetAttribute("SkillDirection", direction)
+	character:SetAttribute("SkillUntil", now + skill.Duration)
+	local sequence = character:GetAttribute("SkillSequence")
+	character:SetAttribute("SkillSequence", (if typeof(sequence) == "number" then sequence else 0) + 1)
 	return true
 end
 
@@ -518,23 +534,23 @@ function Yumi:Step(dt: number)
 			continue
 		end
 		state.Pending = nil
-		local skill = Config.Skills[pending.Slot]
-		if pending.Slot == "Spin" then
-			for _, angle in { -8, 0, 8 } do
-				local direction = CFrame.Angles(0, math.rad(angle), 0):VectorToWorldSpace(pending.Direction)
-				Launch(character, state, direction, skill.Range, 8, skill.Name, 1, pending.Hit)
-			end
-		else
-			local damage = if pending.Slot == "RisingCrash" then 24 elseif pending.Slot == "Charge" then 10 else 12
+		local skill = pending.Definition
+		local projectile = skill.Projectile
+		if not projectile then
+			continue
+		end
+		for _, angle in projectile.Angles do
+			local direction = CFrame.Angles(0, math.rad(angle), 0):VectorToWorldSpace(pending.Direction)
 			Launch(
 				character,
 				state,
-				pending.Direction,
+				direction,
 				skill.Range,
-				damage,
+				projectile.Damage,
 				skill.Name,
-				if pending.Slot == "RisingCrash" then 2 else 1,
-				pending.Hit
+				projectile.MaxTargets,
+				pending.Hit,
+				projectile.Slow
 			)
 		end
 	end

@@ -118,7 +118,7 @@ scope Combat {
         From: Client,
         Type: Reliable,
         Call: SingleAsync,
-        Data: (u8, vector),
+        Data: (u8, vector, Instance?),
     }
 
     event Projectile {

@@ -8,6 +8,7 @@ local Workspace = game:GetService("Workspace")
 local Server = require(ReplicatedStorage.Shared.Network.Server)
 local Config = require(ReplicatedStorage.Shared.Combat.Config)
 local Weapons = require(ReplicatedStorage.Shared.Combat.Weapons)
+local SkillDefinitions = require(ReplicatedStorage.Shared.Combat.SkillDefinitions)
 local Tags = require(ReplicatedStorage.Shared.Core.Tags)
 local Status = require(script.Status)
 local Katana = require(script.Katana)
@@ -16,6 +17,7 @@ local Melee = require(ReplicatedStorage.Shared.Combat.Melee)
 local History = require(script.History)
 local TrainingRig = require(script.TrainingRig)
 local Skills = require(script.Skills)
+local SkillHandlers = require(script.SkillHandlers)
 local Team = require(script.Team)
 local CaptureAuthority = require(ReplicatedStorage.Shared.Capture.Authority)
 
@@ -42,7 +44,9 @@ export type System = {
 	EquipWeapon: (self: System, player: Player, id: string) -> boolean,
 	BeginDraw: (self: System, player: Player, id: number, enabled: boolean) -> boolean,
 	ReleaseDraw: (self: System, player: Player, id: number, direction: Vector3) -> boolean,
-	CastSlot: (self: System, player: Player, slot: number, direction: Vector3) -> boolean,
+	CastSlot: (self: System, player: Player, slot: number, direction: Vector3, target: Instance?) -> boolean,
+	CastSkill: (self: System, character: Model, id: string, direction: Vector3?, target: Instance?) -> boolean,
+	CancelSkills: (self: System, character: Model) -> (),
 	ApplyHit: (
 		self: System,
 		attacker: Model,
@@ -227,12 +231,31 @@ function System:ReleaseDraw(player: Player, id: number, direction: Vector3): boo
 		end)
 end
 
-function System:CastSlot(player: Player, slot: number, direction: Vector3): boolean
+function System:CastSkill(character: Model, id: string, direction: Vector3?, target: Instance?): boolean
+	local definition = SkillDefinitions.Get(id)
+	if not definition or not CollectionService:HasTag(character, Tags.Combatant) or not OffensiveAllowed(character) then
+		return false
+	end
+	local _, root = GetLiving(character)
+	return SkillHandlers.Cast(character, definition, {
+		Direction = direction or (if root then root.CFrame.LookVector else Vector3.zero),
+		Target = target,
+		Player = Players:GetPlayerFromCharacter(character),
+	}, function(attacker, victim, damage, label, stagger)
+		return self:ApplySkillHit(attacker, victim, damage, stagger, label)
+	end)
+end
+
+function System:CancelSkills(character: Model)
+	Skills.Cancel(character)
+	Yumi:Cancel(character)
+end
+
+function System:CastSlot(player: Player, slot: number, direction: Vector3, target: Instance?): boolean
 	local character = player.Character
-	return character ~= nil
-		and Yumi:Cast(character, slot, direction, function(attacker, target, damage, label)
-			return self:ApplySkillHit(attacker, target, damage, false, label)
-		end)
+	local name = SkillDefinitions.Slot(slot)
+	local definition = name and SkillDefinitions.Resolve(Weapons.Weapon(character), name)
+	return character ~= nil and definition ~= nil and self:CastSkill(character, definition.Id, direction, target)
 end
 
 function System:ApplyStatus(target: Model, kind: Status.Kind, duration: number): boolean
@@ -340,24 +363,8 @@ function System:TryCaptureBotSkill(character: Model, name: string, direction: Ve
 	then
 		return false
 	end
-	local function hit(attacker: Model, victim: Model, damage: number): boolean
-		local label = if name == "Spin"
-			then "Wind Spin"
-			elseif name == "RisingCrash" then "Rising Crash"
-			elseif name == "GroundShock" then "Ground Shock"
-			else name
-		return self:ApplySkillHit(attacker, victim, damage, name == "RisingCrash", label)
-	end
-	if name == "Spin" then
-		return Skills.CastSpin(character, hit)
-	elseif name == "Charge" and target then
-		return Skills.CastCharge(character, target, hit)
-	elseif name == "RisingCrash" then
-		return Skills.CastRisingCrash(character, direction, hit)
-	elseif name == "GroundShock" then
-		return Skills.CastGroundShock(character, direction, hit)
-	end
-	return false
+	local definition = SkillDefinitions.Resolve(Weapons.Weapon(character), name)
+	return definition ~= nil and self:CastSkill(character, definition.Id, direction, target)
 end
 
 function System:UnregisterDungeonMob(character: Model)
@@ -425,39 +432,23 @@ function System:TryDash(player: Player, direction: Vector3): boolean
 end
 
 function System:TrySpin(player: Player): boolean
-	if Weapons.Weapon(player.Character) ~= "Katana" or not OffensiveAllowed(player.Character) then
-		return false
-	end
-	return Skills.TrySpin(player, function(attacker, target, damage)
-		return self:ApplySkillHit(attacker, target, damage, false, "Wind Spin")
-	end)
+	local character = player.Character
+	return character ~= nil and self:CastSkill(character, "WindSpin")
 end
 
 function System:TryCharge(player: Player, target: Instance): boolean
-	if Weapons.Weapon(player.Character) ~= "Katana" or not OffensiveAllowed(player.Character) then
-		return false
-	end
-	return Skills.TryCharge(player, target, function(attacker, target, damage)
-		return self:ApplySkillHit(attacker, target, damage, false, "Charge")
-	end)
+	local character = player.Character
+	return character ~= nil and self:CastSkill(character, "Charge", nil, target)
 end
 
 function System:TryRisingCrash(player: Player, direction: Vector3): boolean
-	if Weapons.Weapon(player.Character) ~= "Katana" or not OffensiveAllowed(player.Character) then
-		return false
-	end
-	return Skills.TryRisingCrash(player, direction, function(attacker, target, damage)
-		return self:ApplySkillHit(attacker, target, damage, nil, "Rising Crash")
-	end)
+	local character = player.Character
+	return character ~= nil and self:CastSkill(character, "RisingCrash", direction)
 end
 
 function System:TryGroundShock(player: Player, direction: Vector3): boolean
-	if Weapons.Weapon(player.Character) ~= "Katana" or not OffensiveAllowed(player.Character) then
-		return false
-	end
-	return Skills.TryGroundShock(player, direction, function(attacker, target, damage)
-		return self:ApplySkillHit(attacker, target, damage, false, "Ground Shock")
-	end)
+	local character = player.Character
+	return character ~= nil and self:CastSkill(character, "GroundShock", direction)
 end
 
 function System:SetSprinting(player: Player, enabled: boolean): boolean
@@ -515,8 +506,8 @@ function System:Init()
 	Server.Combat.Release.On(function(player, id, direction)
 		self:ReleaseDraw(player, id, direction)
 	end)
-	Server.Combat.CastSlot.On(function(player, slot, direction)
-		self:CastSlot(player, slot, direction)
+	Server.Combat.CastSlot.On(function(player, slot, direction, target)
+		self:CastSlot(player, slot, direction, target)
 	end)
 	Server.Combat.Attack.On(function(player, attackId, startedAt, direction, kind)
 		self:TryAttack(player, attackId, startedAt, direction, kind)

@@ -55,7 +55,11 @@ for _, group in Pool:GetChildren() do
 end
 
 function AudioUtilities.Stop(name: string)
-	for _, slot in Slots[name] or {} do
+	local entries = Slots[name]
+	if not entries then
+		return
+	end
+	for _, slot in entries do
 		if slot.Busy then
 			slot.Player:Stop()
 			slot.Busy = false

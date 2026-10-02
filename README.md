@@ -28,5 +28,6 @@ Open the existing Brawl place in Studio (place ID `127512254096488`), connect Ro
 
 - Register systems in `src/Shared/Core/Framework/Features.lua`.
 - Keep specs beneath their tested module: `Name/init.lua` and `Name/Name.spec.lua`.
+- Skills: edit `Shared/Combat/SkillDefinitions` and server `Combat/SkillHandlers`; use `Combat:CastSkill(character, id, direction, target)` on the server or `Combat:CastSkill(id, direction, target)` on the client. Client `RegisterSkillEffects(id, handler)` hooks cast, impact, and end; effect references name native `Assets.Effects` templates.
 - Author assets in Studio Edit mode via MCP and save them in the place; runtime clones its templates. Rojo syncs code and preserves Studio assets.
 - Local checks, outputs, builds, and task notes are ignored by Git.

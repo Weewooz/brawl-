@@ -6,6 +6,7 @@ local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local Players = game:GetService("Players")
 
 local Config = require(ReplicatedStorage.Shared.Combat.Config)
+local SkillDefinitions = require(ReplicatedStorage.Shared.Combat.SkillDefinitions)
 local Tags = require(ReplicatedStorage.Shared.Core.Tags)
 local Katana = require(script.Parent.Katana)
 local Status = require(script.Parent.Status)
@@ -131,7 +132,8 @@ function Skills.CastSpin(character: Model, hit: Hit): boolean
 	Skills.Cancel(character)
 	character:SetAttribute("SpinReadyAt", now + Config.Spin.Cooldown)
 	Status.SetSpin(character, now + Config.Spin.Duration)
-	Katana.SetTrail(character, true)
+	local definition = SkillDefinitions.Get("WindSpin")
+	Katana.SetTrail(character, definition ~= nil and definition.Presentation.Trail == true)
 	local endsAt = now + Config.Spin.Duration
 	local nextHit = now + Config.Spin.FirstHit
 	local hits = 0
@@ -287,7 +289,8 @@ local function TryDirectional(
 	character:SetAttribute(name .. "Until", now + config.Duration)
 	character:SetAttribute(name .. "Direction", aim)
 	root.CFrame = CFrame.lookAt(root.Position, root.Position + aim)
-	Katana.SetTrail(character, true)
+	local definition = SkillDefinitions.Resolve("Katana", name)
+	Katana.SetTrail(character, definition ~= nil and definition.Presentation.Trail == true)
 	local state: DirectionalState = { Connection = nil, Attribute = name .. "Until" }
 	Directionals[character] = state
 	local impacted = false

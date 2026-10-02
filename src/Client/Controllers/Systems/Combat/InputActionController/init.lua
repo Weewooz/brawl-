@@ -23,6 +23,7 @@ export type Callbacks = {
 	CanBeginControl: () -> boolean,
 	CanBeginSkillAim: () -> boolean,
 	Ranged: () -> boolean,
+	AimMode: ((name: string) -> string?)?,
 	Facing: () -> Vector3,
 	ScreenDirection: (delta: Vector2) -> Vector3?,
 	MovementDirection: () -> Vector3?,
@@ -182,6 +183,11 @@ function InputActionController:Reset()
 	end
 end
 
+local function Targeted(self: Controller, name: string): boolean
+	local aimMode = self.Callbacks.AimMode
+	return if aimMode then aimMode(name) == "Target" else not self.Callbacks.Ranged() and name == "Charge"
+end
+
 function InputActionController:MoveSkillAim(position: Vector2)
 	local aiming = self.Aiming
 	if not aiming then
@@ -190,7 +196,7 @@ function InputActionController:MoveSkillAim(position: Vector2)
 	aiming.Position = position
 	local button = self.Buttons[aiming.Name]
 	MoveKnob(self.Knobs[aiming.Name], button, aiming.Origin, position)
-	if self.Callbacks.Ranged() or aiming.Name ~= "Charge" then
+	if not Targeted(self, aiming.Name) then
 		aiming.Direction = if aiming.Input.UserInputType == Enum.UserInputType.MouseButton1
 			then self.Callbacks.MouseDirection()
 			else self.Callbacks.ScreenDirection(position - aiming.Origin)
@@ -308,11 +314,7 @@ function InputActionController:EndAim(input: InputObject)
 				else position
 		)
 		self:ClearSkillAim()
-		if
-			not cancelled
-			and not aiming.Cancelled
-			and (self.Callbacks.Ranged() or aiming.Name ~= "Charge" or aiming.Valid)
-		then
+		if not cancelled and not aiming.Cancelled and (not Targeted(self, aiming.Name) or aiming.Valid) then
 			self.Callbacks.RequestSkill(aiming.Name, aiming.Direction, input.UserInputType == Enum.UserInputType.Touch)
 		end
 	end

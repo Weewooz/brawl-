@@ -1,5 +1,6 @@
 --!strict
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
+local SkillDefinitions = require(ReplicatedStorage.Shared.Combat.SkillDefinitions)
 local AnimationAssets = ReplicatedStorage.Assets:WaitForChild("CombatAnimations")
 local ATTACK_NAMES = { "Slash", "Reverse" }
 
@@ -30,17 +31,24 @@ function CharacterAnimations:Clear()
 	table.clear(Tracks)
 end
 
-local function LoadTrack(animator: Animator, name: string, priority: Enum.AnimationPriority, looped: boolean)
-	local animation = AnimationAssets:FindFirstChild(name)
+local function LoadTrack(
+	animator: Animator,
+	name: string,
+	priority: Enum.AnimationPriority,
+	looped: boolean,
+	sourceName: string?
+)
+	local source = sourceName or name
+	local animation = AnimationAssets:FindFirstChild(source)
 	if not animation or not animation:IsA("Animation") then
-		warn("[Combat] Missing preauthored CombatAnimations." .. name)
+		warn("[Combat] Missing preauthored CombatAnimations." .. source)
 		return
 	end
 	local ok, track = pcall(function()
 		return animator:LoadAnimation(animation)
 	end)
 	if not ok then
-		warn("[Combat] Could not load RPG animation " .. name .. ": " .. tostring(track))
+		warn("[Combat] Could not load RPG animation " .. source .. ": " .. tostring(track))
 		return
 	end
 	track.Priority = priority
@@ -85,14 +93,27 @@ function CharacterAnimations:Bind(character: Model, animator: Instance?, ranged:
 		for _, name in ATTACK_NAMES do
 			LoadTrack(animator, name, Enum.AnimationPriority.Action3, false)
 		end
-		LoadTrack(animator, "RisingCrash", Enum.AnimationPriority.Action3, false)
-		LoadTrack(animator, "GroundShock", Enum.AnimationPriority.Action3, false)
-		LoadTrack(animator, "Spin", Enum.AnimationPriority.Action3, true)
-		LoadTrack(animator, "Charge", Enum.AnimationPriority.Action3, false)
 	elseif animator and animator:IsA("Animator") then
 		LoadTrack(animator, "Impact", Enum.AnimationPriority.Action, false)
 	else
 		warn("[Combat] Character Animator unavailable")
+	end
+	if animator and animator:IsA("Animator") then
+		local skills = SkillDefinitions.ForWeapon(if ranged then "Yumi" else "Katana")
+		if skills then
+			for _, slot in SkillDefinitions.Slots do
+				local presentation = skills[slot].Presentation
+				if presentation.Animation then
+					LoadTrack(
+						animator,
+						slot,
+						Enum.AnimationPriority.Action3,
+						presentation.Looped == true,
+						presentation.Animation
+					)
+				end
+			end
+		end
 	end
 	local animate = character:FindFirstChild("Animate")
 	if animate and animate:IsA("LocalScript") and ranged then
@@ -140,11 +161,10 @@ function CharacterAnimations:Stop(name: string, fade: number)
 end
 
 function CharacterAnimations:StopActions(fade: number)
-	for _, name in ATTACK_NAMES do
-		self:Stop(name, fade)
-	end
-	for _, name in { "RisingCrash", "GroundShock", "Charge", "Spin" } do
-		self:Stop(name, fade)
+	for _, track in Tracks do
+		if track.Priority == Enum.AnimationPriority.Action3 then
+			track:Stop(fade)
+		end
 	end
 end
 

@@ -4,21 +4,11 @@ local Players = game:GetService("Players")
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 
 local Audio = require(ReplicatedStorage.Shared.Utilities.AudioUtilities)
-local Config = require(ReplicatedStorage.Shared.Combat.Config)
+local SkillDefinitions = require(ReplicatedStorage.Shared.Combat.SkillDefinitions)
 local Weapons = require(ReplicatedStorage.Shared.Combat.Weapons)
 local Player = Players.LocalPlayer
 local INTERVAL = 1 / 30
 local RANGE = 64
-local TIMING = {
-	RisingCrash = { Duration = Config.RisingCrash.Duration, Times = { Config.RisingCrash.Windup }, Cue = "RisingCrash" },
-	GroundShock = { Duration = Config.GroundShock.Duration, Times = { Config.GroundShock.Windup }, Cue = "GroundShock" },
-	Spin = {
-		Duration = Config.Spin.Duration,
-		Times = { Config.Spin.FirstHit, Config.Spin.FirstHit + Config.Spin.Interval },
-		Cue = "WindSpin",
-	},
-	Charge = { Duration = Config.Charge.Duration, Times = { 0 }, Cue = "Charge" },
-}
 
 type Cue = { Until: number, Next: number }
 
@@ -28,7 +18,7 @@ export type System = {
 	Step: (self: System, dt: number) -> (),
 }
 
-local RemoteCues: System = { Elapsed = 0, Actors = {} }
+local RemoteCues = { Elapsed = 0, Actors = {} } :: System
 
 local function Active(character: Model, attribute: string, now: number): boolean
 	local value = character:GetAttribute(attribute)
@@ -50,12 +40,7 @@ function RemoteCues:Step(dt: number)
 	local now = workspace:GetServerTimeNow()
 	local seen: { [Model]: boolean } = {}
 	for _, instance in CollectionService:GetTagged("Combatant") do
-		if
-			not instance:IsA("Model")
-			or instance == character
-			or not instance:IsDescendantOf(workspace)
-			or Weapons.Weapon(instance) == "Yumi"
-		then
+		if not instance:IsA("Model") or instance == character or not instance:IsDescendantOf(workspace) then
 			continue
 		end
 		local humanoid = instance:FindFirstChildOfClass("Humanoid")
@@ -70,6 +55,7 @@ function RemoteCues:Step(dt: number)
 			or Active(instance, "StaggeredUntil", now)
 			or Active(instance, "StunnedUntil", now)
 			or Active(instance, "ControlDisabledUntil", now)
+			or Weapons.Weapon(instance) == "Yumi"
 		then
 			continue
 		end
@@ -79,26 +65,36 @@ function RemoteCues:Step(dt: number)
 			cues = {}
 			self.Actors[instance] = cues
 		end
-		for name, timing in TIMING do
+		local skills = SkillDefinitions.ForWeapon(Weapons.Weapon(instance))
+		if not skills then
+			continue
+		end
+		for name, skill in skills do
+			local timeline = skill.Presentation.Cues
+			if #timeline == 0 then
+				cues[name] = nil
+				continue
+			end
 			local endsAt = instance:GetAttribute(name .. "Until")
 			if typeof(endsAt) ~= "number" or endsAt <= now then
 				cues[name] = nil
 				continue
 			end
 			local cue = cues[name]
-			local startedAt = endsAt - timing.Duration
-			if not cue or cue.Until ~= endsAt then
-				cue = { Until = endsAt, Next = 1 }
-				cues[name] = cue
+			local startedAt = endsAt - skill.Duration
+			local current: Cue = if cue and cue.Until == endsAt then cue else { Until = endsAt, Next = 1 }
+			if current ~= cue then
+				cues[name] = current
 				-- Entering audible range during a cast must not replay earlier impacts.
-				local tolerance = if name == "Charge" then 0.12 else INTERVAL
-				while cue.Next <= #timing.Times and startedAt + timing.Times[cue.Next] < now - tolerance do
-					cue.Next += 1
+				local tolerance = if timeline[1].At == 0 then 0.12 else INTERVAL
+				while current.Next <= #timeline and startedAt + timeline[current.Next].At < now - tolerance do
+					current.Next += 1
 				end
 			end
-			while cue.Next <= #timing.Times and now >= startedAt + timing.Times[cue.Next] do
-				Audio.PlayAtPart(timing.Cue, root, if name == "GroundShock" then 0.28 else 0.24)
-				cue.Next += 1
+			while current.Next <= #timeline and now >= startedAt + timeline[current.Next].At do
+				local event = timeline[current.Next]
+				Audio.PlayAtPart(event.Sound, root, event.RemoteVolume or event.Volume or 0.24)
+				current.Next += 1
 			end
 		end
 	end
