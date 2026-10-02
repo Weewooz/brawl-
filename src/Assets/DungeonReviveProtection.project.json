@@ -1,9 +1,0 @@
-{
-  "name": "DungeonReviveProtection",
-  "tree": {
-    "$className": "ForceField",
-    "$properties": {
-      "Visible": false
-    }
-  }
-}

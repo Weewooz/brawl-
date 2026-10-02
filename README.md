@@ -14,19 +14,19 @@ wally-package-types --sourcemap sourcemap.json ServerPackages/
 rojo serve
 ```
 
-Connect the Studio Rojo plugin to `localhost:34872`, then press Play.
+Open the existing Brawl place in Studio (place ID `127512254096488`), connect Rojo to `localhost:34872`, then press Play. Collaborators need edit access to that place.
 
 ## What's included
 
 - `src/Client`: input, camera, combat presentation, and UI.
 - `src/Server`: combat authority, Capture, dungeons, profiles, and commands.
 - `src/Shared`: framework, rules, networking, and utilities.
-- `src/Assets`: authored models, UI, effects, and audio.
+- Models, UI, effects, and audio live in the Studio place.
 - `network.blink`: network contracts; `default.project.json`: Rojo mapping.
 
 ## Notes
 
 - Register systems in `src/Shared/Core/Framework/Features.lua`.
 - Keep specs beneath their tested module: `Name/init.lua` and `Name/Name.spec.lua`.
-- Author assets in Studio Edit mode via MCP, export to `src/Assets`, and clone templates at runtime.
+- Author assets in Studio Edit mode via MCP and save them in the place; runtime clones its templates. Rojo syncs code and preserves Studio assets.
 - Local checks, outputs, builds, and task notes are ignored by Git.
