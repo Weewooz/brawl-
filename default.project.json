@@ -51,7 +51,22 @@
           },
           "Arrow": {
             "$path": "src/Assets/Arrow.rbxmx"
+          },
+          "Katana": {
+            "$path": "src/Assets/Katana.rbxm"
           }
+        },
+        "Rigs": {
+          "$className": "Folder",
+          "IncubatorRig": {
+            "$path": "src/Assets/IncubatorRig.rbxm"
+          }
+        },
+        "Projectiles": {
+          "$path": "src/Assets/ProjectileTemplates.rbxm"
+        },
+        "Audio": {
+          "$path": "src/Assets/AudioTemplates.rbxm"
         },
         "CombatAnimations": {
           "$path": "src/Assets/CombatAnimations.project.json"

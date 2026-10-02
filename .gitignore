@@ -1,6 +1,11 @@
-/*.rbxlx.lock
-/*.rbxl.lock
+# Generated Roblox builds and tool output
+*.rbxl
+*.rbxlx
+*.rbxl.lock
+*.rbxlx.lock
+*.log
 sourcemap.json
+*.sourcemap.json
 wally.lock
 Packages
 ServerPackages
@@ -17,6 +22,14 @@ AGENTS.md
 .cursor/rules.bak/
 
 # Local builds and scratch files
+/checks/
+/outputs/
 /tmp/
 /work/
-/NUL.rbxlx
+/tasks/
+/build/
+/dist/
+/coverage/
+/test-results/
+__pycache__/
+*.pyc

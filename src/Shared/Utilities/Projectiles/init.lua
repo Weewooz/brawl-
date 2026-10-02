@@ -5,6 +5,14 @@ local RunService = game:GetService("RunService")
 local SwiftCast = require(ReplicatedStorage.Packages.SwiftCast)
 local SoundUtilities = require(ReplicatedStorage.Shared.Utilities.SoundUtilities)
 
+local Templates = ReplicatedStorage:WaitForChild("Assets"):WaitForChild("Projectiles")
+local ContainerTemplate = Templates:WaitForChild("Container")
+local WeldTemplate = Templates:WaitForChild("Weld")
+local TrailTemplate = Templates:WaitForChild("TrailRig")
+assert(ContainerTemplate:IsA("Model"), "Assets.Projectiles.Container must be a Model")
+assert(WeldTemplate:IsA("WeldConstraint"), "Assets.Projectiles.Weld must be a WeldConstraint")
+assert(TrailTemplate:IsA("Folder"), "Assets.Projectiles.TrailRig must be a Folder")
+
 local VISUAL_FOLDER_NAME = "_Projectiles"
 local MAX_AGE = 0.5 -- Seconds of catch-up allowed from the shared server clock
 local DRIFT = 1 / 60 -- Shortfall tolerated before re-anchoring to the shared clock
@@ -219,7 +227,7 @@ local function CreateVisual(
 	local projectileTemplate = definition.Model:Clone()
 	local projectilePart: BasePart
 	if projectileTemplate:IsA("Tool") then
-		local visualModel = Instance.new("Model")
+		local visualModel = ContainerTemplate:Clone()
 		visualModel.Name = projectileTemplate.Name
 		for _, child in projectileTemplate:GetChildren() do
 			child.Parent = visualModel
@@ -245,26 +253,25 @@ local function CreateVisual(
 		projectileVisual.PrimaryPart = projectilePart
 	end
 
-	local function Paint(part: BasePart)
+	local function prepare(part: BasePart)
 		part.Anchored = false
 		part.CanCollide = false
 		part.CanQuery = false
 		part.CanTouch = false
 		if color then
 			part.Color = color
-			part.Material = Enum.Material.Neon
 		end
 	end
 
 	local visualParts: { BasePart } = {}
 	for _, descendant in projectileVisual:GetDescendants() do
 		if descendant:IsA("BasePart") then
-			Paint(descendant)
+			prepare(descendant)
 			table.insert(visualParts, descendant)
 		end
 	end
 
-	Paint(projectilePart)
+	prepare(projectilePart)
 	local visual = definition.Visual
 	local visualScale = if visual then visual.Scale else nil
 	if visualScale and visualScale ~= 1 then
@@ -275,28 +282,24 @@ local function CreateVisual(
 		end
 	end
 	if visual and visual.Trail then
-		local front = Instance.new("Attachment")
+		local trailRig = TrailTemplate:Clone()
+		local front = trailRig:FindFirstChild("Front")
+		local back = trailRig:FindFirstChild("Back")
+		local trail = trailRig:FindFirstChild("Trail")
+		assert(front and front:IsA("Attachment"), "Assets.Projectiles.TrailRig.Front must be an Attachment")
+		assert(back and back:IsA("Attachment"), "Assets.Projectiles.TrailRig.Back must be an Attachment")
+		assert(trail and trail:IsA("Trail"), "Assets.Projectiles.TrailRig.Trail must be a Trail")
 		front.Position = Vector3.new(0, 0, -projectilePart.Size.Z * 0.45)
-		front.Parent = projectilePart
-		local back = Instance.new("Attachment")
 		back.Position = Vector3.new(0, 0, projectilePart.Size.Z * 0.45)
-		back.Parent = projectilePart
-		local trail = Instance.new("Trail")
-		trail.Attachment0 = front
-		trail.Attachment1 = back
 		trail.Color = ColorSequence.new(color or projectilePart.Color)
-		trail.LightEmission = 1
-		trail.Lifetime = 0.12
-		trail.MinLength = 0.05
-		trail.WidthScale = NumberSequence.new({
-			NumberSequenceKeypoint.new(0, 0.3),
-			NumberSequenceKeypoint.new(1, 0),
-		})
-		trail.Parent = projectilePart
+		for _, child in trailRig:GetChildren() do
+			child.Parent = projectilePart
+		end
+		trailRig:Destroy()
 	end
 	for _, part in visualParts do
 		if part ~= projectilePart then
-			local weld = Instance.new("WeldConstraint")
+			local weld = WeldTemplate:Clone()
 			weld.Part0 = projectilePart
 			weld.Part1 = part
 			weld.Parent = projectilePart

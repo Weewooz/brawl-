@@ -1,12 +1,14 @@
 --!strict
 
 local Debris = game:GetService("Debris")
+local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local SoundService = game:GetService("SoundService")
+
+local SoundTemplate = ReplicatedStorage:WaitForChild("Assets"):WaitForChild("Audio"):WaitForChild("Sound")
+assert(SoundTemplate:IsA("Sound"), "Assets.Audio.Sound must be a Sound")
 
 local SoundUtil = {}
 
-local DEFAULT_ROLL_OFF_MIN_DISTANCE = 32
-local DEFAULT_ROLL_OFF_MAX_DISTANCE = 64
 local TEMPLATE_CLEANUP_TIME = 30
 
 --------------------------------------------------------------------------------
@@ -69,12 +71,8 @@ end
 	@return Sound -- The created sound instance.
 ]=]
 function SoundUtil.CreateSound(soundId: string): Sound
-	local sound = Instance.new("Sound")
+	local sound = SoundTemplate:Clone()
 	sound.SoundId = soundId
-	sound.Volume = 0.5
-	sound.RollOffMode = Enum.RollOffMode.Linear
-	sound.RollOffMinDistance = DEFAULT_ROLL_OFF_MIN_DISTANCE
-	sound.RollOffMaxDistance = DEFAULT_ROLL_OFF_MAX_DISTANCE
 
 	return sound
 end

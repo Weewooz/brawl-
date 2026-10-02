@@ -4,7 +4,6 @@ local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local RunService = game:GetService("RunService")
 local Workspace = game:GetService("Workspace")
 
-local Animations = require(ReplicatedStorage.Shared.Combat.Animations)
 local Config = require(ReplicatedStorage.Shared.Combat.Config)
 
 export type Role = "Blocking" | "Idle" | "Attacking"
@@ -20,7 +19,7 @@ type Actor = {
 }
 
 local TrainingRig = {} :: Service
-local Actors: { [Role]: Actor } = {}
+local Actors: { Blocking: Actor?, Idle: Actor?, Attacking: Actor? } = {}
 local Started = false
 local TICK = 0.1
 local POSITIONS = {
@@ -41,34 +40,33 @@ local function GetTemplate(): Model?
 	if template and template:IsA("Model") then
 		return template
 	end
-	local description = Instance.new("HumanoidDescription")
-	description.Head = 10638267973
-	local ok, result = pcall(function()
-		return Players:CreateHumanoidModelFromDescriptionAsync(description, Enum.HumanoidRigType.R15)
-	end)
-	description:Destroy()
-	if not ok then
-		warn("[Combat] Incubator training rig unavailable: " .. tostring(result))
-		return nil
+	warn("[Combat] Missing authored ReplicatedStorage.Assets.Rigs.IncubatorRig Model; sync the preview asset with Rojo")
+	return nil
+end
+
+local function GetAnimation(name: string): Animation?
+	local assets = ReplicatedStorage:FindFirstChild("Assets")
+	local animations = assets and assets:FindFirstChild("CombatAnimations")
+	local animation = animations and animations:FindFirstChild(name)
+	if animation and animation:IsA("Animation") then
+		return animation
 	end
-	return result :: Model
+	warn("[Combat] Missing authored Animation at ReplicatedStorage.Assets.CombatAnimations." .. name)
+	return nil
 end
 
 local function LoadTrack(
 	humanoid: Humanoid,
-	animationId: string,
+	animation: Animation,
 	priority: Enum.AnimationPriority,
 	looped: boolean
 ): AnimationTrack
-	local animator = humanoid:FindFirstChildOfClass("Animator")
-	if not animator then
-		animator = Instance.new("Animator")
+	local existing = humanoid:FindFirstChildOfClass("Animator")
+	local animator = existing or Instance.new("Animator")
+	if not existing then
 		animator.Parent = humanoid
 	end
-	local source = Instance.new("Animation")
-	source.AnimationId = "rbxassetid://" .. animationId
-	local track = animator:LoadAnimation(source)
-	source:Destroy()
+	local track = animator:LoadAnimation(animation)
 	track.Priority = priority
 	track.Looped = looped
 	if looped then
@@ -77,25 +75,15 @@ local function LoadTrack(
 	return track
 end
 
-local function CreateLabel(model: Model, role: Role): TextLabel
-	local head = model:FindFirstChild("Head")
-	local gui = Instance.new("BillboardGui")
-	gui.Name = "TrainingLabel"
-	gui.Adornee = if head and head:IsA("BasePart") then head else model.PrimaryPart
-	gui.Size = UDim2.fromOffset(96, 26)
-	gui.StudsOffsetWorldSpace = Vector3.new(0, 2.4, 0)
-	gui.AlwaysOnTop = true
-	gui.Parent = model
-	local label = Instance.new("TextLabel")
-	label.Size = UDim2.fromScale(1, 1)
+local function ConfigureLabel(model: Model, role: Role): TextLabel?
+	local gui = model:FindFirstChild("TrainingLabel")
+	local label = gui and gui:FindFirstChild("Label")
+	if not gui or not gui:IsA("BillboardGui") or not label or not label:IsA("TextLabel") then
+		warn("[Combat] Authored IncubatorRig requires TrainingLabel BillboardGui with a Label TextLabel")
+		return nil
+	end
 	label.BackgroundColor3 = COLORS[role]
-	label.BackgroundTransparency = 0.12
-	label.TextColor3 = Color3.new(1, 1, 1)
-	label.TextStrokeTransparency = 0.45
-	label.TextSize = 13
-	label.Font = Enum.Font.GothamBold
 	label.Text = string.upper(role)
-	label.Parent = gui
 	return label
 end
 
@@ -123,7 +111,10 @@ function TrainingRig:Start(onSpawn: (Model, Role) -> (), onAttack: (Model, Vecto
 	end
 	Started = true
 	local template = GetTemplate()
-	if not template then
+	local idle = GetAnimation("Idle")
+	local guard = GetAnimation("Guard")
+	local impactAnimation = GetAnimation("Impact")
+	if not template or not idle or not guard or not impactAnimation then
 		return
 	end
 	local container = Instance.new("Folder")
@@ -139,9 +130,10 @@ function TrainingRig:Start(onSpawn: (Model, Role) -> (), onAttack: (Model, Vecto
 		model:PivotTo(CFrame.lookAt(position, Vector3.new(0, position.Y, 0)))
 		local humanoid = model:FindFirstChildOfClass("Humanoid")
 		local root = model:FindFirstChild("HumanoidRootPart")
-		if not humanoid or not root or not root:IsA("BasePart") then
+		local label = ConfigureLabel(model, role)
+		if not humanoid or not root or not root:IsA("BasePart") or not label then
 			model:Destroy()
-			warn("[Combat] Training rig is missing Humanoid or HumanoidRootPart")
+			warn("[Combat] Authored training rig requires Humanoid, HumanoidRootPart, and TrainingLabel.Label")
 			return
 		end
 		humanoid.DisplayName = role .. " NPC"
@@ -154,16 +146,16 @@ function TrainingRig:Start(onSpawn: (Model, Role) -> (), onAttack: (Model, Vecto
 			Model = model,
 			Humanoid = humanoid,
 			Root = root,
-			Label = CreateLabel(model, role),
+			Label = label,
 		}
 		Actors[role] = actor
 		onSpawn(model, role)
 		if role == "Blocking" then
-			LoadTrack(humanoid, Animations.Melee.Guard, Enum.AnimationPriority.Action, true)
+			LoadTrack(humanoid, guard, Enum.AnimationPriority.Action, true)
 		else
-			LoadTrack(humanoid, Animations.Melee.Idle, Enum.AnimationPriority.Idle, true)
+			LoadTrack(humanoid, idle, Enum.AnimationPriority.Idle, true)
 		end
-		local impact = LoadTrack(humanoid, Animations.Melee.Impact, Enum.AnimationPriority.Action4, false)
+		local impact = LoadTrack(humanoid, impactAnimation, Enum.AnimationPriority.Action4, false)
 		model:GetAttributeChangedSignal("StaggeredUntil"):Connect(function()
 			local untilAt = model:GetAttribute("StaggeredUntil")
 			if typeof(untilAt) == "number" and untilAt > Workspace:GetServerTimeNow() and humanoid.Health > 0 then
@@ -182,8 +174,8 @@ function TrainingRig:Start(onSpawn: (Model, Role) -> (), onAttack: (Model, Vecto
 		end)
 	end
 
-	for _, role: Role in { "Blocking", "Idle", "Attacking" } do
-		spawn(role)
+	for _, role in { "Blocking", "Idle", "Attacking" } do
+		spawn(role :: Role)
 	end
 	local elapsed = 0
 	RunService.Heartbeat:Connect(function(dt)
